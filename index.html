@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0"
+      http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jenny's blog</title>
+<style>
+html{width: 100%;
+	background-color: #d0d0d0;
+}
+body{width: 1080px;
+	margin: 0px auto;
+	text-align: center;
+}
+.subBody{
+	width: 100%;
+	margin: 0px;
+	position: relative;
+}
+.upperPart{
+	width: 900px;
+	height: 150px;
+	margin: 0px auto;
+	background-color: white;
+}
+.menuBar{
+	width: 920px;
+	height: 60px;
+	margin: 0px auto;
+	text-align: center;
+	background-color: 	#F75000;
+	z-index: 900;
+}
+.menuBar:before, .menuBar:after{
+	content:"";
+	position: absolute;
+	width: 917px;
+	height: 40px;
+	top: 161px;
+	bottom: 22px;
+	background: transparent;
+	z-index: -1;
+}
+.menuBar:before{
+	right:83px;
+	box-shadow: 4px 7px 10px #5B5B5B;
+	transform: skew(-5deg) rotate(-1deg);
+}
+.menuBar:after{
+	left: 83px;
+	box-shadow: -4px 7px 10px #5B5B5B;
+	transform: skew(5deg) rotate(1deg);
+}
+.menuBarQuater{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	width: 24%;
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+}
+.menuBarText{
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+	margin: 10px auto 10px auto;
+	padding: 0px;
+	text-align: center;
+}
+.menuBarText p{
+	line-height: 40px;
+	font-size: 18px;
+	margin: 0px;
+}
+.menuDropDown{
+	position: absolute;
+	left: -1px;
+	width: 100%;
+	margin: 0px auto;
+	padding: 0px;
+	border-left: dotted 1px black;
+	background-color: white;
+	text-align: center;
+	line-height: 13px;
+	box-shadow: 2px 2px 2px gray;
+	cursor: default;
+	display: none;
+}
+.menuBarQuater:hover{
+	background-color: #FFAD86;
+}
+.menuBarQuater:hover .menuDropDown{
+	display: block;
+}
+.lowerPart{
+	position: absolute;
+	top: 210px;
+	left: 89px;
+	width: 900px;
+	margin: 0px auto;
+	text-align: center;
+	background-color: white;
+	z-index: -2;
+}
+.myPhoto{
+	position: relative;
+	margin: 110px auto 20px auto;
+	padding: 0px;
+	width: 800px;
+	height: 650px;
+}
+#myPhoto_thumb_01, #myPhoto_thumb_02, #myPhoto_thumb_03,
+#myPhoto_thumb_04, #myPhoto_thumb_05, #myPhoto_thumb_06{
+	width: 14%;
+	margin: 0px;
+	border: 2px solid white;
+	cursor: pointer;
+	display: inline-block;
+}
+#myPhoto_thumb_01 img, #myPhoto_thumb_02 img, #myPhoto_thumb_03 img,
+#myPhoto_thumb_04 img, #myPhoto_thumb_05 img, #myPhoto_thumb_06 img{
+	margin: 0px; padding: 0px; width: 100%; max-width: 100%; display: block; 
+	
+}
+#myPhoto_thumb_01:hover, #myPhoto_thumb_02:hover, #myPhoto_thumb_03:hover,
+#myPhoto_thumb_04:hover, #myPhoto_thumb_05:hover, #myPhoto_thumb_06:hover{
+	border-color: black;
+}
+#myPhoto_big_01{
+	margin: 5px 100px 50px 100px; padding: 0px;
+	width: 600px;
+}
+#myPhoto_big_02, #myPhoto_big_03, #myPhoto_big_04,
+#myPhoto_big_05, #myPhoto_big_06{
+	position: absolute;
+	top: 98px;
+	left: 100px;
+	margin: 0px; padding: 0px;
+	width: 600px; display: none; 
+}
+#myPhoto_big_01 img, #myPhoto_big_02 img, #myPhoto_big_03 img,
+#myPhoto_big_04 img, #myPhoto_big_05 img, #myPhoto_big_06 img{
+	margin: 0px; padding: 0px; max-width: 100%; display: block; 
+}
+#myPhoto_thumb_02:hover ~ #myPhoto_big_02,
+#myPhoto_thumb_03:hover ~ #myPhoto_big_03,
+#myPhoto_thumb_04:hover ~ #myPhoto_big_04,
+#myPhoto_thumb_05:hover ~ #myPhoto_big_05,
+#myPhoto_thumb_06:hover ~ #myPhoto_big_06{
+	display: block;
+}
+</style>
+
+
+<body>
+	<div class="subBody">
+		<div class="upperPart">
+		</div>
+		<div class="menuBar">
+			<div class="menuBarQuater">
+				<div class="menuBarText">
+					<p>我的主页</p>
+				</div>
+				<div class="menuDropDown">
+					<p>nothing to show here</p>
+				</div>
+			</div>
+			<div class="menuBarQuater">
+				<div class="menuBarText">
+					<p>我的文章</p>
+				</div>
+				<div class="menuDropDown">
+					<p>nothing to show here</p>
+				</div>
+			</div>
+			<div class="menuBarQuater">
+				<div class="menuBarText">
+					<p>我的作品</p>
+				</div>
+				<div class="menuDropDown">
+					<p>nothing to show here</p>
+				</div>
+			</div>
+			<div class="menuBarQuater">
+				<div class="menuBarText">
+					<p>联系我</p>
+				</div>
+				<div class="menuDropDown">
+					<p>nothing to show here</p>
+				</div>
+			</div>
+		</div>
+		<div class="lowerPart">
+			<div class="myPhoto">
+				<div id="myPhoto_thumb_01">
+					<img src="https://img3.doubanio.com/view/photo/large/nPMUIQ4hi3yZQBKTCsxg9Q/61715392/x2502528663.jpg" alt="图片1"/>
+				</div>
+				<div id="myPhoto_thumb_02">
+					<img src="https://img3.doubanio.com/view/photo/large/ZaOQYx8ougyToF3Sij35SA/61715392/x2502528662.jpg" alt="图片2"/>
+				</div>
+				<div id="myPhoto_thumb_03">
+					<img src="https://img3.doubanio.com/view/photo/large/7UCiOdUmrV8Lqwgr4RgYmg/61715392/x2502528661.jpg" alt="图片3"/>
+				</div>
+				<div id="myPhoto_thumb_04">
+					<img src="https://img3.doubanio.com/view/photo/large/B-9DnSvzco_nI82d0f84nA/61715392/x2502528660.jpg" alt="图片4"/>
+				</div>
+				<div id="myPhoto_thumb_05">
+					<img src="https://img1.doubanio.com/view/photo/large/Sjj1-JW2D_hIu7DcM5vBNQ/61715392/x2502528659.jpg" alt="图片5"/>
+				</div>
+				<div id="myPhoto_thumb_06">
+					<img src="https://img1.doubanio.com/view/photo/large/vluX2KW9y8Kf6LL5Ye0dFw/61715392/x2502528657.jpg" alt="图片6"/>
+				</div>
+				<div id="myPhoto_big_01">
+					<img src="https://img3.doubanio.com/view/photo/large/nPMUIQ4hi3yZQBKTCsxg9Q/61715392/x2502528663.jpg" alt="图片1"/>
+				</div>
+				<div id="myPhoto_big_02">
+					<img src="https://img3.doubanio.com/view/photo/large/ZaOQYx8ougyToF3Sij35SA/61715392/x2502528662.jpg" alt="图片2"/>
+				</div>
+				<div id="myPhoto_big_03">
+					<img src="https://img3.doubanio.com/view/photo/large/7UCiOdUmrV8Lqwgr4RgYmg/61715392/x2502528661.jpg" alt="图片3"/>
+				</div>
+				<div id="myPhoto_big_04">
+					<img src="https://img3.doubanio.com/view/photo/large/B-9DnSvzco_nI82d0f84nA/61715392/x2502528660.jpg" alt="图片4"/>
+				</div>
+				<div id="myPhoto_big_05">
+					<img src="https://img1.doubanio.com/view/photo/large/Sjj1-JW2D_hIu7DcM5vBNQ/61715392/x2502528659.jpg" alt="图片5"/>
+				</div>
+				<div id="myPhoto_big_06">
+					<img src="https://img1.doubanio.com/view/photo/large/vluX2KW9y8Kf6LL5Ye0dFw/61715392/x2502528657.jpg" alt="图片6"/>
+				</div>
+			</div>
+		</div>
+		<div class="myIntro">
+		</div>
+	</div>
+</body>
+
+</html>
