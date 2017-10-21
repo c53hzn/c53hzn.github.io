@@ -143,7 +143,7 @@ body{width: 1080px;
 }
 .myPhoto{
 	position: relative;
-	margin: 110px auto 10px auto;
+	margin: 70px auto 10px auto;
 	padding: 0px;
 	width: 800px;
 	height: 580px;
@@ -194,22 +194,21 @@ body{width: 1080px;
 	width: 25%;
 	margin: 0px;
 	padding: 10px;
-	background-color: #f8d781;
-	border-left: solid 1px black;
-	border-top: solid 1px black;
-	border-right: solid 1px black;
+	color: white;
+	background-color: #F75000;
 	border-color: black;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
+	box-shadow: 0px -1px 3px gray;
 	cursor: pointer;
 }
 .myIntro_PC_itemLabel:hover{
-	background-color: #F75000;
-	color: white;
+	background-color: #f8d781;
+	color: black;
 }
 .myIntro_PC input:checked + .myIntro_PC_itemLabel{
-	background-color: #F75000;
-	color: white;
+	background-color: #f8d781;
+	color: black;
 }
 .myIntro_PC input:nth-of-type(1):checked ~ .myIntro_PC_itemText:nth-of-type(1),
 .myIntro_PC input:nth-of-type(2):checked ~ .myIntro_PC_itemText:nth-of-type(2),
@@ -223,6 +222,7 @@ body{width: 1080px;
 	border-left: 1px solid #F75000;
 	border-bottom: 1px solid #F75000;
 	border-right: 1px solid #F75000;
+	box-shadow: 0px 0px 8px black;
 	text-align: left;
 	display: none;
 }
@@ -253,7 +253,7 @@ body{width: 1080px;
 {
 	.myHeaderPhoto{left: 100px;}
 	.myHeaderText{left: 270px;}
-	.myPhoto{width: 600px; height: 480px;}
+	.myPhoto{margin-top: 40px; width: 600px; height: 480px;}
 	.myPhoto_big{width: 500px; top: 85px; left: 50px;}
 }
 @media all and (max-width: 730px)
@@ -266,7 +266,7 @@ body{width: 1080px;
 	.myHeaderPhoto{top: 30px; left: 40px; width: 90px; height: 90px; border-radius: 45px;}
 	.myHeaderPhoto img{top: -30px; left: -14px;width: 220px;}
 	.myHeaderText{left: 150px;}
-	.myPhoto{width: 450px; height: 400px;}
+	.myPhoto{margin-top: 35px; width: 450px; height: 400px;}
 	.myPhoto_big{width: 425px; left: 12px; top: 60px;}
 }
 @media all and (max-width: 550px)
