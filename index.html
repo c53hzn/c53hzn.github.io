@@ -9,6 +9,8 @@ html{width: 100%;
 	background-color: #d0d0d0;
 }
 body{width: 1080px;
+	max-width: 100%;
+	min-width: 380px;
 	margin: 0px auto;
 	text-align: center;
 }
@@ -16,6 +18,7 @@ body{width: 1080px;
 	width: 100%;
 	margin: 0px;
 	position: relative;
+
 }
 .upperPart{
 	position: relative;
@@ -23,6 +26,8 @@ body{width: 1080px;
 	height: 150px;
 	margin: 0px auto;
 	background-color: white;
+	box-shadow: 0px 0px 20px black;
+	z-index: -1
 }
 .myHeaderPhoto{
 	position: absolute;
@@ -31,6 +36,7 @@ body{width: 1080px;
 	width: 120px;
 	height: 120px;
 	border-radius: 60px;
+	box-shadow: 0px 0px 10px black;
 	overflow: hidden;
 }
 .myHeaderPhoto img{
@@ -70,12 +76,12 @@ body{width: 1080px;
 	z-index: -1;
 }
 .menuBar:before{
-	right:83px;
+	right:81px;
 	box-shadow: 4px 7px 10px #5B5B5B;
 	transform: skew(-5deg) rotate(-1deg);
 }
 .menuBar:after{
-	left: 83px;
+	left: 81px;
 	box-shadow: -4px 7px 10px #5B5B5B;
 	transform: skew(5deg) rotate(1deg);
 }
@@ -133,6 +139,7 @@ body{width: 1080px;
 	margin: 0px auto;
 	text-align: center;
 	background-color: white;
+	box-shadow: 0px 0px 20px black;
 	z-index: -2;
 }
 .myPhoto{
@@ -142,49 +149,97 @@ body{width: 1080px;
 	width: 800px;
 	height: 650px;
 }
-#myPhoto_thumb_01, #myPhoto_thumb_02, #myPhoto_thumb_03,
-#myPhoto_thumb_04, #myPhoto_thumb_05, #myPhoto_thumb_06{
+.myPhoto_thumb{
 	width: 14%;
 	margin: 2px;
 	border: none;
-	box-shadow: 0px 0px 3px gray;
+	box-shadow: 0px 0px 4px gray;
 	cursor: pointer;
 	display: inline-block;
 }
-#myPhoto_thumb_01 img, #myPhoto_thumb_02 img, #myPhoto_thumb_03 img,
-#myPhoto_thumb_04 img, #myPhoto_thumb_05 img, #myPhoto_thumb_06 img{
+.myPhoto_thumb img{
 	margin: 0px; padding: 0px; width: 100%; max-width: 100%; display: block; 
 	
 }
-#myPhoto_thumb_01:hover, #myPhoto_thumb_02:hover, #myPhoto_thumb_03:hover,
-#myPhoto_thumb_04:hover, #myPhoto_thumb_05:hover, #myPhoto_thumb_06:hover{
+.myPhoto_thumb:hover{
 	box-shadow: 0px 0px 8px black;
 }
-#myPhoto_big_01{
-	margin: 5px 100px 50px 100px; padding: 0px;
-	width: 600px;
-	box-shadow: 0px 0px 3px gray;
-}
-#myPhoto_big_02, #myPhoto_big_03, #myPhoto_big_04,
-#myPhoto_big_05, #myPhoto_big_06{
+.myPhoto_big{
 	position: absolute;
-	top: 98px;
+	top: 97.5px;
 	left: 100px;
 	margin: 0px; padding: 0px;
 	width: 600px;
-	box-shadow: 0px 1px 3px gray;
+	box-shadow: 0px 1px 5px gray;
 	display: none; 
 }
-#myPhoto_big_01 img, #myPhoto_big_02 img, #myPhoto_big_03 img,
-#myPhoto_big_04 img, #myPhoto_big_05 img, #myPhoto_big_06 img{
+.myPhoto_big:nth-child(2){
+	display: block;
+}
+.myPhoto_big img{
 	margin: 0px; padding: 0px; max-width: 100%; display: block; 
 }
-#myPhoto_thumb_02:hover ~ #myPhoto_big_02,
-#myPhoto_thumb_03:hover ~ #myPhoto_big_03,
-#myPhoto_thumb_04:hover ~ #myPhoto_big_04,
-#myPhoto_thumb_05:hover ~ #myPhoto_big_05,
-#myPhoto_thumb_06:hover ~ #myPhoto_big_06{
+.myPhoto_thumb:hover + .myPhoto_big{
 	display: block;
+}
+@media all and (max-width: 1098px)
+{
+	body{width: 100%;}
+	.upperPart{width: 100%;}
+	.myHeaderPhoto{left: 180px;}
+	.myHeaderText{left: 395px;}
+	.menuBar{width: 100%;}
+	.lowerPart{left: 0px; width: 100%;}
+	.menuBar:before, .menuBar:after{display: none;}
+}
+@media all and (max-width: 950px)
+{
+	.myHeaderPhoto{left: 130px;}
+	.myHeaderText{left: 300px;}
+}
+@media all and (max-width: 800px)
+{
+	.myHeaderPhoto{left: 100px;}
+	.myHeaderText{left: 270px;}
+}
+@media all and (max-width: 730px)
+{
+	.myHeaderPhoto{left: 60px;}
+	.myHeaderText{left: 230px;}
+}
+@media all and (max-width: 620px)
+{
+	.myHeaderPhoto{top: 30px; left: 40px; width: 90px; height: 90px; border-radius: 45px}
+	.myHeaderPhoto img{top: -30px; left: -14px;width: 220px;}
+	.myHeaderText{left: 150px;}
+}
+@media all and (max-width: 550px)
+{
+	.myHeaderPhoto{left: 20px;}
+	.myHeaderText{left: 120px;}
+}
+@media all and (max-width: 480px)
+{
+	.myHeaderPhoto{ left: 18px;}
+	.myHeaderText{top: 50px; left: 120px;}
+	.myHeaderText p{font-size: 40px;}
+}
+@media all and (max-width: 420px)
+{
+	.myHeaderPhoto{left: 10px;}
+	.myHeaderText{left: 105px;}
+	.myHeaderText p{font-size: 40px;}
+}
+@media all and (max-width: 400px)
+{
+	.myHeaderPhoto{left: 3px;}
+	.myHeaderText{left: 100px;}
+	.menuBarQuater{width: 23%;}
+}
+@media all and (max-width: 390px)
+{
+	.myHeaderText p{font-size: 35px;}
+	.menuBarText p{font-size: 16px;}
 }
 </style>
 
@@ -235,40 +290,40 @@ body{width: 1080px;
 		</div>
 		<div class="lowerPart">
 			<div class="myPhoto">
-				<div id="myPhoto_thumb_01">
+				<div class="myPhoto_thumb">
 					<img src="photo/index-01.jpg" alt="图片1"/>
 				</div>
-				<div id="myPhoto_thumb_02">
+				<div class="myPhoto_big">
+					<img src="photo/index-01.jpg" alt="图片1"/>
+				</div>
+				<div class="myPhoto_thumb">
 					<img src="photo/index-02.jpg" alt="图片2"/>
 				</div>
-				<div id="myPhoto_thumb_03">
+				<div class="myPhoto_big">
+					<img src="photo/index-02.jpg" alt="图片2"/>
+				</div>
+				<div class="myPhoto_thumb">
 					<img src="photo/index-03.jpg" alt="图片3"/>
 				</div>
-				<div id="myPhoto_thumb_04">
+				<div class="myPhoto_big">
+					<img src="photo/index-03.jpg" alt="图片3"/>
+				</div>
+				<div class="myPhoto_thumb">
 					<img src="photo/index-04.jpg" alt="图片4"/>
 				</div>
-				<div id="myPhoto_thumb_05">
+				<div class="myPhoto_big">
+					<img src="photo/index-04.jpg" alt="图片4"/>
+				</div>
+				<div class="myPhoto_thumb">
 					<img src="photo/index-05.jpg" alt="图片5"/>
 				</div>
-				<div id="myPhoto_thumb_06">
+				<div class="myPhoto_big">
+					<img src="photo/index-05.jpg" alt="图片5"/>
+				</div>
+				<div class="myPhoto_thumb">
 					<img src="photo/index-06.jpg" alt="图片6"/>
 				</div>
-				<div id="myPhoto_big_01">
-					<img src="photo/index-01.jpg" alt="图片1"/>
-				</div>
-				<div id="myPhoto_big_02">
-					<img src="photo/index-02.jpg" alt="图片2"/>
-				</div>
-				<div id="myPhoto_big_03">
-					<img src="photo/index-03.jpg" alt="图片3"/>
-				</div>
-				<div id="myPhoto_big_04">
-					<img src="photo/index-04.jpg" alt="图片4"/>
-				</div>
-				<div id="myPhoto_big_05">
-					<img src="photo/index-05.jpg" alt="图片5"/>
-				</div>
-				<div id="myPhoto_big_06">
+				<div class="myPhoto_big">
 					<img src="photo/index-06.jpg" alt="图片6"/>
 				</div>
 			</div>
