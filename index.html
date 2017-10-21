@@ -181,6 +181,9 @@ body{width: 1080px;
 .myPhoto_thumb:hover + .myPhoto_big{
 	display: block;
 }
+.myIntro{
+	width: 100%;
+}
 @media all and (max-width: 1098px)
 {
 	body{width: 100%;}
@@ -196,10 +199,12 @@ body{width: 1080px;
 	.myHeaderPhoto{left: 130px;}
 	.myHeaderText{left: 300px;}
 }
-@media all and (max-width: 800px)
+@media all and (max-width: 820px)
 {
 	.myHeaderPhoto{left: 100px;}
 	.myHeaderText{left: 270px;}
+	.myPhoto{width: 600px;}
+	.myPhoto_big{width: 500px; left: 50px;}
 }
 @media all and (max-width: 730px)
 {
@@ -208,9 +213,11 @@ body{width: 1080px;
 }
 @media all and (max-width: 620px)
 {
-	.myHeaderPhoto{top: 30px; left: 40px; width: 90px; height: 90px; border-radius: 45px}
+	.myHeaderPhoto{top: 30px; left: 40px; width: 90px; height: 90px; border-radius: 45px;}
 	.myHeaderPhoto img{top: -30px; left: -14px;width: 220px;}
 	.myHeaderText{left: 150px;}
+	.myPhoto{width: 450px;}
+	.myPhoto_big{width: 425px; left: 12px;}
 }
 @media all and (max-width: 550px)
 {
@@ -229,12 +236,24 @@ body{width: 1080px;
 	.myHeaderPhoto{ left: 18px;}
 	.myHeaderText{top: 50px; left: 120px;}
 	.myHeaderText p{font-size: 40px;}
+	.myPhoto{margin-top: 10px; width: 98%;}
+	.myPhoto_thumb{display: none;}
+	.myPhoto_big:nth-child(2){
+		top: 0px;
+		left: 0px;
+		width: 100%;
+	}
+	.myPhoto_big:nth-child(2) img{
+
+	}
 }
 @media all and (max-width: 420px)
 {
 	.myHeaderPhoto{left: 10px;}
 	.myHeaderText{left: 105px;}
 	.myHeaderText p{font-size: 40px;}
+	.myPhoto_thumb{display: none;}
+	.myPhoto_big{display: none;}
 }
 @media all and (max-width: 400px)
 {
@@ -270,7 +289,7 @@ body{width: 1080px;
 			</div>
 		</div>
 		<div class="menuBar">
-			<div class="menuBarQuater" onmouseover="">
+			<div class="menuBarQuater">
 				<div class="menuBarText">
 					<p>我的主页</p>
 				</div>
@@ -278,7 +297,7 @@ body{width: 1080px;
 					<p>nothing to show here</p>
 				</div>
 			</div>
-			<div class="menuBarQuater" onmouseover="">
+			<div class="menuBarQuater">
 				<div class="menuBarText">
 					<p>我的文章</p>
 				</div>
@@ -286,7 +305,7 @@ body{width: 1080px;
 					<p>nothing to show here</p>
 				</div>
 			</div>
-			<div class="menuBarQuater" onmouseover="">
+			<div class="menuBarQuater">
 				<div class="menuBarText">
 					<p>我的作品</p>
 				</div>
@@ -294,7 +313,7 @@ body{width: 1080px;
 					<p>nothing to show here</p>
 				</div>
 			</div>
-			<div class="menuBarQuater" onmouseover="">
+			<div class="menuBarQuater">
 				<div class="menuBarText">
 					<p>联系我</p>
 				</div>
@@ -346,6 +365,12 @@ body{width: 1080px;
 		<div class="myIntro">
 		</div>
 	</div>
+<script>
+	function(){
+	document.getElementsByClassName('menuBarQuater').mouseouver()
+	};
+
+</script>
 </body>
 
 </html>
