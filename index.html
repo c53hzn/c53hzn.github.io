@@ -143,10 +143,10 @@ body{width: 1080px;
 }
 .myPhoto{
 	position: relative;
-	margin: 110px auto 20px auto;
+	margin: 110px auto 10px auto;
 	padding: 0px;
 	width: 800px;
-	height: 650px;
+	height: 580px;
 }
 .myPhoto_thumb{
 	width: 14%;
@@ -184,6 +184,45 @@ body{width: 1080px;
 .myIntro{
 	position: relative;
 	width: 100%;
+}
+.myIntro_PC input{
+	display: none;
+}
+.myIntro_PC_itemLabel{
+	bottom: 30px;
+	display: inline-block;
+	width: 25%;
+	margin: 0px;
+	padding: 10px;
+	background-color: #f8d781;
+	border-left: solid 1px black;
+	border-top: solid 1px black;
+	border-right: solid 1px black;
+	border-color: black;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	cursor: pointer;
+}
+.myIntro_PC_itemLabel:hover{
+	background-color: #de6d38;
+}
+.myIntro_PC input:checked + .myIntro_PC_itemLabel{
+	background-color: #de6d38;
+}
+.myIntro_PC input:nth-of-type(1):checked ~ .myIntro_PC_itemText:nth-of-type(1),
+.myIntro_PC input:nth-of-type(2):checked ~ .myIntro_PC_itemText:nth-of-type(2),
+.myIntro_PC input:nth-of-type(3):checked ~ .myIntro_PC_itemText:nth-of-type(3){
+	display: block;
+}
+.myIntro_PC_itemText{
+	margin: 0px 5% 25px 5%;
+	padding: 10px 40px;
+	background-color: green;
+	text-align: left;
+	display: none;
+}
+.myIntro_mobile{
+	display: none;
 }
 @media all and (max-width: 1098px)
 {
@@ -274,7 +313,9 @@ body{width: 1080px;
 }
 @media all and (max-width: 350px)
 {
-	.myHeaderText p{font-size: 31px;}
+	.myHeaderText p{
+		font-size: 31px;
+	}
 }
 </style>
 
@@ -365,34 +406,51 @@ body{width: 1080px;
 			<div class="myIntro">
 				<div class="myIntro_PC">
 					<input checked="checked" id="myIntro_PC_item01" name="myIntros" type="radio" />
-					<label for="myIntro_PC_item01" class="myIntro_PC_itemLabel">PAYMENT </label>
-					<div class="myIntro_PC_itemText">
-						PayPal is the only accepted payment method.<br />
-						&nbsp;
-					</div>
+					<label for="myIntro_PC_item01" class="myIntro_PC_itemLabel">我的技能</label>
 					<input id="myIntro_PC_item02" name="myIntros" type="radio" />
-					<label for="myIntro_PC_item02" class="myIntro_PC_itemLabel">SHIPPING</label>
-					<div class="myIntro_PC_itemText">
-						Handling time: 10 business days.<br />
-						Item will be shipped to buyer&#39;s PayPal address.
-					</div>
+					<label for="myIntro_PC_item02" class="myIntro_PC_itemLabel">我的爱好</label>
 					<input id="myIntro_PC_item03" name="myIntros" type="radio" />
-					<label for="myIntro_PC_item02" class="myIntro_PC_itemLabel">RETURNS </label>
+					<label for="myIntro_PC_item03" class="myIntro_PC_itemLabel">我喜欢的作品</label>
 					<div class="myIntro_PC_itemText">
-						Generally speaking, returns are not accepted, but if you receive an item with serious damage, please contact me through ebay system, I will get back to you soon.
+						我喜欢做的事情有：<br/>
+						1.<br/>
+						2.<br/>
+						3.<br/>
+					</div>
+					<div class="myIntro_PC_itemText">
+						我会的技能有：<br/>
+						1.<br/>
+						2.<br/>
+						3.<br/>
+					</div>
+					<div class="myIntro_PC_itemText">
+						我喜欢的作品有：<br/>
+						1.<br/>
+						2.<br/>
+						3.<br/>
 					</div>
 				</div>
 				<div class="myIntro_mobile">
-					<div class="myIntro_MobileHeader">PAYMENT</div>
-					<div class="myIntro_MobileText">PayPal is the only accepted payment method.</div>
-					<div class="myIntro_MobileHeader">SHIPPING</div>
+					<div class="myIntro_MobileHeader">我的技能</div>
 					<div class="myIntro_MobileText">
-						Handling time: 10 business days.<br />
-						Item will be shipped to buyer&#39;s PayPal address.
+						我会的技能有：<br/>
+						1.<br/>
+						2.<br/>
+						3.<br/></div>
+					<div class="myIntro_MobileHeader">我的爱好</div>
+					<div class="myIntro_MobileText">
+						我喜欢做的事情有：<br/>
+						1.<br/>
+						2.<br/>
+						3.<br/>
 					</div>
-					<div class="myIntro_MobileHeader">RETURNS</div>
+					<div class="myIntro_MobileHeader">我喜欢的作品</div>
 					<div class="myIntro_MobileText">
-						Generally speaking, returns are not accepted, but if you receive an item with serious damage, please contact me through ebay system, I will get back to you soon.
+						我喜欢的作品有：<br/>
+						1.<br/>
+						2.<br/>
+						3.<br/>
+					</div>
 				</div>
 			</div>
 		</div>
