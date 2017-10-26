@@ -115,7 +115,7 @@ body{width: 1080px;
 	left: 0px;
 	width: 100%;
 	margin: 0px auto;
-	padding: 0px;
+	padding: 18px 0px;
 	border: none;
 	background-color: white;
 	text-align: center;
@@ -125,6 +125,10 @@ body{width: 1080px;
 	display: none;
 	z-index: 2;
 }
+.menuDropDown a:link{text-decoration: none; color: blue;}
+.menuDropDown a:visited{color: blue;}
+.menuDropDown a:active{color: green;}
+.menuDropDown a:hover{color: blue;}
 .menuBarQuater:hover{
 	background-color: #FFAD86;
 }
@@ -174,7 +178,7 @@ body{width: 1080px;
 	position: absolute;
 	margin: 0px auto 30px auto;
 	padding: 0px;
-	top: 92px;
+	top: 17.5%;
 	left: 11.1%;
 	width: 80%;
 	box-shadow: 0px 1px 5px gray;
@@ -198,6 +202,13 @@ body{width: 1080px;
 .myPhoto_thumb:nth-child(5):hover ~ .myPhoto_big:nth-child(11),
 .myPhoto_thumb:nth-child(6):hover ~ .myPhoto_big:nth-child(12){
 	display: block;
+}
+.myPhoto_thumb:nth-child(2):hover ~ .myPhoto_big:nth-child(7),
+.myPhoto_thumb:nth-child(3):hover ~ .myPhoto_big:nth-child(7),
+.myPhoto_thumb:nth-child(4):hover ~ .myPhoto_big:nth-child(7),
+.myPhoto_thumb:nth-child(5):hover ~ .myPhoto_big:nth-child(7),
+.myPhoto_thumb:nth-child(6):hover ~ .myPhoto_big:nth-child(7){
+	visibility: hidden;
 }
 .myIntro{
 	position: relative;
@@ -305,15 +316,15 @@ body{width: 1080px;
 					<p>我的主页</p>
 				</div>
 				<div class="menuDropDown">
-					<p>nothing to show here</p>
+					<a href="index.html" target="_self">回到首页</a>
 				</div>
 			</div>
 			<div class="menuBarQuater" onmouseover="">
 				<div class="menuBarText">
-					<p>我的文章</p>
+					<p>我的收藏</p>
 				</div>
 				<div class="menuDropDown">
-					<p>nothing to show here</p>
+					nothing to show here
 				</div>
 			</div>
 			<div class="menuBarQuater" onmouseover="">
@@ -321,7 +332,7 @@ body{width: 1080px;
 					<p>我的作品</p>
 				</div>
 				<div class="menuDropDown">
-					<p>nothing to show here</p>
+					<a href="myWork01.html" target="_self">JavaScript计算器</a>
 				</div>
 			</div>
 			<div class="menuBarQuater" onmouseover="">
@@ -329,7 +340,7 @@ body{width: 1080px;
 					<p>联系我</p>
 				</div>
 				<div class="menuDropDown">
-					<p>nothing to show here</p>
+					nothing to show here
 				</div>
 			</div>
 		</div>
@@ -384,21 +395,21 @@ body{width: 1080px;
 					<label for="myIntro_3item_item03" class="myIntro_3item_itemLabel">我喜欢的作品</label>
 					<div class="myIntro_3item_itemText">
 						我会的技能有：<br/>
-						1.<br/>
-						2.<br/>
-						3.<br/>
+						1.吐槽<br/>
+						2.讽刺<br/>
+						3.骂人<br/>
 					</div>
 					<div class="myIntro_3item_itemText">
 						我喜欢做的事情有：<br/>
-						1.<br/>
-						2.<br/>
-						3.<br/>
+						1.吃饭<br/>
+						2.睡觉<br/>
+						3.看电视<br/>
 					</div>
 					<div class="myIntro_3item_itemText">
 						我喜欢的作品有：<br/>
-						1.<br/>
-						2.<br/>
-						3.<br/>
+						1.《哈利·波特1》<br/>
+						2.《哈利·波特2》<br/>
+						3.《哈利·波特3》及所有剩下的系列<br/>
 					</div>
 				</div>
 			</div>
