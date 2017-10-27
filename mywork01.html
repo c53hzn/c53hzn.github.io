@@ -383,10 +383,14 @@ lowerhalf.innerText="输入错误";
 <!---------等于的同时用计算结果替换原先的累加内容-------->
   function equals01()
 {
-    Ans01=eval(result101);
+	if(result101!="")
+	{
+	Ans01=eval(result101);
 	lowerhalf.innerText=Ans01;
 	result101="";
 	Adding01="";
+	}
+	else{return;}
 }
 <!---------计算结果结束--------->
 
