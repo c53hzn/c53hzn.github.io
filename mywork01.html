@@ -6,16 +6,21 @@
 <title>Jenny's blog</title>
 <style>
 html{width: 100%;
+	height: 100%;
 	background-color: #d0d0d0;
 }
 body{width: 1080px;
 	max-width: 100%;
+	min-width: 320px;
+	height: 100%;
 	margin: 0px auto;
 	text-align: center;
 }
 .subBody{
 	position: relative;
 	width: 900px;
+	min-height: 100%;
+	height: auto;
 	margin: 0px auto;
 	background-color: #FFFACD;
 	box-shadow: 0px 0px 20px black;
@@ -141,7 +146,7 @@ body{width: 1080px;
 .middlePart{
 	position: relative;
 	width: 100%;
-	height: 70px;
+	height: 35px;
 	margin: 0px auto;
 	padding: 0px;
 }
@@ -153,7 +158,12 @@ body{width: 1080px;
 	text-align: center;
 	z-index: 1;
 }
-.Calc{border-spacing:10px; align:center; padding:5px; background-color:#FF8F59;}
+.Calc{
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	border-spacing:10px; padding:5px; background-color:#FF8F59;}
 table.Calc{margin: 0px auto;}
 .number,.function,.result
 {
@@ -190,13 +200,12 @@ text-align:right;font-size:38px;word-wrap:break-word;word-break:break-all;
 }
 @media all and (max-width: 600px)
 {
-	.middlePart{height: 35px;}
 	.number,.function,.result{
 	 width:60px; height:60px;
-	 font-size:36px;line-height:33px; 
+	 font-size:36px;line-height:36px; 
 	} 
 	#upperhalf{
-	font-size:33px;
+	font-size:32px;
 	}
 	#Back{font-size:25px;}
 }
@@ -211,7 +220,7 @@ text-align:right;font-size:38px;word-wrap:break-word;word-break:break-all;
 	 font-size:30px;line-height:30px; 
 	} 
 	#upperhalf{
-	font-size:30px;
+	font-size:27px;
 	}
 	#Back{font-size:22px;}
 }
@@ -224,6 +233,14 @@ text-align:right;font-size:38px;word-wrap:break-word;word-break:break-all;
 	.myHeaderText p{font-size: 33px;}
 	.menuBarQuater{width: 23%;}
 	.menuBarText p{font-size: 16px;}
+	.number,.function,.result{
+	 width:42px; height:42px;
+	 font-size:28px;line-height:28px; 
+	} 
+	#upperhalf{
+	font-size:25px;
+	}
+	#Back{font-size:20px;}
 }
 </style>
 
@@ -252,7 +269,7 @@ text-align:right;font-size:38px;word-wrap:break-word;word-break:break-all;
 					<p>我的收藏</p>
 				</div>
 				<div class="menuDropDown">
-					nothing to show here
+					<a href="useful.html" target="_self">有用的东西都在这</a>
 				</div>
 			</div>
 			<div class="menuBarQuater" onmouseover="">
@@ -260,7 +277,7 @@ text-align:right;font-size:38px;word-wrap:break-word;word-break:break-all;
 					<p>我的作品</p>
 				</div>
 				<div class="menuDropDown">
-					<a href="mywork01.html" target="_self">JavaScript计算器</a>
+					<a href="mywork.html" target="_self">看看我在捣鼓啥</a>
 				</div>
 			</div>
 			<div class="menuBarQuater" onmouseover="">
@@ -268,7 +285,7 @@ text-align:right;font-size:38px;word-wrap:break-word;word-break:break-all;
 					<p>联系我</p>
 				</div>
 				<div class="menuDropDown">
-					nothing to show here
+					<a href="aboutme.html" target="_self">猜猜我是谁</a>
 				</div>
 			</div>
 		</div>
@@ -311,7 +328,6 @@ text-align:right;font-size:38px;word-wrap:break-word;word-break:break-all;
 					</tr>
 				</tbody>
 			</table>
-
 		</div>
 	</div>
 <script type="text/javascript">
@@ -383,14 +399,14 @@ lowerhalf.innerText="输入错误";
 <!---------等于的同时用计算结果替换原先的累加内容-------->
   function equals01()
 {
-	if(result101!="")
-	{
-	Ans01=eval(result101);
-	lowerhalf.innerText=Ans01;
-	result101="";
-	Adding01="";
-	}
-	else{return;}
+  if(result101!="")
+  {
+    Ans01=eval(result101);
+    lowerhalf.innerText=Ans01;
+    result101="";
+    Adding01="";
+  }
+  else{return;}
 }
 <!---------计算结果结束--------->
 
