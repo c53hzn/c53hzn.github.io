@@ -172,8 +172,8 @@ body{width: 1080px;
 	text-align: left;
 	font-size: 20px;
 }
-.addItem input{margin: 0px; height: 25px; width: 78%;}
-.addItem button{margin: 0px; height: 25px; width: 18%;}
+.addItem input{margin: 0px; height: 25px; width: 79%;}
+.addItem button{margin: 0px; height: 25px; width: 16%;}
 .toDoList{
 	margin: 5px auto;
 	padding: 0px;
@@ -182,18 +182,31 @@ body{width: 1080px;
 	text-align: left;
 	font-size: 20px;
 }
-.toDoList ol{margin: 0px auto; padding-left: 20px;}
+.toDoList ul{margin: 0px auto; padding-left: 0px; list-style: none;}
 .toDoList li{
+	position: relative;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
 	cursor: pointer;
 	background-color: #FFBB77;
+	display: block;
 }
 .toDoList li:nth-child(even){background-color: #FFD1A4;}
 .toDoList li:hover{background-color: #EA7500;}
 li.finished{background-color: #EA7500; color: gray; text-decoration: line-through;}
+.listNum{
+	position: absolute;
+	left: -25px; top: 0px;
+	padding: 0px 5px;
+}
+.closeBtn{
+	position: absolute;
+	right: 0px; top: 0px;
+	padding: 0px 5px;
+}
+.closeBtn:hover{color: white; background-color: red;}
 @media all and (max-width: 1081px)
 {
 	body, .subBody, .menuBar{width: 100%; margin: 0px;}
@@ -280,25 +293,60 @@ li.finished{background-color: #EA7500; color: gray; text-decoration: line-throug
 		<div class="middlePart">
 		</div>
 		<div class="lowerPart">
+			<h1>To-do List</h1>
 			<div class="toDo">
 				<div class="addItem">
 					<input type="text" id="addText" placeholder="Create a new task..."/>
 					<button type="button" id="addBtn">Add</button>
 				</div>
 				<div class="toDoList">
-					<ol>
+					<ul>
 						<li>item01</li>
 						<li class="finished">item02</li>
 						<li>item03</li>
 						<li>item04</li>
 						<li>item05</li>
-					</ol>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 <script type="text/javascript">
+//每个li左边加序号 右边加删除按钮
+var myList=document.getElementsByTagName("LI");
+var m;
+for(m=0; m < myList.length; m++){
+	var span01 = document.createElement("SPAN");
+	var txt01 = document.createTextNode("\u00D7");
+	span01.className="closeBtn";
+	span01.appendChild(txt01);
+	myList[m].appendChild(span01);
+	var span02 = document.createElement("SPAN");
+	var txt02 = document.createTextNode(m+1);
+	span02.className="listNum";
+	span02.appendChild(txt02);
+	myList[m].appendChild(span02);
+}
+//单击删除按钮 隐藏该li
 
+var finishTask=document.getElementsByClassName("closeBtn");
+var i;
+for(i=0; i < finishTask.length; i++){
+	finishTask[i].onclick=function(){
+		var parentDiv=this.parentElement;
+		parentDiv.style.display="none";
+	}
+}
+/*
+var close = document.getElementsByClassName("finished");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+*/
 </script>
 </body>
 
