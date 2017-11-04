@@ -325,7 +325,6 @@ h1{margin: 0px auto;}
 		</div>
 	</div>
 <script type="text/javascript">
-localstorage.todolist=document.getElementById("toDoList");
 //每个li右边加删除按钮
 var myList=document.getElementsByTagName("LI");
 var m;
@@ -370,22 +369,22 @@ function addNewItem() {
 	}
 	else {
 		myListUl.appendChild(newLi);
-  }
-//加完新事项后输入区域恢复原状
-document.getElementById("addText").value = "";
-//添加删除按钮
-var spanClose = document.createElement("SPAN");
-var txtClose = document.createTextNode("\u00D7");
-spanClose.className = "closeBtn";
-spanClose.appendChild(txtClose);
-newLi.appendChild(spanClose);
-//点击删除按钮关闭(隐藏)事项
-for (i = 0; i < finishTask.length; i++) {
-	finishTask[i].onclick = function() {
-		var parentLi = this.parentElement;
-		parentLi.className = 'closed';
 	}
-  }
+//加完新事项后输入区域恢复原状
+	document.getElementById("addText").value = "";
+//添加删除按钮
+	var spanClose = document.createElement("SPAN");
+	var txtClose = document.createTextNode("\u00D7");
+	spanClose.className = "closeBtn";
+	spanClose.appendChild(txtClose);
+	newLi.appendChild(spanClose);
+//点击删除按钮关闭(隐藏)事项
+	for (i = 0; i < finishTask.length; i++) {
+		finishTask[i].onclick = function() {
+			var parentLi = this.parentElement;
+			parentLi.className = 'closed';
+		}
+	  }
 //每个新添的item都加序号
 	var numDiv = document.createElement("DIV");
 	var numTxt = document.createTextNode(n+1);
