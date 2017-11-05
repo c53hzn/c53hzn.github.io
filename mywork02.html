@@ -164,7 +164,6 @@ h1{margin: 0px auto;}
 	margin: 0px auto 50px auto;
 	padding: 0px;
 	width: 480px;
-	overflow: hidden;
 }
 .addItem{
 	margin: 5px auto;
@@ -186,18 +185,6 @@ h1{margin: 0px auto;}
 	font-size: 20px;
 	overflow: hidden;
 }
-#myListNum{
-	position: absolute;
-	left: 0px;
-}
-.listNum{
-	margin: 0px auto;
-	padding: 0px 5px;
-	height: 30px;
-	line-height: 30px;
-	font-size: 20px;
-	display: block;
-}
 #toDoList ul{margin: 0px auto; padding-left: 0px; list-style: none;}
 #toDoList li{
 	position: relative;
@@ -208,21 +195,25 @@ h1{margin: 0px auto;}
 	height: 30px;
 	line-height: 30px;
 	cursor: pointer;
-	background-color: #FFBB77;
+	background-color: #FFD1A4;
 }
-#toDoList li:nth-child(even){background-color: #FFD1A4;}
 #toDoList li:hover{background-color: #EA7500;}
 .unclosed{display: block}
 .closed{display: none;}
-.unfinished{margin: 0px; padding-left: 5px; height: 100%;}
-.finished{margin: 0px; padding-left: 5px; height: 100%; background-color: #EA7500; color: gray; text-decoration: line-through;}
+.unfinished{margin: 0px; padding-left: 25px; height: 100%;}
+.finished{margin: 0px; padding-left: 25px; height: 100%; background-color: #EA7500; color: gray; text-decoration: line-through;}
 .closeBtn{
 	position: absolute;
 	right: 0px; top: 0px;
 	padding: 0px 5px;
 }
 .closeBtn:hover{color: white; background-color: red;}
-#delnum{margin: 10px auto;}
+.listNum{
+	position: absolute;
+	left: -5px; top: 0px;
+	padding: 0px 5px;
+	text-align: right;
+}
 @media all and (max-width: 1081px)
 {
 	body, .subBody, .menuBar{width: 100%; margin: 0px;}
@@ -235,6 +226,7 @@ h1{margin: 0px auto;}
 		right: 0px;
 	}
 	.menuDropDown{width: 200px;}
+	#toDoList li:hover{background-color: #FFD1A4;}
 }
 @media all and (max-width: 600px)
 {
@@ -316,8 +308,12 @@ h1{margin: 0px auto;}
 					<button type="button" id="addBtn" onclick="addNewItem()">Add</button>
 				</div>
 				<div id="toDoList">
-					<div id="myListNum"></div>
 					<ul id="myListUl">
+						<li class="unclosed"><p class="finished">item01</p></li>
+						<li class="unclosed"><p class="unfinished">item02</p></li>
+						<li class="unclosed"><p class="unfinished">item03</p></li>
+						<li class="unclosed"><p class="finished">item04</p></li>
+						<li class="unclosed"><p class="unfinished">item05</p></li>
 					</ul>
 					<div id="textHere"></div>
 				</div>
@@ -325,36 +321,68 @@ h1{margin: 0px auto;}
 		</div>
 	</div>
 <script type="text/javascript">
-//每个li右边加删除按钮
-var myList=document.getElementsByTagName("LI");
-var m;
-for(m=0; m < myList.length; m++){
-	var spanClose = document.createElement("SPAN");
-	var txtClose = document.createTextNode("\u00D7");
-	spanClose.className="closeBtn";
-	spanClose.appendChild(txtClose);
-	myList[m].appendChild(spanClose);
-	
-}
-//单击删除按钮 隐藏该li
-
-var finishTask = document.getElementsByClassName("closeBtn");
-var i;
-for (i = 0; i < finishTask.length; i++) {
-	finishTask[i].onclick = function() {
-	var parentLi = this.parentElement;
-	parentLi.className = 'closed';
+//每个现有的li右边加删除按钮
+function toAddCloseBtnForOldTask(){
+	var myList=document.getElementsByTagName("LI");
+	var m;
+	for(m=0; m < myList.length; m++){
+		var spanClose = document.createElement("SPAN");//从这开始加删除按钮
+		var txtClose = document.createTextNode("\u00D7");
+		spanClose.className="closeBtn";
+		spanClose.appendChild(txtClose);
+		myList[m].appendChild(spanClose);
 	}
 }
-//点击添加finished横线
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-	if (ev.target.tagName === 'P') {
-	ev.target.classList.toggle('finished');
+//每个现有的li左边添加序号所在的DIV
+function toAddNumDivForOldTask(){
+	var myList=document.getElementsByTagName("LI");
+	var m;
+	for(m=0; m < myList.length; m++){
+		var numDiv = document.createElement("DIV");
+		numDiv.className="listNum";
+		myList[m].appendChild(numDiv);
 	}
-}, false);
+}
+//更新当前所有class为unclosed的li下的序号DIV的内容
+function toAddNum(){
+	var n;
+	var myListVisible = document.querySelectorAll("li.unclosed");
+	for(n=0; n < myListVisible.length; n++){
+		var addNum = myListVisible[n].getElementsByClassName("listNum");
+		addNum[0].innerHTML = n+1;
+	}
+}
+//点击将任务的class改成finished或者恢复成unfinished
+function toFinishOrToUnfinish(){
+	var list = document.querySelector('ul');
+	list.addEventListener('click', function(ev) {
+		if (ev.target.className === 'unfinished') {
+		ev.target.className='finished';
+		}
+		else{ev.target.className='unfinished'}
+	}, false);
+	console.log('toFinishOrToUnfinish');
+}
+//点击删除按钮关闭(隐藏)事项
+function toClose(){
+	var finishTask = document.getElementsByClassName("closeBtn");
+	var i;
+	for (i = 0; i < finishTask.length; i++) {
+		finishTask[i].onclick = function() {
+			var parentLi = this.parentElement;
+			parentLi.className = 'closed';
+			toAddNum();
+		}
+	}
+}
+//放在外面的部分是为现有的5个项目加删除按钮、加序号DIV、加序号、加完成状态、加关闭功能
+//因为只有运行一次才能更新一次变量
+toAddCloseBtnForOldTask();
+toAddNumDivForOldTask();
+toAddNum();
+toFinishOrToUnfinish()
+toClose();
 //点击Add按钮添加新事项
-var n="";
 function addNewItem() {
 	var newLi = document.createElement("li");
 	newLi.className="unclosed";
@@ -372,26 +400,20 @@ function addNewItem() {
 	}
 //加完新事项后输入区域恢复原状
 	document.getElementById("addText").value = "";
-//添加删除按钮
+//加删除按钮
 	var spanClose = document.createElement("SPAN");
 	var txtClose = document.createTextNode("\u00D7");
-	spanClose.className = "closeBtn";
+	spanClose.className="closeBtn";
 	spanClose.appendChild(txtClose);
 	newLi.appendChild(spanClose);
-//点击删除按钮关闭(隐藏)事项
-	for (i = 0; i < finishTask.length; i++) {
-		finishTask[i].onclick = function() {
-			var parentLi = this.parentElement;
-			parentLi.className = 'closed';
-		}
-	  }
-//每个新添的item都加序号
+//加序号所在的DIV
 	var numDiv = document.createElement("DIV");
-	var numTxt = document.createTextNode(n+1);
 	numDiv.className="listNum";
-	numDiv.appendChild(numTxt);
-	myListNum.appendChild(numDiv);
-	n++;
+	newLi.appendChild(numDiv);
+//引用已有的function来更新序号、更新完成状态、更新关闭按钮
+	toAddNum();
+	toFinishOrToUnfinish()
+	toClose();
 }
 </script>
 </body>
