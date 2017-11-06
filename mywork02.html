@@ -200,8 +200,8 @@ h1{margin: 0px auto;}
 #toDoList li:hover{background-color: #EA7500;}
 .unclosed{display: block}
 .closed{display: none;}
-.unfinished{margin: 0px; padding-left: 25px; height: 100%;}
-.finished{margin: 0px; padding-left: 25px; height: 100%; background-color: #EA7500; color: gray; text-decoration: line-through;}
+.unfinished{margin: 0px; padding-left: 30px; height: 100%;}
+.finished{margin: 0px; padding-left: 30px; height: 100%; background-color: #EA7500; color: gray; text-decoration: line-through;}
 .closeBtn{
 	position: absolute;
 	right: 0px; top: 0px;
@@ -210,9 +210,9 @@ h1{margin: 0px auto;}
 .closeBtn:hover{color: white; background-color: red;}
 .listNum{
 	position: absolute;
-	left: -5px; top: 0px;
-	padding: 0px 5px;
-	width: 15px;
+	left: -2px; top: 0px;
+	padding: 0px;
+	width: 30px;
 	text-align: right;
 }
 @media all and (max-width: 1081px)
@@ -350,7 +350,7 @@ function toAddNum(){
 	var myListVisible = document.querySelectorAll("li.unclosed");
 	for(n=0; n < myListVisible.length; n++){
 		var addNum = myListVisible[n].getElementsByClassName("listNum");
-		addNum[0].innerHTML = n+1;
+		addNum[0].innerHTML = n+1+'\.';
 	}
 }
 //点击将任务的class改成finished或者恢复成unfinished
@@ -380,8 +380,8 @@ function toClose(){
 //因为只有运行一次才能更新一次变量
 toAddCloseBtnForOldTask();
 toAddNumDivForOldTask();
-toFinishOrToUnfinish();
 toAddNum();
+toFinishOrToUnfinish();
 toClose();
 //点击Add按钮添加新事项
 function addNewItem() {
@@ -415,6 +415,15 @@ function addNewItem() {
 	toAddNum();
 	toClose();
 }
+//侦测回车事件
+function toEnter(){
+	addText.addEventListener('keydown', function(ev) {
+		if(ev.keyCode == 13){
+			addNewItem();
+		}
+	}, false);
+}
+toEnter();
 </script>
 </body>
 
