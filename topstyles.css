@@ -65,6 +65,16 @@ body{width: 1080px;
 	background-color: 	#F75000;
 	z-index: 2;
 }
+.menuBarFixated{
+	position: fixed;
+	top: 0px;
+	width: 930px;
+	height: 60px;
+	margin: 0px 0px 0px -15px;
+	text-align: center;
+	background-color: 	#F75000;
+	z-index: 2;
+}
 .menuBar:before, .menuBar:after{
 	content:"";
 	position: absolute;
@@ -143,6 +153,13 @@ body{width: 1080px;
 	margin: 0px auto;
 	padding: 0px;
 }
+.middlePartFixated{
+	position: relative;
+	width: 100%;
+	height: 130px;
+	margin: 0px auto;
+	padding: 0px;
+}
 .lowerPart{
 	position: relative;
 	width: 100%;
@@ -150,6 +167,10 @@ body{width: 1080px;
 	padding: 0px 0px 30px 0px;
 	text-align: center;
 	z-index: 1;
+}
+.lowerInnerPart{
+	position: relative;
+	margin: 0px 30px;
 }
 .myList{
 	list-style: none;
@@ -162,7 +183,7 @@ ul.myList{list-style: none;}
 .myList a:visited, .myList a:active, .myList a:hover{color: blue;}
 @media all and (max-width: 1081px)
 {
-	body, .subBody, .menuBar{width: 100%; margin: 0px;}
+	body, .subBody, .menuBar, .menuBarFixated{width: 100%; margin: 0px;}
 	.menuBar:before, .menuBar:after{display: none;}
 }
 @media all and (max-width: 800px)
@@ -172,10 +193,14 @@ ul.myList{list-style: none;}
 		right: 0px;
 	}
 	.menuDropDown{width: 200px;}
+	.lowerInnerPart{
+	margin: 0px 20px 20px 20px;
+	}
 }
 @media all and (max-width: 600px)
 {
 	.middlePart{height: 35px;}
+	.middlePartFixated{height: 95px;}
 }
 @media all and (max-width: 485px)
 {
@@ -183,6 +208,9 @@ ul.myList{list-style: none;}
 	.myHeaderPhoto img{width: 200px; top: -28px; left: -48px;}
 	.myHeaderText{top: -8px;}
 	.myHeaderText p{font-size: 40px;}
+	.lowerInnerPart{
+	margin: 0px 15px 20px 15px;
+	}
 }
 @media all and (max-width: 400px)
 {
