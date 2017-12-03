@@ -8,15 +8,16 @@ function toNotFixate(){
 }
 $(document).scroll(
 	function(){
-	if( $(window).width() <401){
-		if( $(document).scrollTop() > 120){
+		if( $(window).width() <401){
+			if( $(document).scrollTop() > 120){
+				toFixate();
+			}
+			else{toNotFixate();}
+		}
+		else if( $(document).scrollTop() > 150){
 			toFixate();
 		}
-		else{toNotFixate();}
-	}
-	else if( $(document).scrollTop() > 150){
-		toFixate();
-	}
-	else{toNotFixate();}
+		else{toNotFixate();
+		}
 	}
 );
