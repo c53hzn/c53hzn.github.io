@@ -1,11 +1,11 @@
 function toFixate(){
 	$("#float_menubar").attr("class", "menuBarFixated");
 	$("#float_middlePart").attr("class", "middlePartFixated");
-};
+}
 function toNotFixate(){
 	$("#float_menubar").attr("class", "menuBar");
 	$("#float_middlePart").attr("class", "middlePart");
-};
+}
 $(document).scroll(
 	function(){
 	if( $(window).width() <401){
