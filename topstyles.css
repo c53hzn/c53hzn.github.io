@@ -60,6 +60,7 @@ body{width: 1080px;
 }
 .menuBar{
 	width: 930px;
+	min-width: 320px;
 	height: 60px;
 	margin: 0px 0px 0px -15px;
 	text-align: center;
@@ -70,6 +71,7 @@ body{width: 1080px;
 	position: fixed;
 	top: 0px;
 	width: 930px;
+	min-width: 320px;
 	height: 60px;
 	margin: 0px 0px 0px -15px;
 	text-align: center;
@@ -150,6 +152,7 @@ body{width: 1080px;
 .middlePart{
 	position: relative;
 	width: 100%;
+	min-width: 320px;
 	height: 70px;
 	margin: 0px auto;
 	padding: 0px;
@@ -157,6 +160,7 @@ body{width: 1080px;
 .middlePartFixated{
 	position: relative;
 	width: 100%;
+	min-width: 320px;
 	height: 130px;
 	margin: 0px auto;
 	padding: 0px;
