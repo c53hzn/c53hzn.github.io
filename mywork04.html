@@ -57,33 +57,33 @@ pre{overflow-x: scroll;}
 		<div class="middlePart" id="float_middlePart">
 		</div>
 		<div class="lowerPart">
+		<div class="lowerInnerPart">
 			<h1>求斐波那契数列的值</h1>
 			<br>
-			<div style="margin: 10px; text-align: left;">
-				<div>
-					<p>递归法求斐波那契数列的值</p>
-					<pre style="background: #f0f0f0;">
-						<code>
+			<div>
+				<p>递归法求斐波那契数列的值</p>
+				<pre style="background: #f0f0f0;">
+					<code>
 function fibRecurse(n){
 	if(n>1){
 		return fibRecurse(n-1)+fibRecurse(n-2);
 	}
 	else {return n;}
 }
-						</code>
-					</pre>
-					<span>行数:&nbsp;</span>
-					<input type="text" style="width: 150px;" id="recurseNth"/>
-					<button type="button" id="recurseCalculate">求值</button>
-					<br><br>
-					<span>值:&nbsp;</span>
-					<input id="recurseResult" type="text" style="width: 250px;"/>
-				</div>
-				<hr>
-				<div>
-					<p>迭代法求斐波那契数列的值</p>
-					<pre style="background: #f0f0f0;">
-						<code>
+					</code>
+				</pre>
+				<span>行数:&nbsp;</span>
+				<input type="text" style="width: 150px;" id="recurseNth"/>
+				<button type="button" id="recurseCalculate">求值</button>
+				<br><br>
+				<span>值:&nbsp;</span>
+				<input id="recurseResult" type="text" style="width: 250px;"/>
+			</div>
+			<hr>
+			<div>
+				<p>迭代法求斐波那契数列的值</p>
+				<pre style="background: #f0f0f0;">
+					<code>
 function fibIterate(n){
 	var i, temp0, temp1=0, temp2=1;
 	if(n<1){
@@ -98,18 +98,18 @@ function fibIterate(n){
 		return temp0;
 	}
 }
-						</code>
-					</pre>
-					<span>行数:&nbsp;</span>
-					<input type="text" style="width: 150px;" id="iterateNth"/>
-					<button type="button" id="iterateCalculate">求值</button>
-					<br><br>
-					<span>值:&nbsp;</span>
-					<input id="iterateResult" type="text" style="width: 250px;"/>
-				</div>
+					</code>
+				</pre>
+				<span>行数:&nbsp;</span>
+				<input type="text" style="width: 150px;" id="iterateNth"/>
+				<button type="button" id="iterateCalculate">求值</button>
+				<br><br>
+				<span>值:&nbsp;</span>
+				<input id="iterateResult" type="text" style="width: 250px;"/>
 			</div>
 		</div>
-	<div>
+	</div>
+<div>
 
 <script>
 function fibRecurse(n){
