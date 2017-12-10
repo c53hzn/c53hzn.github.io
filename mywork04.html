@@ -60,7 +60,7 @@ pre{overflow-x: scroll;}
 		</div>
 		<div class="lowerPart">
 		<div class="lowerInnerPart">
-			<h1>求斐波那契数列的值</h1>
+			<h1>斐波那契数列求值</h1>
 			<br>
 			<div>
 				<p>递归法求斐波那契数列的值</p>
@@ -114,13 +114,14 @@ function fibIterate(n){
 <div>
 
 <script>
+//递归法求斐波那契数列的值
 function fibRecurse(n){
 	if(n>1){
 		return fibRecurse(n-1)+fibRecurse(n-2);
 	}
 	else {return n;}
 }
-
+//迭代法求斐波那契数列的值
 function fibIterate(n){
 	var i, temp0, temp1=0, temp2=1;
 	if(n<1){
@@ -135,27 +136,39 @@ function fibIterate(n){
 		return temp0;
 	}
 }
-
+//将递归法求得的值写入结果
+function toCalculateRecurse(){
+var $recurseNth=$("#recurseNth").val();
+if($recurseNth>44){
+	alert("递归法求45或以上的行数会导致浏览器崩溃，换一个数吧~");
+}
+else if($recurseNth>34){
+	if(confirm("递归法求35或以上的行数会非常慢，确定执行？")){
+	$("#recurseResult").val(fibRecurse($recurseNth));
+	}
+	else{return false;}
+}
+else{$("#recurseResult").val(fibRecurse($recurseNth));}
+}
+//将迭代法求得的值写入结果
+function toCalculateIteration(){
+var $iterateNth=$("#iterateNth").val();
+$("#iterateResult").val(fibIterate($iterateNth));
+}
+	
 $(document).ready(function(){
-  $("#recurseCalculate").click(
-	function(){
-	var $recurseNth=$("#recurseNth").val();
-	if($recurseNth>44){
-		alert("递归法求45或以上的行数会导致浏览器崩溃，换一个数吧~");
-	}
-	else if($recurseNth>34){
-		if(confirm("递归法求35或以上的行数会非常慢，确定执行？")){
-		$("#recurseResult").val(fibRecurse($recurseNth));
-		}
-		else{return false;}
-	}
-	else{$("#recurseResult").val(fibRecurse($recurseNth));}
-	}
-  );
-    $("#iterateCalculate").click(function(){
-	var $iterateNth=$("#iterateNth").val();
-    $("#iterateResult").val(fibIterate($iterateNth));
-  });
+	$("#recurseCalculate").on('click',toCalculateRecurse);//单击递归法的求值按钮
+	$("#iterateCalculate").on('click',toCalculateIteration);//单击迭代法的求值按钮
+	//递归法回车
+	$("#recurseNth").keydown(function(event){ 
+    if(event.keyCode == 13){ 
+        toCalculateRecurse();}
+    });
+	//迭代法回车
+	$("#iterateNth").keydown(function(event){ 
+    if(event.keyCode == 13){ 
+        toCalculateIteration();}
+    });
 });
 </script>
 </body>
