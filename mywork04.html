@@ -143,6 +143,12 @@ $(document).ready(function(){
 	if($recurseNth>44){
 		alert("递归法求45或以上的行数会导致浏览器崩溃，换一个数吧~");
 	}
+	else if($recurseNth>34){
+		if(confirm("递归法求35或以上的行数会非常慢，确定执行？")){
+		$("#recurseResult").val(fibRecurse($recurseNth));
+		}
+		else{return false;}
+	}
 	else{$("#recurseResult").val(fibRecurse($recurseNth));}
 	}
   );
