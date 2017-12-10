@@ -177,6 +177,7 @@ body{width: 1080px;
 	position: relative;
 	margin: 0px 30px;
 }
+.lowerInnerPart h1{margin: 0 auto; text-align: center;}
 .myList{
 	list-style: none;
 	padding: 0px;
