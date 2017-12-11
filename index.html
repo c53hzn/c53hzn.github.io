@@ -19,13 +19,15 @@
 	box-shadow: 0px 0px 4px gray;
 	cursor: pointer;
 	display: inline-block;
-	transition: box-shadow .5s;
+	opacity: 1;
+	transition: box-shadow 0.5s, opacity 0.5s;
 }
 .myPhoto_thumb img{
 	margin: 0px; padding: 0px; width: 100%; max-width: 100%; display: block; 
 }
 .myPhoto_thumb:hover{
 	box-shadow: 0px 0px 8px black;
+	opacity: .7;
 }
 .myPhoto_big{
 	position: absolute;
@@ -36,18 +38,20 @@
 	width: 80%;
 	box-shadow: 0px 1px 5px gray;
 	visibility: hidden;
+	opacity: 0;
 	z-index: 1;
-	transition: visibility .5s;
+	transition: visibility 0s, opacity 0.5s;
 }
 .myPhoto .myPhoto_big:nth-child(7){
 	position: relative;
 	top: 0px;
 	margin: 0px;
 	visibility: visible;
+	opacity: 1;
 	z-index: 0;
 }
 .myPhoto_big img{
-	margin: 0px; padding: 0px; max-width: 100%; visibility: visible; 
+	margin: 0px; padding: 0px; max-width: 100%; display: block; 
 }
 .myPhoto_thumb:nth-child(1):hover ~ .myPhoto_big:nth-child(7),
 .myPhoto_thumb:nth-child(2):hover ~ .myPhoto_big:nth-child(8),
@@ -55,14 +59,14 @@
 .myPhoto_thumb:nth-child(4):hover ~ .myPhoto_big:nth-child(10),
 .myPhoto_thumb:nth-child(5):hover ~ .myPhoto_big:nth-child(11),
 .myPhoto_thumb:nth-child(6):hover ~ .myPhoto_big:nth-child(12){
-	visibility: visible;
+	visibility: visible; opacity: 1;
 }
 .myPhoto_thumb:nth-child(2):hover ~ .myPhoto_big:nth-child(7),
 .myPhoto_thumb:nth-child(3):hover ~ .myPhoto_big:nth-child(7),
 .myPhoto_thumb:nth-child(4):hover ~ .myPhoto_big:nth-child(7),
 .myPhoto_thumb:nth-child(5):hover ~ .myPhoto_big:nth-child(7),
 .myPhoto_thumb:nth-child(6):hover ~ .myPhoto_big:nth-child(7){
-	visibility: hidden;
+	visibility: hidden; opacity: 0;
 }
 .myIntro{
 	position: relative;
