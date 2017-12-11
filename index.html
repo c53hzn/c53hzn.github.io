@@ -19,10 +19,10 @@
 	box-shadow: 0px 0px 4px gray;
 	cursor: pointer;
 	display: inline-block;
+	transition: box-shadow .5s;
 }
 .myPhoto_thumb img{
 	margin: 0px; padding: 0px; width: 100%; max-width: 100%; display: block; 
-	
 }
 .myPhoto_thumb:hover{
 	box-shadow: 0px 0px 8px black;
@@ -35,18 +35,19 @@
 	left: 11.1%;
 	width: 80%;
 	box-shadow: 0px 1px 5px gray;
-	display: none; 
+	visibility: hidden;
 	z-index: 1;
+	transition: visibility .5s;
 }
 .myPhoto .myPhoto_big:nth-child(7){
 	position: relative;
 	top: 0px;
 	margin: 0px;
-	display: block;
+	visibility: visible;
 	z-index: 0;
 }
 .myPhoto_big img{
-	margin: 0px; padding: 0px; max-width: 100%; display: block; 
+	margin: 0px; padding: 0px; max-width: 100%; visibility: visible; 
 }
 .myPhoto_thumb:nth-child(1):hover ~ .myPhoto_big:nth-child(7),
 .myPhoto_thumb:nth-child(2):hover ~ .myPhoto_big:nth-child(8),
@@ -54,7 +55,7 @@
 .myPhoto_thumb:nth-child(4):hover ~ .myPhoto_big:nth-child(10),
 .myPhoto_thumb:nth-child(5):hover ~ .myPhoto_big:nth-child(11),
 .myPhoto_thumb:nth-child(6):hover ~ .myPhoto_big:nth-child(12){
-	display: block;
+	visibility: visible;
 }
 .myPhoto_thumb:nth-child(2):hover ~ .myPhoto_big:nth-child(7),
 .myPhoto_thumb:nth-child(3):hover ~ .myPhoto_big:nth-child(7),
