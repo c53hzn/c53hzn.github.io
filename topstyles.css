@@ -181,10 +181,11 @@ body{width: 1080px;
 .myList{
 	list-style: none;
 	padding: 0px;
-	margin: 0px auto;
+	margin: 0px auto 0px 33%;
 	font-size: 20px;
+	text-align: left;
 }
-ul.myList{list-style: none;}
+ul.myList{list-style: decimal; color: blue;}
 .myList a:link{text-decoration: none; color: blue;}
 .myList a:visited, .myList a:active, .myList a:hover{color: blue;}
 @media all and (max-width: 1081px)
@@ -207,6 +208,7 @@ ul.myList{list-style: none;}
 {
 	.middlePart{height: 35px;}
 	.middlePartFixated{height: 95px;}
+	.myList{margin-left: 25%;}
 }
 @media all and (max-width: 485px)
 {
@@ -217,6 +219,7 @@ ul.myList{list-style: none;}
 	.lowerInnerPart{
 	margin: 0px 15px 20px 15px;
 	}
+	.myList{margin-left: 20%;}
 }
 @media all and (max-width: 400px)
 {
@@ -227,4 +230,5 @@ ul.myList{list-style: none;}
 	.myHeaderText p{font-size: 33px;}
 	.menuBarQuater{width: 23%;}
 	.menuBarText p{font-size: 16px;}
+	.myList{margin-left: 15%;}
 }
