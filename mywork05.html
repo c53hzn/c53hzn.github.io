@@ -23,25 +23,10 @@ h1{margin: 25px; color: white;}
   content: "Said by: "; font-style: normal;
 }
 #quoteBottom{margin-top: 15px;}
-#iconWeixin,#iconWeibo{padding: 5px;border-radius: 5px; font-size: 24px; background: white; color: white;} 
-#iconWeixin{font-size: 22px; padding-top:8px;}
+#iconTwitter, #iconWeibo{padding: 5px;border-radius: 5px; font-size: 24px; background: white; color: white;} 
 #changeQuote{display: inline-block; float: right; background: white; color: white;}
 #shareQuote a{text-decoration: none;}
 #author{color: white; margin: 10px auto;}
-#backToIndex{
-	position: fixed;
-	bottom: 20px;
-	right: 10%;
-	width: 50px;
-	height: 50px;
-	border-radius: 50px;
-	background-color: #F75000;
-	color: white;
-	font-size: 19px;
-	line-height: 50px;
-	text-align: center;
-	box-shadow: 0px 0px 5px black;
-}
 @media all and (max-width: 768px){
   #quoteTitle{margin-bottom: 10px; font-size: 25px;}
 }
@@ -49,7 +34,6 @@ h1{margin: 25px; color: white;}
 </head>
 
 <body translate="no" >
-
 <div id="grayCover"></div>
 <div class="container">
   <div class="row">
@@ -67,10 +51,10 @@ h1{margin: 25px; color: white;}
         </div>
         <div class="row" id="quoteBottom">
           <div id="shareQuote" class="col">
-            <a href="#" target="_blank">
-              <i class="fa fa-weixin" id="iconWeixin"></i>
+            <a id="twitterLink" href="#" target="_blank">
+              <i class="fa fa-twitter" id="iconTwitter"></i>
             </a>
-            <a href="https://service.weibo.com/share/share.php" target="_blank">
+            <a id="weiboLink" href="https://service.weibo.com/share/share.php" target="_blank">
               <i class="fa fa-weibo" id="iconWeibo"></i>
             </a>
             <button id="changeQuote" type="button" class="btn">New Quote</button>
@@ -92,7 +76,7 @@ h1{margin: 25px; color: white;}
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.min.js'></script>
 
 <script >
-//定义整体颜色
+ //定义整体颜色
 var colors = [
   "blueviolet",
   "dimgray",
@@ -111,18 +95,28 @@ var colors = [
   "salmon",
   "yellowgreen"
 ];
+var allQuotes = [];
 //页面加载完成后开始执行
 $(document).ready(function() {
   //获取JSON数据
-  var allQuotes = [];
   function toRetrieveData() {
+    $.ajaxSetup({
+      error: function(x, e) {
+        $("#quoteContent").css("color","red").html("Cannot load required contents-1");
+        return false;
+      }
+    });
     // $.ajaxSettings.async = false;
     $.getJSON(
       "https://houzhenni.github.io/mywork/criminal-minds-quotes.json",
       function(data) {
-        allQuotes = data.quotes;
-        console.log("Data retrieved successfully");
-        toChange();
+        if (data !== "") {
+          allQuotes = data.quotes;
+          console.log("Data retrieved successfully");
+          toChange();
+        } else {
+          $("#quoteContent").css("color","green").html("Cannot load required contents-2");
+        }
       }
     );
     // $.ajaxSettings.async = true;
@@ -150,7 +144,6 @@ $(document).ready(function() {
         console.log("randomColor = " + randomColor);
       }
     }
-    toGenerateColor();
     function toGenerateNum() {
       tempNum1 = Math.floor(Math.random() * 32); //因为最小值是0才能这么简单，0 <= tempNum1 <=31
       if (randomNum == tempNum1) {
@@ -163,22 +156,32 @@ $(document).ready(function() {
         console.log("randomNum = " + randomNum);
       }
     }
+    toGenerateColor();
     toGenerateNum();
     //改颜色
     $("body").transition({ background: randomColor }, 800);
     $("#quoteContent").transition(
-      { color: randomColor, borderLeftColor: randomColor},
+      { color: randomColor, borderLeftColor: randomColor },
       800
     );
     $("#quoteAuthor").transition({ color: randomColor }, 800);
     $("#saidByWhom").transition({ color: randomColor }, 800);
-    $("#iconWeixin").transition({ background: randomColor }, 800);
+    $("#iconTwitter").transition({ background: randomColor }, 800);
     $("#iconWeibo").transition({ background: randomColor }, 800);
     $("#changeQuote").transition({ background: randomColor }, 800);
     //改内容
     $("#quoteContent").html(allQuotes[randomNum].quote);
     $("#quoteAuthor").html(allQuotes[randomNum].author);
     $("#saidByWhom").html(allQuotes[randomNum].whosaidit);
+    //为twitter转义分号
+    function html2Escape(sHtml) {
+ return sHtml.replace(/[;]/g,function(c){return {';':'%3B'}[c];});
+}
+    var twitterTxtBefore = allQuotes[randomNum].quote;
+    var twitterTxt = html2Escape(twitterTxtBefore);
+    $("#twitterLink").attr("href","https://twitter.com/intent/tweet?related=freecodecamp&text=" + twitterTxt + "%20--%20" + allQuotes[randomNum].author);
+    //twitter结束
+    $("#weiboLink").attr("href","https://service.weibo.com/share/share.php?url=https://codepen.io/houzhenni/full/GyjzZb/&title=" + allQuotes[randomNum].quote + "%20--%20" + allQuotes[randomNum].author);
   }
   // toChange();
   $("#changeQuote").on("click", toChange);
