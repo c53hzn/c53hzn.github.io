@@ -152,15 +152,16 @@ $(document).ready(function() {
             );
             $("#searchResultBox").append(resultURL);
           }
-          var myFade = function(posts) {
-            posts.fadeIn(50, function() {
-              var nextOne = $(this).next("#searchResultBox a");
-              if (nextOne.length > 0) {
-                myFade(nextOne);
-              }
-            });
-          };
-          myFade($("#searchResultBox a:first"));
+	  $("#searchResultBox a").slideDown();
+//           var myFade = function(posts) {
+//             posts.fadeIn(50, function() {
+//               var nextOne = $(this).next("#searchResultBox a");
+//               if (nextOne.length > 0) {
+//                 myFade(nextOne);
+//               }
+//             });
+//           };
+//           myFade($("#searchResultBox a:first"));
         }
       );
     }
