@@ -12,8 +12,8 @@ body{margin: 0px; background: #003333; text-align: center; min-width: 320px;}
 #magnifier{position: relative; margin: 10px auto; height: 35px; width: 35px; background: #003333; border: 5px solid darkorange; border-radius: 33px; cursor: pointer;}
 #magnifierHandle{position: absolute; top: 40px; left: 27px; width: 22px; border-top: 5px solid darkorange; transform:rotate(45deg); z-index: -1;}
 #searchBox{margin: 10px auto; background: none; width: 35px; height: 35px; border: 5px solid darkorange; border-radius: 33px; display: none;}
-#searchContent{margin-top: 3px; margin-left: 6px; width: 0px; height: 20px; color: white; font-size: 18px; background: none; border: none; outline: none; display: inline-block;}
-#closeIcon{margin-top: 3px; width: 0px; color: darkorange; font-size: 20px; cursor: pointer; display: inline-block;}
+#searchContent{margin-top: 3px; margin-left: 6px; width: 0px; height: 20px; color: white; font-size: 18px; background: none; border: none; outline: none; display: none;}
+#closeIcon{margin-top: 3px; width: 0px; color: darkorange; font-size: 20px; cursor: pointer; display: none;}
 #desc{margin: 25px auto; color: white; font-size: 18px;}
 #searchResultBox{width: 800px; margin: 10px auto;}
 #searchResultBox a{text-decoration: none; display: none;}
@@ -81,6 +81,8 @@ $(document).ready(function() {
       function toShowInputBox() {
         $("#closeIcon").css("width", "5%");
         $("#searchContent").css("width", "83%");
+	$("#closeIcon").css("display", "none");
+        $("#searchContent").css("display", "none");
       }
       $("#searchBox").css("display", "block");
       $("#magnifier").css("display", "none");
@@ -105,6 +107,8 @@ $(document).ready(function() {
     $("#searchContent").val("");
     $("#searchContent").css("width", 0);
     $("#searchResultBox").html("");
+    $("#closeIcon").css("display", "none");
+    $("#searchContent").css("display", "none");
     //0.5秒的时间缩小搜索框
     $("#searchBox").transition({ width: 40 }, 300);
     //等搜索框变窄之后回调隐藏搜索框和显示放大镜的函数
