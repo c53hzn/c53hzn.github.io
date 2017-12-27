@@ -81,7 +81,7 @@ $(document).ready(function() {
       function toShowInputBox() {
         $("#closeIcon").css("width", "5%");
         $("#searchContent").css("width", "83%");
-        $("#searchContent").css("appearance", "normal");
+        $("#searchContent").css("-webkit-appearance", "normal");
 	$("#closeIcon").css("display", "inline-block");
         $("#searchContent").css("display", "inline-block");
       }
@@ -109,7 +109,7 @@ $(document).ready(function() {
     $("#closeIcon").css("width", 0);
     $("#searchContent").val("");
     $("#searchContent").css("width", 0);
-    $("#searchContent").css("appearance", "none");
+    $("#searchContent").css("-webkit-appearance", "none");
     $("#searchResultBox").html("");
     $("#closeIcon").css("display", "none");
     $("#searchContent").css("display", "none");
