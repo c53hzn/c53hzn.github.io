@@ -81,12 +81,11 @@ $(document).ready(function() {
       function toShowInputBox() {
         $("#closeIcon").css("width", "5%");
         $("#searchContent").css("width", "83%");
-        $("#searchContent").css("-webkit-appearance", "normal");
-	$("#closeIcon").css("display", "inline-block");
+        $("#closeIcon").css("display", "inline-block");
         $("#searchContent").css("display", "inline-block");
       }
+      $("#searchBox").css("margin-top", 10);
       $("#searchBox").css("display", "block");
-      $("#searchBox").css("border", "5px solid darkorange"); 
       $("#magnifier").css("display", "none");
       $("#searchBox").transition({ width: 300 }, 300);
       //等搜索框变宽后回调显示输入框和关闭按钮
@@ -99,7 +98,8 @@ $(document).ready(function() {
   }
   function toShowMagnifierFull() {
     function showMagnifier() {
-      $("#searchBox").css("border", "none");
+      $("#searchBox").css("margin-top", 50);
+      $("#searchBox").css("width", 0);
       $("#searchBox").css("display", "none");
       $("#magnifier").css("display", "block");
       $("#magnifierHandle").transition({ top: 40, left: 27 }, 200);
@@ -109,7 +109,6 @@ $(document).ready(function() {
     $("#closeIcon").css("width", 0);
     $("#searchContent").val("");
     $("#searchContent").css("width", 0);
-    $("#searchContent").css("-webkit-appearance", "none");
     $("#searchResultBox").html("");
     $("#closeIcon").css("display", "none");
     $("#searchContent").css("display", "none");
@@ -152,23 +151,14 @@ $(document).ready(function() {
             var resultDIV = $('<div class="searchResult"></div>').html(
               resultContent
             );
-            var resultURL = $('<a target="_blank"></a>').html(resultDIV);
+            var resultURL = $('<a class="hiddenLink" target="_blank"></a>').html(resultDIV);
             resultURL.attr(
               "href",
               "https://en.wikipedia.org/?curid=" + wikiIDs[i]
             );
             $("#searchResultBox").append(resultURL);
           }
-          $("#searchResultBox a").slideDown();
-          // var myFade = function(posts) {
-          //   posts.fadeIn(150, function() {
-          //     var nextOne = $(this).next("#searchResultBox a");
-          //     if (nextOne.length > 0) {
-          //       setTimeout(myFade(nextOne),150);
-          //     }
-          //   });
-          // };
-          // myFade($("#searchResultBox a:first"));
+          $(".searchResult").transition({ opacity: 1},500);
         }
       );
     }
