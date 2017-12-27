@@ -12,8 +12,8 @@ body{margin: 0px; background: #003333; text-align: center; min-width: 320px;}
 #magnifier{position: relative; margin: 10px auto; height: 35px; width: 35px; background: #003333; border: 5px solid darkorange; border-radius: 33px; cursor: pointer;}
 #magnifierHandle{position: absolute; top: 40px; left: 27px; width: 22px; border-top: 5px solid darkorange; transform:rotate(45deg); z-index: -1;}
 #searchBox{margin: 10px auto; background: none; width: 35px; height: 35px; border: 5px solid darkorange; border-radius: 33px; display: none;}
-#searchContent{margin-top: 3px; margin-left: 6px; width: 82%; height: 20px; color: white; font-size: 18px; background: none; border: none; outline: none; display: none;}
-#closeIcon{margin-top: 3px; width: 5%; color: darkorange; font-size: 20px; cursor: pointer; display: none;}
+#searchContent{margin-top: 3px; margin-left: 6px; width: 0px; height: 20px; color: white; font-size: 18px; background: none; border: none; outline: none; display: inline-block;}
+#closeIcon{margin-top: 3px; width: 0px; color: darkorange; font-size: 20px; cursor: pointer; display: inline-block;}
 #desc{margin: 25px auto; color: white; font-size: 18px;}
 #searchResultBox{width: 800px; margin: 10px auto;}
 #searchResultBox a{text-decoration: none; display: none;}
@@ -79,8 +79,8 @@ $(document).ready(function() {
   function toShowSearchBoxFull() {
     function showSearchBox() {
       function toShowInputBox() {
-        $("#closeIcon").css("display", "inline-block");
-        $("#searchContent").css("display", "inline-block");
+        $("#closeIcon").css("width", "5%");
+        $("#searchContent").css("width", "83%");
       }
       $("#searchBox").css("display", "block");
       $("#magnifier").css("display", "none");
@@ -88,7 +88,6 @@ $(document).ready(function() {
       //等搜索框变宽后回调显示输入框和关闭按钮
       setTimeout(toShowInputBox, 300);
     }
-    showSearchStart = new Date();
     //0.5秒的时间缩小把手
     $("#magnifierHandle").transition({ top: 15, left: 0 }, 200);
     //等放大镜把手缩小后回调隐藏放大镜和显示搜索框的函数
@@ -102,9 +101,9 @@ $(document).ready(function() {
       setTimeout('$("#randomWiki").transition({ marginTop: 130 }, 200)', 200);
       setTimeout('$("#desc").fadeIn(200)', 400);
     }
-    $("#closeIcon").css("display", "none");
+    $("#closeIcon").css("width", 0);
     $("#searchContent").val("");
-    $("#searchContent").css("display", "none");
+    $("#searchContent").css("width", 0);
     $("#searchResultBox").html("");
     //0.5秒的时间缩小搜索框
     $("#searchBox").transition({ width: 40 }, 300);
@@ -152,16 +151,16 @@ $(document).ready(function() {
             );
             $("#searchResultBox").append(resultURL);
           }
-	  $("#searchResultBox a").slideDown();
-//           var myFade = function(posts) {
-//             posts.fadeIn(50, function() {
-//               var nextOne = $(this).next("#searchResultBox a");
-//               if (nextOne.length > 0) {
-//                 myFade(nextOne);
-//               }
-//             });
-//           };
-//           myFade($("#searchResultBox a:first"));
+          $("#searchResultBox a").slideDown();
+          // var myFade = function(posts) {
+          //   posts.fadeIn(150, function() {
+          //     var nextOne = $(this).next("#searchResultBox a");
+          //     if (nextOne.length > 0) {
+          //       setTimeout(myFade(nextOne),150);
+          //     }
+          //   });
+          // };
+          // myFade($("#searchResultBox a:first"));
         }
       );
     }
@@ -178,6 +177,7 @@ $(document).ready(function() {
     }
   });
 });
+
 </script>
 </body>
 </html>
