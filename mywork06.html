@@ -84,7 +84,8 @@ $(document).ready(function() {
 	$("#closeIcon").css("display", "inline-block");
         $("#searchContent").css("display", "inline-block");
       }
-      $("#searchBox").css("display", "block");
+      $("#searchBox").css("display", "block"); 5px solid darkorange
+      $("#searchBox").css("border", "5px solid darkorange"); 
       $("#magnifier").css("display", "none");
       $("#searchBox").transition({ width: 300 }, 300);
       //等搜索框变宽后回调显示输入框和关闭按钮
@@ -97,6 +98,7 @@ $(document).ready(function() {
   }
   function toShowMagnifierFull() {
     function showMagnifier() {
+      $("#searchBox").css("border", "none");
       $("#searchBox").css("display", "none");
       $("#magnifier").css("display", "block");
       $("#magnifierHandle").transition({ top: 40, left: 27 }, 200);
