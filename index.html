@@ -13,8 +13,10 @@
 	margin: 0px auto 70px auto;
 	padding: 0px;
 	width: 83%;
+	height: 520px;
 }
-.myPhoto_thumb{
+.myPhoto input{display: none;}
+.myPhoto label{
 	width: 15%;
 	margin: 2px;
 	border: none;
@@ -24,18 +26,23 @@
 	opacity: 1;
 	transition: box-shadow 0.5s, opacity 0.5s;
 }
-.myPhoto_thumb img{
+.myPhoto img{
 	margin: 0px; padding: 0px; width: 100%; max-width: 100%; display: block; 
 }
-.myPhoto_thumb:hover{
+.myPhoto label:hover{
 	box-shadow: 0px 0px 8px black;
 	opacity: .7;
 }
-.myPhoto_big{
+.myPhoto input:checked + label{
+	box-shadow: 0px 0px 8px black;
+	opacity: .7;
+}
+#myPhoto_big01, #myPhoto_big02, #myPhoto_big03,
+#myPhoto_big04, #myPhoto_big05, #myPhoto_big06{
 	position: absolute;
 	margin: 0px auto 30px auto;
 	padding: 0px;
-	top: 17.5%;
+	top: 120px;
 	left: 11.1%;
 	width: 80%;
 	box-shadow: 0px 1px 5px gray;
@@ -44,31 +51,19 @@
 	z-index: 1;
 	transition: visibility 0s, opacity 0.5s;
 }
-.myPhoto .myPhoto_big:nth-child(7){
-	position: relative;
-	top: 0px;
-	margin: 0px;
-	visibility: visible;
-	opacity: 1;
-	z-index: 0;
-}
-.myPhoto_big img{
+#myPhoto_big01 img, #myPhoto_big02 img, #myPhoto_big03 img,
+#myPhoto_big04 img, #myPhoto_big05 img, #myPhoto_big06 img{
 	margin: 0px; padding: 0px; max-width: 100%; display: block; 
 }
-.myPhoto_thumb:nth-child(1):hover ~ .myPhoto_big:nth-child(7),
-.myPhoto_thumb:nth-child(2):hover ~ .myPhoto_big:nth-child(8),
-.myPhoto_thumb:nth-child(3):hover ~ .myPhoto_big:nth-child(9),
-.myPhoto_thumb:nth-child(4):hover ~ .myPhoto_big:nth-child(10),
-.myPhoto_thumb:nth-child(5):hover ~ .myPhoto_big:nth-child(11),
-.myPhoto_thumb:nth-child(6):hover ~ .myPhoto_big:nth-child(12){
+#myPhoto_thumb01:checked ~ #myPhoto_big01, #myPhoto_thumb02:checked ~ #myPhoto_big02,
+#myPhoto_thumb03:checked ~ #myPhoto_big03, #myPhoto_thumb04:checked ~ #myPhoto_big04,
+#myPhoto_thumb05:checked ~ #myPhoto_big05, #myPhoto_thumb06:checked ~ #myPhoto_big06{
 	visibility: visible; opacity: 1;
 }
-.myPhoto_thumb:nth-child(2):hover ~ .myPhoto_big:nth-child(7),
-.myPhoto_thumb:nth-child(3):hover ~ .myPhoto_big:nth-child(7),
-.myPhoto_thumb:nth-child(4):hover ~ .myPhoto_big:nth-child(7),
-.myPhoto_thumb:nth-child(5):hover ~ .myPhoto_big:nth-child(7),
-.myPhoto_thumb:nth-child(6):hover ~ .myPhoto_big:nth-child(7){
-	visibility: hidden; opacity: 0;
+#photoLabel01:hover ~ #myPhoto_big01, #photoLabel02:hover ~ #myPhoto_big02,
+#photoLabel03:hover ~ #myPhoto_big03, #photoLabel04:hover ~ #myPhoto_big04,
+#photoLabel05:hover ~ #myPhoto_big05, #photoLabel06:hover ~ #myPhoto_big06{
+	visibility: visible; opacity: 1; z-index: 999;
 }
 .myIntro{
 	position: relative;
@@ -120,21 +115,39 @@
 }
 
 @media all and (max-width: 1081px)
-{}
+{
+	.myPhoto{height: 600px;}
+	#myPhoto_big01, #myPhoto_big02, #myPhoto_big03,
+	#myPhoto_big04, #myPhoto_big05, #myPhoto_big06{
+		left: 5%; width: 90%;
+	}
+}
 @media all and (max-width: 800px)
-{}
+{
+	.myPhoto{height: 540px;}
+	#myPhoto_big01, #myPhoto_big02, #myPhoto_big03,
+	#myPhoto_big04, #myPhoto_big05, #myPhoto_big06{
+		left: 0; width: 100%;
+	}
+}
 @media all and (max-width: 600px)
 {
-	.myPhoto{width: 100%; margin-bottom: 35px;}
-	.myPhoto_thumb{display: none;}
-	.myPhoto_big{left: 5%; width: 90%;}
+	.myPhoto{width: 100%; height: 370px;}
+	.myPhoto label{display: none;}
+	#myPhoto_big01, #myPhoto_big02, #myPhoto_big03,
+	#myPhoto_big04, #myPhoto_big05, #myPhoto_big06{
+		top: 0; width: 100%;
+	}
 }
 @media all and (max-width: 485px)
 {
+	.myPhoto{height: 290px;}
 	.myIntro_3item_itemLabel{padding: 5px; font-size: 13px;}
 }
 @media all and (max-width: 400px)
-{}
+{
+	.myPhoto{height: 230px;}
+}
 </style>
 
 
@@ -186,40 +199,34 @@
 		</div>
 		<div class="lowerPart">
 			<div class="myPhoto">
-				<div class="myPhoto_thumb">
+				<input type="radio" name="photo_thumb" id="myPhoto_thumb01" checked="checked" />
+				<label for="myPhoto_thumb01" id="photoLabel01"><img src="photo/index-01.jpg" alt="图片1"/></label>
+				<input type="radio" name="photo_thumb" id="myPhoto_thumb02">
+				<label for="myPhoto_thumb02" id="photoLabel02"><img src="photo/index-02.jpg" alt="图片2"/></label>
+				<input type="radio" name="photo_thumb" id="myPhoto_thumb03">
+				<label for="myPhoto_thumb03" id="photoLabel03"><img src="photo/index-03.jpg" alt="图片3"/></label>
+				<input type="radio" name="photo_thumb" id="myPhoto_thumb04">
+				<label for="myPhoto_thumb04" id="photoLabel04"><img src="photo/index-04.jpg" alt="图片4"/></label>
+				<input type="radio" name="photo_thumb" id="myPhoto_thumb05">
+				<label for="myPhoto_thumb05" id="photoLabel05"><img src="photo/index-05.jpg" alt="图片5"/></label>
+				<input type="radio" name="photo_thumb" id="myPhoto_thumb06">
+				<label for="myPhoto_thumb06" id="photoLabel06"><img src="photo/index-06.jpg" alt="图片6"/></label>
+				<div id="myPhoto_big01">
 					<img src="photo/index-01.jpg" alt="图片1"/>
 				</div>
-				<div class="myPhoto_thumb">
+				<div id="myPhoto_big02">
 					<img src="photo/index-02.jpg" alt="图片2"/>
 				</div>
-				<div class="myPhoto_thumb">
+				<div id="myPhoto_big03">
 					<img src="photo/index-03.jpg" alt="图片3"/>
 				</div>
-				<div class="myPhoto_thumb">
+				<div id="myPhoto_big04">
 					<img src="photo/index-04.jpg" alt="图片4"/>
 				</div>
-				<div class="myPhoto_thumb">
+				<div id="myPhoto_big05">
 					<img src="photo/index-05.jpg" alt="图片5"/>
 				</div>
-				<div class="myPhoto_thumb">
-					<img src="photo/index-06.jpg" alt="图片6"/>
-				</div>
-				<div class="myPhoto_big">
-					<img src="photo/index-01.jpg" alt="图片1"/>
-				</div>
-				<div class="myPhoto_big">
-					<img src="photo/index-02.jpg" alt="图片2"/>
-				</div>
-				<div class="myPhoto_big">
-					<img src="photo/index-03.jpg" alt="图片3"/>
-				</div>
-				<div class="myPhoto_big">
-					<img src="photo/index-04.jpg" alt="图片4"/>
-				</div>
-				<div class="myPhoto_big">
-					<img src="photo/index-05.jpg" alt="图片5"/>
-				</div>
-				<div class="myPhoto_big">
+				<div id="myPhoto_big06">
 					<img src="photo/index-06.jpg" alt="图片6"/>
 				</div>
 			</div>
@@ -234,8 +241,8 @@
 					<div class="myIntro_3item_itemText">
 						我会的技能有：<br/>
 						1.吐槽<br/>
-						2.讽刺<br/>
-						3.骂人<br/>
+						2.点赞<br/>
+						3.鼓掌<br/>
 					</div>
 					<div class="myIntro_3item_itemText">
 						我喜欢做的事情有：<br/>
