@@ -117,7 +117,15 @@ $(document).ready(function() {
     //等搜索框变窄之后回调隐藏搜索框和显示放大镜的函数
     setTimeout(showMagnifier, 300);
   }
-  function toSearch(val) {
+  function toSearch(val) {  
+    var myFade = function (posts){
+    	posts.fadeIn (100, function (){
+            var nextOne = $ (this).next ('#searchResultBox a');
+            if (nextOne.length > 0){
+                myFade (nextOne);
+            }
+        });
+    }
     if (val != "") {
       $.getJSON(
         "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&generator=search&exsentences=1&exintro=1&gsrsearch=" +
@@ -125,7 +133,7 @@ $(document).ready(function() {
           "&gsrnamespace=0&gsrlimit=10&callback=?",
         function(data) {
           var dataArr = data.query.pages;
-          console.log("Data retrived successfully");
+          console.log("Data retrieved successfully");
           console.log(dataArr);
           var wikiIDs = [];
           //遍历一个有未知属性的JSON对象并获取所有属性名，此处为所有文章的ID
@@ -151,14 +159,16 @@ $(document).ready(function() {
             var resultDIV = $('<div class="searchResult"></div>').html(
               resultContent
             );
-            var resultURL = $('<a class="hiddenLink" target="_blank"></a>').html(resultDIV);
+            var resultURL = $('<a target="_blank"></a>').html(resultDIV);
             resultURL.attr(
               "href",
               "https://en.wikipedia.org/?curid=" + wikiIDs[i]
             );
             $("#searchResultBox").append(resultURL);
           }
-          $(".searchResult").transition({ opacity: 1},500);
+          jQuery (function ($){
+          	myFade ($ ("#searchResultBox a:first"));
+          });
         }
       );
     }
