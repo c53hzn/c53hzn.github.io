@@ -7,8 +7,97 @@
   <title>MineSweeper - 扫雷</title>
   <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
+  <style>
+    .outer{
+      margin: 0px;
+      padding: 4px;
+      text-align: center;
+      background-color: rgb(192, 192, 192);
+    }
+    #mineField{
+      margin: 10px auto; border: 2px solid;
+      border-left-color: rgb(128, 128, 128);
+      border-top-color: rgb(128, 128, 128);
+      border-right-color: white;
+      border-bottom-color: white;
+      border-collapse: separate; border-spacing: 0px;
+    }
+    #mineField td{
+      width: 22px; height: 22px;
+      background-color: rgb(192, 192, 192); 
+    }
+    .cleared{
+      border: 2px solid;
+      border-left-color: rgb(128, 128, 128);
+      border-top-color: rgb(128, 128, 128);
+      border-right-color: white;
+      border-bottom-color: white;
+    }
+    .untouched{
+      border: 2px solid;
+      border-left-color: white;
+      border-top-color: white;
+      border-right-color: rgb(128, 128, 128);
+      border-bottom-color: rgb(128, 128, 128);
+      cursor: pointer;
+    }
+  </style>
  </head>
  <body>
-  
+  <div class="outer">
+    <table id="mineField">
+      <tbody>
+        <tr>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='minesweeper.js'></script>
+  <script>
+    $(document).ready(function(){
+      $("#mineField td").addClass("untouched");
+      $("#mineField td").each(function(index){
+        $(this).on("click",function(){
+          $(this).removeClass("untouched");
+          $(this).addClass("cleared");
+        });
+      });
+    });
+  </script>
  </body>
 </html>

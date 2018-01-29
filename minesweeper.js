@@ -1,3 +1,20 @@
+var mineFieldLen = $("#mineField tr").length;
+var mineLineLen = $("#mineField tr:first td").length;
+function makeMatrix(a,b){
+    var line = [];
+    for(var i = 0; i < b; i++){
+        line.push(false);
+    }
+    var matrix = [];
+    for(var j = 0; j < a; j++){
+        matrix.push(line);
+    }
+    
+    return matrix;
+}
+var mineMatrix = makeMatrix(mineFieldLen,mineLineLen);
+console.log(mineMatrix);
+
 function minesweeper(matrix) {
     //给雷区加上边界
 	function toExpand(arr){
