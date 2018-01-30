@@ -63,10 +63,10 @@
    	display: inline-block;
 	border: 2px solid;
 	width: fit-content;
-	border-left-color: rgb(128, 128, 128);
-	border-top-color: rgb(128, 128, 128);
-	border-bottom-color: white;
-	border-right-color: white;
+	border-left-color: white;
+	border-top-color: white;
+	border-bottom-color: rgb(128, 128, 128);
+	border-right-color: rgb(128, 128, 128);
    }
    .btnInner{
 	border: 2px solid;
@@ -174,7 +174,7 @@
      </div>
     </a>
     <div class="btnOuter" id="noMineOuter">
-    	<div id="noMine" class="btnInner">无雷纯享版</div>
+    	<div id="noMine" class="btnInner" onselectstart="return false">无雷纯享版</div>
     </div>
     <div class="btnOuter" id="newMineOuter">
     	<div id="newMine" class="btnInner">
@@ -192,7 +192,10 @@
   <script>
     $(document).ready(function(){
     	makeNoMineField("mineField","untouched","cleared");
-    	$("#noMine").on('click',function(){
+    	$("#noMine").mousedown(function(){
+    		$("#noMine").removeClass("btnInner").addClass("cleared");
+    	}).mouseup(function(){
+    		$("#noMine").removeClass("cleared").addClass("btnInner");
     		makeNoMineField("mineField","untouched","cleared");
     	});
     });
