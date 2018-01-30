@@ -1,19 +1,34 @@
-var mineFieldLen = $("#mineField tr").length;
-var mineLineLen = $("#mineField tr:first td").length;
-function makeMatrix(a,b){
-    var line = [];
-    for(var i = 0; i < b; i++){
-        line.push(false);
+function makeNoMineField(tableId,class1, class2){
+    var table = document.getElementById(tableId);
+    var tds = table.getElementsByTagName("td");
+    for(var k = 0; k < tds.length; k++){
+        tds[k].className = class1;
     }
-    var matrix = [];
-    for(var j = 0; j < a; j++){
-        matrix.push(line);
+    for(var m = 0; m < tds.length; m++){
+        tds[m].onclick = function(){
+            this.className = class2;
+        }
     }
-    
-    return matrix;
+
+    var tr = table.children;
+    var mineFieldLen = tr.length;
+    var td = tr[0].children;
+    var mineLineLen = td.length;
+    function makeMatrix(a,b){
+        var line = [];
+        for(var i = 0; i < b; i++){
+            line.push(false);
+        }
+        var matrix = [];
+        for(var j = 0; j < a; j++){
+            matrix.push(line);
+        }
+        
+        return matrix;
+    }
+    var mineMatrix = makeMatrix(mineFieldLen,mineLineLen);
+    console.log(mineMatrix);
 }
-var mineMatrix = makeMatrix(mineFieldLen,mineLineLen);
-console.log(mineMatrix);
 
 function minesweeper(matrix) {
     //给雷区加上边界
