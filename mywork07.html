@@ -191,13 +191,22 @@
   <script src='minesweeper.js'></script>
   <script>
     $(document).ready(function(){
+
     	makeNoMineField("mineField","untouched","cleared");
+
     	$("#noMine").mousedown(function(){
     		$("#noMine").removeClass("btnInner").addClass("cleared");
     	}).mouseup(function(){
     		$("#noMine").removeClass("cleared").addClass("btnInner");
     		makeNoMineField("mineField","untouched","cleared");
     	});
+
+    	$("#newMine").mousedown(function(){
+    		$("#newMine").removeClass("btnInner").addClass("cleared");
+    	}).mouseup(function(){
+    		$("#newMine").removeClass("cleared").addClass("btnInner");
+    	});
+    	
     });
   </script>
  </body>
