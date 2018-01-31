@@ -8,27 +8,33 @@
   <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <style>
+  html,body{
+      -webkit-touch-callout:none ;
+      -webkit-text-size-adjust:none ;
+      -webkit-tap-highlight-color:transparent ;
+      -webkit-user-select:none ;
+    }
   	body{
   	width: 320px; margin: 0px auto;
   	}
     .outer{
-	position: relative;
-	margin: 4px;
-	padding: 4px;
-	height: 430px;
-	background-color: rgb(192, 192, 192);
+  	position: relative;
+  	margin: 4px;
+  	padding: 4px;
+  	height: 430px;
+  	background-color: rgb(192, 192, 192);
     }
     #mineField{
-	margin: 10px auto; border: 2px solid;
-	border-left-color: rgb(128, 128, 128);
-	border-top-color: rgb(128, 128, 128);
-	border-bottom-color: white;
-	border-right-color: white;
-	border-collapse: separate; border-spacing: 0px;
+  	margin: 10px auto; border: 2px solid;
+  	border-left-color: rgb(128, 128, 128);
+  	border-top-color: rgb(128, 128, 128);
+  	border-bottom-color: white;
+  	border-right-color: white;
+  	border-collapse: separate; border-spacing: 0px;
     }
     #mineField td{
-	width: 22px; height: 22px;
-	background-color: rgb(192, 192, 192); 
+  	width: 22px; height: 22px;
+  	background-color: rgb(192, 192, 192); 
 	}
     .cleared{
     border: 2px solid;
@@ -61,16 +67,16 @@
    }
    .btnOuter{
    	display: inline-block;
-	border: 2px solid;
-	width: fit-content;
-	border-left-color: white;
-	border-top-color: white;
-	border-bottom-color: rgb(128, 128, 128);
-	border-right-color: rgb(128, 128, 128);
+  	border: 2px solid;
+  	width: fit-content;
+  	border-left-color: white;
+  	border-top-color: white;
+  	border-bottom-color: rgb(128, 128, 128);
+  	border-right-color: rgb(128, 128, 128);
    }
    .btnInner{
-	border: 2px solid;
-	height: 22px;
+  	border: 2px solid;
+  	height: 22px;
     border-left-color: white;
     border-top-color: white;
     border-right-color: rgb(128, 128, 128);
@@ -205,6 +211,7 @@
     		$("#newMine").removeClass("btnInner").addClass("cleared");
     	}).mouseup(function(){
     		$("#newMine").removeClass("cleared").addClass("btnInner");
+        makeMineField("mineField","untouched","cleared");
     	});
     	
     });
