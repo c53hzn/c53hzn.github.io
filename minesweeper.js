@@ -52,10 +52,8 @@ function minesweeper(matrix) {
         var sum = 0;
         for(var i = 0; i < arr.length; i++){
             for(var j = 0; j < arr[i].length; j++){
-            	if(arr[i][j]){
-            		if(!(i ==1 && j == 1)){//9宫格正中间的不参与计算，第二个的index是1不是222！！！
-            			sum++;
-            		}
+            	if(arr[i][j] && !(i ==1 && j == 1)){//9宫格正中间的不参与计算，第二个的index是1不是222！！！
+			sum++;
             	}
             }
         }
