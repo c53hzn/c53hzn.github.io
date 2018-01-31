@@ -9,6 +9,7 @@ function makeNoMineField(tableId,class1, class2){
             this.className = class2;
         }
     }
+    console.log("no mines here");
 }
 
 function makeMineField(tableId,class1, class2){
