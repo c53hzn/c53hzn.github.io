@@ -68,7 +68,7 @@ function makeMineField(tableId,class1, class2){
         		for(var mm = 0; mm < tds.length; mm++){
         			if(numberedMatrix[Math.floor(mm / mineLineLen)][mm % mineLineLen].mine){
         				tds[mm].className = class2;
-        				tds[mm].innerHTML = "<div style='width: 100%; height: 100%; text-align: center;'>O</div>";
+        				tds[mm].innerHTML = "<div style='width: 100%; height: 100%; padding: 0px auto; margin: 0px; text-align: center;'>O</div>";
         			}
         		}
         		for(var nn = 0; nn < tds.length; nn++){
@@ -81,28 +81,28 @@ function makeMineField(tableId,class1, class2){
 	            	case 0:
 	            	break;
 	            	case 1:
-	            	this.innerHTML = "<div style='width: 100%; height: 100%; text-align: center; color: blue; font-weight: bold;'>1</div>";
+	            	this.innerHTML = "<div class='mineNumber' style='color: blue;'>1</div>";
 	            	break;
 	            	case 2:
-	            	this.innerHTML = "<div style='width: 100%; height: 100%; text-align: center; color: green; font-weight: bold;'>2</div>";
+	            	this.innerHTML = "<div class='mineNumber' style='color: green;'>2</div>";
 	            	break;
 	            	case 3:
-	            	this.innerHTML = "<div style='width: 100%; height: 100%; text-align: center; color: red; font-weight: bold;'>3</div>";
+	            	this.innerHTML = "<div class='mineNumber' style='color: red;'>3</div>";
 	            	break;
 	            	case 4:
-	            	this.innerHTML = "<div style='width: 100%; height: 100%; text-align: center; color: darkblue; font-weight: bold;'>4</div>";
+	            	this.innerHTML = "<div class='mineNumber' style='color: darkblue;'>4</div>";
 	            	break;
 	            	case 5:
-	            	this.innerHTML = "<div style='width: 100%; height: 100%; text-align: center; color: darkred; font-weight: bold;'>5</div>";
+	            	this.innerHTML = "<div class='mineNumber' style='color: darkred;'>5</div>";
 	            	break;
 	            	case 6:
-	            	this.innerHTML = "<div style='width: 100%; height: 100%; text-align: center; color: lightblue; font-weight: bold;'>6</div>";
+	            	this.innerHTML = "<div class='mineNumber' style='color: lightblue;'>6</div>";
 	            	break;
 	            	case 7:
-	            	this.innerHTML = "<div style='width: 100%; height: 100%; text-align: center; color: black; font-weight: bold;'>7</div>";
+	            	this.innerHTML = "<div class='mineNumber' style='color: black;'>7</div>";
 	            	break;
 	            	case 8:
-	            	this.innerHTML = "<div style='width: 100%; height: 100%; text-align: center; color: rgb(128, 128, 128); font-weight: bold;'>8</div>";
+	            	this.innerHTML = "<div class='mineNumber' style='color: rgb(128, 128, 128);'>8</div>";
 	            	break;
 	            }
         	}
