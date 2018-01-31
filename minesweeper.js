@@ -9,6 +9,19 @@ function makeNoMineField(tableId,class1, class2){
             this.className = class2;
         }
     }
+}
+
+function makeMineField(tableId,class1, class2){
+    var table = document.getElementById(tableId);
+    var tds = table.getElementsByTagName("td");
+    for(var k = 0; k < tds.length; k++){
+        tds[k].className = class1;
+    }
+    for(var m = 0; m < tds.length; m++){
+        tds[m].onclick = function(){
+            this.className = class2;
+        }
+    }
 
     var tr = table.children;
     var mineFieldLen = tr.length;
