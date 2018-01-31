@@ -68,7 +68,7 @@ function makeMineField(tableId,class1, class2){
         		for(var mm = 0; mm < tds.length; mm++){
         			if(numberedMatrix[Math.floor(mm / mineLineLen)][mm % mineLineLen].mine){
         				tds[mm].className = class2;
-        				tds[mm].innerHTML = "<div style='width: 100%; height: 100%; padding: 0px auto; margin: 0px; text-align: center;'>O</div>";
+        				tds[mm].innerHTML = "<div class='mineNumber'>O</div>";
         			}
         		}
         		for(var nn = 0; nn < tds.length; nn++){
