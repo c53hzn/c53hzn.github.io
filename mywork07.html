@@ -31,6 +31,7 @@
   	border-collapse: separate; border-spacing: 0px;
     }
     #mineField td{
+    position: relative;
   	width: 22px; max-width: 22px; height: 22px;
   	background-color: rgb(192, 192, 192); 
 	}
@@ -86,13 +87,20 @@
    #noMineOuter{
    	margin: 0px auto auto 23px;
    }
-   #newMineOuter, #flagOuter{
-   	margin: 0px auto auto 21px;
+   #newMineOuter, #flagOuter, .counterOuter{
+   	margin: 0px auto auto 12px;
    }
-   #flagOuter{
-    margin: 0px auto auto 21px;
+   .counterOuter{
+    display: inline-block;
+    background-color: black;
+    color: red;
+    border: 2px solid rgb(90, 84, 84);
+    width: fit-content;
    }
-   #newMine, #newFlag{
+   .counterInner{
+    text-align: right;
+   }
+   #newMine, #newFlag, .counterInner{
    	position: relative;
    	width: 22px;
    }
@@ -132,6 +140,31 @@
    	border-bottom: 2px solid black;
    	border-bottom-left-radius: 10px;
    	border-bottom-right-radius: 10px;
+   }
+   .flag{
+    position: absolute;
+    top: 2px; left: 3px;
+    width: 0; 
+    height: 0; 
+    border-top: 5px solid transparent; 
+    border-right: 10px solid red; 
+    border-bottom: 5px solid transparent;
+   }
+   .pole{
+    position: absolute;
+    margin: 0px; padding: 0px;
+    border: none;
+    top: 2.5px; left: 12px;
+    width: 2px; height: 16px;
+    background-color: black;
+   }
+   .stand{
+    position: absolute;
+    margin: 0px; padding: 0px;
+    border: none;
+    top: 17px; left: 5px;
+    width: 13px; height: 2px;
+    background-color: black;
    }
    .mineNumber{
     width: 22px; height: 22px;
@@ -215,11 +248,14 @@
     <div class="btnOuter" id="flagOuter">
       <div id="newFlag" class="btnInner">
         &nbsp;
-        <div class="faceOuter">
-          <div class="eyeLeft"></div>
-          <div class="eyeRight"></div>
-          <div class="smileLips"></div>
-        </div>
+        <div class="flag"></div>
+        <div class="pole"></div>
+        <div class="stand"></div>
+      </div>
+    </div>
+    <div class="counterOuter">
+      <div id="counter" class="counterInner">
+        15
       </div>
     </div>
   </div>

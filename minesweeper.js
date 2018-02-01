@@ -67,8 +67,23 @@ function makeMineField(tableId,class1, class2, mineNumClass){
     var numberedMatrix = minesweeper(mineMatrix);
     console.log(numberedMatrix);
     for(var k = 0; k < tds.length; k++){
+    	var mineCountDown = document.getElementById("counter");
+    	mineCountDown.innerHTML = "15";
+    	var mineCountDownContent = Number(mineCountDown.innerHTML);
         tds[k].className = class1;
         tds[k].innerHTML = "";
+        tds[k].oncontextmenu = function(){
+        	if(this.innerHTML){
+        		if(this.innerHTML.match(/[^\d]/)){
+        			console.log(this.innerHTML);
+        			this.innerHTML = "";
+	        		mineCountDown.innerHTML = ++mineCountDownContent;
+        		}
+        	}else{
+        		this.innerHTML = '<div class="flag"></div><div class="pole"></div><div class="stand"></div>';
+	        	mineCountDown.innerHTML = --mineCountDownContent;
+        	}
+        }
         tds[k].onclick = function(){
         	if(numberedMatrix[this.parentNode.rowIndex][this.cellIndex].mine == true){
         		for(var mm = 0; mm < tds.length; mm++){
