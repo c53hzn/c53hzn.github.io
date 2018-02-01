@@ -68,7 +68,7 @@ function makeMineField(tableId,class1, class2){
         		for(var mm = 0; mm < tds.length; mm++){
         			if(numberedMatrix[Math.floor(mm / mineLineLen)][mm % mineLineLen].mine){
         				tds[mm].className = class2;
-        				tds[mm].innerHTML = "<div class='mineNumber'>O</div>";
+        				tds[mm].innerHTML = "<div class='mineNumber'>&times;</div>";
         			}
         		}
         		for(var nn = 0; nn < tds.length; nn++){
@@ -105,6 +105,18 @@ function makeMineField(tableId,class1, class2){
 	            	this.innerHTML = "<div class='mineNumber' style='color: rgb(128, 128, 128);'>8</div>";
 	            	break;
 	            }
+                var tableNow = document.getElementById(tableId);
+                var tdUntouched = tableNow.getElementsByClassName("untouched");
+                if(tdUntouched.length == 15){
+                    for(var x = 0; x < tds.length; x++){
+                        if(numberedMatrix[Math.floor(x / mineLineLen)][x % mineLineLen].mine){
+                            tds[x].innerHTML = "<div class='mineNumber' style='color: green;'>&radic;</div>";
+                        }
+                    }
+                    for(var y = 0; y < tds.length; y++){
+                        tds[y].onclick = function(){};
+                    }
+                }
         	}
         }
     }
