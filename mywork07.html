@@ -1,258 +1,170 @@
-<!DOCTYPE html>
-<html lang="zh">
- <head>
-  <meta charset="utf-8" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  <title>MineSweeper - 扫雷</title>
-  <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-  <meta name="format-detection" content="telephone=no" />
-  <style>
-  html,body{
-      -webkit-tap-highlight-color:transparent ;
-      -webkit-user-select:none ;
+function makeNoMineField(tableId,class1, class2){
+    var table = document.getElementById(tableId);
+    var tds = table.getElementsByTagName("td");
+    for(var k = 0; k < tds.length; k++){
+        tds[k].className = class1;
     }
-  	body{
-  	width: 320px; max-width: 320px; margin: 0px auto;
-  	}
-    .outer{
-  	margin: 4px 5px;
-  	padding: 4px;
-    width: 300px;
-  	height: 430px;
-  	background-color: rgb(192, 192, 192);
+    for(var m = 0; m < tds.length; m++){
+    	tds[m].innerHTML = "";
+        tds[m].onclick = function(){
+            this.className = class2;
+        }
     }
-    #mineField{
-  	margin: 10px auto; border: 2px solid;
-  	border-left-color: rgb(128, 128, 128);
-  	border-top-color: rgb(128, 128, 128);
-  	border-bottom-color: white;
-  	border-right-color: white;
-  	border-collapse: separate; border-spacing: 0px;
+    console.log("no mines here");
+}
+
+function makeMineField(tableId,class1, class2){
+    var table = document.getElementById(tableId);
+    var tds = table.getElementsByTagName("td");
+
+    var tbody = table.children;
+    var tr = tbody[0].children;
+    var mineFieldLen = tr.length;
+    var td = tr[0].children;
+    var mineLineLen = td.length;
+    function makeMatrix(a,b){
+    	console.log("a = " + a + ", b = " + b)
+        var matrix = [];
+        for(var j = 0; j < a; j++){
+        	var line = [];
+	        for(var i = 0; i < b; i++){
+	        	var obj = {"mine":false,"num":-1};
+	            line.push(obj);
+	        }
+            matrix.push(line);
+        }
+
+        var nthMine = [];
+        var tempObj = {};
+        var index = -1;
+        function toGenerateNth(){
+        	if(nthMine.length < 15){
+        		index = parseInt(Math.random() * (a * b - 1),10);
+        		if(!tempObj[index]){
+        			tempObj[index] = true;
+        			console.log(Math.floor(index / b) + ", " + (index % b));
+        			nthMine.push(index);
+        			toGenerateNth();
+        		}else{
+        			toGenerateNth();
+        		}
+
+        	}
+        }
+        toGenerateNth();
+        for(var n = 0; n < nthMine.length; n++){
+        	matrix[Math.floor(nthMine[n]/b)][nthMine[n] % b].mine = true;
+        }
+        return matrix;
     }
-    #mineField td{
-  	width: 22px; max-width: 22px; height: 22px;
-  	background-color: rgb(192, 192, 192); 
+    var mineMatrix = makeMatrix(mineFieldLen,mineLineLen);
+    var numberedMatrix = minesweeper(mineMatrix);
+    console.log(numberedMatrix);
+    for(var k = 0; k < tds.length; k++){
+        tds[k].className = class1;
+        tds[k].innerHTML = "";
+        tds[k].onclick = function(){
+        	if(numberedMatrix[this.parentNode.rowIndex][this.cellIndex].mine == true){
+        		for(var mm = 0; mm < tds.length; mm++){
+        			if(numberedMatrix[Math.floor(mm / mineLineLen)][mm % mineLineLen].mine){
+        				tds[mm].className = class2;
+        				tds[mm].innerHTML = "<div class='mineNumber'>&times;</div>";
+        			}
+        		}
+        		for(var nn = 0; nn < tds.length; nn++){
+        			tds[nn].onclick = function(){};
+        		}
+        	}else{
+        		this.className = class2;
+	            var innerNum = numberedMatrix[this.parentNode.rowIndex][this.cellIndex].num;
+	            switch(innerNum){
+	            	case 0:
+	            	break;
+	            	case 1:
+	            	this.innerHTML = "<div class='mineNumber' style='color: blue;'>1</div>";
+	            	break;
+	            	case 2:
+	            	this.innerHTML = "<div class='mineNumber' style='color: green;'>2</div>";
+	            	break;
+	            	case 3:
+	            	this.innerHTML = "<div class='mineNumber' style='color: red;'>3</div>";
+	            	break;
+	            	case 4:
+	            	this.innerHTML = "<div class='mineNumber' style='color: darkblue;'>4</div>";
+	            	break;
+	            	case 5:
+	            	this.innerHTML = "<div class='mineNumber' style='color: darkred;'>5</div>";
+	            	break;
+	            	case 6:
+	            	this.innerHTML = "<div class='mineNumber' style='color: lightblue;'>6</div>";
+	            	break;
+	            	case 7:
+	            	this.innerHTML = "<div class='mineNumber' style='color: black;'>7</div>";
+	            	break;
+	            	case 8:
+	            	this.innerHTML = "<div class='mineNumber' style='color: rgb(128, 128, 128);'>8</div>";
+	            	break;
+	            }
+                var tableNow = document.getElementById(tableId);
+                var tdNow = tableNow.getElementsByTagName("td");
+                var tdUntouched = tdNow.getElementsByClassName("untouched");
+                if(tdUntouched.length == ){
+                    for(var x = 0; x < 15; x++){
+                        tdUntouched[x].className = class2;
+                        tdUntouched[x].innerHTML = "<div class='mineNumber' style='background: green;'>&times;</div>";
+                    }
+                    for(var y = 0; y < tds.length; y++){
+                        tds[y].onclick = function(){};
+                    }
+                }
+        	}
+        }
+    }
+}
+
+function minesweeper(matrix) {
+    //给雷区加上边界
+	function toExpand(arr){
+		var line = [];
+		var newArr = [];
+		var obj = {"mine":false,"num":-1};
+		for(var i = 0; i < arr[0].length + 2; i++){
+			line.push(obj);
+		}
+		newArr.push(line);
+		for(var j = 0; j < arr.length; j++){
+			arr[j].unshift(obj);
+			arr[j].push(obj);
+			newArr.push(arr[j]);
+		}
+		newArr.push(line);
+		return newArr;
 	}
-    .cleared{
-    border: 2px solid;
-    border-left-color: rgb(128, 128, 128);
-    border-top-color: rgb(128, 128, 128);
-    border-bottom-color: white;
-    border-right-color: white;
+    //给每一个方格计算数字
+    function toBlur(arr){
+        var sum = 0;
+        for(var i = 0; i < arr.length; i++){
+            for(var j = 0; j < arr[i].length; j++){
+            	if(arr[i][j].mine && !(i ==1 && j == 1)){//9宫格正中间的不参与计算，第二个的index是1不是222！！！
+			sum++;
+            	}
+            }
+        }
+        arr[1][1].num = sum;
+        return arr[1][1];
     }
-    .cleared:hover{}
-    .untouched{
-    border: 2px solid;
-    border-left-color: white;
-    border-top-color: white;
-    border-right-color: rgb(128, 128, 128);
-    border-bottom-color: rgb(128, 128, 128);
-    cursor: pointer;
+    var expanded = toExpand(matrix);//加了边界的雷区
+    var newMatrix = [];//用来存放标记了数字的雷区
+    for(var i = 0; i < expanded.length - 2; i++){
+        var newLine = [];
+        for(var j = 0; j < expanded[i].length - 2; j++){
+            var line = [];
+            line.push(expanded[i].slice(j,j + 3));//从第j个到第j+3前面的那个: j, j+1, j+2
+            line.push(expanded[i + 1].slice(j,j + 3));
+            line.push(expanded[i + 2].slice(j,j + 3));
+            newLine.push(toBlur(line));
+        }
+        newMatrix.push(newLine);
     }
-    .untouched:hover{}
-   #backToIndex{
-   	position: absolute;
-   	bottom: 20px;
-    right: 10px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    background-color: rgb(128, 128, 128);
-    color: white;
-    font-size: 19px;
-    line-height: 50px;
-    text-align: center;
-    box-shadow: 0px 0px 5px black;
-   }
-   .btnOuter{
-   	display: inline-block;
-  	border: 2px solid;
-  	width: fit-content;
-  	border-left-color: white;
-  	border-top-color: white;
-  	border-bottom-color: rgb(128, 128, 128);
-  	border-right-color: rgb(128, 128, 128);
-   }
-   .btnInner{
-  	border: 2px solid;
-  	height: 22px;
-    border-left-color: white;
-    border-top-color: white;
-    border-right-color: rgb(128, 128, 128);
-    border-bottom-color: rgb(128, 128, 128);
-    cursor: pointer;
-   }
-   #noMineOuter{
-   	margin: 10px auto auto 23px;
-   }
-   #newMineOuter{
-   	margin: 10px auto auto 21px;
-   }
-   #newMine{
-   	position: relative;
-   	width: 22px;
-   }
-   .faceOuter{
-   	position: absolute;
-   	top: .5px;
-   	left: 1px;
-   	width: 20px;
-   	height: 20px;
-   	border-radius: 20px;
-   	background-color: yellow;
-   }
-   .eyeLeft{
-   	position: absolute;
-   	top: 5px;
-   	left: 6px;
-   	width: 2px;
-   	height: 2px;
-   	border-radius: 2px;
-   	background-color: black;
-   }
-   .eyeRight{
-   	position: absolute;
-   	top: 5px;
-   	left: 12px;
-   	width: 2px;
-   	height: 2px;
-   	border-radius: 2px;
-   	background-color: black;
-   }
-   .smileLips{
-   	position: absolute;
-   	top: 5px;
-   	left: 5px;
-   	width: 10px;
-   	height: 10px;
-   	border-bottom: 2px solid black;
-   	border-bottom-left-radius: 10px;
-   	border-bottom-right-radius: 10px;
-   }
-   .mineNumber{
-    width: 100%; max-width: 100%; height: 100%; max-height: 100%; padding: 0px; margin: 0px; text-align: center; font-weight: bold; overflow: hidden;
-   }
-   @media all and (max-width: 320px){
-   	.outer{
-   		position: fixed;
-   		padding: 0px;
-   		margin: 0px;
-   		top: 4px;
-   		width: 320px;
-   	}
-   }
-  </style>
- </head>
- <body>
-  <div class="outer">
-    <table id="mineField">
-      <tbody>
-        <tr>
-          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-      </tbody>
-    </table>
-    <a class="noDecorLink" href="index.html" target="_self">
-     <div id="backToIndex">
-       Back
-     </div>
-    </a>
-    <div class="btnOuter" id="noMineOuter">
-    	<div id="noMine" class="btnInner" onselectstart="return false">无雷纯享版</div>
-    </div>
-    <div class="btnOuter" id="newMineOuter">
-    	<div id="newMine" class="btnInner">
-    		&nbsp;
-    		<div class="faceOuter">
-    			<div class="eyeLeft"></div>
-    			<div class="eyeRight"></div>
-    			<div class="smileLips"></div>
-    		</div>
-    	</div>
-    </div>
-  </div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-  <script src='minesweeper.js'></script>
-  <script>
-	var lastTouchEnd = 0; 
-	document.documentElement.addEventListener
-	(
-	 'touchend', 
-	 function (event)
-	 {
-	  var now = Date.now();
-	  if (now - lastTouchEnd <= 500) 
-	  {
-	   event.preventDefault(); 
-	  } 
-	  lastTouchEnd = now; 
-	 },
-	 false
-	);
-	  
-    $(document).ready(function(){
-		var lastTouchEnd = 0;
-		document.documentElement.addEventListener('touchend', function (event) {
-		  var now = Date.now();
-		  if (now - lastTouchEnd <= 300) {
-		    event.preventDefault();
-		  }
-		  lastTouchEnd = now;
-		}, false);
-
-    	makeMineField("mineField","untouched","cleared");
-	    
-
-	    
-    	$("#noMine").mousedown(function(){
-    		$("#noMine").removeClass("btnInner").addClass("cleared");
-    	}).mouseup(function(){
-    		$("#noMine").removeClass("cleared").addClass("btnInner");
-    		makeNoMineField("mineField","untouched","cleared");
-    	});
-
-    	$("#newMine").mousedown(function(){
-    		$("#newMine").removeClass("btnInner").addClass("cleared");
-    	}).mouseup(function(){
-    		$("#newMine").removeClass("cleared").addClass("btnInner");
-        makeMineField("mineField","untouched","cleared");
-    	});
-    	
-    });
-  </script>
- </body>
-</html>
+    return newMatrix;
+}
