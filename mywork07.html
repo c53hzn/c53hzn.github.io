@@ -246,7 +246,7 @@
     	</div>
     </div>
     <div class="btnOuter" id="flagOuter">
-      <div id="newFlag" class="btnInner">
+      <div id="newFlag" class="btnInner" draggable="true">
         &nbsp;
         <div class="flag"></div>
         <div class="pole"></div>
@@ -288,12 +288,6 @@
     		$("#newMine").removeClass("cleared").addClass("btnInner");
         makeMineField("mineField","untouched","cleared","mineNumber");
     	});
-    	
-      $("#newFlag").mousedown(function(){
-        $("#newFlag").removeClass("btnInner").addClass("cleared");
-      }).mouseup(function(){
-        $("#newFlag").removeClass("cleared").addClass("btnInner");
-      });
 
     });
   </script>

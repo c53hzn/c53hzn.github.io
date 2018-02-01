@@ -43,7 +43,7 @@ function makeMineField(tableId,class1, class2, mineNumClass){
         var nthMine = [];
         var tempObj = {};
         var index = -1;
-        function toGenerateNth(){
+        function toGenerateNth(){//生成15个随机数
         	if(nthMine.length < 15){
         		index = parseInt(Math.random() * (a * b - 1),10);
         		if(!tempObj[index]){
@@ -66,80 +66,112 @@ function makeMineField(tableId,class1, class2, mineNumClass){
     var mineMatrix = makeMatrix(mineFieldLen,mineLineLen);
     var numberedMatrix = minesweeper(mineMatrix);
     console.log(numberedMatrix);
+
+function allowDrop(ev)
+{
+ev.preventDefault();
+}
+
+function drag(ev)
+{
+ev.dataTransfer.setData("Text",ev.target.id);
+}
+
+function drop(ev)
+{
+ev.preventDefault();
+var data=ev.dataTransfer.getData("Text");
+ev.target.appendChild(document.getElementById(data));
+}
+
     for(var k = 0; k < tds.length; k++){
     	var mineCountDown = document.getElementById("counter");
     	mineCountDown.innerHTML = "15";
     	var mineCountDownContent = Number(mineCountDown.innerHTML);
         tds[k].className = class1;
         tds[k].innerHTML = "";
-        tds[k].oncontextmenu = function(){
+        
+        function toAddFlag(){//插小旗，此时左击无效，再右击则取消小旗
         	if(this.innerHTML){
-        		if(this.innerHTML.match(/[^\d]/)){
-        			console.log(this.innerHTML);
+        		if(this.innerHTML.match(/^<div/gm)){
         			this.innerHTML = "";
 	        		mineCountDown.innerHTML = ++mineCountDownContent;
         		}
         	}else{
-        		this.innerHTML = '<div class="flag"></div><div class="pole"></div><div class="stand"></div>';
-	        	mineCountDown.innerHTML = --mineCountDownContent;
+        		if(this.className == class1){
+        			this.innerHTML = '<div class="flag"></div><div class="pole"></div><div class="stand"></div>';
+		        	mineCountDown.innerHTML = --mineCountDownContent;
+        		}
         	}
         }
+
+        tds[k].oncontextmenu = toAddFlag;//右击插小旗
+
+tds[k].addEventListener("dragenter", function(event) {
+    // 阻止浏览器默认事件
+    event.preventDefault();
+}, false);
+tds[k].addEventListener("dragover", allowDrop(event), false);
+tds[k].addEventListener("drop", drop(event), false);
+
         tds[k].onclick = function(){
-        	if(numberedMatrix[this.parentNode.rowIndex][this.cellIndex].mine == true){
-        		for(var mm = 0; mm < tds.length; mm++){
-        			if(numberedMatrix[Math.floor(mm / mineLineLen)][mm % mineLineLen].mine){
-        				tds[mm].className = class2;
-        				tds[mm].innerHTML = "<span class='" + mineNumClass + "'>&times;</span>";
-        			}
-        		}
-        		for(var nn = 0; nn < tds.length; nn++){
-        			tds[nn].onclick = function(){};
-        		}
-        	}else{
-        		this.className = class2;
-        		var row = this.parentNode.rowIndex;
-        		var cell = this.cellIndex;
-	            var innerNum = numberedMatrix[row][cell].num;
-	            switch(innerNum){
-	            	case 0:
-	            	break;
-	            	case 1:
-	            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: blue;'>1</span>";
-	            	break;
-	            	case 2:
-	            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: green;'>2</span>";
-	            	break;
-	            	case 3:
-	            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: red;'>3</span>";
-	            	break;
-	            	case 4:
-	            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: darkblue;'>4</span>";
-	            	break;
-	            	case 5:
-	            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: darkred;'>5</span>";
-	            	break;
-	            	case 6:
-	            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: lightblue;'>6</span>";
-	            	break;
-	            	case 7:
-	            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: black;'>7</span>";
-	            	break;
-	            	case 8:
-	            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: rgb(128, 128, 128);'>8</span>";
-	            	break;
-	            }
-                var tableNow = document.getElementById(tableId);
-                var tdUntouched = tableNow.getElementsByClassName("untouched");
-                if(tdUntouched.length == 15){
-                    for(var x = 0; x < tds.length; x++){
-                        if(numberedMatrix[Math.floor(x / mineLineLen)][x % mineLineLen].mine){
-                            tds[x].innerHTML = "<div class='" + mineNumClass + "' style='color: green;'>&radic;</div>";
-                        }
-                    }
-                    for(var y = 0; y < tds.length; y++){
-                        tds[y].onclick = function(){};
-                    }
-                }
+        	if(!this.innerHTML){
+        		if(numberedMatrix[this.parentNode.rowIndex][this.cellIndex].mine == true){
+	        		for(var mm = 0; mm < tds.length; mm++){
+	        			if(numberedMatrix[Math.floor(mm / mineLineLen)][mm % mineLineLen].mine){
+	        				tds[mm].className = class2;
+	        				tds[mm].innerHTML = "<span class='" + mineNumClass + "'>&times;</span>";
+	        			}
+	        		}
+	        		for(var nn = 0; nn < tds.length; nn++){
+	        			tds[nn].onclick = function(){};
+	        		}
+	        	}else{
+	        		this.className = class2;
+	        		var row = this.parentNode.rowIndex;
+	        		var cell = this.cellIndex;
+		            var innerNum = numberedMatrix[row][cell].num;
+		            switch(innerNum){
+		            	case 0:
+		            	break;
+		            	case 1:
+		            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: blue;'>1</span>";
+		            	break;
+		            	case 2:
+		            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: green;'>2</span>";
+		            	break;
+		            	case 3:
+		            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: red;'>3</span>";
+		            	break;
+		            	case 4:
+		            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: darkblue;'>4</span>";
+		            	break;
+		            	case 5:
+		            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: darkred;'>5</span>";
+		            	break;
+		            	case 6:
+		            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: lightblue;'>6</span>";
+		            	break;
+		            	case 7:
+		            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: black;'>7</span>";
+		            	break;
+		            	case 8:
+		            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: rgb(128, 128, 128);'>8</span>";
+		            	break;
+		            }
+	                var tableNow = document.getElementById(tableId);
+	                var tdUntouched = tableNow.getElementsByClassName("untouched");
+	                if(tdUntouched.length == 15){
+	                    for(var x = 0; x < tds.length; x++){
+	                        if(numberedMatrix[Math.floor(x / mineLineLen)][x % mineLineLen].mine){
+	                            tds[x].innerHTML = "<div class='" + mineNumClass + "' style='color: green;'>&radic;</div>";
+	                        }
+	                    }
+	                    for(var y = 0; y < tds.length; y++){
+	                        tds[y].onclick = function(){};
+	                    }
+	                }
+	        	}
         	}
         }
     }
