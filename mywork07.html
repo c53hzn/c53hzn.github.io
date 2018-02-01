@@ -226,31 +226,16 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src='minesweeper.js'></script>
   <script>
-  	// var lastTouchEnd = 0; 
-  	// document.documentElement.addEventListener
-  	// (
-  	//  'touchend', 
-  	//  function (event)
-  	//  {
-  	//   var now = Date.now();
-  	//   if (now - lastTouchEnd <= 500) 
-  	//   {
-  	//    event.preventDefault(); 
-  	//   } 
-  	//   lastTouchEnd = now; 
-  	//  },
-  	//  false
-  	// );
+  	var lastTouchEnd = 0;
+    document.documentElement.addEventListener('touchend', function (event) {
+      var now = Date.now();
+      if (now - lastTouchEnd <= 500) {
+        event.preventDefault();
+      }
+      lastTouchEnd = now;
+    }, false);
 	  
     $(document).ready(function(){
-		var lastTouchEnd = 0;
-		document.documentElement.addEventListener('touchend', function (event) {
-		  var now = Date.now();
-		  if (now - lastTouchEnd <= 300) {
-		    event.preventDefault();
-		  }
-		  lastTouchEnd = now;
-		}, false);
 
     	makeMineField("mineField","untouched","cleared","mineNumber");
 	    
