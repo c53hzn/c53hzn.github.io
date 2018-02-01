@@ -131,7 +131,8 @@
    	border-bottom-right-radius: 10px;
    }
    .mineNumber{
-    width: 100%; max-width: 100%; height: 100%; max-height: 100%; padding: 0px; margin: 0px; text-align: center; font-weight: bold; overflow: hidden;
+    width: 22px; height: 22px;
+    padding: 0px; margin: 0px 0px 0px 6px; text-align: center; font-weight: bold; overflow: hidden;
    }
    @media all and (max-width: 320px){
    	.outer{
@@ -235,7 +236,7 @@
 		  lastTouchEnd = now;
 		}, false);
 
-    	makeMineField("mineField","untouched","cleared");
+    	makeMineField("mineField","untouched","cleared","mineNumber");
 	    
 
 	    
@@ -250,7 +251,7 @@
     		$("#newMine").removeClass("btnInner").addClass("cleared");
     	}).mouseup(function(){
     		$("#newMine").removeClass("cleared").addClass("btnInner");
-        makeMineField("mineField","untouched","cleared");
+        makeMineField("mineField","untouched","cleared","mineNumber");
     	});
     	
     });

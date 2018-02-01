@@ -13,7 +13,7 @@ function makeNoMineField(tableId,class1, class2){
     console.log("no mines here");
 }
 
-function makeMineField(tableId,class1, class2){
+function makeMineField(tableId,class1, class2, mineNumClass){
     var table = document.getElementById(tableId);
     var tds = table.getElementsByTagName("td");
 
@@ -68,7 +68,7 @@ function makeMineField(tableId,class1, class2){
         		for(var mm = 0; mm < tds.length; mm++){
         			if(numberedMatrix[Math.floor(mm / mineLineLen)][mm % mineLineLen].mine){
         				tds[mm].className = class2;
-        				tds[mm].innerHTML = "<div class='mineNumber'>&times;</div>";
+        				tds[mm].innerHTML = "<span class='" + mineNumClass + "'>&times;</span>";
         			}
         		}
         		for(var nn = 0; nn < tds.length; nn++){
@@ -76,33 +76,35 @@ function makeMineField(tableId,class1, class2){
         		}
         	}else{
         		this.className = class2;
-	            var innerNum = numberedMatrix[this.parentNode.rowIndex][this.cellIndex].num;
+        		var row = this.parentNode.rowIndex;
+        		var cell = this.cellIndex;
+	            var innerNum = numberedMatrix[row][cell].num;
 	            switch(innerNum){
 	            	case 0:
 	            	break;
 	            	case 1:
-	            	this.innerHTML = "<div class='mineNumber' style='color: blue;'>1</div>";
+	            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: blue;'>1</span>";
 	            	break;
 	            	case 2:
-	            	this.innerHTML = "<div class='mineNumber' style='color: green;'>2</div>";
+	            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: green;'>2</span>";
 	            	break;
 	            	case 3:
-	            	this.innerHTML = "<div class='mineNumber' style='color: red;'>3</div>";
+	            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: red;'>3</span>";
 	            	break;
 	            	case 4:
-	            	this.innerHTML = "<div class='mineNumber' style='color: darkblue;'>4</div>";
+	            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: darkblue;'>4</span>";
 	            	break;
 	            	case 5:
-	            	this.innerHTML = "<div class='mineNumber' style='color: darkred;'>5</div>";
+	            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: darkred;'>5</span>";
 	            	break;
 	            	case 6:
-	            	this.innerHTML = "<div class='mineNumber' style='color: lightblue;'>6</div>";
+	            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: lightblue;'>6</span>";
 	            	break;
 	            	case 7:
-	            	this.innerHTML = "<div class='mineNumber' style='color: black;'>7</div>";
+	            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: black;'>7</span>";
 	            	break;
 	            	case 8:
-	            	this.innerHTML = "<div class='mineNumber' style='color: rgb(128, 128, 128);'>8</div>";
+	            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: rgb(128, 128, 128);'>8</span>";
 	            	break;
 	            }
                 var tableNow = document.getElementById(tableId);
@@ -110,7 +112,7 @@ function makeMineField(tableId,class1, class2){
                 if(tdUntouched.length == 15){
                     for(var x = 0; x < tds.length; x++){
                         if(numberedMatrix[Math.floor(x / mineLineLen)][x % mineLineLen].mine){
-                            tds[x].innerHTML = "<div class='mineNumber' style='color: green;'>&radic;</div>";
+                            tds[x].innerHTML = "<div class='" + mineNumClass + "' style='color: green;'>&radic;</div>";
                         }
                     }
                     for(var y = 0; y < tds.length; y++){
