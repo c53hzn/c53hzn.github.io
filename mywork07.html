@@ -23,7 +23,7 @@
   	background-color: rgb(192, 192, 192);
     }
     #mineField{
-  	margin: 10px auto; border: 2px solid;
+  	margin: 8px auto 6px auto; border: 2px solid;
   	border-left-color: rgb(128, 128, 128);
   	border-top-color: rgb(128, 128, 128);
   	border-bottom-color: white;
@@ -84,12 +84,15 @@
     cursor: pointer;
    }
    #noMineOuter{
-   	margin: 10px auto auto 23px;
+   	margin: 0px auto auto 23px;
    }
-   #newMineOuter{
-   	margin: 10px auto auto 21px;
+   #newMineOuter, #flagOuter{
+   	margin: 0px auto auto 21px;
    }
-   #newMine{
+   #flagOuter{
+    margin: 0px auto auto 21px;
+   }
+   #newMine, #newFlag{
    	position: relative;
    	width: 22px;
    }
@@ -209,25 +212,35 @@
     		</div>
     	</div>
     </div>
+    <div class="btnOuter" id="flagOuter">
+      <div id="newFlag" class="btnInner">
+        &nbsp;
+        <div class="faceOuter">
+          <div class="eyeLeft"></div>
+          <div class="eyeRight"></div>
+          <div class="smileLips"></div>
+        </div>
+      </div>
+    </div>
   </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src='minesweeper.js'></script>
   <script>
-	var lastTouchEnd = 0; 
-	document.documentElement.addEventListener
-	(
-	 'touchend', 
-	 function (event)
-	 {
-	  var now = Date.now();
-	  if (now - lastTouchEnd <= 500) 
-	  {
-	   event.preventDefault(); 
-	  } 
-	  lastTouchEnd = now; 
-	 },
-	 false
-	);
+  	// var lastTouchEnd = 0; 
+  	// document.documentElement.addEventListener
+  	// (
+  	//  'touchend', 
+  	//  function (event)
+  	//  {
+  	//   var now = Date.now();
+  	//   if (now - lastTouchEnd <= 500) 
+  	//   {
+  	//    event.preventDefault(); 
+  	//   } 
+  	//   lastTouchEnd = now; 
+  	//  },
+  	//  false
+  	// );
 	  
     $(document).ready(function(){
 		var lastTouchEnd = 0;
@@ -240,8 +253,6 @@
 		}, false);
 
     	makeMineField("mineField","untouched","cleared","mineNumber");
-	    
-
 	    
     	$("#noMine").mousedown(function(){
     		$("#noMine").removeClass("btnInner").addClass("cleared");
@@ -257,6 +268,12 @@
         makeMineField("mineField","untouched","cleared","mineNumber");
     	});
     	
+      $("#newFlag").mousedown(function(){
+        $("#newFlag").removeClass("btnInner").addClass("cleared");
+      }).mouseup(function(){
+        $("#newFlag").removeClass("cleared").addClass("btnInner");
+      });
+
     });
   </script>
  </body>

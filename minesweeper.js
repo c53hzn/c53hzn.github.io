@@ -1,5 +1,8 @@
 function makeNoMineField(tableId,class1, class2){
     var table = document.getElementById(tableId);
+    table.oncontextmenu = function(e){
+	　　return false;
+	}
     var tds = table.getElementsByTagName("td");
     for(var k = 0; k < tds.length; k++){
         tds[k].className = class1;
@@ -15,6 +18,9 @@ function makeNoMineField(tableId,class1, class2){
 
 function makeMineField(tableId,class1, class2, mineNumClass){
     var table = document.getElementById(tableId);
+    table.oncontextmenu = function(e){
+	　　return false;
+	}
     var tds = table.getElementsByTagName("td");
 
     var tbody = table.children;
