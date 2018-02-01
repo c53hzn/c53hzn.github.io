@@ -184,6 +184,7 @@
         <tr>
           <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
         </tr>
+        
       </tbody>
     </table>
     <a class="noDecorLink" href="index.html" target="_self">
@@ -233,8 +234,10 @@
 		  }
 		  lastTouchEnd = now;
 		}, false);
+
     	makeMineField("mineField","untouched","cleared");
 	    
+
 	    
     	$("#noMine").mousedown(function(){
     		$("#noMine").removeClass("btnInner").addClass("cleared");
@@ -242,6 +245,7 @@
     		$("#noMine").removeClass("cleared").addClass("btnInner");
     		makeNoMineField("mineField","untouched","cleared");
     	});
+
     	$("#newMine").mousedown(function(){
     		$("#newMine").removeClass("btnInner").addClass("cleared");
     	}).mouseup(function(){
