@@ -12,29 +12,29 @@
       -webkit-tap-highlight-color:transparent ;
       -webkit-user-select:none ;
     }
-  	body{
-  	width: 320px; max-width: 320px; margin: 0px auto;
-  	}
+    body{
+    width: 320px; max-width: 320px; margin: 0px auto;
+    }
     .outer{
-  	margin: 4px 5px;
-  	padding: 4px;
+    margin: 4px 5px;
+    padding: 4px;
     width: 300px;
-  	height: 430px;
-  	background-color: rgb(192, 192, 192);
+    height: 430px;
+    background-color: rgb(192, 192, 192);
     }
     #mineField{
-  	margin: 8px auto 6px auto; border: 2px solid;
-  	border-left-color: rgb(128, 128, 128);
-  	border-top-color: rgb(128, 128, 128);
-  	border-bottom-color: white;
-  	border-right-color: white;
-  	border-collapse: separate; border-spacing: 0px;
+    margin: 8px auto 6px auto; border: 2px solid;
+    border-left-color: rgb(128, 128, 128);
+    border-top-color: rgb(128, 128, 128);
+    border-bottom-color: white;
+    border-right-color: white;
+    border-collapse: separate; border-spacing: 0px;
     }
     #mineField td{
     position: relative;
-  	width: 22px; max-width: 22px; height: 22px;
-  	background-color: rgb(192, 192, 192); 
-	}
+    width: 22px; max-width: 22px; height: 22px;
+    background-color: rgb(192, 192, 192); 
+  }
     .cleared{
     border: 2px solid;
     border-left-color: rgb(128, 128, 128);
@@ -53,8 +53,8 @@
     }
     .untouched:hover{}
    #backToIndex{
-   	position: absolute;
-   	bottom: 20px;
+    position: absolute;
+    bottom: 20px;
     right: 10px;
     width: 50px;
     height: 50px;
@@ -67,17 +67,17 @@
     box-shadow: 0px 0px 5px black;
    }
    .btnOuter{
-   	display: inline-block;
-  	border: 2px solid;
-  	width: fit-content;
-  	border-left-color: white;
-  	border-top-color: white;
-  	border-bottom-color: rgb(128, 128, 128);
-  	border-right-color: rgb(128, 128, 128);
+    display: inline-block;
+    border: 2px solid;
+    width: fit-content;
+    border-left-color: white;
+    border-top-color: white;
+    border-bottom-color: rgb(128, 128, 128);
+    border-right-color: rgb(128, 128, 128);
    }
    .btnInner{
-  	border: 2px solid;
-  	height: 22px;
+    border: 2px solid;
+    height: 22px;
     border-left-color: white;
     border-top-color: white;
     border-right-color: rgb(128, 128, 128);
@@ -85,10 +85,10 @@
     cursor: pointer;
    }
    #noMineOuter{
-   	margin: 0px auto auto 23px;
+    margin: 0px auto auto 23px;
    }
    #newMineOuter, #flagOuter, .counterOuter{
-   	margin: 0px auto auto 12px;
+    margin: 0px auto auto 12px;
    }
    .counterOuter{
     display: inline-block;
@@ -101,45 +101,45 @@
     text-align: right;
    }
    #newMine, #newFlag, .counterInner{
-   	position: relative;
-   	width: 22px;
+    position: relative;
+    width: 22px;
    }
    .faceOuter{
-   	position: absolute;
-   	top: .5px;
-   	left: 1px;
-   	width: 20px;
-   	height: 20px;
-   	border-radius: 20px;
-   	background-color: yellow;
+    position: absolute;
+    top: .5px;
+    left: 1px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: yellow;
    }
    .eyeLeft{
-   	position: absolute;
-   	top: 5px;
-   	left: 6px;
-   	width: 2px;
-   	height: 2px;
-   	border-radius: 2px;
-   	background-color: black;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: black;
    }
    .eyeRight{
-   	position: absolute;
-   	top: 5px;
-   	left: 12px;
-   	width: 2px;
-   	height: 2px;
-   	border-radius: 2px;
-   	background-color: black;
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: black;
    }
    .smileLips{
-   	position: absolute;
-   	top: 5px;
-   	left: 5px;
-   	width: 10px;
-   	height: 10px;
-   	border-bottom: 2px solid black;
-   	border-bottom-left-radius: 10px;
-   	border-bottom-right-radius: 10px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
    }
    .flag{
     position: absolute;
@@ -174,13 +174,13 @@
     display: block;
    }
    @media all and (max-width: 320px){
-   	.outer{
-   		position: fixed;
-   		padding: 0px;
-   		margin: 0px;
-   		top: 4px;
-   		width: 320px;
-   	}
+    .outer{
+      position: fixed;
+      padding: 0px;
+      margin: 0px;
+      top: 4px;
+      width: 320px;
+    }
    }
   </style>
  </head>
@@ -233,17 +233,17 @@
      </div>
     </a>
     <div class="btnOuter" id="noMineOuter">
-    	<div id="noMine" class="btnInner" onselectstart="return false">无雷纯享版</div>
+      <div id="noMine" class="btnInner" onselectstart="return false">无雷纯享版</div>
     </div>
     <div class="btnOuter" id="newMineOuter">
-    	<div id="newMine" class="btnInner">
-    		&nbsp;
-    		<div class="faceOuter">
-    			<div class="eyeLeft"></div>
-    			<div class="eyeRight"></div>
-    			<div class="smileLips"></div>
-    		</div>
-    	</div>
+      <div id="newMine" class="btnInner">
+        &nbsp;
+        <div class="faceOuter">
+          <div class="eyeLeft"></div>
+          <div class="eyeRight"></div>
+          <div class="smileLips"></div>
+        </div>
+      </div>
     </div>
     <div class="btnOuter" id="flagOuter">
       <div id="newFlag" class="btnInner" draggable="true">
@@ -262,7 +262,7 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src='minesweeper.js'></script>
   <script>
-  	var lastTouchEnd = 0;
+    var lastTouchEnd = 0;
     document.documentElement.addEventListener('touchend', function (event) {
       var now = Date.now();
       if (now - lastTouchEnd <= 500) {
@@ -270,25 +270,22 @@
       }
       lastTouchEnd = now;
     }, false);
-	  
+    
     $(document).ready(function(){
-
-    	makeMineField("mineField","untouched","cleared","mineNumber");
-	    
-    	$("#noMine").mousedown(function(){
-    		$("#noMine").removeClass("btnInner").addClass("cleared");
-    	}).mouseup(function(){
-    		$("#noMine").removeClass("cleared").addClass("btnInner");
-    		makeNoMineField("mineField","untouched","cleared");
-    	});
-
-    	$("#newMine").mousedown(function(){
-    		$("#newMine").removeClass("btnInner").addClass("cleared");
-    	}).mouseup(function(){
-    		$("#newMine").removeClass("cleared").addClass("btnInner");
+      makeMineField("mineField","untouched","cleared","mineNumber");
+      
+      $("#noMine").mousedown(function(){
+        $("#noMine").removeClass("btnInner").addClass("cleared");
+      }).mouseup(function(){
+        $("#noMine").removeClass("cleared").addClass("btnInner");
+        makeNoMineField("mineField","untouched","cleared");
+      });
+      $("#newMine").mousedown(function(){
+        $("#newMine").removeClass("btnInner").addClass("cleared");
+      }).mouseup(function(){
+        $("#newMine").removeClass("cleared").addClass("btnInner");
         makeMineField("mineField","untouched","cleared","mineNumber");
-    	});
-
+      });
     });
   </script>
  </body>
