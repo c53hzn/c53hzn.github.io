@@ -67,22 +67,7 @@ function makeMineField(tableId,class1, class2, mineNumClass){
     var numberedMatrix = minesweeper(mineMatrix);
     console.log(numberedMatrix);
 
-function allowDrop(ev)
-{
-ev.preventDefault();
-}
 
-function drag(ev)
-{
-ev.dataTransfer.setData("Text",ev.target.id);
-}
-
-function drop(ev)
-{
-ev.preventDefault();
-var data=ev.dataTransfer.getData("Text");
-ev.target.appendChild(document.getElementById(data));
-}
 
     for(var k = 0; k < tds.length; k++){
     	var mineCountDown = document.getElementById("counter");
@@ -91,7 +76,7 @@ ev.target.appendChild(document.getElementById(data));
         tds[k].className = class1;
         tds[k].innerHTML = "";
         
-        function toAddFlag(){//插小旗，此时左击无效，再右击则取消小旗
+        function toAddFlag(){//插小旗，计数减一，此时左击无效，再右击则取消小旗，计数加一
         	if(this.innerHTML){
         		if(this.innerHTML.match(/^<div/gm)){
         			this.innerHTML = "";
@@ -105,14 +90,12 @@ ev.target.appendChild(document.getElementById(data));
         	}
         }
 
-        tds[k].oncontextmenu = toAddFlag;//右击插小旗
+        tds[k].oncontextmenu = toAddFlag;//右击插小旗或者取消小旗
 
-tds[k].addEventListener("dragenter", function(event) {
-    // 阻止浏览器默认事件
-    event.preventDefault();
-}, false);
-tds[k].addEventListener("dragover", allowDrop(event), false);
-tds[k].addEventListener("drop", drop(event), false);
+        tds[k].addEventListener("dragover",function(e){
+        	e.preventDefault();
+        },false);
+        tds[k].addEventListener("drop",toAddFlag,true);
 
         tds[k].onclick = function(){
         	if(!this.innerHTML){
@@ -164,7 +147,7 @@ tds[k].addEventListener("drop", drop(event), false);
 	                if(tdUntouched.length == 15){
 	                    for(var x = 0; x < tds.length; x++){
 	                        if(numberedMatrix[Math.floor(x / mineLineLen)][x % mineLineLen].mine){
-	                            tds[x].innerHTML = "<div class='" + mineNumClass + "' style='color: green;'>&radic;</div>";
+	                            tds[x].innerHTML = '<div class="flag"></div><div class="pole"></div><div class="stand"></div>';
 	                        }
 	                    }
 	                    for(var y = 0; y < tds.length; y++){
