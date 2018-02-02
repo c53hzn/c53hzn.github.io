@@ -13,6 +13,8 @@ function makeNoMineField(tableId,class1, class2){
             this.className = class2;
         }
     }
+    var theFlag = document.getElementById("newFlag");
+    theFlag.onclick = function(){};
     console.log("no mines here");
 }
 
