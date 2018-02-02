@@ -157,6 +157,7 @@ function makeMineField(tableId,class1, class2, mineNumClass){
 		                    for(var x = 0; x < tds.length; x++){
 		                        if(numberedMatrix[Math.floor(x / mineLineLen)][x % mineLineLen].mine){
 		                            tds[x].innerHTML = '<div class="flag"></div><div class="pole"></div><div class="stand"></div>';
+                                    mineCountDown.innerHTML = "0";
 		                        }
 		                    }
 		                    for(var y = 0; y < tds.length; y++){
