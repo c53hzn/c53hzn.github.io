@@ -67,13 +67,14 @@ function makeMineField(tableId,class1, class2, mineNumClass){
     console.log(numberedMatrix);
 
     var theFlag = document.getElementById("newFlag");
-    theFlag.addEventListener("click",function(){
-    	if(theFlag.className == class1){
-    		theFlag.className = class2;
-    	}else{
-    		theFlag.className = class1;
-    	}
-    },true);
+    theFlag.onclick = function(){
+        console.log("theFlag.className = " + theFlag.className);
+        if(theFlag.className == class1){
+            theFlag.className = class2;
+        }else{
+            theFlag.className = class1;
+        }
+    };
 
     for(var k = 0; k < tds.length; k++){
     	var mineCountDown = document.getElementById("counter");
@@ -99,10 +100,11 @@ function makeMineField(tableId,class1, class2, mineNumClass){
 
         tds[k].oncontextmenu = toAddFlag;//右击插小旗或者取消小旗
 
-        tds[k].addEventListener("dragover",function(e){
-        	e.preventDefault();
-        },false);
-        tds[k].addEventListener("drop",toAddFlag,true);
+        //以下是按住并拖放至雷区的代码
+        // tds[k].addEventListener("dragover",function(e){
+        // 	e.preventDefault();
+        // },false);
+        // tds[k].addEventListener("drop",toAddFlag,true);
 
         tds[k].onclick = function(){
         	if(theFlag.className != class2){
@@ -152,7 +154,7 @@ function makeMineField(tableId,class1, class2, mineNumClass){
 			            	break;
 			            }
 		                var tableNow = document.getElementById(tableId);
-		                var tdUntouched = tableNow.getElementsByClassName("untouched");
+		                var tdUntouched = tableNow.getElementsByClassName(class1);
 		                if(tdUntouched.length == 15){
 		                    for(var x = 0; x < tds.length; x++){
 		                        if(numberedMatrix[Math.floor(x / mineLineLen)][x % mineLineLen].mine){
