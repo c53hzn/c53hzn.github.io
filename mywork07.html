@@ -248,7 +248,7 @@
       </div>
     </div>
     <div class="btnOuter" id="flagOuter">
-      <div id="newFlag" class="btnInner" draggable="true">
+      <div id="newFlag" class="untouched">
         &nbsp;
         <div class="flag"></div>
         <div class="pole"></div>
@@ -272,8 +272,26 @@
       }
       lastTouchEnd = now;
     }, false);
+
+    var noMine = document.getElementById("moMine");
+    noMine.ontouchstart = function(){
+      moMine.className = "cleared";
+    }
+    noMine.ontouchstart = function(){
+      moMine.className = "untouched";
+    }
+
+    var newMine = document.getElementById("newMine");
+    noMine.ontouchstart = function(){
+      newMine.className = "cleared";
+    }
+    noMine.ontouchstart = function(){
+      newMine.className = "untouched";
+    }
     
+
     $(document).ready(function(){
+
       makeMineField("mineField","untouched","cleared","mineNumber");
       
       $("#noMine").mousedown(function(){
@@ -282,6 +300,7 @@
         $("#noMine").removeClass("cleared").addClass("btnInner");
         makeNoMineField("mineField","untouched","cleared");
       });
+      
       $("#newMine").mousedown(function(){
         $("#newMine").removeClass("btnInner").addClass("cleared");
       }).mouseup(function(){
