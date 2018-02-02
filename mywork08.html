@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <title>plain text to HTML code tool</title>
+  <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+</head>
+<body>
+<div>
+<p>source</p>
+<textarea style="width: 98%; height: 40%; word-wrap: break-word; word-break: break-all;" id="sourceTxt"></textarea>
+<div>
+<button id="brBtn" style="margin-top: 10px; width: 56px;">Add br</button>
+<button id="noTagBtn" style="margin-top: 10px; width: 140px;">delete excel formats</button>
+<button id="pBtn" style="margin-top: 10px; width: 42px;">To p</button>
+<button id="ulBtn" style="margin-top: 10px; width: 45px;">To ul</button>
+<button id="olBtn" style="margin-top: 10px; width: 45px;">To ol</button>
+<button id="olBtni" style="margin-top: 10px; width: 55px;">To i ol</button>
+<button id="olBtna" style="margin-top: 10px; width: 56px;">To a ol</button>
+<button id="imgBtn" style="margin-top: 10px; width: 60px;">To img</button>
+<button id="spanBtn" style="margin-top: 10px; width: 65px;">To span</button>
+<button id="aSelfBtn" style="margin-top: 10px; width: 100px;">To anchor link</button>
+<button id="aNewBtn" style="margin-top: 10px; width: 120px;">To new page link</button>
+</div>
+<p>output</p>
+<textarea style="width: 98%; height: 40%; word-wrap: break-word; word-break: break-all;" id="outputTxt"></textarea>
+</div>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script>
+$(document).ready(function(){
+	//添加<br/>
+	$("#brBtn").on("click",function(){
+		$("#outputTxt").val("");//清空結果的textarea
+		var origTxt = $("#sourceTxt").val();//获取输入的内容
+		var arr = origTxt.split("\n");
+		var newArr = [];
+		arr.forEach(function(m){
+			if(m != ""){
+				var str = m + "<br>";
+				newArr.push(str);
+			}
+		});
+		var separatedTxt = newArr.join("\n");//给每个换行符添加分行标签
+		$("#outputTxt").val(separatedTxt);//输出
+	});
+	//消除所有HTML标签
+	$("#noTagBtn").on("click",function(){
+		$("#outputTxt").val("");//清空結果的textarea
+		var origTxt = $("#sourceTxt").val();//获取输入的内容
+		var quotationKept = origTxt.replace(/\"\n/gm,"");
+		// var linsSeparated = quotationKept.replace(/\n/g,"").replace(/>\s</gm,"><").replace(/\s{2}/gm," ");
+		// var noTagTxt = linsSeparated.replace(/<\/?(?!img|\/?p|br|table|tbody|tr|td|h\d)[^>]+>/gm,"");
+		var quoteReversed = quotationKept.replace(/\"{2}/gm,"'");//.replace(/thisIsQuote/gm,"\"\n");
+		$("#outputTxt").val(quoteReversed);
+		
+	});
+	//转成段落
+	$("#pBtn").on("click",function(){
+		$("#outputTxt").val("");//清空結果的textarea
+		var origTxt = $("#sourceTxt").val();//获取输入的内容
+		var arr = origTxt.split("\n");
+		var newArr = [];
+		arr.forEach(function(m){
+			if(m != ""){
+				var str = "<p>" + m + "</p>";
+				newArr.push(str);
+			}
+		});
+		var newTxt = newArr.join("\n");
+		$("#outputTxt").val(newTxt);//输出
+	});
+	//转成无序列表
+	$("#ulBtn").on("click",function(){
+		$("#outputTxt").val("");//清空結果的textarea
+		var origTxt = $("#sourceTxt").val();//获取输入的内容
+		var arr = origTxt.split("\n");
+		var newArr = [];
+		arr.forEach(function(m){
+			if(m != ""){
+				var str = "\t<li>" + m + "</li>";
+				newArr.push(str);
+			}
+		});
+		var newTxt = "<ul>\n" + newArr.join("\n") + "\n</ul>";
+		$("#outputTxt").val(newTxt);//输出
+	});
+	//转成有序列表
+	$("#olBtn").on("click",function(){
+		$("#outputTxt").val("");//清空結果的textarea
+		var origTxt = $("#sourceTxt").val();//获取输入的内容
+		var arr = origTxt.split("\n");
+		var newArr = [];
+		arr.forEach(function(m){
+			if(m != ""){
+				var str = "\t<li>" + m + "</li>";
+				newArr.push(str);
+			}
+		});
+		var newTxt = "<ol>\n" + newArr.join("\n") + "\n</ol>";
+		$("#outputTxt").val(newTxt);//输出
+	});
+	//转成有序列表，小写罗马字母序号
+	$("#olBtni").on("click",function(){
+		$("#outputTxt").val("");//清空結果的textarea
+		var origTxt = $("#sourceTxt").val();//获取输入的内容
+		var arr = origTxt.split("\n");
+		var newArr = [];
+		arr.forEach(function(m){
+			if(m != ""){
+				var str = "\t<li>" + m + "</li>";
+				newArr.push(str);
+			}
+		});
+		var newTxt = "<ol style='list-style: lower-roman;'>\n" + newArr.join("\n") + "\n</ol>";
+		$("#outputTxt").val(newTxt);//输出
+	});
+	//转成有序列表，小写拉丁字母序号
+	$("#olBtna").on("click",function(){
+		$("#outputTxt").val("");//清空結果的textarea
+		var origTxt = $("#sourceTxt").val();//获取输入的内容
+		var arr = origTxt.split("\n");
+		var newArr = [];
+		arr.forEach(function(m){
+			if(m != ""){
+				var str = "\t<li>" + m + "</li>";
+				newArr.push(str);
+			}
+		});
+		var newTxt = "<ol style='list-style: lower-latin;>\n" + newArr.join("\n") + "\n</ol>";
+		$("#outputTxt").val(newTxt);//输出
+	});
+	//转成img
+	$("#imgBtn").on("click",function(){
+		$("#outputTxt").val("");//清空結果的textarea
+		var origTxt = $("#sourceTxt").val();//获取输入的内容
+		var arr = origTxt.split("\n");
+		var newArr = [];
+		arr.forEach(function(m){
+			if(m != ""){
+				var str = "<img src='" + m + "' class='img-responsive' style='width: ;' alt='' />";
+				newArr.push(str);
+			}
+		});
+		var newTxt = newArr.join("\n");
+		$("#outputTxt").val(newTxt);//输出
+	});
+	//转成本窗口打开的a标签
+	$("#aSelfBtn").on("click",function(){
+		$("#outputTxt").val("");//清空結果的textarea
+		var origTxt = $("#sourceTxt").val();//获取输入的内容
+		var arr = origTxt.split("\n");
+		var newArr = [];
+		arr.forEach(function(m){
+			if(m != ""){
+				var str = "<a href='#' target='_self'>" + m + "</a>";
+				newArr.push(str);
+			}
+		});
+		var newTxt = newArr.join("\n");
+		$("#outputTxt").val(newTxt);//输出
+	});
+	//转成新窗口打开的a标签
+	$("#aNewBtn").on("click",function(){
+		$("#outputTxt").val("");//清空結果的textarea
+		var origTxt = $("#sourceTxt").val();//获取输入的内容
+		var arr = origTxt.split("\n");
+		var newArr = [];
+		arr.forEach(function(m){
+			if(m != ""){
+				var str = "<a href='#' target='_blank'>" + m + "</a>";
+				newArr.push(str);
+			}
+		});
+		var newTxt = newArr.join("\n");
+		$("#outputTxt").val(newTxt);//输出
+	});
+	//转成span
+	$("#spanBtn").on("click",function(){
+		$("#outputTxt").val("");//清空結果的textarea
+		var origTxt = $("#sourceTxt").val();//获取输入的内容
+		var arr = origTxt.split("\n");
+		var newArr = [];
+		arr.forEach(function(m){
+			if(m != ""){
+				var str = "<span style='color: black; font-weight: normal;'>" + m + "</span>";
+				newArr.push(str);
+			}
+		});
+		var newTxt = newArr.join("\n");
+		$("#outputTxt").val(newTxt);//输出
+	});
+});
+</script>
+</body>
+</html>
