@@ -279,14 +279,14 @@
 
       $("#moMine").on("touchstart",function(){
         $("#noMine").removeClass("btnInner").addClass("cleared");
-      }).mouseup(function(){
+      }).on("touchend",function(){
         $("#noMine").removeClass("cleared").addClass("btnInner");
         makeNoMineField("mineField","untouched","cleared");
       });
 
       $("#newMine").on("touchend",function(){
         $("#newMine").removeClass("btnInner").addClass("cleared");
-      }).mouseup(function(){
+      }).on("touchend",function(){
         $("#newMine").removeClass("cleared").addClass("btnInner");
         makeMineField("mineField","untouched","cleared","mineNumber");
       });
