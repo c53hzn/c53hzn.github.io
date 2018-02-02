@@ -273,24 +273,21 @@
       lastTouchEnd = now;
     }, false);
 
-    var noMine = document.getElementById("moMine");
-    noMine.ontouchstart = function(){
-      moMine.className = "cleared";
-    }
-    noMine.ontouchstart = function(){
-      moMine.className = "untouched";
-    }
-
-    var newMine = document.getElementById("newMine");
-    noMine.ontouchstart = function(){
-      newMine.className = "cleared";
-    }
-    noMine.ontouchstart = function(){
-      newMine.className = "untouched";
-    }
-    
 
     $(document).ready(function(){
+      $("#moMine").on("touchstart",function(){
+        $("#noMine").removeClass("btnInner").addClass("cleared");
+      }).mouseup(function(){
+        $("#noMine").removeClass("cleared").addClass("btnInner");
+        makeNoMineField("mineField","untouched","cleared");
+      });
+
+      $("#newMine").on("touchend",function(){
+        $("#newMine").removeClass("btnInner").addClass("cleared");
+      }).mouseup(function(){
+        $("#newMine").removeClass("cleared").addClass("btnInner");
+        makeMineField("mineField","untouched","cleared","mineNumber");
+      });
 
       makeMineField("mineField","untouched","cleared","mineNumber");
       
