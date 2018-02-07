@@ -44,7 +44,7 @@ function makeMineField(tableId,class1, class2, mineNumClass){
 
         
         function toGetRandomNum(num){//生成15个随机数
-		var nthMine = [];
+		var arr = [];
 		var tempObj = {};
 		var index = -1;
 		function toGenerateNth(){
@@ -53,15 +53,16 @@ function makeMineField(tableId,class1, class2, mineNumClass){
 				if(!tempObj[index]){
 					tempObj[index] = true;
 					console.log(Math.floor(index / b) + ", " + (index % b));
-					nthMine.push(index);
+					arr.push(index);
 					toGenerateNth();
 				}else{
 					toGenerateNth();
 				}
 			}
 		}
+		return arr;
         }
-        toGetRandomNum(15);
+        var nthMine = toGetRandomNum(15);
         for(var n = 0; n < nthMine.length; n++){
         	matrix[Math.floor(nthMine[n]/b)][nthMine[n] % b].mine = true;
         }
