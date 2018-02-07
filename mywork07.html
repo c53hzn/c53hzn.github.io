@@ -277,22 +277,6 @@
     $(document).ready(function(){
       makeMineField("mineField","untouched","cleared","mineNumber");
 
-      $("#moMine").on("touchstart",function(){
-        $("#noMine").removeClass("btnInner").addClass("cleared");
-      });
-      $("#moMine").on("touchend",function(){
-        $("#noMine").removeClass("cleared").addClass("btnInner");
-        makeNoMineField("mineField","untouched","cleared");
-      });
-
-      $("#newMine").on("touchend",function(){
-        $("#newMine").removeClass("btnInner").addClass("cleared");
-      });
-      $("#newMine").on("touchend",function(){
-        $("#newMine").removeClass("cleared").addClass("btnInner");
-        makeMineField("mineField","untouched","cleared","mineNumber");
-      });
-
       $("#noMine").mousedown(function(){
         $("#noMine").removeClass("btnInner").addClass("cleared");
       }).mouseup(function(){
