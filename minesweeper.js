@@ -60,6 +60,7 @@ function makeMineField(tableId,class1, class2, mineNumClass){
 				}
 			}
 		}
+		toGenerateNth();
 		return arr;
         }
         var nthMine = toGetRandomNum(15);
