@@ -41,30 +41,11 @@ function makeMineField(tableId,class1, class2, mineNumClass){
 	        }
             matrix.push(line);
         }
-
-        
-        function toGetRandomNum(num){//生成15个随机数
-		var arr = [];
-		var tempObj = {};
-		var index = -1;
-		function toGenerateNth(){
-			if(arr.length < num){
-				index = parseInt(Math.random() * (a * b - 1),10);
-				if(!tempObj[index]){
-					tempObj[index] = true;
-					console.log(Math.floor(index / b) + ", " + (index % b));
-					arr.push(index);
-					toGenerateNth();
-				}else{
-					toGenerateNth();
-				}
-			}
-		}
-		toGenerateNth();
-		return arr;
+        var nthMine = toGetRandomNum(0,a * b - 1,15);
+        console.log("nthMine = " + nthMine);
+        for(var i = 0; i < nthMine.length; i++){
+        	console.log(Math.floor(nthMine[i] / b) + ", " + (nthMine[i] % b));
         }
-        var nthMine = toGetRandomNum(15);
-	    console.log("nthMine = " + nthMine);
         for(var n = 0; n < nthMine.length; n++){
         	matrix[Math.floor(nthMine[n]/b)][nthMine[n] % b].mine = true;
         }
@@ -195,6 +176,26 @@ function makeMineField(tableId,class1, class2, mineNumClass){
         	}
         }
     }
+}
+
+function toGetRandomNum(min,max,num){//生成指定范围，指定数量的随机数
+	var arr = [];
+	var tempObj = {};
+	var index = -1;
+	function toGenerateNth(){
+		if(arr.length < num){
+			index = parseInt(Math.random() * max,10) + min;
+			if(!tempObj[index]){
+				tempObj[index] = true;
+				arr.push(index);
+				toGenerateNth();
+			}else{
+				toGenerateNth();
+			}
+		}
+	}
+	toGenerateNth();
+	return arr;
 }
 
 function minesweeper(matrix) {
