@@ -42,23 +42,26 @@ function makeMineField(tableId,class1, class2, mineNumClass){
             matrix.push(line);
         }
 
-        var nthMine = [];
-        var tempObj = {};
-        var index = -1;
-        function toGenerateNth(){//生成15个随机数
-        	if(nthMine.length < 15){
-        		index = parseInt(Math.random() * (a * b - 1),10);
-        		if(!tempObj[index]){
-        			tempObj[index] = true;
-        			console.log(Math.floor(index / b) + ", " + (index % b));
-        			nthMine.push(index);
-        			toGenerateNth();
-        		}else{
-        			toGenerateNth();
-        		}
-        	}
+        
+        function toGetRandomNum(num){//生成15个随机数
+		var nthMine = [];
+		var tempObj = {};
+		var index = -1;
+		function toGenerateNth(){
+			if(nthMine.length < num){
+				index = parseInt(Math.random() * (a * b - 1),10);
+				if(!tempObj[index]){
+					tempObj[index] = true;
+					console.log(Math.floor(index / b) + ", " + (index % b));
+					nthMine.push(index);
+					toGenerateNth();
+				}else{
+					toGenerateNth();
+				}
+			}
+		}
         }
-        toGenerateNth();
+        toGetRandomNum(15);
         for(var n = 0; n < nthMine.length; n++){
         	matrix[Math.floor(nthMine[n]/b)][nthMine[n] % b].mine = true;
         }
