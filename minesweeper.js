@@ -48,7 +48,7 @@ function makeMineField(tableId,class1, class2, mineNumClass){
 		var tempObj = {};
 		var index = -1;
 		function toGenerateNth(){
-			if(nthMine.length < num){
+			if(arr.length < num){
 				index = parseInt(Math.random() * (a * b - 1),10);
 				if(!tempObj[index]){
 					tempObj[index] = true;
