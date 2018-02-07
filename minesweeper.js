@@ -64,6 +64,7 @@ function makeMineField(tableId,class1, class2, mineNumClass){
 		return arr;
         }
         var nthMine = toGetRandomNum(15);
+	    console.log("nthMine = " + nthMine);
         for(var n = 0; n < nthMine.length; n++){
         	matrix[Math.floor(nthMine[n]/b)][nthMine[n] % b].mine = true;
         }
