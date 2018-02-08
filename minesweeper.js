@@ -24,37 +24,14 @@ function makeMineField(tableId,class1, class2, mineNumClass){
 	　　return false;
 	}
     var tds = table.getElementsByTagName("td");
-
     var tbody = table.children;
     var tr = tbody[0].children;
     var mineFieldLen = tr.length;
     var td = tr[0].children;
     var mineLineLen = td.length;
-    function makeMatrix(a,b){
-    	console.log("a = " + a + ", b = " + b)
-        var matrix = [];
-        for(var j = 0; j < a; j++){
-        	var line = [];
-	        for(var i = 0; i < b; i++){
-	        	var obj = {"mine":false,"num":-1};
-	            line.push(obj);
-	        }
-            matrix.push(line);
-        }
-        var nthMine = toGetRandomNum(0,a * b - 1,15);
-        console.log("nthMine = " + nthMine);
-        for(var i = 0; i < nthMine.length; i++){
-        	console.log(Math.floor(nthMine[i] / b) + ", " + (nthMine[i] % b));
-        }
-        for(var n = 0; n < nthMine.length; n++){
-        	matrix[Math.floor(nthMine[n]/b)][nthMine[n] % b].mine = true;
-        }
-        return matrix;
-    }
     var mineMatrix = makeMatrix(mineFieldLen,mineLineLen);
     var numberedMatrix = minesweeper(mineMatrix);
     console.log(numberedMatrix);
-
     var theFlag = document.getElementById("newFlag");
     theFlag.onclick = function(){
         console.log("theFlag.className = " + theFlag.className);
@@ -94,6 +71,35 @@ function makeMineField(tableId,class1, class2, mineNumClass){
         // 	e.preventDefault();
         // },false);
         // tds[k].addEventListener("drop",toAddFlag,true);
+        function toSwitchInnerNum(theTr,theTd,theNum){
+            var item = tds[theTr * mineLineLen + theTd];
+            switch(theNum){
+                case 1:
+                item.innerHTML = "<span class='" + mineNumClass + "' style='color: blue;'>1</span>";
+                break;
+                case 2:
+                item.innerHTML = "<span class='" + mineNumClass + "' style='color: green;'>2</span>";
+                break;
+                case 3:
+                item.innerHTML = "<span class='" + mineNumClass + "' style='color: red;'>3</span>";
+                break;
+                case 4:
+                item.innerHTML = "<span class='" + mineNumClass + "' style='color: darkblue;'>4</span>";
+                break;
+                case 5:
+                item.innerHTML = "<span class='" + mineNumClass + "' style='color: darkred;'>5</span>";
+                break;
+                case 6:
+                item.innerHTML = "<span class='" + mineNumClass + "' style='color: lightblue;'>6</span>";
+                break;
+                case 7:
+                item.innerHTML = "<span class='" + mineNumClass + "' style='color: black;'>7</span>";
+                break;
+                case 8:
+                item.innerHTML = "<span class='" + mineNumClass + "' style='color: rgb(128, 128, 128);'>8</span>";
+                break;
+            }
+        }
 
         tds[k].onclick = function(){
         	if(theFlag.className != class2){
@@ -101,58 +107,33 @@ function makeMineField(tableId,class1, class2, mineNumClass){
         		if(!this.innerHTML){
 	        		if(numberedMatrix[this.parentNode.rowIndex][this.cellIndex].mine == true){
 		        		for(var mm = 0; mm < tds.length; mm++){
+                            tds[mm].onclick = function(){};
 		        			if(numberedMatrix[Math.floor(mm / mineLineLen)][mm % mineLineLen].mine){
 		        				tds[mm].className = class2;
 		        				tds[mm].innerHTML = "<span class='" + mineNumClass + "'>&times;</span>";
 		        			}
-		        		}
-		        		for(var nn = 0; nn < tds.length; nn++){
-		        			tds[nn].onclick = function(){};
 		        		}
 		        	}else{
 		        		this.className = class2;
 		        		var row = this.parentNode.rowIndex;
 		        		var cell = this.cellIndex;
 			            var innerNum = numberedMatrix[row][cell].num;
-			            switch(innerNum){
-			            	case 0:
-			            	break;
-			            	case 1:
-			            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: blue;'>1</span>";
-			            	break;
-			            	case 2:
-			            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: green;'>2</span>";
-			            	break;
-			            	case 3:
-			            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: red;'>3</span>";
-			            	break;
-			            	case 4:
-			            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: darkblue;'>4</span>";
-			            	break;
-			            	case 5:
-			            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: darkred;'>5</span>";
-			            	break;
-			            	case 6:
-			            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: lightblue;'>6</span>";
-			            	break;
-			            	case 7:
-			            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: black;'>7</span>";
-			            	break;
-			            	case 8:
-			            	this.innerHTML = "<span class='" + mineNumClass + "' style='color: rgb(128, 128, 128);'>8</span>";
-			            	break;
-			            }
+                        if(innerNum == 0){
+                            // console.log("innerNum = " + innerNum);
+                            // toClear8td(row,cell);
+                        }else{
+                            toSwitchInnerNum(row,cell,innerNum);
+                        }
 		                var tableNow = document.getElementById(tableId);
 		                var tdUntouched = tableNow.getElementsByClassName(class1);
 		                if(tdUntouched.length == 15){
 		                    for(var x = 0; x < tds.length; x++){
+                                tds[x].onclick = function(){};
 		                        if(numberedMatrix[Math.floor(x / mineLineLen)][x % mineLineLen].mine){
 		                            tds[x].innerHTML = '<div class="flag"></div><div class="pole"></div><div class="stand"></div>';
                                     mineCountDown.innerHTML = "0";
+
 		                        }
-		                    }
-		                    for(var y = 0; y < tds.length; y++){
-		                        tds[y].onclick = function(){};
 		                    }
 		                }
 		        	}
@@ -178,6 +159,27 @@ function makeMineField(tableId,class1, class2, mineNumClass){
     }
 }
 
+function makeMatrix(a,b){
+    console.log("a = " + a + ", b = " + b)
+    var matrix = [];
+    for(var j = 0; j < a; j++){
+        var line = [];
+        for(var i = 0; i < b; i++){
+            var obj = {"mine":false,"num":-1};
+            line.push(obj);
+        }
+        matrix.push(line);
+    }
+    var nthMine = toGetRandomNum(0,a * b - 1,15);
+    console.log("nthMine = " + nthMine);
+    for(var i = 0; i < nthMine.length; i++){
+        console.log(Math.floor(nthMine[i] / b) + ", " + (nthMine[i] % b));
+    }
+    for(var n = 0; n < nthMine.length; n++){
+        matrix[Math.floor(nthMine[n]/b)][nthMine[n] % b].mine = true;
+    }
+    return matrix;
+}
 function toGetRandomNum(min,max,num){//生成指定范围，指定数量的随机数
 	var arr = [];
 	var tempObj = {};
