@@ -73,6 +73,7 @@ function makeMineField(tableId,class1, class2, mineNumClass){
         // tds[k].addEventListener("drop",toAddFlag,true);
         function toSwitchInnerNum(theTr,theTd,theNum){
             var item = tds[theTr * mineLineLen + theTd];
+            item.onclick = function(){};
             switch(theNum){
                 case 1:
                 item.innerHTML = "<span class='" + mineNumClass + "' style='color: blue;'>1</span>";
@@ -102,44 +103,43 @@ function makeMineField(tableId,class1, class2, mineNumClass){
         }
 
         tds[k].onclick = function(){
-        	if(theFlag.className != class2){
-        		// console.log("theFlag.className = " + theFlag.className);
-        		if(!this.innerHTML){
-	        		if(numberedMatrix[this.parentNode.rowIndex][this.cellIndex].mine == true){
+        	if(theFlag.className != class2){//不在标记地雷的状态下
+        		if(!this.innerHTML){//排除未被翻开但已被标记的、已被翻开且有数字的
+	        		if(numberedMatrix[this.parentNode.rowIndex][this.cellIndex].mine == true){//如果有雷
 		        		for(var mm = 0; mm < tds.length; mm++){
-                            tds[mm].onclick = function(){};
-		        			if(numberedMatrix[Math.floor(mm / mineLineLen)][mm % mineLineLen].mine){
-		        				tds[mm].className = class2;
-		        				tds[mm].innerHTML = "<span class='" + mineNumClass + "'>&times;</span>";
+                            tds[mm].onclick = function(){};//游戏结束，所有方块的单击事件都被取消
+		        			if(numberedMatrix[Math.floor(mm / mineLineLen)][mm % mineLineLen].mine){//遍历所有有雷的方块
+		        				tds[mm].className = class2;//翻开
+		        				tds[mm].innerHTML = "<span class='" + mineNumClass + "'>☀</span>";//指明这里有雷
 		        			}
 		        		}
-		        	}else{
-		        		this.className = class2;
+		        	}else{//如果无雷
+		        		this.className = class2;//翻开
 		        		var row = this.parentNode.rowIndex;
 		        		var cell = this.cellIndex;
 			            var innerNum = numberedMatrix[row][cell].num;
-                        if(innerNum == 0){
+                        if(innerNum == 0){//周围8个方块都无雷
                             // console.log("innerNum = " + innerNum);
                             // toClear8td(row,cell);
-                        }else{
+                        }else{//周围有雷
                             toSwitchInnerNum(row,cell,innerNum);
                         }
 		                var tableNow = document.getElementById(tableId);
-		                var tdUntouched = tableNow.getElementsByClassName(class1);
-		                if(tdUntouched.length == 15){
+		                var tdUntouched = tableNow.getElementsByClassName(class1);//检查当前没被翻开的方块数
+		                if(tdUntouched.length == 15){//如果没被翻开的正好等于所有地雷数
 		                    for(var x = 0; x < tds.length; x++){
-                                tds[x].onclick = function(){};
+                                tds[x].onclick = function(){};//游戏结束，取消所有单击事件
 		                        if(numberedMatrix[Math.floor(x / mineLineLen)][x % mineLineLen].mine){
-		                            tds[x].innerHTML = '<div class="flag"></div><div class="pole"></div><div class="stand"></div>';
-                                    mineCountDown.innerHTML = "0";
+		                            tds[x].innerHTML = '<div class="flag"></div><div class="pole"></div><div class="stand"></div>';//标小旗
+                                    mineCountDown.innerHTML = "0";//地雷计数归零
 
 		                        }
 		                    }
 		                }
 		        	}
 	        	}
-        	}else{
-        		if(this.className != class2){
+        	}else{//在标记地雷的状态下
+        		if(this.className != class2){//如果被点击的方块已被标记
         			console.log("theFlag.className = " + theFlag.className);
         			console.log("this.className = " + this.className);
         			if(this.innerHTML){
@@ -147,8 +147,8 @@ function makeMineField(tableId,class1, class2, mineNumClass){
 		        			this.innerHTML = "";
 			        		mineCountDown.innerHTML = ++mineCountDownContent;
 		        		}
-		        	}else{
-		        		if(this.className == class1){
+		        	}else{//如果被点击的方块还没被标记
+		        		if(this.className == class1){//如果没被标记的方块是还没被点击的（为了区分已经被点出来的数字方块）
 		        			this.innerHTML = '<div class="flag"></div><div class="pole"></div><div class="stand"></div>';
 				        	mineCountDown.innerHTML = --mineCountDownContent;
 		        		}
@@ -159,7 +159,7 @@ function makeMineField(tableId,class1, class2, mineNumClass){
     }
 }
 
-function makeMatrix(a,b){
+function makeMatrix(a,b){//a是row，b是col
     console.log("a = " + a + ", b = " + b)
     var matrix = [];
     for(var j = 0; j < a; j++){
