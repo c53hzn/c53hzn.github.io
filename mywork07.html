@@ -287,10 +287,10 @@
       }
 
       var newMine = document.getElementById("newMine");
-      noMine.onmousedown = function(){
+      newMine.onmousedown = function(){
         this.className = "cleared";
       }
-      noMine.onmouseup = function(){
+      newMine.onmouseup = function(){
         this.className = "btnInner";
         makeMineField("mineField","untouched","cleared","mineNumber");
       }
