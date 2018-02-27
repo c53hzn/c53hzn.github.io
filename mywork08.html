@@ -28,6 +28,7 @@
 <button id="spanBtn">To span</button>
 <button id="aSelfBtn">To anchor link</button>
 <button id="aNewBtn">To new page link</button>
+<button id="tableBtn">To table</button>
 </div>
 <p>output</p>
 <textarea style="width: 98%; height: 40%; word-wrap: break-word; word-break: break-all;" id="outputTxt"></textarea>
@@ -196,6 +197,25 @@ $(document).ready(function(){
 			}
 		});
 		var newTxt = newArr.join("\n");
+		$("#outputTxt").val(newTxt);//输出
+	});
+	$("#tableBtn").on("click",function(){
+		$("#outputTxt").val("");//清空結果的textarea
+		var origTxt = $("#sourceTxt").val();//获取输入的内容
+		var trs = origTxt.split("\n");
+		var arr = [];
+		trs.forEach(function(m){
+			var tds = m.split(" ");
+			for(var i = 0; i < tds.length; i++){
+				tds[i] = "\t\t\t<td>" + tds[i] + "</td>\n";
+				// console.log(tds[i]);
+			}
+			// console.log(tds);
+			m = "\t\t<tr>\n" + tds.join("") + "\t\t</tr>\n";
+			arr.push(m);
+		});
+		// console.log(arr);
+		var newTxt = "<table>\n\t<tbody>\n" + arr.join("\n") + "\n\t</tbody>\n</table>";
 		$("#outputTxt").val(newTxt);//输出
 	});
 });
