@@ -2,9 +2,9 @@ hy-push-state{
 	background-color: #d3e8ef;
 }
 .mb6{
-	background-color: rgba(255,255,255,0.8);
+	background-color: rgba(255,255,255,0.8);}
+.mb6:before{
 	border-left: .4rem solid #007480;
-	padding-left: .5rem;
 }
 .mb6:hover{
 	border-left-color: darkorange;
@@ -12,4 +12,7 @@ hy-push-state{
 .icon-menu:before{
 	border: .5rem solid white;
 	border-radius: .5rem;	
+}
+.layout-post{
+	background-color: rgba(255,255,255,0.8);
 }
