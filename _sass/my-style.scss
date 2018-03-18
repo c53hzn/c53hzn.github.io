@@ -2,12 +2,15 @@ hy-push-state{
 	background-color: #d3e8ef;
 }
 .mb6{
-	background-color: rgba(255,255,255,0.8);}
-.mb6:before{
+	background-color: rgba(255,255,255,0.9);
 	border-left: .4rem solid #007480;
+	padding: .5rem;
 }
 .mb6:hover{
 	border-left-color: darkorange;
+}
+.icon-menu{
+	background-color: white;
 }
 .icon-menu:before{
 	border: .5rem solid white;
@@ -15,4 +18,8 @@ hy-push-state{
 }
 .layout-post{
 	background-color: rgba(255,255,255,0.8);
+}
+.message{
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
