@@ -1,47 +1,20 @@
-# Hydejack
-[![Gem Version](https://badge.fury.io/rb/jekyll-theme-hydejack.svg)](https://badge.fury.io/rb/jekyll-theme-hydejack)
+---
+layout: about
+title: About
+description: >
+  **Hydejack** is a Jekyll theme with JavaScript powers, combining the best of static sites and modern web apps.
+  It features a suite of JavaScript that makes the page feel like an app, without sacrificing backwards-compatibility,
+  page-load speed or SEO.
+menu: true
+order: 4
+---
 
-**Hydejack** is a Jekyll theme with JavaScript powers, combining the best of static sites and modern web apps.
-It features a suite of JavaScript that makes the page feel like an app, without sacrificing backwards-compatibility,
-page-load speed or SEO.
-
-> Your presence on the web — A [blog], a [portfolio] and a [resume].
-
-**Hydejack** aims to be the complete package for professionals on the web.
+**Hydejack** is the complete package for professionals on the web.
 It features a blog suitable for both prose and technical documentation,
-a showcase for your projects, and a resume that fits with the rest of the design.
+a showcase for your projects, and a resume that is well-integrated with the design.
 
-![Screenshot](https://qwtel.com/assets/img/projects/default.jpg)
-
-## Demo
-It's best to just [see it in action](https://qwtel.com/hydejack/).
-
-## Features
-Both versions include these features:
-
-* Full in-app page loading, powered by [hy-push-state]
-* A customizable sidebar that turns into a drawer menu on mobile, powered by [hy-drawer]
-* Advanced FLIP animations, inspired by Material Design
-* Good [Google PageSpeed Score][gpss][^3]
-* Higher *perceived speed* thanks to content pre-fetching
-* [Syntax highlighting][syntax], powered by [Rouge]
-* [LaTeX math blocks][latex], powered by [KaTeX]
-* Change the wording of built-in strings and possibly translate in other languages
-* Support for categories and tags
-* Built-in icons for many social networks
-* Simple and semantic HTML — can be viewed even with text-based browsers
-* Author section below each article and support for multiple authors
-* Progressive enhancement — sacrifice features, not content
-* Google Analytics and Google Fonts support
-* Disqus comments
-* Print layout — Used to render Hydejack's [PDF documentation][pdf]
-* Blog layout via `jekyll-paginate` (optional)
-* SEO meta tags via `jekyll-seo-tag` (optional)
-* Github avatars via `jekyll-avatar` (optional)
-* Gist support via `jekyll-gist` (optional)
-
-## Documentation
-Hydejack is well documented. You can read the docs [on the Jekyll site][docs], or [on GitHub][wiki], or [download the PDF][pdf].
+> Your presence on the web --- A [blog], a [portfolio] and a [resume].
+{:.lead}
 
 ## Download
 There are two versions of **Hydejack**: The *free version* includes basic blogging functionality,
@@ -73,21 +46,85 @@ This table details what is and isn't included in each respective version.
       Please use the free version to confirm that Hydejack works for you.
       For more, see the [PRO] license.
 
+## Features
+Both versions include these features:
+
+* Full in-app page loading, powered by [hy-push-state]{:.external}
+* A customizable sidebar that turns into a drawer menu on mobile, powered by [hy-drawer]{:.external}
+* Advanced FLIP animations, inspired by Material Design
+* Good [Google PageSpeed Score][gpss][^4]
+* Higher *perceived speed* thanks to content pre-fetching
+* [Syntax highlighting](#syntax-highlighting), powered by [Rouge]
+* [LaTeX math blocks](#latex-math-blocks), powered by [KaTeX]
+* Change the wording of built-in strings and possibly translate in other languages
+* Support for categories and tags
+* Built-in icons for many social networks
+* Simple and semantic HTML — can be viewed even with text-based browsers
+* Author section below each article and support for multiple authors
+* Progressive enhancement — sacrifice features, not content
+* Google Analytics and Google Fonts support
+* Disqus comments
+* Print layout — Used to render Hydejack's [PDF documentation][pdf]
+* Blog layout via `jekyll-paginate` (optional)
+* SEO meta tags via `jekyll-seo-tag` (optional)
+* Github avatars via `jekyll-avatar` (optional)
+* Gist support via `jekyll-gist` (optional)
+
+[^4]: Actual page load speed depends on your hosting provider, resolution of embedded images and usage of 3rd party plugins.  
+
+### Syntax Highlighting
+Syntax highlighting powered by [Rouge].
+
+~~~ruby
+# Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end
+~~~
+
+### LaTeX Math Blocks
+Write formulas in familiar LaTeX syntax. Powered by [KaTeX].
+
+$$
+\begin{aligned}
+  \phi(x,y) &= \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right) \\[2em]
+            &= \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j)            \\[2em]
+            &= (x_1, \ldots, x_n)
+               \left(\begin{array}{ccc}
+                 \phi(e_1, e_1)  & \cdots & \phi(e_1, e_n) \\
+                 \vdots          & \ddots & \vdots         \\
+                 \phi(e_n, e_1)  & \cdots & \phi(e_n, e_n)
+               \end{array}\right)
+               \left(\begin{array}{c}
+                 y_1    \\
+                 \vdots \\
+                 y_n
+               \end{array}\right)
+\end{aligned}
+$$
+
+### Newsletter Subscription Box*
+The *PRO version* has built-in support for [Tinyletter] subscription boxes.
+
+If you are using a different newsletter service, like MailChimp,
+you can build a custom newsletter subscription box using [custom forms][forms].
+
+## Versions
+### Free Version
+The *free version* features the design and tech of **Hydejack**, but only supports basic blogging.
+
+[**Download**][kit]
+
+### PRO Version
+The *PRO version* aims to be the complete package for professionals on the web.
+It includes layouts for your [portfolio],
+your [resume] (with support for [JSON Resume](https://jsonresume.org/)),
+a [welcome] page to introduce yourself to visitors,
+built-in support for [Tinyletter], and from element styles so you can build arbitrary contact forms.
+
+[**Buy Now - $29**][buy] [^2]
+
 [^2]: Transactions secured by [Stripe](https://stripe.com). Downloads handled by [Simple Goods](https://simplegoods.co/).  
-
-[^3]: Actual page load speed depends on your hosting provider, resolution of embedded images and usage of 3rd party plugins.  
-
-~~~
- __  __                __                                     __
-/\ \/\ \              /\ \             __                    /\ \
-\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
- \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
-  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
-   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
-    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
-                /\___/                \ \____/
-                \/__/                  \/___/
-~~~
 
 [blog]: https://qwtel.com/hydejack/blog/
 [portfolio]: https://qwtel.com/hydejack/variations/
@@ -96,10 +133,10 @@ This table details what is and isn't included in each respective version.
 [welcome]: https://qwtel.com/hydejack/
 [forms]: https://qwtel.com/hydejack/forms-by-example/
 
-[feat]: https://qwtel.com/hydejack/#features
-[news]: https://qwtel.com/hydejack/#newsletter-subscription-box
-[syntax]: https://qwtel.com/hydejack/#syntax-highlighting
-[latex]: https://qwtel.com/hydejack/#latex-math-blocks
+[feat]: #features
+[news]: #newsletter-subscription-box
+[syntax]: #syntax-highlighting
+[latex]: #latex-math-blocks
 
 [license]: LICENSE.md
 [pro]: licenses/PRO.md
@@ -107,7 +144,6 @@ This table details what is and isn't included in each respective version.
 
 [kit]: https://github.com/qwtel/hydejack-starter-kit/archive/v7.5.0.zip
 [src]: https://github.com/qwtel/hydejack
-[git]: https://github.com/qwtel/hydejack-starter-kit
 [gem]: https://rubygems.org/gems/jekyll-theme-hydejack
 [buy]: https://app.simplegoods.co/i/AQTTVBOE
 
