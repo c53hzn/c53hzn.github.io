@@ -24,3 +24,12 @@ hy-push-state{
 	margin-left: 1rem;
 	margin-right: 1rem;
 }
+.pagination-item:first-child>*{
+	margin-left: -0.1rem;
+}
+.pagination-item:last-child>*{
+	margin-left: 0.1rem;
+}
+.pagination-item>a{
+	box-shadow: 0px 0px 0.05rem darkgreen;
+}
