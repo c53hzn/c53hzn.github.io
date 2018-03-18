@@ -1,6 +1,11 @@
 hy-push-state{
 	background-color: #d3e8ef;
 }
-main{
+.mb6{
 	background-color: rgba(255,255,255,0.8);
+	border-left: .4rem solid #007480;
+	padding-left: .5rem;
+}
+.mb6:hover{
+	border-left-color: darkorange;
 }
