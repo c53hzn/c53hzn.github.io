@@ -1,7 +1,7 @@
 ---
 layout: list
-title: Posts
-slug: 全部文章
+title: 全部文章
+slug: posts
 menu: true
 order: 1
 description: >
