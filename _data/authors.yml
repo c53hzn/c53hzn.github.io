@@ -3,7 +3,7 @@
 # Change `author1` to your shortname.
 author1:
   name:              Jenny HOU
-  email:             hznfantasy@gmail.com
+  email:             hzn2013@outlook.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
@@ -18,11 +18,11 @@ author1:
 
   # This photo will be used in the about section
   picture:
-    path:            https://i1.wp.com/houzhenni.files.wordpress.com/2018/03/j-hou.jpg?ssl=1&w=450
+    path:            ./assets/img/author-pic.png
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            https://i1.wp.com/houzhenni.files.wordpress.com/2018/03/j-hou.jpg?ssl=1&w=450
-      2x:            https://i1.wp.com/houzhenni.files.wordpress.com/2018/03/j-hou.jpg?ssl=1&w=450
+      1x:            ./assets/img/author-pic-1x.png
+      2x:            ./assets/img/author-pic-2x.png
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
@@ -30,7 +30,7 @@ author1:
   social:
     # twitter:         <username>
     github:          houzhenni
-    email:           mailto:<hznfantasy@gmail.com>
+    email:           mailto:hzn2013@outlook.com
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>

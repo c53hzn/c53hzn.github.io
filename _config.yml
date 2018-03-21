@@ -27,9 +27,8 @@ title:                 Jenny的小站
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  会日/英/普/粤
-  有一颗做前端的心，不过还是做客服的命
-  欢迎找我玩呀~
+  会日语，会英语，会广东话的小客服一枚
+  想要成为大前端~
 
 # A shorter description for the sidebar.
 tagline:               >
@@ -45,7 +44,7 @@ logo:                  /assets/icons/icon.png
 # Duplication is necessary due to the `jekyll-feed`, `jekyll-seo-tag` plugin.
 author:
   name:                Jenny HOU
-  email:               hznfantasy@gmail.com
+  email:               hzn2013@outlook.com
   # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
