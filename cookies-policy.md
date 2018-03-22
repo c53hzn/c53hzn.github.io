@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: page
 title: Cookies policy
 description: >
   Cookies policy on this website.
