@@ -40,6 +40,6 @@ hy-push-state{
 	box-shadow: 0.1rem 0rem 0.3rem grey;
 	margin-top: 1rem;
 }
-ol.line-height-0 > li, ul.line-height-0 > li{
+ol.line-height-0 > li > p, ul.line-height-0 > li > p{
 	line-height: 0px;
 }
