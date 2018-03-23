@@ -13,10 +13,10 @@
 home:                  Home
 pages:                 Pages
 posts:                 Posts
-about:                 About
+about:                 关于作者
 related_posts:         相关文章
 other_projects:        Other Projects
-comments:              Comments
+comments:              所有评论
 jump_to:               Jump to
 navigation:            Navigation
 social:                Social
@@ -33,24 +33,24 @@ loading:               加载中…
 redirecting:           正在为您重定向页面…
 
 continue_reading:      >
-  继续阅读 <!--post_title-->
+  阅读全文 <!--post_title-->
 
 cookies_banner:
   text:                >
-    This site uses cookies. [Cookies Policy](/cookies-policy/).
+    本站使用 cookies. 详情请见[Cookies](/cookies-policy/).
   okay:                Okay
 
 not_found:
   title:               '404: Page Not Found'
   message:             |
-    Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.
-    <!--home_link--> to try finding it again.
-  home_link:           Head back home
+    你要的页面找不到啦，还是去其他地方逛逛吧！
+    <!--home_link--> 再看看别的怎么样？
+  home_link:           回到主页
 
 error:
   title:               Error
   message:             |
-    Sorry, an error occurred while loading <!--link-->.
+    加载 <!--link-->时发生错误.
 
 # Separators
 # ---------------------------------------------------------------------------------------
