@@ -2,12 +2,12 @@
 {% if page.comments %}
 <aside class="comments related" role="complementary">
   <h2 class="hr">{{ site.data.strings.comments | default:"Comments" }}</h2>
-  <div id="disqus_thread"></div>
+  <div id="comment"></div>
   <script src="/assets/iDisqus.min.js"></script>
   <script>
   	(function(){
-		if(document.getElementById('disqus_thread')){
-			var disq = new iDisqus('disqus_thread', {
+		if(document.getElementById('comment')){
+			var disq = new iDisqus('comment', {
 		        forum: 'houzhenni-com',
 		        api: 'https://37ed5962-3f77-41a6-bd8e-c7735322cebe.coding.io/api/login.php',
 		        site: 'https://www.houzhenni.com',
