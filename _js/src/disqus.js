@@ -14,28 +14,38 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-function loadDisqus2() {
-  window.DISQUS.reset({
-    reload: true,
-    config() {
-      this.page.url = window.location.href;
-      this.page.title = document.title;
-    },
-  });
-}
+// function loadDisqus2() {
+//   window.DISQUS.reset({
+//     reload: true,
+//     config() {
+//       this.page.url = window.location.href;
+//       this.page.title = document.title;
+//     },
+//   });
+// }
 
 
 export default function loadDisqus() {
   if (document.getElementById('disqus_thread')) {
-    if (window.DISQUS) {
-      loadDisqus2();
-    } else {
-      window.disqus_config = function disqusConfig() {
-        this.page.url = window.location.href;
-        this.page.title = document.title;
-      };
-      window.loadJSDeferred(document.getElementById('_disqusJS').href);
-    }
+    var disq = new iDisqus('comment', {
+        forum: 'houzhenni-com',
+        api: 'https://37ed5962-3f77-41a6-bd8e-c7735322cebe.coding.io/api/login.php',
+        site: 'https://www.houzhenni.com',
+        mode: 1,
+        timeout: 3000,
+        init: true
+    });
+    disq.popular();
+    disq.count();
+    // if (window.DISQUS) {
+    //   loadDisqus2();
+    // } else {
+    //   window.disqus_config = function disqusConfig() {
+    //     this.page.url = window.location.href;
+    //     this.page.title = document.title;
+    //   };
+    //   window.loadJSDeferred(document.getElementById('_disqusJS').rhef);
+    // }
   }
 }
 
