@@ -93,7 +93,7 @@ google_analytics:      UA-115799066-1
 
 # Setting a disqus shortname will enable the comment section on
 # pages with `comments: true` in the front matter.
-disqus:                houzhenni-com
+# disqus:                houzhenni-com
 
 # Setting a tinyletter username will enable the newsletter subscription box.
 # tinyletter:            <tinyletter_username>

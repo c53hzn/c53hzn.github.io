@@ -16,16 +16,18 @@
   <link rel="dns-prefetch" href="https://www.google-analytics.com">
 {% endif %}
 
-{% assign disqus = site.disqus | default:site.disqus_shortname %}
-{% if disqus %}
+<!-- {% assign disqus = site.disqus | default:site.disqus_shortname %}
+{% if disqus %} -->
 
-<link id="_disqusJS" rel="dns-prefetch" src="/assets/iDisqus.min.js">
+<!-- <link id="_disqusJS" rel="dns-prefetch" src="/assets/iDisqus.min.js"> -->
 <!-- <script src="/assets/iDisqus.min.js"></script> -->
+<!-- <link rel="stylesheet" href="/assets/iDisqus.min.css"> -->
+
+<!-- {% endif %} -->
+
+{% comment %}
 <link rel="stylesheet" href="/assets/iDisqus.min.css">
-
-{% endif %}
-
-{% comment %}<!--
+<!--
 The links below are here so that we can use their `href` in JS (see `_js/src/katex.js`).
 This way, CDN optimizers or other tools can modify the URL and we avoid hard-coding it in JavaScript.
 -->{% endcomment %}
