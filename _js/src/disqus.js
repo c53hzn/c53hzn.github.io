@@ -27,6 +27,7 @@
 
 export default function loadDisqus() {
   if (document.getElementById('disqus_thread')) {
+    window.loadJSDeferred(document.getElementById('_disqusJS').rhef);
     var disq = new iDisqus('disqus_thread', {
         forum: 'houzhenni-com',
         api: 'https://37ed5962-3f77-41a6-bd8e-c7735322cebe.coding.io/api/login.php',
@@ -37,6 +38,7 @@ export default function loadDisqus() {
     });
     disq.popular();
     disq.count();
+
     // if (window.DISQUS) {
     //   loadDisqus2();
     // } else {
