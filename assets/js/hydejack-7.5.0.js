@@ -497,16 +497,15 @@
 	}],
 	7: [function (t, e, r) {
 		"use strict";
-
 		function n() {
-			document.getElementById("disqus_thread") && (window.DISQUS ? window.DISQUS.reset({
-				reload: !0,
-				config: function () {
-					this.page.url = window.location.href, this.page.title = document.title
-				}
-			}) : (window.disqus_config = function () {
-				this.page.url = window.location.href, this.page.title = document.title
-			}, window.loadJSDeferred(document.getElementById("_disqusJS").href)))
+			// document.getElementById("disqus_thread") && (window.DISQUS ? window.DISQUS.reset({
+			// 	reload: !0,
+			// 	config: function () {
+			// 		this.page.url = window.location.href, this.page.title = document.title
+			// 	}
+			// }) : (window.disqus_config = function () {
+			// 	this.page.url = window.location.href, this.page.title = document.title
+			// }, window.loadJSDeferred(document.getElementById("_disqusJS").href)))
 		}
 		Object.defineProperty(r, "__esModule", {
 			value: !0
