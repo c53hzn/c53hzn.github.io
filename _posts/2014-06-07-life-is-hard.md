@@ -3,7 +3,7 @@ layout: post
 title: 人生已经如此艰难，赶快努力吧
 description: >
   你以为大学很难熬？出了大学才难熬呢
-tags: [碎碎念]
+tags: [小日常]
 author: author1
 comments: true
 canonical_url: http://hyde.getpoole.com/2012/02/06/whats-jekyll/
