@@ -53,23 +53,23 @@ Github是一个可以免费进行代码托管和版本控制的平台，简单�
 
 不过我现在只能对着那14个doc文件干瞪眼了。
 
-要想使用Github对你的文件进行记录，可以注册Github账号，然后为你的项目建立代码仓库（repository），往里面上传你正在做的代码文件，你可以用Git命令工具或者用GitHub桌面版进行管理，每次在电脑本地修改后都将你的修改推送上GitHub，每次修改都留有记录，这样就可以进行版本控制啦。
+要想使用Github对你的文件进行记录，可以注册Github账号，然后为你的项目建立代码仓库（repository），往里面上传你正在做的代码文件，你可以用Git命令工具或者用GitHub桌面版进行管理，每次在电脑本地修改后都将你的修改推送上GitHub，每次修改都留有记录，这样就可以进行版本控制了。
 
-Git命令对我来说有点复杂，所以我用的是GitHub桌面版软件，也很方便。安装软件之后，把你的账号下的repo克隆到电脑本地，在本地修改、保存后，打开Github桌面版，先commit，给你这次的更新写个小备注，然后push上云端就OK啦。
+Git命令对我来说有点复杂，所以我用的是GitHub桌面版软件，也很方便。安装软件之后，把你的账号下的repo克隆到电脑本地，在本地修改、保存后，打开Github桌面版，先commit，给你这次的更新写个小备注，然后push上云端，就能看到了。
 
-GitHub上建立公开的repo是免费的，而且不限个数，不限大小，不过当然不能滥用啦，那样会被封号的。
+GitHub上建立公开的repo是免费的，而且不限个数，不限大小，不过当然不能滥用，那样会被封号的。
 
 有关Github的空间和使用限制[看这里](https://help.github.com/articles/what-is-my-disk-quota)。
 
 如果你已经用HTML或者Markdown这样的标记语言写好了静态网页文件，你就可以用Github的静态网页部署功能——Github Pages，来建立一个静态的网页项目，比如一个项目展示网页、个人简历页面，或者任何一个你希望大家看到的页面。
 
-在你的repo的setting的Options那里找到“Github Pages”，选择一个分支，然后save就可以发布啦。
+在你的repo的setting的Options那里找到“Github Pages”，选择一个分支，然后save即可发布。
 
-Github上只能部署静态页面，不能部署动态页面和数据库，不过用来做个人博客已经是很够用啦。
+Github上只能部署静态页面，不能部署动态页面和数据库，不过用来做个人博客已经是很够用了。
 
 关于静态页面和动态页面的区别[看这里](https://zhidao.baidu.com/question/40565483.html)。
 
-通常在部署静态博客的时候，大家都会选择使用 username.github.io(username即为你注册的用户名) 这种Github免费提供的二级域名来作为repo的名称，然后在setting里面发布你的pages，之后你就可以用username.github.io来访问你的博客啦。
+通常在部署静态博客的时候，大家都会选择使用 username.github.io(username即为你注册的用户名) 这种Github免费提供的二级域名来作为repo的名称，然后在setting里面发布你的pages，发布成功后，username.github.io就成为你的博客地址啦。
 
 国内有一个类似Github的代码托管平台[coding.net](https://www.coding.net)，也可以云储存代码、查看修改记录、部署网页、使用它的二级域名，而它提供的网页部署功能除了静态之外，甚至能部署动态的网页，还免费提供数据库，不过总空间有限制就是了。
 
@@ -93,9 +93,9 @@ Jekyll是一个静态博客网站生成器，只要经过一定的配置，服�
 
 就算没有安装Jekyll的运行环境，只要我们把文件配置好，上到Github之后照样能运行。
 
-大家可能会担心Jekyll的配置会很复杂，不过这种担心完全是不必要啦，网上有很多Jekyll框架模板可以免费下载使用，挑选模板[看这里](http://jekyllthemes.org)。
+大家可能会担心Jekyll的配置会很复杂，不过这种担心完全是不必要的，网上有很多Jekyll框架模板可以免费下载使用，挑选模板[看这里](http://jekyllthemes.org)。
 
-我选中的这个和Jekyll的名字非常搭，它叫“Hydejack”，是很简洁的左右两栏布局，整体颜色是非常沉静的绿色，决定用它之后，我就点进它的主题页面，点“download”下载文件包，解压缩，全部放进电脑本地的 username.github.io 那个repo里面，然后就可以修改配置啦。
+我选中的这个和Jekyll的名字非常搭，它叫“Hydejack”，是很简洁的左右两栏布局，整体颜色是非常沉静的绿色，决定用它之后，我就点进它的主题页面，点“download”下载文件包，解压缩，全部放进电脑本地的 username.github.io 那个repo里面，然后就需要开始修改配置。
 
 Hydejack里面需要修改的配置文件是\_config.yml，里面可以设置你的个人站点的站点名、个人简介、你想展示的社交网站账号、Google Analytics账号设置，等等。
 
