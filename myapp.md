@@ -22,3 +22,5 @@ canonical_url: http://hyde.getpoole.com/2012/02/06/whats-jekyll/
 * [随机生成名人名言的网页](https://www.houzhenni.com/myapp/randomquote.html)
 
 * [JavaScript计算器](https://www.houzhenni.com/myapp/calculator.html)
+
+* [Wikipedia搜索页](https://www.houzhenni.com/myapp/wikipage.html)
