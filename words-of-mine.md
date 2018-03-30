@@ -6,6 +6,7 @@ description: >
 tags: []
 author: author1
 comments: true
+menu: true
 order: 4
 canonical_url: http://hyde.getpoole.com/2012/02/06/whats-jekyll/
 ---
