@@ -27,4 +27,6 @@ canonical_url: http://hyde.getpoole.com/2012/02/06/whats-jekyll/
 
 <a href="https://www.houzhenni.com/myapp/twitchtv.html" target="_blank">一个非实时的Twitch TV直播列表</a>
 
+<a href="https://www.houzhenni.com/myapp/pomodoro.html" target="_blank">一个用来管理短期项目时间的番茄钟(Pomodoro Clock)</a>
+
 此目录会不断更新，敬请期待~
