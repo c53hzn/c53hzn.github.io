@@ -25,4 +25,6 @@ canonical_url: http://hyde.getpoole.com/2012/02/06/whats-jekyll/
 
 <a href="https://www.houzhenni.com/myapp/wikipage.html" target="_blank">Wikipedia搜索页</a>
 
+<a href="https://www.houzhenni.com/myapp/twitchtv.html" target="_blank">一个非实时的Twitch TV直播列表</a>
+
 此目录会不断更新，敬请期待~
