@@ -29,4 +29,6 @@ canonical_url: http://hyde.getpoole.com/2012/02/06/whats-jekyll/
 
 <a href="https://www.houzhenni.com/myapp/pomodoro.html" target="_blank">一个用来管理短期项目时间的番茄钟(Pomodoro Clock)</a>
 
+<a href="https://www.houzhenni.com/2018/04/15/css-items/" target="_blank">用CSS写的常见形状(尺寸可调)</a>
+
 此目录会不断更新，敬请期待~
