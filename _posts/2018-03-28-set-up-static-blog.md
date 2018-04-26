@@ -136,7 +136,11 @@ markdown语法介绍<a href='http://xianbai.me/learn-md' target='_blank'>看这�
 * Godaddy方面
 
     * 可以参考<a href="https://www.zhihu.com/question/31377141" target="_blank">这篇知乎问答</a>    
+<<<<<<< HEAD
     核心思想就是在github设置了CNAME之后，也要在godaddy上设置DNS解析，添加“A name”、“@”、“www”等等记录指向github，nameserver也要指向github。
+=======
+    核心思想就是在github设置了CNAME之后，也要在godaddy上设置DNS解析，添加“A name”、“@”等等记录指向github。
+>>>>>>> ed299f2aea8f599615f52145e7ca7f9cd2511c23
 
 设置好之后，没一会就能用域名访问了。
 
