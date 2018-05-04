@@ -176,6 +176,12 @@ HTTPS provides a layer of encryption that prevents others from snooping on or ta
 
 你就可以用HTTPS安全链接访问你的域名啦
 
+update 2018-05-04
+
+刚刚发现就在2018年5月1日，github支持自定义域名的pages使用HTTPS链接了，也就是说，完全不需要用cloudflare做加密了，心塞塞。。。
+
+reference -> <a href="https://blog.github.com/2018-05-01-github-pages-custom-domains-https/" target="_blank">here</a>
+
 <h3 id="static-blog-05">做个有心人，用Google Analytics分析你的网站</h3>
 
 <h3 id="static-blog-06">静态博客没有自带的评论系统怎么办？</h3>
