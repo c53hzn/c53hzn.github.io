@@ -28,12 +28,12 @@
 
   @media screen {
     padding-left: 1.5rem;
-    max-width: 38rem;
+  //  max-width: 38rem;
     min-height: 100vh;
   }
 
   @media screen and (min-width: $break-point-2) {
-    max-width: 42rem;
+ //   max-width: 42rem;
   }
 
   @media screen and (min-width: $break-point-3) {
