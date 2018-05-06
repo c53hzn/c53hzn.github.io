@@ -20,6 +20,7 @@
 {% if disqus %}
 
 <link id="_disqusJS" rel="dns-prefetch" src="/assets/iDisqus.min.js">
+<link rel="stylesheet" href="/assets/iDisqus.min.css">
 <!-- <script src="/assets/iDisqus.min.js"></script> -->
 <!-- <link rel="stylesheet" href="/assets/iDisqus.min.css"> -->
 
@@ -29,6 +30,6 @@
 The links below are here so that we can use their `href` in JS (see `_js/src/katex.js`).
 This way, CDN optimizers or other tools can modify the URL and we avoid hard-coding it in JavaScript.
 -->{% endcomment %}
-<link rel="stylesheet" href="/assets/iDisqus.min.css">
+
 <link id="_katexJS"  rel="dns-prefetch" href="{{ '/assets/bower_components/katex/dist/katex.min.js'  | relative_url }}">
 <link id="_katexCSS" rel="dns-prefetch" href="{{ '/assets/bower_components/katex/dist/katex.min.css' | relative_url }}">
