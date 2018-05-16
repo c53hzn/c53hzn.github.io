@@ -31,6 +31,8 @@ canonical_url: http://hyde.getpoole.com/2012/02/06/whats-jekyll/
 
 <a href="https://www.houzhenni.com/myapp/converttohtml.html" target="_blank">纯文字转HTML的小工具</a>
 
+<a href="https://www.houzhenni.com/myapp/image-size-checker.html" target="_blank">一个简易的图片尺寸检查工具，专为eBay卖家设计</a>
+
 ### 有意思的小东西
 
 <a href="https://www.houzhenni.com/myapp/minesweeper.html" target="_blank">扫个雷玩玩吧</a>
@@ -41,6 +43,5 @@ canonical_url: http://hyde.getpoole.com/2012/02/06/whats-jekyll/
 
 <a href="https://www.houzhenni.com/myapp/xiaomi-clock.html" target="_blank">一个简易的小米时钟</a>
 
-<a href="https://www.houzhenni.com/myapp/image-size-checker.html" target="_blank">一个简易的图片尺寸检查工具，专为eBay卖家设计</a>
 
 此目录会不断更新，敬请期待~
