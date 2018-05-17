@@ -53,7 +53,8 @@
   }
 
   @media screen and (min-width: $break-point-5) {
-    max-width: 48rem;
+    /* max-width: 48rem; */
+    max-width: 52rem;
   }
 
   @media screen and (min-width: $break-point-dynamic) {
