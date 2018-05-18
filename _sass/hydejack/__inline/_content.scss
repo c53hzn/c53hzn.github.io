@@ -53,15 +53,15 @@
   }
 
   @media screen and (min-width: $break-point-5) {
-    /* max-width: 48rem; */
-    margin-left: 40rem;
-    margin-right: 4rem;
-    padding-left: 1rem;
-    max-width: 60rem;
+    max-width: 48rem;
   }
 
   @media screen and (min-width: $break-point-dynamic) {
-    margin: auto;
+   /*  margin: auto; */
+    max-width: 60rem;
+    margin-left: 40rem;
+    margin-right: 4rem;
+    padding-left: 1rem;
   }
 }
 
