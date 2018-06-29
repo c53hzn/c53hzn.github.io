@@ -43,5 +43,7 @@ canonical_url: http://hyde.getpoole.com/2012/02/06/whats-jekyll/
 
 <a href="https://www.houzhenni.com/myapp/xiaomi-clock.html" target="_blank">一个简易的小米时钟</a>
 
+<a href="https://www.houzhenni.com/cssitem/photoalbum.html" target="_blank">一个瓦片布局的照片墙</a>
+
 
 此目录会不断更新，敬请期待~
