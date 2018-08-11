@@ -47,5 +47,7 @@ canonical_url: http://hyde.getpoole.com/2012/02/06/whats-jekyll/
 
 <a href="https://www.houzhenni.com/cssitem/photoalbum.html" target="_blank">一个瓦片布局的照片墙</a>
 
+<a href="https://www.houzhenni.com/cssitem/flexalbum.html" target="_blank">一个flexbox布局的图片展示</a>
+
 
 此目录会不断更新，敬请期待~
