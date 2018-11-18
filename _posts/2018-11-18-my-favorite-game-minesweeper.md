@@ -8,9 +8,10 @@ author: author1
 comments: true
 canonical_url: http://hyde.getpoole.com/2012/02/06/whats-jekyll/
 ---
-## 我和扫雷
 
 Vue版扫雷游戏[在这里](https://www.houzhenni.com/myapp/minesweeper-vue.html)
+
+## 我和扫雷
 
 我其实不是一个爱玩游戏的人，不管是PC、iPad、手机还是PS4上的游戏，我都是浅尝辄止，过了一段时间之后甚至记不起自己装过什么游戏。
 
