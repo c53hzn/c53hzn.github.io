@@ -57,6 +57,8 @@ Vue版扫雷游戏[在这里](https://www.houzhenni.com/myapp/minesweeper-vue.ht
 
 设置按钮的图标是我以前用CSS画的八齿空心齿轮，而它的弹出窗口本身是一个轮播图的形式，以后也可以直接复用。
 
+轮播图[在这里](https://www.houzhenni.com/myapp/carousel-vue.html)
+
 我想做的功能都实现了，这个版本基本上算是圆满了。
 
 ## 其他人的扫雷
