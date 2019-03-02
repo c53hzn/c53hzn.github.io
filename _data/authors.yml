@@ -8,7 +8,7 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    努力学英语，努力学日语，努力学韩语，努力提高中文。我一生的追求大抵如此。
+    努力学英语，努力学日语，努力学韩语，努力提高中文，努力学习写代码，加油！
 
   # Lorem ipsum dolor sit amet, consectetur adipiscing elit,
   #  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -31,8 +31,8 @@ author1:
     # twitter:         <username>
     github:          houzhenni
     email:           mailto:admin@houzhenni.com
-    # rss:             https://<url>/feed.xml
-    # facebook:        <username>
+    rss:             https://www.houzhenni.com/feed.xml
+    facebook:        jenny.hou.1048
     # google:          <number>
     # vk:              <username>
     # youtube:         <string_string_string>
