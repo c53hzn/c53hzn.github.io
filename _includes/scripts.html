@@ -24,7 +24,10 @@
       loadJSDeferred('https://www.google-analytics.com/analytics.js');
       var aTags = document.getElementsByTagName("a");
       for (let i = 0; i < aTags.length; i++) {
-        aTags[i].target = "_blank"
+        let classList = aTags[i].classList;
+        if (classList.length == 0 || classList.contains("external") || classList.contains("no-mark-external")) {
+          aTags[i].target = "_blank"
+        }
       }
     </script>
   {% endif %}
