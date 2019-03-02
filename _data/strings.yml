@@ -10,9 +10,9 @@
 
 # Free version
 # ---------------------------------------------------------------------------------------
-home:                  Home
-pages:                 Pages
-posts:                 Posts
+home:                  主页
+pages:                 页面
+posts:                 文章
 about:                 关于作者
 related_posts:         相关文章
 other_projects:        Other Projects
@@ -22,9 +22,9 @@ navigation:            Navigation
 social:                Social
 links:                 Links
 pagination:            Pagination
-newer:                 Newer
-older:                 Older
-back:                  Back
+newer:                 下一页
+older:                 上一页
+back:                  返回
 permalink:             Permalink
 permalink_icon:        icon-link
 templates:             Templates (for web app)
