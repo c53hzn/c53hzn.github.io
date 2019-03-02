@@ -24,7 +24,7 @@
       loadJSDeferred('https://www.google-analytics.com/analytics.js');
       var aTags = document.getElementsByTagName("a");
       for (let i = 0; i < aTags.length; i++) {
-        if (!/^https:\/\/(www|e-comm)\.houzhenni(\.com$|\.com\/\d.+)/.test(aTags[i].href)) {
+        if (!/^https:\/\/(www|e-comm)\.houzhenni(\.com\/$|\.com\/\d.+)/.test(aTags[i].href)) {
           aTags[i].target = "_blank";
         }
       }
