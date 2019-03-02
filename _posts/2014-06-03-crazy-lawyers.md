@@ -3,7 +3,7 @@ layout: post
 title: 电视剧推荐之神经病律师事务所
 description: >
   看精英律师如何巧舌如簧
-tags: [小日常]
+tags: [小日常,剧评]
 author: author1
 comments: true
 canonical_url: http://hyde.getpoole.com/2012/02/06/whats-jekyll/
