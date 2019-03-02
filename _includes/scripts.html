@@ -22,13 +22,16 @@
       {% endif %}
       ga('send', 'pageview');
       loadJSDeferred('https://www.google-analytics.com/analytics.js');
-      $("body").on("click", "a", function(e) {
-        e.preventDefault();
-        var url = this.href;
-        var win = window.open(url, '_blank');
-        win.focus();
-        return false;
-      });
+      var aTags = document.getElementsByTagName("a");
+      for (let i = 0; i < aTags.length; i++) {
+        aTags[i].onclick = function(e) {
+          e.preventDefault();
+          var url = this.href;
+          var win = window.open(url, '_blank');
+          win.focus();
+          return false;
+        }
+      }
     </script>
   {% endif %}
 
