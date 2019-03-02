@@ -31,7 +31,7 @@
       document.getElementsByTagName("body")[0].addEventListener("click", function() {
         var aTags = document.getElementsByTagName("a");
         for (let i = 0; i < aTags.length; i++) {
-          if (/^\//.test(aTags[i].href && aTags[i].target != "_blank") {
+          if (/^\//.test(aTags[i].href) && aTags[i].target != "_blank") {
             aTags[i].target = "_blank";
           }
         }
