@@ -37,7 +37,7 @@ continue_reading:      >
 
 cookies_banner:
   text:                >
-    本站使用 cookies. 详情请见[Cookies](/cookies-policy/).
+    本站使用 cookies. 详情请见<a href="/cookies-policy/" target="_blank">Cookies</a>.
   okay:                Okay
 
 not_found:
