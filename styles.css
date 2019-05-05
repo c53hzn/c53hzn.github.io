@@ -1,0 +1,62 @@
+* {
+	box-sizing: border-box;
+	word-wrap: break-word;
+	/*word-break: break-all;*/
+}
+html, body {
+  margin: 0px;
+}
+html {
+	height: 100%;
+	background: #f9f9f9;
+}
+body {
+	width: 100%;
+	min-width: 320px;
+}
+.container {
+  margin-top: 40px;
+  width: 100%;
+  background: #f9f9f9;
+}
+main {
+	margin: 0px auto;
+	padding: 20px;
+	width: 800px;
+	background: white;
+	border-left: 1px solid rgba(0, 0, 0, 0.3);
+	border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+a, a:visited {
+	color: inherit;
+}
+.font-arial {
+  font-family: Arial;
+}
+.blog-date {
+	font-family: "Arial";
+	color: gray;
+	font-size: 14px;
+}
+.blog-tag {
+	margin: 5px;
+	padding: 2px;
+	color: white;
+	font-size: 14px;
+	border-radius: 10%;
+	background: gray;
+}
+.blog-tag a{
+	text-decoration: none;
+	color: inherit;
+}
+img {
+	max-width: 100%;
+}
+@media all and (max-width: 768px) {
+	main {
+		margin: 0px;
+		padding: 10px;
+		width: auto;
+	}
+}
