@@ -1,0 +1,162 @@
+{
+  "tel": "(852)12345678",
+  "fullName": "HOU Zhenni",
+  "email": "admin@houzhenni.com",
+  "nickname": "Jenny",
+  "work_exp": [
+    {
+      "company": "Holistic Technology Company Ltd",
+      "title": "Business Manager",
+      "start_m_y": "April 2017",
+      "end_m_y": "Now",
+      "city": "Hong Kong",
+      "company_desc": "Holistic Technology Company Ltd specializes in cross-border E-Commerce ERP system, its clients range from individual sellers to enterprise sellers, and SoldEazy.com is the key product, the company has won many awards including 2016 Hong Kong ICT award",
+      "duties": [
+        {
+          "name": "Work as a team leader of Customer Service",
+          "details": [
+            "Maintain multichannel support for the ERP system with 3 team members",
+            "Host webinars on E-Commerce platform & ERP system operation",
+            "Plan workflow and arrange staff on the churn customer management program"
+          ]
+        },
+        {
+          "name": "Participate in product quality enhancement",
+          "details": [
+            "Conduct competitive product analysis and user acceptance test",
+            "Write tutorial documents for system functions and new platforms released",
+            "Implement first-line problem detection, collect relevant evidence and test for reproducible bugs"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Brand Off Ltd",
+      "title": "E-Commerce Assistant",
+      "start_m_y": "Apr 2015",
+      "end_m_y": "Nov 2016",
+      "city": "Hong Kong",
+      "company_desc": "Brand Off Ltd is a professional retail/wholesale company that deals with second-hand luxury products. The E-Commerce team is responsible for all its activities on various platforms(EBay, Reebonz and its official online shop)",
+      "duties": [
+        {
+          "name": "Online Shop Management",
+          "details": [
+            "Producing media resources for eBay/ Reebonz/ online shop, such as writing product specifications (Chi & Eng) and editing product photos",
+            "Respond to customer phone calls and emails",
+            "Product page editing and eDM content management",
+            "Maintain social media contents(Facebook, Line and Weibo)"
+          ]
+        },
+        {
+          "name": "Brand Auction Helper",
+          "details": [
+            "Field assistance in the Brand Auction held by Brand Off Ltd in Hong Kong",
+            "Material preparation, on-site client reception, interpretation between Japanese and Chinese, etc"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Cido Research Ltd",
+      "title": "Survey Interviewer(Contract)",
+      "start_m_y": "Sep 2014",
+      "end_m_y": "Mar 2015",
+      "city": "Hong Kong",
+      "company_desc": "Cido Research Ltd conducts all types of marketing research, its clients range from the Hong Kong Tourism Board to Bank of China (Hong Kong) Limited and others",
+      "duties": [
+        {
+          "name": "Marketing Research Survey Interview",
+          "details": [
+            "Approach foreign visitors to Hong Kong and conducting tourism marketing survey",
+            "Collect tourism data involving sightseeing, shopping and entertainment"
+          ]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institute": "FreeCodeCamp",
+      "field": "Web development",
+      "start_m_y": "Nov 2017",
+      "end_m_y": "Now",
+      "city": "Online",
+      "highlights": [
+        {
+          "name": "Responsive Web Design Certification",
+          "details": []
+        },
+        {
+          "name": "Front-End Libraries Certification",
+          "details": []
+        },
+        {
+          "name": "JavaScript Algorithms and Data Structures Certification",
+          "details": []
+        }
+      ]
+    },
+    {
+      "institute": "The Hong Kong Polytechnic University",
+      "field": "MA in Japanese Studies for the Profession",
+      "start_m_y": "Sep 2013",
+      "end_m_y": "Aug 2014",
+      "city": "Hong Kong",
+      "highlights": [
+        {
+          "name": "Prize for distinguished postgraduate students (2013/14)",
+          "details": ["GPA: 3.6/4"]
+        }
+      ]
+    },
+    {
+      "institute": "Fuyang Teachers College",
+      "field": "BA in Japanese",
+      "start_m_y": "Sep 2009",
+      "end_m_y": "Jun 2013",
+      "city": "Fuyang, Anhui Province",
+      "highlights": [
+        {
+          "name": "School scholarships for 4 consecutive years",
+          "details": ["GPA: 3.92/5"]
+        }
+      ]
+    }
+  ],
+  "pro_skills": [
+    {
+      "nature": "Microsoft Office Softwares",
+      "items": [
+        {
+          "name": "Word, Excel, PowerPoint, Outlook",
+          "details": [
+            "Excel formulas and functions specialized:",
+            "SUM, IF, VLOOKUP, FIND, Data Validation, Data Consolidation, Conditional Formatting, Pivot, etc",
+            "Able to reduce two days’ worth of data processing work down to 30-minute work"
+          ]
+        }
+      ]
+    },
+    {
+      "nature": "Programming Languages",
+      "items": [
+        {
+          "name": "HTML, CSS, JavaScript",
+          "details": [
+            "Able to write browser scripts, collect desired data and export",
+            "Developed  several useful tools for CS team’s internal use on occasions"
+          ]
+        }
+      ]
+    },
+    {
+      "nature": "Web frameworks & libraries",
+      "items": [
+        {
+          "name": "NodeJS, BootStrap, jQuery, VueJS",
+          "details": []
+        }
+      ]
+    }
+  ]
+}
