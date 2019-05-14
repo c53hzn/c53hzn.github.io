@@ -3,6 +3,7 @@
   "fullName": "HOU Zhenni",
   "email": "admin@houzhenni.com",
   "nickname": "Jenny",
+  "summary": "A self-taught Front-End developer with 4 years of experience in E-Commerce field and also web application development.",
   "work_exp": [
     {
       "company": "~ Technology Company Ltd",
@@ -10,7 +11,7 @@
       "start_m_y": "April 2017",
       "end_m_y": "Now",
       "city": "Hong Kong",
-      "company_desc": "~ Technology Company Ltd specializes in ~ system, its clients range from individual sellers to enterprise sellers, and ~ is the key product",
+      "company_desc": "~ Technology Company Ltd specializes in ~ system, its clients range from ~ to ~, and ~ is the key product",
       "duties": [
         {
           "name": "Work as a team leader of Customer Service",
