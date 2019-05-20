@@ -58,6 +58,9 @@ a, a:visited {
 	border-radius: 10%;
 	background: gray;
 }
+.blog-tag:hover {
+	background: black;
+}
 .blog-tag a{
 	text-decoration: none;
 	color: inherit;
