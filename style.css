@@ -92,11 +92,11 @@ header a:active, header a:visited {
 	height: 100%;
 	line-height: 40px;
 }
-.nav-link:hover{
-    color: gray;
-}
 .nav-link:visited {
 	color: inherit;
+}
+.nav-link:hover{
+    color: gray;
 }
 .nuxt-link-active {
 	border-bottom: 1px solid black;
@@ -148,6 +148,9 @@ main {
 }
 a, a:visited {
 	color: inherit;
+}
+.align-left {
+	text-align: left;
 }
 .font-arial {
   font-family: Arial;
