@@ -161,14 +161,14 @@ a, a:visited {
 	font-size: 14px;
 }
 .blog-tag {
-	margin: 5px;
-	padding: 0px 4px;
-	color: white;
-	font-size: 14px;
-	line-height: 26px;
-	border-radius: 10%;
-	background: gray;
-	display: inline-block;
+    margin: 5px;
+    padding: 0px 3px;
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+    border-radius: 10%;
+    background: gray;
+    display: inline-block;
 }
 .blog-tag:hover {
 	background: black;
