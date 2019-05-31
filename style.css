@@ -161,13 +161,13 @@ a, a:visited {
 	font-size: 14px;
 }
 .blog-tag {
-    margin: 5px;
-    padding: 0px 3px;
+    margin: 1px;
+    padding: 0px 8px;
     color: white;
     font-size: 12px;
     font-family: "Microsoft Yahei";
     line-height: 20px;
-    border-radius: 10%;
+    border-radius: 999px;
     background: gray;
     display: inline-block;
 }
