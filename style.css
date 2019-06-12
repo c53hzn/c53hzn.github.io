@@ -25,7 +25,6 @@ body {
 .container {
   padding-top: 40px;
   width: 100%;
-  min-height: calc(100vh - 121px);
   background: #f9f9f9;
 }
 nav {
@@ -139,7 +138,7 @@ main {
 	margin: 0px auto;
 	padding: 20px;
 	width: 800px;
-	min-height: calc(100vh - 100px);
+	min-height: calc(100vh - 121px);
 	background: white;
 	border-left: 1px solid rgba(0, 0, 0, 0.3);
 	border-right: 1px solid rgba(0, 0, 0, 0.3);
