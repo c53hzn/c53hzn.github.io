@@ -63,7 +63,7 @@ header {
 	margin: 0px;
 	height: 100%;
 }
-header a {
+.no-decor-link {
 	text-decoration: none;
 }
 header a:active, header a:visited {
