@@ -11,7 +11,6 @@ var styleContent = `
 	width: 100%;
 	height: 100%;
 	background: rgba(0, 0, 0, .5);
-	z-index: 999;
 }
 #mask_child {
 	position: absolute;
@@ -31,6 +30,7 @@ var styleContent = `
 }
 .fade-in-anime {
 	animation: fade-in 0.5s;
+  	z-index: 999;
 }
 .fade-out-anime {
 	animation: fade-out 0.5s;
@@ -40,24 +40,24 @@ var styleContent = `
   from {
   	opacity: 0;
   	display: block;
-  	z-index: 0;
+  	z-index: 999;
   }
   to {
   	opacity: 1;
   	display: block;
-  	z-index: 0;
+  	z-index: 999;
   }
 }
 @keyframes fade-out {
   0% {
   	opacity: 1;
   	display: block;
-  	z-index: 0;
+  	z-index: 999;
   }
   99% {
   	opacity: 0;
   	display: block;
-  	z-index: 0;
+  	z-index: 999;
   }
   100% {
   	z-index: -1;
