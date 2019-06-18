@@ -40,20 +40,24 @@ var styleContent = `
   from {
   	opacity: 0;
   	display: block;
+  	z-index: 0;
   }
   to {
   	opacity: 1;
   	display: block;
+  	z-index: 0;
   }
 }
 @keyframes fade-out {
   0% {
   	opacity: 1;
   	display: block;
+  	z-index: 0;
   }
   99% {
   	opacity: 0;
   	display: block;
+  	z-index: 0;
   }
   100% {
   	z-index: -1;
