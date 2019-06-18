@@ -39,24 +39,20 @@ var styleContent = `
 @keyframes fade-in {
   from {
   	opacity: 0;
-  	display: block;
   	z-index: 999;
   }
   to {
   	opacity: 1;
-  	display: block;
   	z-index: 999;
   }
 }
 @keyframes fade-out {
   0% {
   	opacity: 1;
-  	display: block;
   	z-index: 999;
   }
   99% {
   	opacity: 0;
-  	display: block;
   	z-index: 999;
   }
   100% {
