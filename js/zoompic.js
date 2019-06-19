@@ -56,6 +56,7 @@ var styleContent = `
   	z-index: 999;
   }
   100% {
+  	opacity: 0;
   	z-index: -1;
   }
 }
