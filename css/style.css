@@ -26,7 +26,7 @@ body {
 	position: fixed;
 }
 .container {
-  padding-top: 42px;
+  padding-top: 40px;
   width: 100%;
   background: var(--color1);
 }
@@ -37,9 +37,9 @@ nav {
 	right: 0px;
 	bottom: 0px;
 	height: 40px;
+	color: white;
 	font-family: "Poppins", Sans-serif;
-	background: inherit;
-	/*box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.6);*/
+	background: hsla(0, 0%, 20%, 1);
 	z-index: 999;
 }
 .nav-wrap {
@@ -89,7 +89,7 @@ header a:active, header a:visited {
 	color: inherit;
 }
 .nav-home, .nav-link {
-	color: black;
+	color: inherit;
 	height: 100%;
 	line-height: 40px;
 }
@@ -100,7 +100,7 @@ header a:active, header a:visited {
     color: gray;
 }
 .nuxt-link-active {
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid white;
 }
 .nav-mask {
 	position: fixed;
@@ -133,7 +133,7 @@ header a:active, header a:visited {
 	width: 70%;
 	height: 25%;
 	text-align: center;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid white;
 }
 .bar:last-child {
 	border: none;
@@ -142,12 +142,8 @@ main {
 	margin: 0px auto;
 	padding: 20px;
 	width: 800px;
-	min-height: calc(100vh - 123px);
+	min-height: calc(100vh - 121px);
 	background: white;
-	/*border-left: 1px solid rgba(0, 0, 0, 0.3);*/
-	/*border-right: 1px solid rgba(0, 0, 0, 0.3);*/
-	border-radius: 30px;
-	box-shadow: 0px 0px 3px 0px silver;
 }
 a, a:visited {
 	color: inherit;
@@ -294,6 +290,7 @@ footer p {
 		width: 100%;
 		height: auto;
 		transform: translateY(-100%);
+		color: black;
 		text-align: left;
 		background: white;
 		transition: transform 0.8s;
