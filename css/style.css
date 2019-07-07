@@ -332,6 +332,9 @@ footer p {
 	.nav-btn {
 		display: block;
 	}
+	.main-content {
+		min-height: calc(100vh - 118px);
+	}
 	footer {
 		border-top: 1px solid rgba(0, 0, 0, 0.6);
 	}
