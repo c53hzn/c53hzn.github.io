@@ -77,6 +77,8 @@ d.querySelector("head").appendChild(maskStyle);
 d.querySelector("body").appendChild(maskDom);
 var mask_layer = d.getElementById("mask_layer");
 var imgArr = d.querySelectorAll("article img");
+var imgArr2 = d.querySelectorAll(".pic-showcase img");
+imgArr = [...imgArr, ...imgArr2];
 for (let i = 0; i < imgArr.length; i++) {
 	let parent = imgArr[i].parentNode;
 	let grandParent = parent.parentNode;
