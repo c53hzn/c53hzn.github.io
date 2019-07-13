@@ -19,10 +19,11 @@ var styleContent = `
 	right: 0px;
 	bottom: 0px;
 	margin: auto;
-	max-width: 100%;
-	max-height: 100%;
-	min-width: 700px;
-	border: 1px solid black;
+	width: 700px;
+	height: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 	cursor: zoom-out;
 }
 .hidden {
@@ -60,9 +61,9 @@ var styleContent = `
   	z-index: -1;
   }
 }
-@media all and (max-width: 800px) {
+@media all and (max-width: 768px) {
   #mask_child {
-  	min-width: auto;
+  	width: 100%;
   }
 }
 `;
@@ -71,23 +72,29 @@ var maskStyle = d.createElement("style");
 var maskDom = d.createElement("div");
 maskDom.id = "mask_layer";
 maskDom.className = "hidden";
-maskDom.innerHTML = `<img id="mask_child"/>`;
+maskDom.innerHTML = `<div id="mask_child"/>`;
 maskStyle.innerHTML = styleContent;
 d.querySelector("head").appendChild(maskStyle);
 d.querySelector("body").appendChild(maskDom);
 var mask_layer = d.getElementById("mask_layer");
-var imgArr = d.querySelectorAll("article img");
-var imgArr2 = d.querySelectorAll(".pic-showcase img");
-imgArr = [...imgArr, ...imgArr2];
-for (let i = 0; i < imgArr.length; i++) {
-	let parent = imgArr[i].parentNode;
+var imgArr1 = d.querySelectorAll("article img");
+for (let i = 0; i < imgArr1.length; i++) {
+	let parent = imgArr1[i].parentNode;
 	let grandParent = parent.parentNode;
 	if (parent.nodeName != "A" && grandParent.nodeName != "A") {
-		imgArr[i].className = "zoomable";
-		imgArr[i].onclick = function() {
-			d.querySelector("#mask_child").src = this.src;
+		imgArr1[i].className = "zoomable";
+		imgArr1[i].onclick = function() {
+			d.querySelector("#mask_child").style.backgroundImage = "url("+this.src+")";
 			d.querySelector("#mask_layer").className = "fade-in-anime";
 		}
+	}
+}
+var imgArr2 = d.querySelectorAll(".pic-showcase-unit");
+for (let j = 0; j < imgArr2.length; j++) {
+	imgArr2[j].className = imgArr2[j].className+" zoomable";
+	imgArr2[j].onclick = function() {
+		d.querySelector("#mask_child").style.backgroundImage = this.style.backgroundImage;
+		d.querySelector("#mask_layer").className = "fade-in-anime";
 	}
 }
 d.querySelector("#mask_layer").onclick = function() {
