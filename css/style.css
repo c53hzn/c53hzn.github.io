@@ -152,7 +152,7 @@ main {
 	margin: 40px auto;
 	padding: 20px 40px;
 	width: 1080px;
-	min-height: calc(100vh - 198px);
+	min-height: calc(100vh - 192px);
 	background: white;
 	border: 1px solid silver;
 	border-radius: 5px;
@@ -289,7 +289,7 @@ footer p {
 		width: auto;
 	}
 	.main-content {
-		min-height: calc(100vh - 118px);
+		min-height: calc(100vh - 112px);
 		padding: 20px;
 	}
 	.main-content, .main-content-unit {
@@ -352,7 +352,7 @@ footer p {
 		display: block;
 	}
 	.main-content {
-		min-height: calc(100vh - 118px);
+		min-height: calc(100vh - 112px);
 	}
 	footer {
 		border-top: 1px solid rgba(0, 0, 0, 0.6);
