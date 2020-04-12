@@ -147,6 +147,7 @@ header a:active, header a:visited {
 main {
 	margin: 0px auto;
 	width: 100%;
+	font-family: "Microsoft Yahei";
 }
 .main-content {
 	margin: 40px auto;
