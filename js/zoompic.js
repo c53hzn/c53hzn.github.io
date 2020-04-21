@@ -19,8 +19,6 @@ var styleContent = `
 	right: 0px;
 	bottom: 0px;
 	margin: auto;
-	width: 700px;
-	height: 100%;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -61,11 +59,6 @@ var styleContent = `
   	z-index: -1;
   }
 }
-@media all and (max-width: 768px) {
-  #mask_child {
-  	width: 100%;
-  }
-}
 `;
 var d = document;
 var maskStyle = d.createElement("style");
@@ -76,27 +69,23 @@ maskDom.innerHTML = `<div id="mask_child"/>`;
 maskStyle.innerHTML = styleContent;
 d.querySelector("head").appendChild(maskStyle);
 d.querySelector("body").appendChild(maskDom);
-var mask_layer = d.getElementById("mask_layer");
-var imgArr1 = d.querySelectorAll("article img");
-for (let i = 0; i < imgArr1.length; i++) {
-	let parent = imgArr1[i].parentNode;
-	let grandParent = parent.parentNode;
-	if (parent.nodeName != "A" && grandParent.nodeName != "A") {
-		imgArr1[i].className = "zoomable";
-		imgArr1[i].onclick = function() {
-			d.querySelector("#mask_child").style.backgroundImage = "url("+this.src+")";
-			d.querySelector("#mask_layer").className = "fade-in-anime";
-		}
-	}
-}
-var imgArr2 = d.querySelectorAll(".pic-showcase-unit");
-for (let j = 0; j < imgArr2.length; j++) {
-	imgArr2[j].className = imgArr2[j].className+" zoomable";
-	imgArr2[j].onclick = function() {
-		d.querySelector("#mask_child").style.backgroundImage = this.style.backgroundImage;
-		d.querySelector("#mask_layer").className = "fade-in-anime";
-	}
-}
 d.querySelector("#mask_layer").onclick = function() {
 	this.className = "fade-out-anime";
+}
+zoompic("article img");
+zoompic(".pic-showcase-unit");
+function zoompic(selector) {
+	var d = document;
+	var nodes = d.querySelectorAll(selector);
+	for (let i = 0; i < nodes.length; i++) {
+		let parent = nodes[i].parentNode;
+		let grandParent = parent.parentNode;
+		if (parent.nodeName != "A" && grandParent.nodeName != "A") {
+			nodes[i].className = "zoomable";
+			nodes[i].onclick = function() {
+				d.querySelector("#mask_child").style.backgroundImage = "url("+this.src+")";
+				d.querySelector("#mask_layer").className = "fade-in-anime";
+			}
+		}
+	}
 }
