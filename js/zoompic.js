@@ -81,7 +81,7 @@ function zoompic(selector) {
 		let parent = nodes[i].parentNode;
 		let grandParent = parent.parentNode;
 		if (parent.nodeName != "A" && grandParent.nodeName != "A") {
-			nodes[i].className = nodes[i].className + "zoomable";
+			nodes[i].className = nodes[i].className + " zoomable";
 			nodes[i].onclick = function() {
 				d.querySelector("#mask_child").style.backgroundImage = "url("+this.src+")";
 				d.querySelector("#mask_layer").className = "fade-in-anime";
