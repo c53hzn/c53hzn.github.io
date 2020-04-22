@@ -86,7 +86,7 @@ function zoompic(selector,nodeType) {
 				if (nodeType = "img") {
 					d.querySelector("#mask_child").style.backgroundImage = "url("+this.src+")";
 				} else if (nodeType = "div") {
-					d.querySelector("#mask_child").style.backgroundImage = "url("+this.style.backgroundImage+")";
+					d.querySelector("#mask_child").style.backgroundImage = this.style.backgroundImage;
 				}
 				d.querySelector("#mask_layer").className = "fade-in-anime";
 			}
