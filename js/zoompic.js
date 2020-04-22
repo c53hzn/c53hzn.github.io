@@ -72,9 +72,9 @@ d.querySelector("body").appendChild(maskDom);
 d.querySelector("#mask_layer").onclick = function() {
 	this.className = "fade-out-anime";
 }
-zoompic("article img");
-zoompic(".pic-showcase-unit");
-function zoompic(selector) {
+zoompic("article img", "img");
+zoompic(".pic-showcase-unit", "div");
+function zoompic(selector,nodeType) {
 	var d = document;
 	var nodes = d.querySelectorAll(selector);
 	for (let i = 0; i < nodes.length; i++) {
@@ -82,8 +82,12 @@ function zoompic(selector) {
 		let grandParent = parent.parentNode;
 		if (parent.nodeName != "A" && grandParent.nodeName != "A") {
 			nodes[i].className = nodes[i].className + " zoomable";
-			nodes[i].onclick = function() {
-				d.querySelector("#mask_child").style.backgroundImage = "url("+this.src+")";
+			nodes[i].onclick = function(nodeType) {
+				if (nodeType = "img") {
+					d.querySelector("#mask_child").style.backgroundImage = "url("+this.src+")";
+				} else if (nodeType = "div") {
+					d.querySelector("#mask_child").style.backgroundImage = "url("+this.style.backgroundImage+")";
+				}
 				d.querySelector("#mask_layer").className = "fade-in-anime";
 			}
 		}
