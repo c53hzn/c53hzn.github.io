@@ -5,7 +5,7 @@ a[name] {
     top: -40px;
     visibility: hidden;
 }
-.markdown-body p code{
+.markdown-body p code, .markdown-body li code{
 	background: #2b2b2b;
 	color: #f8f8f2;
 }
