@@ -10,6 +10,7 @@ a[name] {
 	color: #f8f8f2;
 }
 .markdown-body blockquote{
+	padding: 10px;
 	background-color: #f8f8f8;
 }
 /*# sourceMappingURL=github-markdown.min.css.map */
