@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>My blog</title>
+        <title>Blog | Jenny的小站</title>
         <link>https://www.houzhenni.com/blog/feed.xml</link>
-        <description>This is my personal blog feed!</description>
-        <lastBuildDate>Sun, 07 Jun 2020 12:34:22 GMT</lastBuildDate>
+        <description>This is the blog feed of Jenny HOU</description>
+        <lastBuildDate>Sun, 07 Jun 2020 16:26:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
             <title><![CDATA[论室友关系]]></title>
             <link>/blog/roommate-relationship</link>
             <guid>/blog/roommate-relationship</guid>
-            <description><![CDATA[与人斗，其累无穷。]]></description>
+            <description><![CDATA[合租这件事，实在是太考验个人智慧了。与人斗，其累无穷。]]></description>
         </item>
         <item>
             <title><![CDATA[How to enable spell check on Chrome]]></title>
