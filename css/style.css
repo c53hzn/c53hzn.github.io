@@ -28,6 +28,7 @@ body {
 .container {
   padding-top: 40px;
   width: 100%;
+  font-family: "Microsoft Yahei";
   background: var(--color1);
 }
 nav {
@@ -38,7 +39,7 @@ nav {
 	bottom: 0px;
 	height: 40px;
 	color: white;
-	font-family: "Poppins", Sans-serif;
+	font-family: "Poppins", Sans-serif, "Microsoft Yahei";
 	background: hsla(0, 0%, 20%, 1);
 	z-index: 999;
 }
@@ -83,6 +84,7 @@ header a:active, header a:visited {
 	margin-right: 20px;
 	height: 35px;
 	text-decoration: none;
+	cursor: pointer;
 }
 .nav-link:last-child {
 	margin-right: 10px;
@@ -148,7 +150,6 @@ header a:active, header a:visited {
 main {
 	margin: 0px auto;
 	width: 100%;
-	font-family: "Microsoft Yahei";
 }
 .main-content {
 	margin: 40px auto;
