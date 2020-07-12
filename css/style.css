@@ -303,7 +303,7 @@ footer p {
 	}
 }
 
-@media all and (max-width: 425px) {
+@media all and (max-width: 600px) {
 	.container {
 		padding-top: 40px;
 	}
