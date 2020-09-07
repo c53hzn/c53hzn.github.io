@@ -4,9 +4,15 @@
         <title>Blog | Jenny的小站</title>
         <link>https://www.houzhenni.com/blog/feed.xml</link>
         <description>This is the blog feed of Jenny HOU</description>
-        <lastBuildDate>Sun, 12 Jul 2020 16:14:05 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 07 Sep 2020 16:58:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[最近在追的电视剧]]></title>
+            <link>/blog/tv-review-2020-1</link>
+            <guid>/blog/tv-review-2020-1</guid>
+            <description><![CDATA[最近主要追了两部剧，《恶之花》和《穿越火线》，不同风格的故事，带给我不同风格的收获。]]></description>
+        </item>
         <item>
             <title><![CDATA[Deprived of rights, starting with her name]]></title>
             <link>/blog/stand-with-rowling-en</link>
