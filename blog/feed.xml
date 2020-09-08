@@ -4,9 +4,15 @@
         <title>Blog | Jenny的小站</title>
         <link>https://www.houzhenni.com/blog/feed.xml</link>
         <description>This is the blog feed of Jenny HOU</description>
-        <lastBuildDate>Mon, 07 Sep 2020 16:58:03 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 08 Sep 2020 17:45:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[小动物]]></title>
+            <link>/blog/little-animal-issue</link>
+            <guid>/blog/little-animal-issue</guid>
+            <description><![CDATA[站在食物链顶端的人类，还是无法与不请自来的“小动物”们和平相处啊。]]></description>
+        </item>
         <item>
             <title><![CDATA[最近在追的电视剧]]></title>
             <link>/blog/tv-review-2020-1</link>
