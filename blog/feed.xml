@@ -4,7 +4,7 @@
         <title>Blog | Jenny的小站</title>
         <link>https://www.houzhenni.com/blog/feed.xml</link>
         <description>This is the blog feed of Jenny HOU</description>
-        <lastBuildDate>Tue, 08 Sep 2020 17:45:22 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 12 Sep 2020 15:02:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
@@ -162,6 +162,12 @@
             <link>/blog/product-landing-page-with-scroll-effects</link>
             <guid>/blog/product-landing-page-with-scroll-effects</guid>
             <description><![CDATA[之前做了不添加任何效果的产品页，这两天看苹果ipad pro的产品页，惊艳到不行，所以自己仿照做一个鼠标滚轮事件触发页面元素平移的版本，不过比较粗糙。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[社畜烛九之死——看《镇魂》有感]]></title>
+            <link>/blog/death-of-a-nobody</link>
+            <guid>/blog/death-of-a-nobody</guid>
+            <description><![CDATA[你们在《镇魂》里看的都是甜甜的爱情，我却看到了社畜的悲哀。。。]]></description>
         </item>
         <item>
             <title><![CDATA[如何搭建静态个人博客]]></title>
