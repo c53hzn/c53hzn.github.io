@@ -168,6 +168,9 @@ main {
 	border: 1px solid silver;
 	border-radius: 5px;
 }
+.article-title {
+	font-size: 30px;
+}
 a, a:visited {
 	color: inherit;
 }
