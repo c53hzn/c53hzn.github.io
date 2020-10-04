@@ -4,9 +4,15 @@
         <title>Blog | Jenny的小站</title>
         <link>https://www.houzhenni.com/blog/feed.xml</link>
         <description>This is the blog feed of Jenny HOU</description>
-        <lastBuildDate>Sun, 27 Sep 2020 13:06:25 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 04 Oct 2020 10:03:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[低配电脑能用什么视频剪辑软件]]></title>
+            <link>/blog/filmora</link>
+            <guid>/blog/filmora</guid>
+            <description><![CDATA[我发现自己的电脑是地狱配置之后，竟然还找到了勉强能用的视频剪辑软件，真的要给万兴喵影点个赞。]]></description>
+        </item>
         <item>
             <title><![CDATA[考据“中华四维拓扑帝国”]]></title>
             <link>/blog/online-research</link>
