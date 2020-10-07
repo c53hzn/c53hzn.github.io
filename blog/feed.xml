@@ -4,9 +4,15 @@
         <title>Blog | Jenny的小站</title>
         <link>https://www.houzhenni.com/blog/feed.xml</link>
         <description>This is the blog feed of Jenny HOU</description>
-        <lastBuildDate>Sun, 04 Oct 2020 10:03:04 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 07 Oct 2020 17:14:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[如何找到明星同款背包]]></title>
+            <link>/blog/bag-research</link>
+            <guid>/blog/bag-research</guid>
+            <description><![CDATA[最近很喜欢刘学义，所以尝试搜索了一下他背的同款背包，也算是用上了一些以往的工作经验。]]></description>
+        </item>
         <item>
             <title><![CDATA[低配电脑能用什么视频剪辑软件]]></title>
             <link>/blog/filmora</link>
