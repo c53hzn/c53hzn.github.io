@@ -4,9 +4,15 @@
         <title>Blog | Jenny的小站</title>
         <link>https://www.houzhenni.com/blog/feed.xml</link>
         <description>This is the blog feed of Jenny HOU</description>
-        <lastBuildDate>Thu, 07 Jan 2021 18:37:06 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 09 Jan 2021 10:35:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[如何用手机查看局域网内Express主机上的文件]]></title>
+            <link>/blog/view-pc-files-from-mobile-via-express-server</link>
+            <guid>/blog/view-pc-files-from-mobile-via-express-server</guid>
+            <description><![CDATA[用电脑搭建Express服务器，然后手机直接看电脑上的文件和视频，好像挺有意思的？]]></description>
+        </item>
         <item>
             <title><![CDATA[熊猫速汇测评]]></title>
             <link>/blog/panda-remit-review</link>
