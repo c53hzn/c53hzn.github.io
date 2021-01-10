@@ -4,7 +4,7 @@
         <title>Blog | Jenny的小站</title>
         <link>https://www.houzhenni.com/blog/feed.xml</link>
         <description>This is the blog feed of Jenny HOU</description>
-        <lastBuildDate>Sat, 09 Jan 2021 10:35:48 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 10 Jan 2021 16:35:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
@@ -14,7 +14,7 @@
             <description><![CDATA[用电脑搭建Express服务器，然后手机直接看电脑上的文件和视频，好像挺有意思的？]]></description>
         </item>
         <item>
-            <title><![CDATA[熊猫速汇测评]]></title>
+            <title><![CDATA[熊猫速汇(Panda Remit)测评]]></title>
             <link>/blog/panda-remit-review</link>
             <guid>/blog/panda-remit-review</guid>
             <description><![CDATA[试用了一下用熊猫速汇从我的香港银行卡汇款到大陆银行卡，感觉还行。]]></description>
