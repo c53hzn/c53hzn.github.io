@@ -17,6 +17,11 @@ a[name] {
 	max-width: 600px;
 	border: 1px solid silver;
 }
+@media all and (max-width: 768px) {
+	.markdown-body img {
+		max-width: 100%;
+	}
+}
 /*# sourceMappingURL=github-markdown.min.css.map */
 /*2020-05-01 deleted 
 .markdown-body .highlight pre,.markdown-body pre{background-color:#f6f8fa;}
