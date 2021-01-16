@@ -13,6 +13,10 @@ a[name] {
 	padding: 10px;
 	background-color: #f8f8f8;
 }
+.markdown-body img{
+	max-width: 600px;
+	border: 1px solid silver;
+}
 /*# sourceMappingURL=github-markdown.min.css.map */
 /*2020-05-01 deleted 
 .markdown-body .highlight pre,.markdown-body pre{background-color:#f6f8fa;}
