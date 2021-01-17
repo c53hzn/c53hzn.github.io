@@ -4,14 +4,14 @@
         <title>Blog | Jenny的小站</title>
         <link>https://www.houzhenni.com/blog/feed.xml</link>
         <description>This is the blog feed of Jenny HOU</description>
-        <lastBuildDate>Sat, 16 Jan 2021 17:59:56 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 17 Jan 2021 08:47:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
             <title><![CDATA[Edge浏览器PDF朗读功能测评]]></title>
             <link>/blog/get-pdf-read-aloud-on-edge</link>
             <guid>/blog/get-pdf-read-aloud-on-edge</guid>
-            <description><![CDATA[Edge浏览器有个PDF朗读功能，中英文都可以，试用了一下感觉还可以。]]></description>
+            <description><![CDATA[Edge浏览器有个PDF朗读功能，中英文都可以，试用了一下感觉还行。]]></description>
         </item>
         <item>
             <title><![CDATA[如何用手机查看局域网内Express主机上的文件]]></title>
