@@ -4,14 +4,9 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Wed, 20 Jan 2021 17:26:45 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 20 Jan 2021 17:44:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
-        <item>
-            <title><![CDATA[记录一下解决Chrome主页被hao123劫持的过程]]></title>
-            <link>https://www.houzhenni.com/blog/hao123-issue</link>
-            <guid>https://www.houzhenni.com/blog/hao123-issue</guid>
-        </item>
         <item>
             <title><![CDATA[添加元素平移效果的产品页面]]></title>
             <link>https://www.houzhenni.com/blog/product-landing-page-with-scroll-effects</link>
@@ -23,14 +18,14 @@
             <guid>https://www.houzhenni.com/blog/death-of-a-nobody</guid>
         </item>
         <item>
-            <title><![CDATA[如何搭建静态个人博客]]></title>
-            <link>https://www.houzhenni.com/blog/jekyll-blog-static-website</link>
-            <guid>https://www.houzhenni.com/blog/jekyll-blog-static-website</guid>
-        </item>
-        <item>
             <title><![CDATA[我最喜欢的PC游戏——扫雷]]></title>
             <link>https://www.houzhenni.com/blog/minesweeper</link>
             <guid>https://www.houzhenni.com/blog/minesweeper</guid>
+        </item>
+        <item>
+            <title><![CDATA[如何搭建静态个人博客]]></title>
+            <link>https://www.houzhenni.com/blog/jekyll-blog-static-website</link>
+            <guid>https://www.houzhenni.com/blog/jekyll-blog-static-website</guid>
         </item>
         <item>
             <title><![CDATA[阿尔罕布拉宫的回忆]]></title>
@@ -43,11 +38,6 @@
             <guid>https://www.houzhenni.com/blog/memories-of-the-alhambra-n-feel-good-to-die</guid>
         </item>
         <item>
-            <title><![CDATA[如何减轻Nuxt打包生成的代码量]]></title>
-            <link>https://www.houzhenni.com/blog/lighten-nuxt-website</link>
-            <guid>https://www.houzhenni.com/blog/lighten-nuxt-website</guid>
-        </item>
-        <item>
             <title><![CDATA[人生初の宝塚歌劇鑑賞－－藤原鎌足の話を見ました]]></title>
             <link>https://www.houzhenni.com/blog/takarazuka-musical-jp</link>
             <guid>https://www.houzhenni.com/blog/takarazuka-musical-jp</guid>
@@ -58,19 +48,24 @@
             <guid>https://www.houzhenni.com/blog/boys-over-flowers</guid>
         </item>
         <item>
-            <title><![CDATA[记忆中的食堂菜]]></title>
-            <link>https://www.houzhenni.com/blog/campus-canteen-memories</link>
-            <guid>https://www.houzhenni.com/blog/campus-canteen-memories</guid>
+            <title><![CDATA[如何减轻Nuxt打包生成的代码量]]></title>
+            <link>https://www.houzhenni.com/blog/lighten-nuxt-website</link>
+            <guid>https://www.houzhenni.com/blog/lighten-nuxt-website</guid>
         </item>
         <item>
-            <title><![CDATA[60天，指定幸存者]]></title>
-            <link>https://www.houzhenni.com/blog/designated-survivor</link>
-            <guid>https://www.houzhenni.com/blog/designated-survivor</guid>
+            <title><![CDATA[记录一下解决Chrome主页被hao123劫持的过程]]></title>
+            <link>https://www.houzhenni.com/blog/hao123-issue</link>
+            <guid>https://www.houzhenni.com/blog/hao123-issue</guid>
         </item>
         <item>
             <title><![CDATA[沙雕小说沙雕剧，拆我CP虐我心——《少年江湖物语》观后感]]></title>
             <link>https://www.houzhenni.com/blog/the-birth-of-the-drama-king</link>
             <guid>https://www.houzhenni.com/blog/the-birth-of-the-drama-king</guid>
+        </item>
+        <item>
+            <title><![CDATA[记忆中的食堂菜]]></title>
+            <link>https://www.houzhenni.com/blog/campus-canteen-memories</link>
+            <guid>https://www.houzhenni.com/blog/campus-canteen-memories</guid>
         </item>
         <item>
             <title><![CDATA[在Excel中用vlookup公式灵活查找数字或文本类型关键字]]></title>
@@ -83,6 +78,11 @@
             <guid>https://www.houzhenni.com/blog/summary-of-my-life-in-2019</guid>
         </item>
         <item>
+            <title><![CDATA[60天，指定幸存者]]></title>
+            <link>https://www.houzhenni.com/blog/designated-survivor</link>
+            <guid>https://www.houzhenni.com/blog/designated-survivor</guid>
+        </item>
+        <item>
             <title><![CDATA[关于疫病的记忆]]></title>
             <link>https://www.houzhenni.com/blog/memories-about-pandemics</link>
             <guid>https://www.houzhenni.com/blog/memories-about-pandemics</guid>
@@ -93,14 +93,14 @@
             <guid>https://www.houzhenni.com/blog/tv-drama-die-now</guid>
         </item>
         <item>
-            <title><![CDATA[Write a JavaScript script for Photoshop image batch processing]]></title>
-            <link>https://www.houzhenni.com/blog/script-for-photoshop-bulk-resize-and-watermark-en</link>
-            <guid>https://www.houzhenni.com/blog/script-for-photoshop-bulk-resize-and-watermark-en</guid>
-        </item>
-        <item>
             <title><![CDATA[用JavaScript写一个Photoshop批处理脚本]]></title>
             <link>https://www.houzhenni.com/blog/script-for-photoshop-bulk-resize-and-watermark</link>
             <guid>https://www.houzhenni.com/blog/script-for-photoshop-bulk-resize-and-watermark</guid>
+        </item>
+        <item>
+            <title><![CDATA[Write a JavaScript script for Photoshop image batch processing]]></title>
+            <link>https://www.houzhenni.com/blog/script-for-photoshop-bulk-resize-and-watermark-en</link>
+            <guid>https://www.houzhenni.com/blog/script-for-photoshop-bulk-resize-and-watermark-en</guid>
         </item>
         <item>
             <title><![CDATA[How to enable spell check on Chrome]]></title>
@@ -113,14 +113,14 @@
             <guid>https://www.houzhenni.com/blog/roommate-relationship</guid>
         </item>
         <item>
-            <title><![CDATA[女性失权，从名字始——罗琳事件有感]]></title>
-            <link>https://www.houzhenni.com/blog/stand-with-rowling</link>
-            <guid>https://www.houzhenni.com/blog/stand-with-rowling</guid>
-        </item>
-        <item>
             <title><![CDATA[Deprived of rights, starting with her name]]></title>
             <link>https://www.houzhenni.com/blog/stand-with-rowling-en</link>
             <guid>https://www.houzhenni.com/blog/stand-with-rowling-en</guid>
+        </item>
+        <item>
+            <title><![CDATA[女性失权，从名字始——罗琳事件有感]]></title>
+            <link>https://www.houzhenni.com/blog/stand-with-rowling</link>
+            <guid>https://www.houzhenni.com/blog/stand-with-rowling</guid>
         </item>
         <item>
             <title><![CDATA[小动物]]></title>
@@ -133,14 +133,14 @@
             <guid>https://www.houzhenni.com/blog/tv-review-2020-1</guid>
         </item>
         <item>
-            <title><![CDATA[高级社畜也不好过啊——《琉璃》和《秘密森林2》的观后感]]></title>
-            <link>https://www.houzhenni.com/blog/destiny-of-shachiku</link>
-            <guid>https://www.houzhenni.com/blog/destiny-of-shachiku</guid>
-        </item>
-        <item>
             <title><![CDATA[考据“中华四维拓扑帝国”]]></title>
             <link>https://www.houzhenni.com/blog/online-research</link>
             <guid>https://www.houzhenni.com/blog/online-research</guid>
+        </item>
+        <item>
+            <title><![CDATA[高级社畜也不好过啊——《琉璃》和《秘密森林2》的观后感]]></title>
+            <link>https://www.houzhenni.com/blog/destiny-of-shachiku</link>
+            <guid>https://www.houzhenni.com/blog/destiny-of-shachiku</guid>
         </item>
         <item>
             <title><![CDATA[如何找到明星同款背包]]></title>
@@ -158,14 +158,14 @@
             <guid>https://www.houzhenni.com/blog/panda-remit-review</guid>
         </item>
         <item>
-            <title><![CDATA[如何用手机查看局域网内Express主机上的文件]]></title>
-            <link>https://www.houzhenni.com/blog/view-pc-files-from-mobile-via-express-server</link>
-            <guid>https://www.houzhenni.com/blog/view-pc-files-from-mobile-via-express-server</guid>
-        </item>
-        <item>
             <title><![CDATA[Edge浏览器PDF朗读功能测评]]></title>
             <link>https://www.houzhenni.com/blog/get-pdf-read-aloud-on-edge</link>
             <guid>https://www.houzhenni.com/blog/get-pdf-read-aloud-on-edge</guid>
+        </item>
+        <item>
+            <title><![CDATA[如何用手机查看局域网内Express主机上的文件]]></title>
+            <link>https://www.houzhenni.com/blog/view-pc-files-from-mobile-via-express-server</link>
+            <guid>https://www.houzhenni.com/blog/view-pc-files-from-mobile-via-express-server</guid>
         </item>
         <item>
             <title><![CDATA[如何使用Nuxt建立个人博客]]></title>
