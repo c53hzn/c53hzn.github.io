@@ -4,7 +4,7 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Wed, 20 Jan 2021 15:43:22 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 20 Jan 2021 17:26:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
@@ -13,9 +13,9 @@
             <guid>https://www.houzhenni.com/blog/hao123-issue</guid>
         </item>
         <item>
-            <title><![CDATA[如何搭建静态个人博客]]></title>
-            <link>https://www.houzhenni.com/blog/jekyll-blog-static-website</link>
-            <guid>https://www.houzhenni.com/blog/jekyll-blog-static-website</guid>
+            <title><![CDATA[添加元素平移效果的产品页面]]></title>
+            <link>https://www.houzhenni.com/blog/product-landing-page-with-scroll-effects</link>
+            <guid>https://www.houzhenni.com/blog/product-landing-page-with-scroll-effects</guid>
         </item>
         <item>
             <title><![CDATA[社畜烛九之死——看《镇魂》有感]]></title>
@@ -23,9 +23,9 @@
             <guid>https://www.houzhenni.com/blog/death-of-a-nobody</guid>
         </item>
         <item>
-            <title><![CDATA[添加元素平移效果的产品页面]]></title>
-            <link>https://www.houzhenni.com/blog/product-landing-page-with-scroll-effects</link>
-            <guid>https://www.houzhenni.com/blog/product-landing-page-with-scroll-effects</guid>
+            <title><![CDATA[如何搭建静态个人博客]]></title>
+            <link>https://www.houzhenni.com/blog/jekyll-blog-static-website</link>
+            <guid>https://www.houzhenni.com/blog/jekyll-blog-static-website</guid>
         </item>
         <item>
             <title><![CDATA[我最喜欢的PC游戏——扫雷]]></title>
@@ -58,14 +58,14 @@
             <guid>https://www.houzhenni.com/blog/boys-over-flowers</guid>
         </item>
         <item>
-            <title><![CDATA[60天，指定幸存者]]></title>
-            <link>https://www.houzhenni.com/blog/designated-survivor</link>
-            <guid>https://www.houzhenni.com/blog/designated-survivor</guid>
-        </item>
-        <item>
             <title><![CDATA[记忆中的食堂菜]]></title>
             <link>https://www.houzhenni.com/blog/campus-canteen-memories</link>
             <guid>https://www.houzhenni.com/blog/campus-canteen-memories</guid>
+        </item>
+        <item>
+            <title><![CDATA[60天，指定幸存者]]></title>
+            <link>https://www.houzhenni.com/blog/designated-survivor</link>
+            <guid>https://www.houzhenni.com/blog/designated-survivor</guid>
         </item>
         <item>
             <title><![CDATA[沙雕小说沙雕剧，拆我CP虐我心——《少年江湖物语》观后感]]></title>
@@ -93,14 +93,14 @@
             <guid>https://www.houzhenni.com/blog/tv-drama-die-now</guid>
         </item>
         <item>
-            <title><![CDATA[用JavaScript写一个Photoshop批处理脚本]]></title>
-            <link>https://www.houzhenni.com/blog/script-for-photoshop-bulk-resize-and-watermark</link>
-            <guid>https://www.houzhenni.com/blog/script-for-photoshop-bulk-resize-and-watermark</guid>
-        </item>
-        <item>
             <title><![CDATA[Write a JavaScript script for Photoshop image batch processing]]></title>
             <link>https://www.houzhenni.com/blog/script-for-photoshop-bulk-resize-and-watermark-en</link>
             <guid>https://www.houzhenni.com/blog/script-for-photoshop-bulk-resize-and-watermark-en</guid>
+        </item>
+        <item>
+            <title><![CDATA[用JavaScript写一个Photoshop批处理脚本]]></title>
+            <link>https://www.houzhenni.com/blog/script-for-photoshop-bulk-resize-and-watermark</link>
+            <guid>https://www.houzhenni.com/blog/script-for-photoshop-bulk-resize-and-watermark</guid>
         </item>
         <item>
             <title><![CDATA[How to enable spell check on Chrome]]></title>
@@ -123,14 +123,14 @@
             <guid>https://www.houzhenni.com/blog/stand-with-rowling-en</guid>
         </item>
         <item>
-            <title><![CDATA[最近在追的电视剧]]></title>
-            <link>https://www.houzhenni.com/blog/tv-review-2020-1</link>
-            <guid>https://www.houzhenni.com/blog/tv-review-2020-1</guid>
-        </item>
-        <item>
             <title><![CDATA[小动物]]></title>
             <link>https://www.houzhenni.com/blog/little-animal-issue</link>
             <guid>https://www.houzhenni.com/blog/little-animal-issue</guid>
+        </item>
+        <item>
+            <title><![CDATA[最近在追的电视剧]]></title>
+            <link>https://www.houzhenni.com/blog/tv-review-2020-1</link>
+            <guid>https://www.houzhenni.com/blog/tv-review-2020-1</guid>
         </item>
         <item>
             <title><![CDATA[高级社畜也不好过啊——《琉璃》和《秘密森林2》的观后感]]></title>
@@ -143,14 +143,14 @@
             <guid>https://www.houzhenni.com/blog/online-research</guid>
         </item>
         <item>
-            <title><![CDATA[低配电脑能用什么视频剪辑软件]]></title>
-            <link>https://www.houzhenni.com/blog/filmora</link>
-            <guid>https://www.houzhenni.com/blog/filmora</guid>
-        </item>
-        <item>
             <title><![CDATA[如何找到明星同款背包]]></title>
             <link>https://www.houzhenni.com/blog/bag-research</link>
             <guid>https://www.houzhenni.com/blog/bag-research</guid>
+        </item>
+        <item>
+            <title><![CDATA[低配电脑能用什么视频剪辑软件]]></title>
+            <link>https://www.houzhenni.com/blog/filmora</link>
+            <guid>https://www.houzhenni.com/blog/filmora</guid>
         </item>
         <item>
             <title><![CDATA[熊猫速汇(Panda Remit)测评]]></title>
