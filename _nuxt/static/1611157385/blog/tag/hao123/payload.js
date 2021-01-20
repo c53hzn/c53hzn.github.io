@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/blog/tag/hao123", (function(a){return {data:[{blog_by_year:[[{slug:"hao123-issue",date:"2017-05-28T00:00:00.000Z",title:"记录一下解决Chrome主页被hao123劫持的过程",tags:["Chrome",a,"首页劫持","技术"]}]],baseURL:"\u002F",tagName:a,ui_str_zh:{tag:"标签",all_tags:"所有标签",all_posts:"所有文章"},ui_str_en:{tag:"Tag",all_tags:"All tags",all_posts:"All posts"}}],fetch:[],mutations:[]}}("hao123")));

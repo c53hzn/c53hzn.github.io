@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/blog/tag/%E5%88%98%E5%AD%A6%E4%B9%89", (function(a){return {data:[{blog_by_year:[[{slug:"bag-research",date:"2020-10-08T00:00:00.000Z",title:"如何找到明星同款背包",tags:["技术",a]}]],baseURL:"\u002F",tagName:a,ui_str_zh:{tag:"标签",all_tags:"所有标签",all_posts:"所有文章"},ui_str_en:{tag:"Tag",all_tags:"All tags",all_posts:"All posts"}}],fetch:[],mutations:[]}}("刘学义")));
