@@ -1,1 +1,0 @@
-window.__NUXT__={staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1611164647",layout:"blog",error:null,state:{lang:{val:"Chi",ui:"English",title:"Change navigation to English"}},serverRendered:true,routePath:"\u002Fblog\u002Ftag\u002F%E6%88%91%E7%9A%84%E9%A1%B9%E7%9B%AE",config:{content:{dbHash:"c554797a"}}};

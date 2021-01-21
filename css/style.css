@@ -188,10 +188,30 @@ a, a:visited {
 .font-arial {
   font-family: Arial;
 }
+.blog-link {
+  text-decoration: none;
+	font-weight: bold;
+}
+.blog-link:hover {
+  color: gray;
+}
 .blog-date, .blog-tags {
 	font-family: "Arial";
 	color: gray;
 	font-size: 14px;
+}
+.blog-lang {
+	display: inline-block;
+    width: 60px;
+    font-size: 14px;
+    text-align: center;
+    color: gray;
+    border: 1px solid silver;
+    border-radius: 4px;
+}
+.blog-lang:hover {
+	color: black;
+	border-color: black;
 }
 .blog-tag {
     margin: 1px;
