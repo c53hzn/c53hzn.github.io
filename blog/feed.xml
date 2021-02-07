@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sun, 07 Feb 2021 14:26:50 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 07 Feb 2021 15:30:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[如何使用Github Actions把Nuxt博客的静态文件push到其他repository]]></title>
+            <link>https://www.houzhenni.com/blog/nuxt-blog-generate-files-n-push-to-another-repo</link>
+            <guid>https://www.houzhenni.com/blog/nuxt-blog-generate-files-n-push-to-another-repo</guid>
+            <description><![CDATA[由于我的Nuxt博客工程文件和博客网站分别在两个不同的代码仓库，没法使用通用的那些GitHub Actions，经过搜索和研究，这次终于可以把Nuxt生成的静态文件推送到其他代码仓库并发布成功了。]]></description>
+        </item>
         <item>
             <title><![CDATA[Edge浏览器PDF朗读功能测评]]></title>
             <link>https://www.houzhenni.com/blog/get-pdf-read-aloud-on-edge</link>
