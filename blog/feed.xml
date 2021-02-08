@@ -4,14 +4,14 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sun, 07 Feb 2021 18:14:01 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 08 Feb 2021 04:51:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
             <title><![CDATA[2021年Nuxt新版本的一些限制]]></title>
             <link>https://www.houzhenni.com/blog/nuxt-2021-limitations</link>
             <guid>https://www.houzhenni.com/blog/nuxt-2021-limitations</guid>
-            <description><![CDATA[升级Nuxt到最新版本之后，遇到了3个问题，这个新版本用起来有点不太顺手。]]></description>
+            <description><![CDATA[升级Nuxt到2.14.12之后，遇到了3个问题，这个新版本用起来有点不太顺手。]]></description>
         </item>
         <item>
             <title><![CDATA[如何使用Github Actions把Nuxt博客的静态文件push到其他repository]]></title>
