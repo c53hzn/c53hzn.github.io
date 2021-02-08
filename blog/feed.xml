@@ -4,7 +4,7 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Mon, 08 Feb 2021 05:07:47 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 08 Feb 2021 12:07:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
@@ -14,16 +14,22 @@
             <description><![CDATA[升级Nuxt到2.14.12之后，遇到了3个问题，这个新版本用起来有点不太顺手。]]></description>
         </item>
         <item>
-            <title><![CDATA[如何使用Github Actions把Nuxt博客的静态文件push到其他repository]]></title>
+            <title><![CDATA[Limitations of latest version Nuxt in 2021]]></title>
+            <link>https://www.houzhenni.com/blog/nuxt-2021-limitations-en</link>
+            <guid>https://www.houzhenni.com/blog/nuxt-2021-limitations-en</guid>
+            <description><![CDATA[After updating to Nuxt 2.14.12, I encountered 3 problems, making the developing process a little difficult for me.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[使用Github Actions把Nuxt静态网站push到其他repository]]></title>
             <link>https://www.houzhenni.com/blog/nuxt-blog-generate-files-n-push-to-another-repo</link>
             <guid>https://www.houzhenni.com/blog/nuxt-blog-generate-files-n-push-to-another-repo</guid>
-            <description><![CDATA[一直想尝试自动部署Nuxt博客，但由于一些限制，我无法把Nuxt生成的静态文件推送到其他代码仓库并发布，经过搜索和研究，这次终于用GitHub Actions推送并发布成功了。]]></description>
+            <description><![CDATA[试了一下用GitHub Actions生成Nuxt静态博客，推送并发布到其他代码仓库，还是挺有意思的。]]></description>
         </item>
         <item>
             <title><![CDATA[Edge浏览器PDF朗读功能测评]]></title>
             <link>https://www.houzhenni.com/blog/get-pdf-read-aloud-on-edge</link>
             <guid>https://www.houzhenni.com/blog/get-pdf-read-aloud-on-edge</guid>
-            <description><![CDATA[Edge浏览器有个PDF朗读功能，中英文都可以，试用了一下感觉还行。]]></description>
+            <description><![CDATA[Edge浏览器有个朗读功能，可以朗读PDF或网页内容，中英文都可以，试用了一下感觉还行。]]></description>
         </item>
         <item>
             <title><![CDATA[如何用手机查看局域网内Express主机上的文件]]></title>
