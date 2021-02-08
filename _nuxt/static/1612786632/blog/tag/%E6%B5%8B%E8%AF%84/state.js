@@ -1,1 +1,0 @@
-window.__NUXT__={staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1612786632",layout:"default",error:null,state:{lang:{val:"Eng",ui:"中文",title:"将UI文本切换成中文"}},serverRendered:true,routePath:"\u002Fblog\u002Ftag\u002F%E6%B5%8B%E8%AF%84",config:{content:{dbHash:"f38ee09a"}}};
