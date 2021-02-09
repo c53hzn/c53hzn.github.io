@@ -1,0 +1,1 @@
+window.__NUXT__={staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1612854308",layout:"post",error:null,state:{lang:{val:"Eng",ui:"中文",title:"将UI文本切换成中文"}},serverRendered:true,routePath:"\u002Fblog\u002Ftv-drama-die-now",config:{content:{dbHash:"9d17fd64"}}};
