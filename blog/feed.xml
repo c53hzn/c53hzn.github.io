@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Wed, 10 Feb 2021 12:57:34 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 10 Feb 2021 12:58:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[我的2020年]]></title>
+            <link>https://www.houzhenni.com/blog/summary-of-my-life-in-2020</link>
+            <guid>https://www.houzhenni.com/blog/summary-of-my-life-in-2020</guid>
+            <description><![CDATA[2020年真的是“被偷走的一年”，我好像除了年龄，什么都没有收获。]]></description>
+        </item>
         <item>
             <title><![CDATA[2021年Nuxt新版本的一些限制]]></title>
             <link>https://www.houzhenni.com/blog/nuxt-2021-limitations</link>
