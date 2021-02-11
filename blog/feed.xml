@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Thu, 11 Feb 2021 02:53:50 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 11 Feb 2021 04:58:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[ASMR推荐]]></title>
+            <link>https://www.houzhenni.com/blog/asmr-recommendations</link>
+            <guid>https://www.houzhenni.com/blog/asmr-recommendations</guid>
+            <description><![CDATA[自从喜欢上看ASMR视频，感觉仿佛新世界的大门打开了。]]></description>
+        </item>
         <item>
             <title><![CDATA[我的2020年]]></title>
             <link>https://www.houzhenni.com/blog/summary-of-my-life-in-2020</link>
