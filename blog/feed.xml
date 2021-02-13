@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sat, 13 Feb 2021 07:33:43 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 13 Feb 2021 16:53:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[ASMR Recommendations]]></title>
+            <link>https://www.houzhenni.com/blog/asmr-recommendations-en</link>
+            <guid>https://www.houzhenni.com/blog/asmr-recommendations-en</guid>
+            <description><![CDATA[ASMR videos are like a new world, let's see what we can find there.]]></description>
+        </item>
         <item>
             <title><![CDATA[ASMR推荐]]></title>
             <link>https://www.houzhenni.com/blog/asmr-recommendations</link>

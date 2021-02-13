@@ -343,13 +343,13 @@ footer p {
 		width: auto;
 	}
 	.breadscrumb {
-		padding-left: 20px;
+		padding-left: 10px;
 		width: auto;
 		background: white;
 	}
 	.main-content {
 		min-height: calc(100vh - 112px);
-		padding: 20px;
+		padding: 10px;
 	}
 	.main-content, .main-content-unit {
 		margin: 0px;
