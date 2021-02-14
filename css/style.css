@@ -159,18 +159,18 @@ main {
   flex-direction: column;
   justify-content: center;
 }
-.breadscrumb {
+.breadcrumbs {
 	margin: 0px auto;
 	padding: 8px 0px;
 	width: 1080px;
 	transform: translateY(8px);
 }
-.breadscrumb a,.breadscrumb a:visited {
+.breadcrumbs a,.breadcrumbs a:visited {
   text-decoration: none;
   color: black;
   font-weight: bold;
 }
-.breadscrumb a:hover {
+.breadcrumbs a:hover {
   color: gray;
 }
 .main-content {
