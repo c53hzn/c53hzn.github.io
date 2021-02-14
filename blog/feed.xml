@@ -4,7 +4,7 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sun, 14 Feb 2021 15:01:57 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 14 Feb 2021 16:16:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
@@ -26,16 +26,16 @@
             <description><![CDATA[2020年真的是“被偷走的一年”，我好像除了年龄，什么都没有收获。]]></description>
         </item>
         <item>
-            <title><![CDATA[Limitations of latest version Nuxt in 2021]]></title>
-            <link>https://www.houzhenni.com/blog/nuxt-2021-limitations-en</link>
-            <guid>https://www.houzhenni.com/blog/nuxt-2021-limitations-en</guid>
-            <description><![CDATA[After updating to Nuxt 2.14.12, I encountered 3 problems, making the developing process a little difficult for me.]]></description>
-        </item>
-        <item>
             <title><![CDATA[2021年Nuxt新版本的一些限制]]></title>
             <link>https://www.houzhenni.com/blog/nuxt-2021-limitations</link>
             <guid>https://www.houzhenni.com/blog/nuxt-2021-limitations</guid>
             <description><![CDATA[升级Nuxt到2.14.12之后，遇到了3个问题，这个新版本用起来有点不太顺手。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Limitations of latest version Nuxt in 2021]]></title>
+            <link>https://www.houzhenni.com/blog/nuxt-2021-limitations-en</link>
+            <guid>https://www.houzhenni.com/blog/nuxt-2021-limitations-en</guid>
+            <description><![CDATA[After updating to Nuxt 2.14.12, I encountered 3 problems, making the developing process a little difficult for me.]]></description>
         </item>
         <item>
             <title><![CDATA[使用Github Actions把Nuxt静态网站push到其他repository]]></title>
