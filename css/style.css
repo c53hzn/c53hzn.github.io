@@ -41,7 +41,7 @@ nav {
 	color: white;
 	font-family: "Poppins", Sans-serif, "Microsoft Yahei";
 	background: hsla(0, 0%, 20%, 1);
-	z-index: 999;
+	z-index: 1;
 }
 .nav-wrap {
 	margin: 0px auto;
