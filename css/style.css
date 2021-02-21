@@ -159,20 +159,6 @@ main {
   flex-direction: column;
   justify-content: center;
 }
-.breadcrumbs {
-	margin: 0px auto;
-	padding: 8px 0px;
-	width: 1080px;
-	transform: translateY(8px);
-}
-.breadcrumbs a,.breadcrumbs a:visited {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-.breadcrumbs a:hover {
-  color: gray;
-}
 .main-content {
 	margin: 40px auto;
 	padding: 20px 40px;
@@ -341,11 +327,6 @@ footer p {
 	}
 	main {
 		width: auto;
-	}
-	.breadcrumbs {
-		padding-left: 10px;
-		width: auto;
-		background: white;
 	}
 	.main-content {
 		min-height: calc(100vh - 112px);
