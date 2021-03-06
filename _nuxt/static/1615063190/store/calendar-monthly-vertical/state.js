@@ -1,0 +1,1 @@
+window.__NUXT__={staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1615063190",layout:"item",error:null,state:{lang:{val:"Eng",ui:"中文",title:"将UI文本切换成中文"}},serverRendered:true,routePath:"\u002Fstore\u002Fcalendar-monthly-vertical",config:{content:{dbHash:"600c0c35"}}};

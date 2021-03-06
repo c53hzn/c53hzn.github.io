@@ -4,11 +4,11 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sat, 06 Mar 2021 20:32:25 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 06 Mar 2021 20:39:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
-            <title><![CDATA[游戏猫国建设者的作弊脚本]]></title>
+            <title><![CDATA[游戏猫国建设者的外挂脚本]]></title>
             <link>https://www.houzhenni.com/blog/kittens-game</link>
             <guid>https://www.houzhenni.com/blog/kittens-game</guid>
             <description><![CDATA[最近从Chrome改用Edge，从Chrome导入了自己写的浏览器脚本外挂，这个按钮好像不太对？]]></description>
