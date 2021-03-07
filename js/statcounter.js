@@ -1,6 +1,4 @@
 (function() {
-	var w = window;
-	var d = document;
 	if (window.location.host == "www.houzhenni.com") {
 		window.sc_project=11716132; 
 		window.sc_invisible=0; 
@@ -10,8 +8,8 @@
 		addScript(url);
 	}
 	function addScript(script) {
-		var s = d.createElement("script");
+		var s = document.createElement("script");
 		s.src = script;
-		d.querySelector("body").appendChild(s);
+		document.querySelector("body").appendChild(s);
 	}
 })();
