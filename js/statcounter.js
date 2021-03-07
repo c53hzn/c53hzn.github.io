@@ -1,4 +1,6 @@
 (function() {
+	var w = window;
+	var d = document;
 	if (window.location.host == "www.houzhenni.com") {
 		window.sc_project=11716132; 
 		window.sc_invisible=0; 
