@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Fri, 12 Mar 2021 19:13:13 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 13 Mar 2021 17:45:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[用nuxt、snipcart和stripe建立一个电商网站]]></title>
+            <link>https://www.houzhenni.com/blog/build-ecommerce-website-in-5-hours-with-nuxt-snipcart-stripe</link>
+            <guid>https://www.houzhenni.com/blog/build-ecommerce-website-in-5-hours-with-nuxt-snipcart-stripe</guid>
+            <description><![CDATA[没有后台和数据库，静态网站也想做网店？完全没有问题。生成网站用nuxt，内容及产品管理用nuxt content，订单管理和结算功能用snipcart，收款账号用stripe。从注册snipcart到功能上线，总共5小时搞定。]]></description>
+        </item>
         <item>
             <title><![CDATA[游戏猫国建设者的外挂脚本]]></title>
             <link>https://www.houzhenni.com/blog/kittens-game</link>
