@@ -151,6 +151,29 @@ main {
 	margin: 0px auto;
 	width: 100%;
 }
+.below-nav {
+  margin: 0px auto;
+  padding: 10px 0px 0px 0px;
+  width: 1080px;
+  display: flex;
+  justify-content: space-between;
+}
+.below-nav a,.below-nav a:visited {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.below-nav a:hover {
+  color: gray;
+}
+@media all and (max-width: 1080px) {
+  .below-nav {
+    padding-left: 10px;
+    padding-right: 16px;
+    background: white;
+    width: auto;
+  }
+}
 .main-wrap {
   width: 100%;
   min-height: calc(100vh - 160px);
