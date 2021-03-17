@@ -12,6 +12,13 @@
 
 
 /*!
+ * reading-time
+ * Copyright (c) Nicolas Gryman <ngryman@gmail.com>
+ * MIT Licensed
+ */
+
+
+/*!
   * vue-router v3.5.1
   * (c) 2021 Evan You
   * @license MIT
@@ -27,11 +34,4 @@
  * vuex v3.6.2
  * (c) 2021 Evan You
  * @license MIT
- */
-
-
-/*!
- * reading-time
- * Copyright (c) Nicolas Gryman <ngryman@gmail.com>
- * MIT Licensed
  */
