@@ -158,6 +158,7 @@ main {
   width: 1080px;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 .below-nav a,.below-nav a:visited {
   text-decoration: none;
