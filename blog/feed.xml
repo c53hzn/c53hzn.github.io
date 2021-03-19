@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Thu, 18 Mar 2021 15:11:59 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Mar 2021 18:10:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[新路由器]]></title>
+            <link>https://www.houzhenni.com/blog/new-wifi-router-review</link>
+            <guid>https://www.houzhenni.com/blog/new-wifi-router-review</guid>
+            <description><![CDATA[买了个华为的路由器，费了点劲才配置好。]]></description>
+        </item>
         <item>
             <title><![CDATA[Build an E-Commerce website with Nuxt, Snipcart and Stripe]]></title>
             <link>https://www.houzhenni.com/blog/build-ecommerce-website-with-nuxt-snipcart-stripe-en</link>
