@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Tue, 23 Mar 2021 05:22:08 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 25 Mar 2021 02:07:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[如何制作中英双语的面包屑导航]]></title>
+            <link>https://www.houzhenni.com/blog/nuxt-breadcrumbs-bilingual</link>
+            <guid>https://www.houzhenni.com/blog/nuxt-breadcrumbs-bilingual</guid>
+            <description><![CDATA[终于弄好了双语的面包屑导航，还是很开心的。]]></description>
+        </item>
         <item>
             <title><![CDATA[新路由器]]></title>
             <link>https://www.houzhenni.com/blog/new-wifi-router-review</link>
