@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/blog/tag/%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85", (function(a){return {data:[{blog_by_year:[[{slug:"summary-of-my-life-in-2020",date:"2021-02-10T00:00:00.000Z",language:"中文",title:"我的2020年",tags:["生活",a]}]],tagName:a,ui_zh:{tag:"标签",all_tags:"所有标签",all_posts:"所有文章"},ui_en:{tag:"Tag",all_tags:"All tags",all_posts:"All posts"}}],fetch:{},mutations:[]}}("新冠疫情")));
