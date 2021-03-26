@@ -170,8 +170,8 @@ main {
 }
 .ad-below-bread {
   margin: 0px auto;
-  padding: 10px 0px;
-  width: 1080px;
+  padding: 10px 0px 0px 0px;
+  width: 800px;
 }
 @media all and (max-width: 1080px) {
   .below-nav {
@@ -180,7 +180,7 @@ main {
     background: white;
     width: auto;
   }
-  .ad-below-brea {
+  .ad-below-bread {
   	padding-left: 10px;
     padding-right: 10px;
     background: white;
