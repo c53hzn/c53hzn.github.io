@@ -168,12 +168,23 @@ main {
 .below-nav a:hover {
   color: gray;
 }
+.ad-below-bread {
+  margin: 0px auto;
+  padding: 10px 0px;
+  width: 1080px;
+}
 @media all and (max-width: 1080px) {
   .below-nav {
     padding-left: 10px;
     padding-right: 16px;
     background: white;
     width: auto;
+  }
+  .ad-below-brea {
+  	padding-left: 10px;
+    padding-right: 10px;
+    background: white;
+    width: 100%;
   }
 }
 .main-wrap {
