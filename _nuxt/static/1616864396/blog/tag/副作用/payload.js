@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/blog/tag/%E5%89%AF%E4%BD%9C%E7%94%A8", (function(a){return {data:[{blog_by_year:[[{slug:"covid19-vaccine-review",date:"2021-03-28T00:00:00.000Z",language:"中文",title:"新冠疫苗测评",tags:["生活","COVID-19","疫苗",a]}]],tagName:a,ui_zh:{tag:"标签",all_tags:"所有标签",all_posts:"所有文章"},ui_en:{tag:"Tag",all_tags:"All tags",all_posts:"All posts"}}],fetch:{},mutations:[]}}("副作用")));
