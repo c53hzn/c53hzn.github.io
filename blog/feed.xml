@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sat, 27 Mar 2021 17:32:36 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 28 Mar 2021 15:39:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[那些一听到就会泪流满面的音乐]]></title>
+            <link>https://www.houzhenni.com/blog/music-that-makes-you-cry</link>
+            <guid>https://www.houzhenni.com/blog/music-that-makes-you-cry</guid>
+            <description><![CDATA[总结一下这些年在影视剧和各种地方听到过的会让人瞬间被带回那个情境的纯音乐和歌曲。]]></description>
+        </item>
         <item>
             <title><![CDATA[新冠疫苗测评]]></title>
             <link>https://www.houzhenni.com/blog/covid19-vaccine-review</link>
