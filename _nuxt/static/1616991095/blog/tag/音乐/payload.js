@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/blog/tag/%E9%9F%B3%E4%B9%90", (function(a){return {data:[{blog_by_year:[[{slug:"music-that-makes-you-cry",date:"2021-03-28T00:00:00.000Z",language:"中文",title:"那些一听到就会泪流满面的音乐",tags:["生活",a]}]],tagName:a,ui_zh:{tag:"标签",all_tags:"所有标签",all_posts:"所有文章"},ui_en:{tag:"Tag",all_tags:"All tags",all_posts:"All posts"}}],fetch:{},mutations:[]}}("音乐")));

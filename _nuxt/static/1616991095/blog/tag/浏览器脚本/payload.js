@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/blog/tag/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%84%9A%E6%9C%AC", (function(a){return {data:[{blog_by_year:[[{slug:"kittens-game",date:"2021-03-07T00:00:00.000Z",language:"中文",title:"游戏猫国建设者的外挂脚本",tags:["技术",a]}]],tagName:a,ui_zh:{tag:"标签",all_tags:"所有标签",all_posts:"所有文章"},ui_en:{tag:"Tag",all_tags:"All tags",all_posts:"All posts"}}],fetch:{},mutations:[]}}("浏览器脚本")));

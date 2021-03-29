@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/blog/tag/MS%20Edge", (function(a){return {data:[{blog_by_year:[[{slug:"get-pdf-read-aloud-on-edge",date:"2021-01-17T00:00:00.000Z",language:"中文",title:"Edge浏览器PDF朗读功能测评",tags:["技术",a,"测评"]}]],tagName:a,ui_zh:{tag:"标签",all_tags:"所有标签",all_posts:"所有文章"},ui_en:{tag:"Tag",all_tags:"All tags",all_posts:"All posts"}}],fetch:{},mutations:[]}}("MS Edge")));
