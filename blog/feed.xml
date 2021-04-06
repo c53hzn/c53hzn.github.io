@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Thu, 01 Apr 2021 19:06:35 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 06 Apr 2021 08:43:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[Create Bilingual Breadcrumbs component for Nuxt]]></title>
+            <link>https://www.houzhenni.com/blog/nuxt-breadcrumbs-bilingual-en</link>
+            <guid>https://www.houzhenni.com/blog/nuxt-breadcrumbs-bilingual-en</guid>
+            <description><![CDATA[I made a Chinese/ English Breadcrumbs component for my Nuxt website, the key point is to use a preset mapping rule.]]></description>
+        </item>
         <item>
             <title><![CDATA[那些一听到就会泪流满面的音乐]]></title>
             <link>https://www.houzhenni.com/blog/music-that-makes-you-cry</link>
