@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Thu, 08 Apr 2021 06:04:57 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 08 Apr 2021 17:34:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[游戏实况推荐--渗透之C君]]></title>
+            <link>https://www.houzhenni.com/blog/horror-games</link>
+            <guid>https://www.houzhenni.com/blog/horror-games</guid>
+            <description><![CDATA[不敢玩恐怖游戏但又心痒痒？剧情向游戏太长无暇尝试？试试云通关吧]]></description>
+        </item>
         <item>
             <title><![CDATA[Create Bilingual Breadcrumbs component for Nuxt]]></title>
             <link>https://www.houzhenni.com/blog/nuxt-breadcrumbs-bilingual-en</link>
