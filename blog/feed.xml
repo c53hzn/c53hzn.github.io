@@ -4,14 +4,14 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sat, 10 Apr 2021 18:38:09 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 10 Apr 2021 19:58:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
             <title><![CDATA[Vue开发的注意事项]]></title>
             <link>https://www.houzhenni.com/blog/points-to-notice-for-vue-development</link>
             <guid>https://www.houzhenni.com/blog/points-to-notice-for-vue-development</guid>
-            <description><![CDATA[应用组件时无法内嵌Vue表达式？无法绑定点击事件？原来这些应该这样写]]></description>
+            <description><![CDATA[应用组件时无法内嵌Vue表达式？无法绑定点击事件？无法传递布尔值给组件？原来这些应该这样写]]></description>
         </item>
         <item>
             <title><![CDATA[游戏实况推荐--渗透之C君]]></title>
