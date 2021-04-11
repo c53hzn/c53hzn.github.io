@@ -4,14 +4,14 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sat, 10 Apr 2021 19:58:13 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 11 Apr 2021 09:48:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
             <title><![CDATA[Vue开发的注意事项]]></title>
             <link>https://www.houzhenni.com/blog/points-to-notice-for-vue-development</link>
             <guid>https://www.houzhenni.com/blog/points-to-notice-for-vue-development</guid>
-            <description><![CDATA[应用组件时无法内嵌Vue表达式？无法绑定点击事件？无法传递布尔值给组件？原来这些应该这样写]]></description>
+            <description><![CDATA[父组件无法给子组件内嵌Vue表达式？无法绑定点击事件？无法传递布尔值？无法调用子组件的方法？原来这些应该这样写]]></description>
         </item>
         <item>
             <title><![CDATA[游戏实况推荐--渗透之C君]]></title>
@@ -107,7 +107,7 @@
             <title><![CDATA[Edge浏览器PDF朗读功能测评]]></title>
             <link>https://www.houzhenni.com/blog/get-pdf-read-aloud-on-edge</link>
             <guid>https://www.houzhenni.com/blog/get-pdf-read-aloud-on-edge</guid>
-            <description><![CDATA[Edge浏览器有个朗读功能，可以朗读PDF或网页内容，中英文都可以，试用了一下感觉还行。]]></description>
+            <description><![CDATA[Edge浏览器有个朗读功能，可以朗读PDF或网页内容，中日英都可以，试用了一下感觉还行。]]></description>
         </item>
         <item>
             <title><![CDATA[如何用手机查看局域网内Express主机上的文件]]></title>
