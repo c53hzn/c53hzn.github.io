@@ -1,0 +1,12 @@
+.my-cart {
+  margin-left: 10px;
+  min-width: 46px;
+  font-size: 24px;
+  text-align: right;
+  transform: translateY(-5px);
+  flex: 1;
+  user-select: none;
+}
+.snipcart__icon--darker.snipcart__icon--medium.snipcart__icon--angled.snipcart__icon {
+  cursor: pointer;
+}
