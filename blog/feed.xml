@@ -4,7 +4,7 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Tue, 13 Apr 2021 07:21:07 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 13 Apr 2021 14:28:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
@@ -23,7 +23,7 @@
             <title><![CDATA[Create Bilingual Breadcrumbs component for Nuxt]]></title>
             <link>https://www.houzhenni.com/blog/nuxt-breadcrumbs-bilingual-en</link>
             <guid>https://www.houzhenni.com/blog/nuxt-breadcrumbs-bilingual-en</guid>
-            <description><![CDATA[I made a Chinese/ English Breadcrumbs component for my Nuxt website, the key point is to use a preset mapping rule.]]></description>
+            <description><![CDATA[I made a Chinese/ English Breadcrumbs component for my Nuxt website, the key point is to use a preset mapping rule. Also I learned about the communication between sibling components, it's worth my time.]]></description>
         </item>
         <item>
             <title><![CDATA[那些一听到就会泪流满面的音乐]]></title>
@@ -41,7 +41,7 @@
             <title><![CDATA[如何制作中英双语的面包屑导航]]></title>
             <link>https://www.houzhenni.com/blog/nuxt-breadcrumbs-bilingual</link>
             <guid>https://www.houzhenni.com/blog/nuxt-breadcrumbs-bilingual</guid>
-            <description><![CDATA[终于弄好了双语的面包屑导航，还是很开心的。]]></description>
+            <description><![CDATA[终于弄好了双语的面包屑导航，还学到了Vue的同级组件通信的知识，我还是很开心的。]]></description>
         </item>
         <item>
             <title><![CDATA[新路由器]]></title>
