@@ -145,7 +145,7 @@ header a:active, header a:visited {
 .bar:last-child {
 	border: none;
 }
-main {
+.container-main {
 	margin: 0px auto;
 	width: 100%;
 }
