@@ -1,5 +1,5 @@
 var loader = setInterval(function () {
-	var tempGoogle = adsbygoogle;
+	var tempGoogle = window.adsbygoogle;
     if(document.readyState !== "complete" && !tempGoogle.loaded) return;
     clearInterval(loader);
     if (window.location.host == "www.houzhenni.com") {

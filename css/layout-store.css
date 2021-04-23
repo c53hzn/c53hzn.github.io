@@ -10,3 +10,8 @@
 .snipcart__icon--darker.snipcart__icon--medium.snipcart__icon--angled.snipcart__icon {
   cursor: pointer;
 }
+@media all and (max-width: 1080px) {
+	.below-nav {
+		background: white;
+	}
+}
