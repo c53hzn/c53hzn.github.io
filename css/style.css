@@ -351,6 +351,9 @@ footer p {
 	font-size: 14px;
 	text-align: center;
 }
+.hidden {
+	display: none;
+}
 
 @media all and (max-width: 1080px) {
 	nav {
