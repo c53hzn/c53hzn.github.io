@@ -376,11 +376,7 @@ footer p {
 		border-radius: 0px;
 	}
 }
-
-@media all and (max-width: 600px) {
-	.container {
-		padding-top: 40px;
-	}
+@media all and (max-width: 768px) {
 	nav {
 		box-shadow: none;
 	}
@@ -427,6 +423,11 @@ footer p {
 	}
 	.nav-btn {
 		display: block;
+	}
+}
+@media all and (max-width: 600px) {
+	.container {
+		padding-top: 40px;
 	}
 	.main-content {
 		min-height: calc(100vh - 112px);
