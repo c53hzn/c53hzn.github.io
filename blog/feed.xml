@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Fri, 07 May 2021 17:40:13 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 08 May 2021 11:30:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[我仿了一个川普的个人版推特]]></title>
+            <link>https://www.houzhenni.com/blog/from-the-desk-of-donald-j-trump</link>
+            <guid>https://www.houzhenni.com/blog/from-the-desk-of-donald-j-trump</guid>
+            <description><![CDATA[单机版推特，一个人的微博，美国前总统唐纳德·J·特朗普同款，你值得拥有。]]></description>
+        </item>
         <item>
             <title><![CDATA[她不记得，他不放弃--《掟上今日子的备忘录》]]></title>
             <link>https://www.houzhenni.com/blog/memorandum-of-kyoko-okitegami</link>
