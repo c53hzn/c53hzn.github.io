@@ -4,7 +4,7 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sun, 09 May 2021 11:11:23 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 09 May 2021 14:54:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
@@ -18,6 +18,12 @@
             <link>https://www.houzhenni.com/blog/memorandum-of-kyoko-okitegami</link>
             <guid>https://www.houzhenni.com/blog/memorandum-of-kyoko-okitegami</guid>
             <description><![CDATA[本格推理/单元剧/Gakki+冈田将生/男主默默守候女主，都是我喜欢的要素呢~]]></description>
+        </item>
+        <item>
+            <title><![CDATA[彼女は覚えない、しかし彼は諦めらないーー『掟上今日子の備忘録』]]></title>
+            <link>https://www.houzhenni.com/blog/memorandum-of-kyoko-okitegami-jp</link>
+            <guid>https://www.houzhenni.com/blog/memorandum-of-kyoko-okitegami-jp</guid>
+            <description><![CDATA[本格ミステリー/一話に一つの話/Gakki+岡田将生/知られない見守り、全部私の大好きな要素ですね~]]></description>
         </item>
         <item>
             <title><![CDATA[QQ远程 vs Teamviewer vs 谷歌Remotedesk vs WPS远程桌面]]></title>
