@@ -4,14 +4,14 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sat, 08 May 2021 11:30:03 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 09 May 2021 05:07:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
-            <title><![CDATA[我仿了一个川普的个人版推特]]></title>
+            <title><![CDATA[我用Vue仿了一个川普的个人版推特]]></title>
             <link>https://www.houzhenni.com/blog/from-the-desk-of-donald-j-trump</link>
             <guid>https://www.houzhenni.com/blog/from-the-desk-of-donald-j-trump</guid>
-            <description><![CDATA[单机版推特，一个人的微博，美国前总统唐纳德·J·特朗普同款，你值得拥有。]]></description>
+            <description><![CDATA[单机版推特，一个人的微博，美国前总统唐纳德·J·特朗普同款，你值得拥有。重点介绍九宫格图片的部分，学会了你也可以写一个微博APP。]]></description>
         </item>
         <item>
             <title><![CDATA[她不记得，他不放弃--《掟上今日子的备忘录》]]></title>
