@@ -254,7 +254,6 @@ a, a:visited {
     line-height: 20px;
     border-radius: 999px;
     background: gray;
-    display: inline-block;
 }
 .blog-tag:hover {
 	background: black;
@@ -262,6 +261,7 @@ a, a:visited {
 .blog-tag a{
 	text-decoration: none;
 	color: inherit;
+	display: block;
 }
 img {
 	max-width: 100%;
