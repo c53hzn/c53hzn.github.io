@@ -241,6 +241,10 @@ a, a:visited {
     border-radius: 4px;
     display: inline-block;
 }
+.blog-lang a {
+	text-decoration: none;
+	display: inline-block;
+}
 .blog-lang:hover {
 	color: black;
 	border-color: black;
