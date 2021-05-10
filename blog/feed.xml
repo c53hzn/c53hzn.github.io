@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Mon, 10 May 2021 02:25:16 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 10 May 2021 18:12:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[问卷星 vs 腾讯问卷 vs WPS表单 vs 谷歌表单 vs 微软表单]]></title>
+            <link>https://www.houzhenni.com/blog/survey-tool-comparison</link>
+            <guid>https://www.houzhenni.com/blog/survey-tool-comparison</guid>
+            <description><![CDATA[这几年用过五个免费问卷系统，各有优缺点，在此给大家介绍一下。]]></description>
+        </item>
         <item>
             <title><![CDATA[我用Vue仿了一个川普的个人版推特]]></title>
             <link>https://www.houzhenni.com/blog/from-the-desk-of-donald-j-trump</link>
