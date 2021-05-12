@@ -4,7 +4,7 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Tue, 11 May 2021 14:26:01 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 12 May 2021 17:39:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
@@ -33,8 +33,8 @@
         </item>
         <item>
             <title><![CDATA[QQ远程 vs Teamviewer vs 谷歌Remotedesk vs WPS远程桌面]]></title>
-            <link>https://www.houzhenni.com/blog/qq-teamviewer-google-wps-remotedesk-comparison</link>
-            <guid>https://www.houzhenni.com/blog/qq-teamviewer-google-wps-remotedesk-comparison</guid>
+            <link>https://www.houzhenni.com/blog/remote-control-tool-comparison</link>
+            <guid>https://www.houzhenni.com/blog/remote-control-tool-comparison</guid>
             <description><![CDATA[我用过4个免费的远程软件，它们各有优劣，本文就算是个测评及推荐吧]]></description>
         </item>
         <item>
