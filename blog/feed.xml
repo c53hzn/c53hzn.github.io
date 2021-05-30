@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Wed, 26 May 2021 04:17:53 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 30 May 2021 09:28:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[我去了九龙寨城遗址]]></title>
+            <link>https://www.houzhenni.com/blog/kowloon-walled-city</link>
+            <guid>https://www.houzhenni.com/blog/kowloon-walled-city</guid>
+            <description><![CDATA[看了《城寨出来者》之后心里一直放不下，于是找到了2个我能去的拍摄地，一个是九龙寨城，一个是尖沙咀水警总部，探访了这两个已经没有了的地方。]]></description>
+        </item>
         <item>
             <title><![CDATA[我用Vue仿了一个川普的个人版推特]]></title>
             <link>https://www.houzhenni.com/blog/from-the-desk-of-donald-j-trump</link>
