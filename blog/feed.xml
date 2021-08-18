@@ -4,7 +4,7 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Wed, 18 Aug 2021 18:00:34 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Aug 2021 18:34:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
@@ -14,7 +14,7 @@
             <description><![CDATA[“虐杀蜗牛”的“尖沙咀狂徒”已落网，我感觉自己刚通网。]]></description>
         </item>
         <item>
-            <title><![CDATA[如何给发烫的手机快速降温]]></title>
+            <title><![CDATA[给发烫的手机快速降温]]></title>
             <link>https://www.houzhenni.com/blog/cool-my-phone</link>
             <guid>https://www.houzhenni.com/blog/cool-my-phone</guid>
             <description><![CDATA[用了4年的手机总是发烫，我的处理是这样的。]]></description>
