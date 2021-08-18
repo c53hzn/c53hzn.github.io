@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Wed, 04 Aug 2021 12:45:54 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Aug 2021 18:00:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[疯狂的蜗牛]]></title>
+            <link>https://www.houzhenni.com/blog/crazy-snails</link>
+            <guid>https://www.houzhenni.com/blog/crazy-snails</guid>
+            <description><![CDATA[“虐杀蜗牛”的“尖沙咀狂徒”已落网，我感觉自己刚通网。]]></description>
+        </item>
         <item>
             <title><![CDATA[如何给发烫的手机快速降温]]></title>
             <link>https://www.houzhenni.com/blog/cool-my-phone</link>
