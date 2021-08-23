@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sat, 21 Aug 2021 12:47:07 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Aug 2021 15:20:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[握不住的正义——《恶魔法官》剧评]]></title>
+            <link>https://www.houzhenni.com/blog/devil-judge</link>
+            <guid>https://www.houzhenni.com/blog/devil-judge</guid>
+            <description><![CDATA[背负沉重过往的法官，通过操纵民意来实现自己的正义，这样做对吗？]]></description>
+        </item>
         <item>
             <title><![CDATA[一些风景照]]></title>
             <link>https://www.houzhenni.com/blog/landscape-photos</link>
