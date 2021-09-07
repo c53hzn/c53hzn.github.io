@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sat, 28 Aug 2021 11:35:16 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 07 Sep 2021 15:00:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[如何在香港交税]]></title>
+            <link>https://www.houzhenni.com/blog/hongkong-income-tax</link>
+            <guid>https://www.houzhenni.com/blog/hongkong-income-tax</guid>
+            <description><![CDATA[在香港工作的内地居民如何交税？薪俸税、暂缴税、退税又是怎么回事？]]></description>
+        </item>
         <item>
             <title><![CDATA[握不住的正义——《恶魔法官》剧评]]></title>
             <link>https://www.houzhenni.com/blog/devil-judge</link>
