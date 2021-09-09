@@ -10,7 +10,7 @@
 .blog-main {
   margin: 0px 10px 10px 0px;
   width: 66%;
-  padding: 0px 16px 16px 16px;
+  padding: 0px 32px 32px 32px;
   background: white;
   border: 1px solid silver;
   border-radius: 5px;
@@ -43,6 +43,9 @@ a[id] {
   top: -40px;
   display: block;
 }
+.blog-title {
+  font-size: 18px;
+}
 @media all and (max-width: 1080px) {
   .below-nav {
     background: none;
@@ -52,7 +55,7 @@ a[id] {
     justify-content: space-around;
   }
   .blog-main {
-    margin: 0px 0px 0px 10px;
+    margin: 0px 16px 16px 16px;
     width: 65%;
   }
   .blog-side {
