@@ -13,13 +13,9 @@ a[name] {
 	background-color: #f8f8f8;
 }
 .markdown-body img{
-	max-width: 600px;
 	border: 1px solid silver;
 }
 @media all and (max-width: 768px) {
-	.markdown-body img {
-		max-width: 100%;
-	}
 	.markdown-body table {
 		margin: 0px 0px 16px 0px;
 	}
