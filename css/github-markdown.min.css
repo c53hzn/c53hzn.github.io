@@ -8,10 +8,6 @@ a[name] {
 .markdown-body table {
 	margin: 0px 16px 16px 16px;
 }
-.markdown-body code{
-	background: #2b2b2b;
-	color: #f8f8f2;
-}
 .markdown-body blockquote{
 	padding: 10px;
 	background-color: #f8f8f8;
