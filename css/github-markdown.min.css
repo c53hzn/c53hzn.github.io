@@ -13,6 +13,7 @@ a[name] {
 	background-color: #f8f8f8;
 }
 .markdown-body img{
+	max-width: unset;
 	border: 1px solid silver;
 }
 @media all and (max-width: 768px) {
