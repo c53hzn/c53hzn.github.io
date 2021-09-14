@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Fri, 10 Sep 2021 03:36:47 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 14 Sep 2021 09:18:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[Hong Kong Income Tax for Non-local Employees]]></title>
+            <link>https://www.houzhenni.com/blog/hongkong-income-tax-en</link>
+            <guid>https://www.houzhenni.com/blog/hongkong-income-tax-en</guid>
+            <description><![CDATA[How do employees from the mainland pay taxes in Hong Kong? What are Salaries Tax, Provision Tax and Tax Refund?]]></description>
+        </item>
         <item>
             <title><![CDATA[如何在香港交税]]></title>
             <link>https://www.houzhenni.com/blog/hongkong-income-tax</link>
