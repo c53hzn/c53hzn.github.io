@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Wed, 15 Sep 2021 14:17:11 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 20 Sep 2021 17:52:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[意识流不是这么用的——《天目危机》剧评]]></title>
+            <link>https://www.houzhenni.com/blog/tv-review-pandoras-box</link>
+            <guid>https://www.houzhenni.com/blog/tv-review-pandoras-box</guid>
+            <description><![CDATA[意识能截停火车，意识能穿越时空，意识能把人送进异度空间，这还是我们认识的“意识”吗？]]></description>
+        </item>
         <item>
             <title><![CDATA[Hong Kong Income Tax for Non-local Employees]]></title>
             <link>https://www.houzhenni.com/blog/hongkong-income-tax-en</link>
