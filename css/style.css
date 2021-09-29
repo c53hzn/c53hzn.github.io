@@ -76,14 +76,12 @@ header a:active, header a:visited {
 	justify-content: center;
 	z-index: 1;
 }
-.nav-ul li {
-	height: 36px;
-}
 .nav-link {
 	margin-right: 16px;
-	height: 35px;
+	height: 36px;
 	text-decoration: none;
 	cursor: pointer;
+	display: block;
 }
 .nav-link:last-child {
 	margin-right: 10px;
@@ -104,10 +102,50 @@ header a:active, header a:visited {
 	color: inherit;
 }
 .nav-link:hover{
-    color: gray;
+  color: gray;
 }
-.nuxt-link-active {
-	border-bottom: 2px solid white;
+.nav-link a,.nav-child a {
+	text-decoration: none;
+}
+.nav-parent {
+	position: relative;
+	margin-right: 16px;
+	height: 36px;
+	color: inherit;
+	line-height: 40px;
+	text-decoration: none;
+	cursor: default;
+	display: block;
+}
+.nav-child {
+  position: absolute;
+  top: 30px;
+  left: -4px;
+  padding-left: 8px;
+  padding-bottom: 12px;
+  width: 100px;
+  text-align: left;
+  background: hsla(0, 0%, 20%, 1);
+  display: none;
+  z-index: -1;
+}
+.nav-child ul {
+	list-style: none;
+	padding-left: 0px;
+}
+.nav-child li {
+	height: 30px;
+}
+.nav-child a {
+	cursor: pointer;
+}
+.nav-child a:hover {
+	color: gray;
+}
+@media all and (min-width: 769px) {
+	.nav-parent:hover .nav-child {
+		display: block;
+	}
 }
 .nav-mask {
 	position: fixed;
@@ -234,12 +272,12 @@ a, a:visited {
 }
 .blog-lang {
 	padding: 0px 5px;
-    font-size: 14px;
-    text-align: center;
-    color: gray;
-    border: 1px solid silver;
-    border-radius: 4px;
-    display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  color: gray;
+  border: 1px solid silver;
+  border-radius: 4px;
+  display: inline-block;
 }
 .blog-lang a {
 	text-decoration: none;
@@ -250,13 +288,13 @@ a, a:visited {
 	border-color: black;
 }
 .blog-cat, .blog-tag {
-    margin: 1px;
-    padding: 0px 8px 1px 8px;
-    font-size: 14px;
-    font-family: 'Noto Sans SC', sans-serif;;
-    line-height: 20px;
-    border-radius: 999px;
-    display: inline-block;
+  margin: 1px;
+  padding: 0px 8px 1px 8px;
+  font-size: 14px;
+  font-family: 'Noto Sans SC', sans-serif;;
+  line-height: 20px;
+  border-radius: 999px;
+  display: inline-block;
 }
 .blog-cat {
 	color: #4c4c4c;
@@ -310,41 +348,41 @@ a, a:visited {
 /* toTop button start */
 /* https://www.liaoxuefeng.com/article/895922498171008 */
 .go-top {
-    opacity: 0.6;
-    position: fixed;
-    bottom: 40px;
-    right: 20px;
-    border: 1px solid gray;
-    width: 38px;
-    height: 38px;
-    background-color: rgba(249, 249, 249, 1);
-    border-radius: 3px;
-    cursor: pointer;
-    transition: opacity .3s;
+  opacity: 0.6;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  border: 1px solid gray;
+  width: 38px;
+  height: 38px;
+  background-color: rgba(249, 249, 249, 1);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: opacity .3s;
 }
 .go-top:hover {
     opacity: 1;
 }
 .go-top .arrow {
-    position: absolute;
-    left: 10px;
-    top: -1px;
-    width: 0;
-    height: 0;
-    border: 9px solid transparent;
-    border-bottom-color: gray;
+  position: absolute;
+  left: 10px;
+  top: -1px;
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-bottom-color: gray;
 }
 .go-top .stick {
-    position: absolute;
-    left: 15px;
-    top: 15px;
-    width: 8px;
-    height: 14px;
-    display: block;
-    background-color: gray;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    border-radius: 1px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 8px;
+  height: 14px;
+  display: block;
+  background-color: gray;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
 }
 /* toTop button end */
 .go-top-hidden {
@@ -415,7 +453,7 @@ footer p {
 	}
 	.nav-link {
 		margin: 0px 10px;
-		padding: 12px 0px 0px 0px;
+		padding: 12px 0px 0px 10px;
 		height: auto;
 		line-height: 20px;
 		border-bottom: 1px solid black;
@@ -430,6 +468,25 @@ footer p {
 		width: auto;
 		height: auto;
 		line-height: 20px;
+	}
+	.nav-parent {
+		margin: 0px 10px;
+		padding: 12px 0px 0px 10px;
+		height: auto;
+		line-height: 20px;
+		border-bottom: 1px solid black;
+	}
+	.nav-parent ul {
+		margin-top: 8px;
+	}
+	.nav-parent li {
+		height: 26px;
+	}
+	.nav-child {
+		position: unset;
+		padding: 0px;
+		color: inherit;
+		background: none;
 	}
 	.nav-btn {
 		display: block;
@@ -449,4 +506,7 @@ footer p {
 
 .google-auto-placed.ap_container iframe {
   margin: 0px;
+}
+.isShow {
+	display: block;
 }
