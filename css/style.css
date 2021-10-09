@@ -135,6 +135,11 @@ header a:active, header a:visited {
 .nav-child li {
 	line-height: 30px;
 }
+.nav-child li:before {
+	content: "·";
+	position: relative;
+	left: -4px;
+}
 .nav-child a {
 	cursor: pointer;
 }
