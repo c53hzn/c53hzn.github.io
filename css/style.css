@@ -453,7 +453,9 @@ footer p {
 		z-index: 0;
 	}
 	.nav-mobile {
+		max-height: calc(100vh - 100px);
 		transform: translateY(0px);
+		overflow-y: scroll;
 	}
 	.nav-link {
 		margin: 0px 10px;
@@ -483,14 +485,14 @@ footer p {
 	.nav-parent ul {
 		margin-top: 8px;
 	}
-	.nav-parent li {
-		height: 26px;
-	}
 	.nav-child {
 		position: unset;
 		padding: 0px;
 		color: inherit;
 		background: none;
+	}
+	.nav-child li {
+		line-height: 24px;
 	}
 	.nav-btn {
 		display: block;
