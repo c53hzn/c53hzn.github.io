@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Wed, 13 Oct 2021 15:15:26 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 30 Oct 2021 17:12:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[如何评价李云迪]]></title>
+            <link>https://www.houzhenni.com/blog/li-yundi</link>
+            <guid>https://www.houzhenni.com/blog/li-yundi</guid>
+            <description><![CDATA[李云迪第二次因嫖娼被抓，热门综艺惨遭二次伤害，这个社会还有救吗？]]></description>
+        </item>
         <item>
             <title><![CDATA[意识流不是这么用的——《天目危机》剧评]]></title>
             <link>https://www.houzhenni.com/blog/tv-review-pandoras-box</link>
