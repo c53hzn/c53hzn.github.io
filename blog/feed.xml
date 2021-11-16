@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sun, 14 Nov 2021 17:42:56 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 16 Nov 2021 11:52:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[《暗杀风暴》定档12月10日，影版暗黑者又将带来什么新故事？]]></title>
+            <link>https://www.houzhenni.com/blog/movie-death-notice</link>
+            <guid>https://www.houzhenni.com/blog/movie-death-notice</guid>
+            <description><![CDATA[周浩晖的小说《死亡通知单》电影版将于12月10日上映，这次是由香港导演、香港演员一起创作的港版电影，到时候肯定能带来和内地剧版不一样的新体验。]]></description>
+        </item>
         <item>
             <title><![CDATA[如何评价李云迪]]></title>
             <link>https://www.houzhenni.com/blog/li-yundi</link>
