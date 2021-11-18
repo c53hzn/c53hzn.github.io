@@ -4,14 +4,14 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Thu, 18 Nov 2021 12:46:12 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 18 Nov 2021 12:57:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
             <title><![CDATA[用Nuxt自建一个微博]]></title>
             <link>https://www.houzhenni.com/blog/self-hosted-weibo</link>
             <guid>https://www.houzhenni.com/blog/self-hosted-weibo</guid>
-            <description><![CDATA[这篇文章是关于xxx的，快来看吧！]]></description>
+            <description><![CDATA[用了11年的微博账号突然没了，于是我用GitHub自建了一个微博。]]></description>
         </item>
         <item>
             <title><![CDATA[《暗杀风暴》定档12月10日，影版暗黑者又将带来什么新故事？]]></title>
