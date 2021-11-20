@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sat, 20 Nov 2021 16:32:48 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 20 Nov 2021 17:03:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[How to log in to two GitHub accounts on the same computer at the same time]]></title>
+            <link>https://www.houzhenni.com/blog/log-in-2-github-account-on-one-pc-en</link>
+            <guid>https://www.houzhenni.com/blog/log-in-2-github-account-on-one-pc-en</guid>
+            <description><![CDATA[After switching Git accounts, it was difficult to switch back, and the tutorials found on the Internet were all outdated. So I tried my own way. Log in to the Git terminal with 1 account, and download the GitHub desktop to log in to a second. This time it was fine.]]></description>
+        </item>
         <item>
             <title><![CDATA[如何在同一台电脑上同时登入两个GitHub账号]]></title>
             <link>https://www.houzhenni.com/blog/log-in-2-github-account-on-one-pc</link>
