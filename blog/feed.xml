@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sat, 20 Nov 2021 17:03:33 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 17 Dec 2021 10:08:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[记录一下港康码系统的智障表现]]></title>
+            <link>https://www.houzhenni.com/blog/hongkong-health-code</link>
+            <guid>https://www.houzhenni.com/blog/hongkong-health-code</guid>
+            <description><![CDATA[港康码系统上线，终于有了通关的迹象，我注册了港康码账号，然后发现这个系统实在是太智障了。]]></description>
+        </item>
         <item>
             <title><![CDATA[How to log in to two GitHub accounts on the same computer at the same time]]></title>
             <link>https://www.houzhenni.com/blog/log-in-2-github-account-on-one-pc-en</link>
