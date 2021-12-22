@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Fri, 17 Dec 2021 12:45:31 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 22 Dec 2021 09:56:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[JoJo主题曲：从家族命运到个人抗争]]></title>
+            <link>https://www.houzhenni.com/blog/jojo-music</link>
+            <guid>https://www.houzhenni.com/blog/jojo-music</guid>
+            <description><![CDATA[《JoJo的奇妙冒险》真的是超棒的系列作品，画风虽然奇特，但是看习惯了还觉得挺有意思的。剧情就不必说了，连音乐也都是杰作。]]></description>
+        </item>
         <item>
             <title><![CDATA[记录一下港康码系统的智障表现]]></title>
             <link>https://www.houzhenni.com/blog/hongkong-health-code</link>
