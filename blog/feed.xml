@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Wed, 22 Dec 2021 15:18:56 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Dec 2021 10:34:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[JoJo的奇妙冒险之星尘远征军:一边发刀一边整活]]></title>
+            <link>https://www.houzhenni.com/blog/jojo-startdust-crusaders</link>
+            <guid>https://www.houzhenni.com/blog/jojo-startdust-crusaders</guid>
+            <description><![CDATA[整个星尘斗士基本上不是在发刀就是在整活，埃及篇尤其如此。]]></description>
+        </item>
         <item>
             <title><![CDATA[JoJo主题曲：从家族命运到个人抗争]]></title>
             <link>https://www.houzhenni.com/blog/jojo-music</link>
