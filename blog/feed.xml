@@ -4,7 +4,7 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Tue, 25 Jan 2022 10:28:59 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 29 Jan 2022 17:16:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
@@ -42,18 +42,6 @@
             <link>https://www.houzhenni.com/blog/hongkong-health-code</link>
             <guid>https://www.houzhenni.com/blog/hongkong-health-code</guid>
             <description><![CDATA[港康码系统上线，终于有了通关的迹象，我注册了港康码账号，然后发现这个系统实在是太智障了。]]></description>
-        </item>
-        <item>
-            <title><![CDATA[How to log in to two GitHub accounts on the same computer at the same time]]></title>
-            <link>https://www.houzhenni.com/blog/log-in-2-github-account-on-one-pc-en</link>
-            <guid>https://www.houzhenni.com/blog/log-in-2-github-account-on-one-pc-en</guid>
-            <description><![CDATA[After switching Git accounts, it was difficult to switch back, and the tutorials found on the Internet were all outdated. So I tried my own way. Log in to the Git terminal with 1 account, and download the GitHub desktop to log in to a second. This time it was fine.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[如何在同一台电脑上同时登入两个GitHub账号]]></title>
-            <link>https://www.houzhenni.com/blog/log-in-2-github-account-on-one-pc</link>
-            <guid>https://www.houzhenni.com/blog/log-in-2-github-account-on-one-pc</guid>
-            <description><![CDATA[Git切换账号之后很难换回去，网上找到教程都失效了。于是我尝试Git终端登录一个，下载GitHub桌面版登录第二个，这次可以了。]]></description>
         </item>
         <item>
             <title><![CDATA[用Nuxt自建一个微博]]></title>
