@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sat, 29 Jan 2022 17:16:11 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 20 Feb 2022 10:39:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[2022香港疫情又起]]></title>
+            <link>https://www.houzhenni.com/blog/hong-kong-covid-2022</link>
+            <guid>https://www.houzhenni.com/blog/hong-kong-covid-2022</guid>
+            <description><![CDATA[客户问我某问题啥时候能解决，我说不好，要是问香港疫情啥时候结束我还能说两句，我觉得2022年不太可能。]]></description>
+        </item>
         <item>
             <title><![CDATA[研究了一下《银魂》的茂茂将军，感叹一下无常的人生]]></title>
             <link>https://www.houzhenni.com/blog/gintama-shigeshige-and-tokugawa-iemochi</link>
