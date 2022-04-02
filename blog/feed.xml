@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sun, 20 Feb 2022 10:39:56 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 02 Apr 2022 07:06:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[推荐6首《银魂》的片头片尾主题曲]]></title>
+            <link>https://www.houzhenni.com/blog/gintama-op-ed-recommendations</link>
+            <guid>https://www.houzhenni.com/blog/gintama-op-ed-recommendations</guid>
+            <description><![CDATA[花了2个月的时间看完了15年份的《银魂》动画和真人版电影，除了一些难忘的剧情之外，经常在我脑子里萦绕的就是那些独特的片头片尾曲了。]]></description>
+        </item>
         <item>
             <title><![CDATA[2022香港疫情又起]]></title>
             <link>https://www.houzhenni.com/blog/hong-kong-covid-2022</link>
