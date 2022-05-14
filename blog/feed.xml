@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sun, 08 May 2022 09:59:43 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 14 May 2022 11:04:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[在一台电脑上用两个GitHub账号]]></title>
+            <link>https://www.houzhenni.com/blog/use-2-github-acc-on-pc</link>
+            <guid>https://www.houzhenni.com/blog/use-2-github-acc-on-pc</guid>
+            <description><![CDATA[要切换使用两个GitHub账号，Git终端实在搞不来，试一试用GitHub桌面版吧！]]></description>
+        </item>
         <item>
             <title><![CDATA[FoodPanda测评——能用，但不好用]]></title>
             <link>https://www.houzhenni.com/blog/foodpanda-hk-review</link>
@@ -188,16 +194,16 @@
             <description><![CDATA[I made a Chinese/ English Breadcrumbs component for my Nuxt website, the key point is to use a preset mapping rule. Also I learned about the communication between sibling components, it's worth my time.]]></description>
         </item>
         <item>
-            <title><![CDATA[那些一听到就会泪流满面的音乐]]></title>
-            <link>https://www.houzhenni.com/blog/music-that-makes-you-cry</link>
-            <guid>https://www.houzhenni.com/blog/music-that-makes-you-cry</guid>
-            <description><![CDATA[记录一下这些年在影视剧和各种地方听到过的会让人瞬间被带回那个情境的纯音乐和歌曲。]]></description>
-        </item>
-        <item>
             <title><![CDATA[新冠疫苗测评]]></title>
             <link>https://www.houzhenni.com/blog/covid19-vaccine-review</link>
             <guid>https://www.houzhenni.com/blog/covid19-vaccine-review</guid>
             <description><![CDATA[打了科兴的克尔来福新冠疫苗，昏睡了半天。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[那些一听到就会泪流满面的音乐]]></title>
+            <link>https://www.houzhenni.com/blog/music-that-makes-you-cry</link>
+            <guid>https://www.houzhenni.com/blog/music-that-makes-you-cry</guid>
+            <description><![CDATA[记录一下这些年在影视剧和各种地方听到过的会让人瞬间被带回那个情境的纯音乐和歌曲。]]></description>
         </item>
         <item>
             <title><![CDATA[如何制作中英双语的面包屑导航]]></title>
