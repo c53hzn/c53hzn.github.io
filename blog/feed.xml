@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Wed, 25 May 2022 09:43:36 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Jun 2022 08:47:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[leetCode第67题Add Binary的JS解法]]></title>
+            <link>https://www.houzhenni.com/blog/leetcode-67-add-binary-javascript-solution</link>
+            <guid>https://www.houzhenni.com/blog/leetcode-67-add-binary-javascript-solution</guid>
+            <description><![CDATA[其实这题的重点不在于二进制和十进制的转换。]]></description>
+        </item>
         <item>
             <title><![CDATA[批量下载图片的浏览器JavaScript脚本]]></title>
             <link>https://www.houzhenni.com/blog/js-script-batch-download-img</link>
