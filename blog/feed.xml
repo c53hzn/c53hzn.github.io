@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Fri, 24 Jun 2022 15:23:05 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 25 Jun 2022 07:49:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[投什么资，不要投资]]></title>
+            <link>https://www.houzhenni.com/blog/investment</link>
+            <guid>https://www.houzhenni.com/blog/investment</guid>
+            <description><![CDATA[强积金和保险都是坑。]]></description>
+        </item>
         <item>
             <title><![CDATA[leetCode第1题Two Sum的JS解法]]></title>
             <link>https://www.houzhenni.com/blog/leetcode-01-two-sum-javascript-solution</link>
