@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Fri, 01 Jul 2022 14:52:02 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 06 Jan 2023 06:03:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[2022年过去了，我还活着]]></title>
+            <link>https://www.houzhenni.com/blog/life-in-2022</link>
+            <guid>https://www.houzhenni.com/blog/life-in-2022</guid>
+            <description><![CDATA[又是乏善可陈的一年过去了。]]></description>
+        </item>
         <item>
             <title><![CDATA[投什么资，不要投资]]></title>
             <link>https://www.houzhenni.com/blog/investment</link>
