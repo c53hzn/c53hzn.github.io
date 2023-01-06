@@ -4,11 +4,11 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Fri, 06 Jan 2023 06:03:38 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 06 Jan 2023 17:20:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
-            <title><![CDATA[2022年过去了，我还活着]]></title>
+            <title><![CDATA[2022年过去了]]></title>
             <link>https://www.houzhenni.com/blog/life-in-2022</link>
             <guid>https://www.houzhenni.com/blog/life-in-2022</guid>
             <description><![CDATA[又是乏善可陈的一年过去了。]]></description>
@@ -332,16 +332,16 @@
             <description><![CDATA[我发现自己的电脑是地狱配置之后，竟然还找到了勉强能用的视频剪辑软件，真的要给万兴喵影点个赞。]]></description>
         </item>
         <item>
-            <title><![CDATA[考据“中华四维拓扑帝国”]]></title>
-            <link>https://www.houzhenni.com/blog/online-research</link>
-            <guid>https://www.houzhenni.com/blog/online-research</guid>
-            <description><![CDATA[如何能快速准确地找到自己想找的内容，这是一个问题。]]></description>
-        </item>
-        <item>
             <title><![CDATA[高级社畜也不好过啊——《琉璃》和《秘密森林2》的观后感]]></title>
             <link>https://www.houzhenni.com/blog/destiny-of-shachiku</link>
             <guid>https://www.houzhenni.com/blog/destiny-of-shachiku</guid>
             <description><![CDATA[作为刘学义和李浚赫的粉丝，以及昊辰/柏麟和徐东宰的角色粉，我有一点点小感想。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[考据“中华四维拓扑帝国”]]></title>
+            <link>https://www.houzhenni.com/blog/online-research</link>
+            <guid>https://www.houzhenni.com/blog/online-research</guid>
+            <description><![CDATA[如何能快速准确地找到自己想找的内容，这是一个问题。]]></description>
         </item>
         <item>
             <title><![CDATA[小动物]]></title>
