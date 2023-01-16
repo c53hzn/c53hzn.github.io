@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Fri, 06 Jan 2023 17:31:26 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 16 Jan 2023 15:24:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[《善恶魔法学院》：美丑可以用来辨善恶吗？]]></title>
+            <link>https://www.houzhenni.com/blog/school-for-good-and-evil</link>
+            <guid>https://www.houzhenni.com/blog/school-for-good-and-evil</guid>
+            <description><![CDATA[把你送进童话世界的魔法学院，你成为善良的主人公，还是邪恶的反派？]]></description>
+        </item>
         <item>
             <title><![CDATA[2022年过去了]]></title>
             <link>https://www.houzhenni.com/blog/life-in-2022</link>
