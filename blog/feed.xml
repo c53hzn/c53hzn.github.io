@@ -4,14 +4,20 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Mon, 16 Jan 2023 15:24:48 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Jan 2023 06:11:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[The school for good and evil--Is it possible to tell good and evil by beauty and ugliness?]]></title>
+            <link>https://www.houzhenni.com/blog/school-for-good-and-evil-en</link>
+            <guid>https://www.houzhenni.com/blog/school-for-good-and-evil-en</guid>
+            <description><![CDATA[If you are in an enchanted school in fairy tales, will you become a good hero, or will you become an evil villain?]]></description>
+        </item>
         <item>
             <title><![CDATA[《善恶魔法学院》：美丑可以用来辨善恶吗？]]></title>
             <link>https://www.houzhenni.com/blog/school-for-good-and-evil</link>
             <guid>https://www.houzhenni.com/blog/school-for-good-and-evil</guid>
-            <description><![CDATA[把你送进童话世界的魔法学院，你成为善良的主人公，还是邪恶的反派？]]></description>
+            <description><![CDATA[把你送进童话世界的魔法学院，你会成为善良的主人公，还是邪恶的反派？]]></description>
         </item>
         <item>
             <title><![CDATA[2022年过去了]]></title>
