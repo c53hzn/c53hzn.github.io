@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Wed, 18 Jan 2023 06:11:16 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 30 Jan 2023 07:22:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[刘慈欣的世界是男女平等的吗？——看流浪地球和三体有感]]></title>
+            <link>https://www.houzhenni.com/blog/gender-equality-in-liu-cixin-world</link>
+            <guid>https://www.houzhenni.com/blog/gender-equality-in-liu-cixin-world</guid>
+            <description><![CDATA[没有人会把叶文洁叫作“杨冬妈妈”，因为叶文洁就是叶文洁，她有自己的故事。我不知道刘慈欣喜不喜欢巴赫，反正我是喜欢的。]]></description>
+        </item>
         <item>
             <title><![CDATA[The school for good and evil--Is it possible to tell good and evil by beauty and ugliness?]]></title>
             <link>https://www.houzhenni.com/blog/school-for-good-and-evil-en</link>
