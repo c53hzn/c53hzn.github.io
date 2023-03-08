@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Mon, 06 Mar 2023 05:36:15 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Mar 2023 09:58:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[Notion is power, but I still got problems]]></title>
+            <link>https://www.houzhenni.com/blog/notion-en</link>
+            <guid>https://www.houzhenni.com/blog/notion-en</guid>
+            <description><![CDATA[I finally came across my favorite multi-device note-taking software. It's so easy to use for blog drafts and bookkeeping.]]></description>
+        </item>
         <item>
             <title><![CDATA[关于“全职主妇”]]></title>
             <link>https://www.houzhenni.com/blog/house-wife</link>
