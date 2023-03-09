@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Wed, 08 Mar 2023 09:58:12 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 09 Mar 2023 06:03:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[Mad Men 6x08, it's your job, it's also gaslighting at workplace]]></title>
+            <link>https://www.houzhenni.com/blog/gaslighting-at-workplace</link>
+            <guid>https://www.houzhenni.com/blog/gaslighting-at-workplace</guid>
+            <description><![CDATA[I keep seeing a video starting with “it’s your job” everywhere, I am pissed and I have to say something.]]></description>
+        </item>
         <item>
             <title><![CDATA[Notion is power, but I still got problems]]></title>
             <link>https://www.houzhenni.com/blog/notion-en</link>
