@@ -4,7 +4,7 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Thu, 09 Mar 2023 06:03:39 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 09 Mar 2023 06:16:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
@@ -14,7 +14,7 @@
             <description><![CDATA[I keep seeing a video starting with “it’s your job” everywhere, I am pissed and I have to say something.]]></description>
         </item>
         <item>
-            <title><![CDATA[Notion is power, but I still got problems]]></title>
+            <title><![CDATA[Notion is powerful, but I still got problems]]></title>
             <link>https://www.houzhenni.com/blog/notion-en</link>
             <guid>https://www.houzhenni.com/blog/notion-en</guid>
             <description><![CDATA[I finally came across my favorite multi-device note-taking software. It's so easy to use for blog drafts and bookkeeping.]]></description>
