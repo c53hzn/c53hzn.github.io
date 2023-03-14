@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Thu, 09 Mar 2023 06:16:03 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 14 Mar 2023 10:55:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[手疼的时候想到八佰伴]]></title>
+            <link>https://www.houzhenni.com/blog/oshin-and-yaohan</link>
+            <guid>https://www.houzhenni.com/blog/oshin-and-yaohan</guid>
+            <description><![CDATA[命运坎坷的阿信，和我竟然有不止一个关联点。]]></description>
+        </item>
         <item>
             <title><![CDATA[Mad Men 6x08, it's your job, it's also gaslighting at workplace]]></title>
             <link>https://www.houzhenni.com/blog/gaslighting-at-workplace</link>
