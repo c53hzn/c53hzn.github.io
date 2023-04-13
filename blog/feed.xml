@@ -4,14 +4,14 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Thu, 13 Apr 2023 09:42:56 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 13 Apr 2023 09:55:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
             <title><![CDATA[显微镜下的大明之丝绢案]]></title>
             <link>https://www.houzhenni.com/blog/under-the-microscope</link>
             <guid>https://www.houzhenni.com/blog/under-the-microscope</guid>
-            <description><![CDATA[这篇文章是关于xxx的，快来看吧！]]></description>
+            <description><![CDATA[《显微镜下的大明之丝绢案》看完了，感触颇深。这不光是一个案子，这是几代人的心血。]]></description>
         </item>
         <item>
             <title><![CDATA[用chatGPT学俄语]]></title>
