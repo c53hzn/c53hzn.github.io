@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Thu, 13 Apr 2023 09:55:38 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 15 Jun 2023 10:27:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[港式英语，勉强算英语吧]]></title>
+            <link>https://www.houzhenni.com/blog/hongkong-english-accent</link>
+            <guid>https://www.houzhenni.com/blog/hongkong-english-accent</guid>
+            <description><![CDATA[港式口音，港式语法，最熟悉的陌生语，等你来体验。]]></description>
+        </item>
         <item>
             <title><![CDATA[显微镜下的大明之丝绢案]]></title>
             <link>https://www.houzhenni.com/blog/under-the-microscope</link>
