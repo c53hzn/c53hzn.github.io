@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Thu, 06 Jul 2023 08:57:48 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 06 Jul 2023 11:37:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[告别Photoshop，用PPT来设计图片横幅吧]]></title>
+            <link>https://www.houzhenni.com/blog/design-banner-w-ppt</link>
+            <guid>https://www.houzhenni.com/blog/design-banner-w-ppt</guid>
+            <description><![CDATA[WPS和微软的PPT都可以输出幻灯片为图片，我们可以插入不同颜色的图形，并善用编辑形状，就可以设计我们想要的图片横幅或者产品图。]]></description>
+        </item>
         <item>
             <title><![CDATA[港式英语，勉强算英语吧]]></title>
             <link>https://www.houzhenni.com/blog/hongkong-english-accent</link>
