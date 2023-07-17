@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Wed, 12 Jul 2023 02:19:08 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 17 Jul 2023 15:04:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[史上最简单的Vue datePicker组件]]></title>
+            <link>https://www.houzhenni.com/blog/most-simple-vue-datepicker</link>
+            <guid>https://www.houzhenni.com/blog/most-simple-vue-datepicker</guid>
+            <description><![CDATA[Vue子组件和父组件如何双向传值？先在子组件写好emit事件，再到父组件调用这个事件，参考我写的这个datePicker component即可。]]></description>
+        </item>
         <item>
             <title><![CDATA[告别Photoshop，用PPT来设计图片横幅吧]]></title>
             <link>https://www.houzhenni.com/blog/design-banner-w-ppt</link>
