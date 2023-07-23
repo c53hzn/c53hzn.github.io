@@ -4,13 +4,13 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sun, 23 Jul 2023 10:12:25 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 23 Jul 2023 11:01:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
             <title><![CDATA[GitHub Actions自动部署vite项目时使用多个环境变量]]></title>
-            <link>https://www.houzhenni.com/blog/multi-env-secrets-in-githubactions</link>
-            <guid>https://www.houzhenni.com/blog/multi-env-secrets-in-githubactions</guid>
+            <link>https://www.houzhenni.com/blog/multi-env-secrets-in-github-actions</link>
+            <guid>https://www.houzhenni.com/blog/multi-env-secrets-in-github-actions</guid>
             <description><![CDATA[除了单个变量单独保存之外，还可以把多个变量一起保存，在自动部署时注入环境变量文件即可。]]></description>
         </item>
         <item>
@@ -428,16 +428,16 @@
             <description><![CDATA[我发现自己的电脑是地狱配置之后，竟然还找到了勉强能用的视频剪辑软件，真的要给万兴喵影点个赞。]]></description>
         </item>
         <item>
-            <title><![CDATA[高级社畜也不好过啊——《琉璃》和《秘密森林2》的观后感]]></title>
-            <link>https://www.houzhenni.com/blog/destiny-of-shachiku</link>
-            <guid>https://www.houzhenni.com/blog/destiny-of-shachiku</guid>
-            <description><![CDATA[作为刘学义和李浚赫的粉丝，以及昊辰/柏麟和徐东宰的角色粉，我有一点点小感想。]]></description>
-        </item>
-        <item>
             <title><![CDATA[考据“中华四维拓扑帝国”]]></title>
             <link>https://www.houzhenni.com/blog/online-research</link>
             <guid>https://www.houzhenni.com/blog/online-research</guid>
             <description><![CDATA[如何能快速准确地找到自己想找的内容，这是一个问题。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[高级社畜也不好过啊——《琉璃》和《秘密森林2》的观后感]]></title>
+            <link>https://www.houzhenni.com/blog/destiny-of-shachiku</link>
+            <guid>https://www.houzhenni.com/blog/destiny-of-shachiku</guid>
+            <description><![CDATA[作为刘学义和李浚赫的粉丝，以及昊辰/柏麟和徐东宰的角色粉，我有一点点小感想。]]></description>
         </item>
         <item>
             <title><![CDATA[小动物]]></title>
