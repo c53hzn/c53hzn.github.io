@@ -4,7 +4,7 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sun, 23 Jul 2023 09:38:03 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 23 Jul 2023 09:51:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
@@ -284,16 +284,16 @@
             <description><![CDATA[单机版推特，一个人的微博，美国前总统唐纳德·J·特朗普同款，你值得拥有。重点介绍九宫格图片的部分，学会了你也可以写一个微博APP。]]></description>
         </item>
         <item>
-            <title><![CDATA[她不记得，他不放弃--《掟上今日子的备忘录》]]></title>
-            <link>https://www.houzhenni.com/blog/memorandum-of-kyoko-okitegami</link>
-            <guid>https://www.houzhenni.com/blog/memorandum-of-kyoko-okitegami</guid>
-            <description><![CDATA[本格推理/单元剧/Gakki+冈田将生/男主默默守候女主，都是我喜欢的要素呢~]]></description>
-        </item>
-        <item>
             <title><![CDATA[覚えない彼女、諦めらない彼ーー『掟上今日子の備忘録』]]></title>
             <link>https://www.houzhenni.com/blog/memorandum-of-kyoko-okitegami-jp</link>
             <guid>https://www.houzhenni.com/blog/memorandum-of-kyoko-okitegami-jp</guid>
             <description><![CDATA[本格ミステリー/一話に一つの話/Gakki+岡田将生/知られない見守り、全部私の大好きな要素ですね~]]></description>
+        </item>
+        <item>
+            <title><![CDATA[她不记得，他不放弃--《掟上今日子的备忘录》]]></title>
+            <link>https://www.houzhenni.com/blog/memorandum-of-kyoko-okitegami</link>
+            <guid>https://www.houzhenni.com/blog/memorandum-of-kyoko-okitegami</guid>
+            <description><![CDATA[本格推理/单元剧/Gakki+冈田将生/男主默默守候女主，都是我喜欢的要素呢~]]></description>
         </item>
         <item>
             <title><![CDATA[QQ远程 vs Teamviewer vs 谷歌Remotedesk vs WPS远程桌面]]></title>
@@ -380,16 +380,16 @@
             <description><![CDATA[2020年真的是“被偷走的一年”，我好像除了年龄，什么都没有收获。]]></description>
         </item>
         <item>
-            <title><![CDATA[2021年Nuxt新版本的一些限制]]></title>
-            <link>https://www.houzhenni.com/blog/nuxt-2021-limitations</link>
-            <guid>https://www.houzhenni.com/blog/nuxt-2021-limitations</guid>
-            <description><![CDATA[升级Nuxt到2.14.12之后，遇到了3个问题，这个新版本用起来有点不太顺手。]]></description>
-        </item>
-        <item>
             <title><![CDATA[Limitations of latest version Nuxt in 2021]]></title>
             <link>https://www.houzhenni.com/blog/nuxt-2021-limitations-en</link>
             <guid>https://www.houzhenni.com/blog/nuxt-2021-limitations-en</guid>
             <description><![CDATA[After updating to Nuxt 2.14.12, I encountered 3 problems, making the developing process a little difficult for me.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[2021年Nuxt新版本的一些限制]]></title>
+            <link>https://www.houzhenni.com/blog/nuxt-2021-limitations</link>
+            <guid>https://www.houzhenni.com/blog/nuxt-2021-limitations</guid>
+            <description><![CDATA[升级Nuxt到2.14.12之后，遇到了3个问题，这个新版本用起来有点不太顺手。]]></description>
         </item>
         <item>
             <title><![CDATA[使用Github Actions把Nuxt静态网站push到其他repository]]></title>
@@ -428,16 +428,16 @@
             <description><![CDATA[我发现自己的电脑是地狱配置之后，竟然还找到了勉强能用的视频剪辑软件，真的要给万兴喵影点个赞。]]></description>
         </item>
         <item>
-            <title><![CDATA[高级社畜也不好过啊——《琉璃》和《秘密森林2》的观后感]]></title>
-            <link>https://www.houzhenni.com/blog/destiny-of-shachiku</link>
-            <guid>https://www.houzhenni.com/blog/destiny-of-shachiku</guid>
-            <description><![CDATA[作为刘学义和李浚赫的粉丝，以及昊辰/柏麟和徐东宰的角色粉，我有一点点小感想。]]></description>
-        </item>
-        <item>
             <title><![CDATA[考据“中华四维拓扑帝国”]]></title>
             <link>https://www.houzhenni.com/blog/online-research</link>
             <guid>https://www.houzhenni.com/blog/online-research</guid>
             <description><![CDATA[如何能快速准确地找到自己想找的内容，这是一个问题。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[高级社畜也不好过啊——《琉璃》和《秘密森林2》的观后感]]></title>
+            <link>https://www.houzhenni.com/blog/destiny-of-shachiku</link>
+            <guid>https://www.houzhenni.com/blog/destiny-of-shachiku</guid>
+            <description><![CDATA[作为刘学义和李浚赫的粉丝，以及昊辰/柏麟和徐东宰的角色粉，我有一点点小感想。]]></description>
         </item>
         <item>
             <title><![CDATA[小动物]]></title>
