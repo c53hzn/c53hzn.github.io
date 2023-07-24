@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sun, 23 Jul 2023 16:21:33 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 24 Jul 2023 12:39:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[用Vue和firebase开发一个私人记账APP]]></title>
+            <link>https://www.houzhenni.com/blog/personal-bookkeeping-app-using-firebase-n-vue</link>
+            <guid>https://www.houzhenni.com/blog/personal-bookkeeping-app-using-firebase-n-vue</guid>
+            <description><![CDATA[前后端分离开发一个记账APP，前端用Vite和Vue，后端用firebase，开发一周就上线了，真的很vite(快)。]]></description>
+        </item>
         <item>
             <title><![CDATA[GitHub Actions自动部署vite项目时使用多个环境变量]]></title>
             <link>https://www.houzhenni.com/blog/multi-env-secrets-in-github-actions</link>
