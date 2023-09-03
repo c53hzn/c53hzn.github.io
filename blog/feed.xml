@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sun, 13 Aug 2023 14:32:26 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 03 Sep 2023 18:41:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[三刷完电影《封神第一部》，我通读了一遍《殷本纪》]]></title>
+            <link>https://www.houzhenni.com/blog/fengshen-trilogy-1</link>
+            <guid>https://www.houzhenni.com/blog/fengshen-trilogy-1</guid>
+            <description><![CDATA[《封神》的后劲儿太大了，我延伸阅读了史书、话本、地图册，但其实一开始我并不喜欢的。]]></description>
+        </item>
         <item>
             <title><![CDATA[用Vue和firebase开发一个私人记账APP]]></title>
             <link>https://www.houzhenni.com/blog/personal-bookkeeping-app-using-firebase-n-vue</link>
