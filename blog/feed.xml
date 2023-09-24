@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Tue, 05 Sep 2023 10:16:44 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 24 Sep 2023 15:40:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[在香港四刷了《封神第一部》，我见到了导演乌尔善]]></title>
+            <link>https://www.houzhenni.com/blog/fengshen-trilogy-1-2</link>
+            <guid>https://www.houzhenni.com/blog/fengshen-trilogy-1-2</guid>
+            <description><![CDATA[《封神》在香港上映了，我又对这个故事有了一些小思索。]]></description>
+        </item>
         <item>
             <title><![CDATA[三刷完电影《封神第一部》，我通读了一遍《殷本纪》]]></title>
             <link>https://www.houzhenni.com/blog/fengshen-trilogy-1</link>
