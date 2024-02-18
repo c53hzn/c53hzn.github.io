@@ -1,0 +1,235 @@
+<!doctype html>
+<html data-n-head-ssr lang="zh" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22zh%22%7D%7D">
+  <head>
+    <title>下载新浪博客全部博文的油猴浏览器脚本 | Jenny的小站</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1"><meta data-n-head="ssr" data-hid="date" name="date" content="2024-02-18"><meta data-n-head="ssr" data-hid="description" name="description" content="使用此文章的几个脚本，可以获取单个新浪博客用户的博文列表，并全部下载，再合并成一个PDF，可包含图片和目录。"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content="技术,浏览器脚本,tampermonkey"><link data-n-head="ssr" rel="shortcut icon" type="image/x-icon" href="/favicon.ico"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico"><link data-n-head="ssr" rel="stylesheet" href="/css/font-Noto-Sans-SC.css"><link data-n-head="ssr" rel="stylesheet" href="/css/style.css?2022-06-24"><link data-n-head="ssr" rel="stylesheet" href="/font-awesome/css/font-awesome.min.css"><link data-n-head="ssr" rel="stylesheet" href="/css/layout-post.css?2021-09-09-1"><link data-n-head="ssr" rel="stylesheet" href="/css/github-markdown.min.css?2021-09-09-2"><script data-n-head="ssr" src="/js/statcounter.js?2021-04-24-1"></script><script data-n-head="ssr" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-ad-client="ca-pub-2790001673900763" async></script><base href="/"><link rel="preload" href="/_nuxt/7e4b94164e32f472bd4c.js" as="script"><link rel="preload" href="/_nuxt/54f6f6bd48b75643c87d.js" as="script"><link rel="preload" href="/_nuxt/43e415fec2b60ff3aa38.js" as="script"><link rel="preload" href="/_nuxt/8df581cb8a5ae31cb7f4.js" as="script"><link rel="preload" href="/_nuxt/efceef13af374f2d770e.js" as="script"><style data-vue-ssr-id="638ca560:0 3191d5ad:0 779bf73e:0 72520070:0 6a62617a:0 f28bdea2:0 cb150022:0 0a408f7a:0">code[class*=language-],pre[class*=language-]{color:#393a34;font-family:Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;font-size:.9em;line-height:1.2em;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre>code[class*=language-]{font-size:1em}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#b3d4fc}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#b3d4fc}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;background-color:#f3f3f3}:not(pre)>code[class*=language-]{padding:1px .2em;background:#f3f3f3;border:1px solid #ddd}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#998;font-style:italic}.token.namespace{opacity:.7}.token.attr-value,.token.string{color:#e3116c}.token.operator,.token.punctuation{color:#393a34}.token.boolean,.token.constant,.token.entity,.token.inserted,.token.number,.token.property,.token.regex,.token.symbol,.token.url,.token.variable{color:#36acaa}.language-autohotkey .token.selector,.token.atrule,.token.attr-name,.token.keyword{color:#00a4db}.language-autohotkey .token.tag,.token.deleted,.token.function{color:#9a050f}.language-autohotkey .token.keyword,.token.selector,.token.tag{color:#00009f}.token.bold,.token.function,.token.important{font-weight:700}.token.italic{font-style:italic}.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#3b8070;z-index:999999}.nuxt-progress.nuxt-progress-notransition{transition:none}.nuxt-progress-failed{background-color:red}.breadcrumbs{max-width:84%;word-wrap:break-word;word-break:break-all;display:inline-block}.nuxt-content{margin-bottom:50px;text-align:justify;word-break:break-all}.nuxt-content h2{margin:9px 0;padding:9px 0}.nuxt-content h3,.nuxt-content h4,.nuxt-content h5{margin:8px 0;padding:0}.nuxt-content h2,.nuxt-content h3{border-bottom:1px solid silver}.nuxt-content h2{font-size:30px}.nuxt-content h3{font-size:26px}.nuxt-content h4{font-size:24px}.nuxt-content h5{font-size:20px}.nuxt-content p{line-height:24px}.nuxt-content ol{padding-right:18px}.nuxt-content li{line-height:24px}.nuxt-content iframe{margin:0 20px}.nuxt-content iframe.youtube{margin:8px auto 8px 20px;width:480px;height:360px;display:block}.nuxt-content blockquote{margin:16px 0;padding:10px;color:#6a737d;background-color:#f8f8f8;border-left:.25em solid #dfe2e5}.nuxt-content a,.toc a,.toc a:active,.toc a:visited{color:#000;font-weight:700;text-decoration:underline}.nuxt-content a:hover,.toc a:hover{color:grey}li.toc3{list-style:circle;margin-left:15px}a#comment-link{top:0}.blog-desc{margin:10px 0;padding:10px;color:#666;background-color:rgba(0,0,0,.025)}#disqus_thread{margin-top:60px}.prev-next{margin:20px auto;display:flex;justify-content:space-between}.prev-next a{display:block}.next,.prev{max-width:42%;color:grey;cursor:pointer}.prev{text-align:left}.next{text-align:right}.next:hover,.prev:hover{color:#000}.prev-next-arrow{font-size:28px}#comment{margin:40px 0 0;text-align:center}.loadCommentBtn{margin-bottom:20px;cursor:pointer;display:inline-block}.loadCommentBtn:hover{color:grey}@media (max-width:768px){.nuxt-content h2,.nuxt-content h3,.nuxt-content h4,.nuxt-content h5{margin:9px 0}.nuxt-content blockquote{margin:16px 0}.nuxt-content iframe{margin:0}.nuxt-content iframe.youtube{margin:8px auto;width:100%}.nuxt-content ul{padding-left:20px}.nuxt-content pre{margin-left:0;margin-right:0}.next,.prev{margin:0}#comment{margin:40px 0 0}}@media (max-width:539px){.nuxt-content iframe.youtube{height:auto}}#my-info:hover{border-color:#000}#my-info a{display:block}.blog-gallery{margin:20px auto;display:flex;justify-content:center;flex-wrap:wrap;overflow:hidden}.blog-gallery-unit{margin:40px 20px 0;width:46%;background:#fff;border:1px solid silver;border-radius:5px}.blog-gallery-unit:first-child,.blog-gallery-unit:nth-child(2){margin-top:20px}.blog-gallery-unit:nth-child(2n-1){margin-left:0}.blog-gallery-unit:nth-child(2n){margin-right:0}.blog-gallery-unit:hover{border-color:#000}.blog-gallery-inner{padding:10px;height:100%}.blog-gallery-inner h4{margin-top:0;margin-bottom:8px;max-height:42px;line-height:20px;overflow:hidden}.blog-gallery-unit .date-lang,.blog-gallery-unit .desc-tag{margin-top:8px;margin-bottom:8px}.blog-gallery-desc{line-height:21px;max-height:64px;display:block;overflow:hidden}.blog-gallery-cat,.blog-gallery-tag{margin:1px;padding:0 8px 1px;font-size:14px;font-family:Noto Sans SC,sans-serif;line-height:20px;border-radius:999px;display:inline-block}.blog-gallery-cat{color:#4c4c4c;border:1px solid #4c4c4c}.blog-gallery-tag{color:#fff;background:grey}.blog-gallery-lang{padding:0 5px;width:60px;font-size:14px;text-align:center;color:grey;border:1px solid silver;border-radius:4px}@media (max-width:768px){.blog-gallery-unit:nth-child(2n-1){margin-right:15px}.blog-gallery-unit:nth-child(2n){margin-left:15px}}@media (max-width:425px){.blog-gallery-unit{margin:20px 0 0;width:100%}.blog-gallery-unit:nth-child(2n-1){margin-right:0}.blog-gallery-unit:nth-child(2n){margin-left:0}}.col-1{margin:10px auto;width:98%}.col-1:first-child,.col-1:nth-child(2){margin-top:10px}.col-1:nth-child(2n),.col-1:nth-child(2n-1){margin:10px}.col-1 .blog-gallery-inner{padding:10px}.col-1 h4{margin:10px 0}.col-1 p{margin:8px 0}.col-1 .desc-tag{display:none}@media (max-width:768px){.col-1{width:44%}.col-1:nth-child(2n-1){margin-right:15px}.col-1:nth-child(2n){margin-left:15px}.col-1 .desc-tag{display:block}}@media (max-width:425px){.col-1{margin:20px 0 0;width:100%}.col-1:first-child,.col-1:nth-child(2){margin-top:10px}.col-1:nth-child(2n),.col-1:nth-child(2n-1){margin:10px}}.hidden{display:none}.side-nav .close{position:absolute;top:4px;right:18px;font-size:24px;cursor:pointer;display:none}.desk-fix{position:fixed;top:0;left:0;right:0;bottom:0;margin:auto;padding:10px;width:400px;height:400px;overflow-y:overlay;display:none}.desk-fix .close{display:block}@media (max-width:768px){.side-nav{position:fixed;top:0;left:0;margin:60px 10px 40px;padding:10px;width:calc(100vw - 20px);height:calc(100vh - 100px);overflow-y:scroll;display:none}.side-nav .close{display:block}}.show{display:block}.list-btn{position:fixed;right:20px;bottom:90px;padding-left:6px;width:38px;height:38px;font-size:24px;color:grey;background-color:#f9f9f9;border:1px solid grey;border-radius:3px;cursor:pointer;opacity:.6;transition:opacity .3s;display:none}.desk-list-btn{display:block}@media (max-width:768px){.list-btn{display:block}}.list-btn:hover{opacity:1}.list-btn-hidden{opacity:0;display:none}</style>
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div class="container"><nav><div class="nav-wrap"><header><a href="/" class="no-decor-link"><p class="nav-home">Jenny's blog</p></a></header> <div class="nav-btn"><div class="bar"></div> <div class="bar"></div> <div class="bar"></div> <div class="bar"></div></div> <div class="nav-mask"></div> <div class="body-mask"></div> <ul class="nav-ul"><span id="lang-switch" title="将界面文本切换成中文" class="nav-link" style="padding-left:10px"><i class="fa fa-language" style="font-size:20px"></i>
+        中/En
+      </span> <li class="nav-link"><a href="/" target="_self" class="no-decor-link">
+          Home<!----><!----></a> <!----></li><li class="nav-parent"><!----> <span><span>About
+            <i class="fa fa-angle-down"></i></span> <div class="nav-child" style="width:100px"><ul><li><a href="/resume" target="_self" class="no-decor-link">
+                  Resume<!----><!----></a></li><li><a href="/portfolio" target="_self" class="no-decor-link">
+                  Portfolio<!----><!----></a></li></ul></div></span></li><li class="nav-parent"><!----> <span><span>Writings
+            <i class="fa fa-angle-down"></i></span> <div class="nav-child" style="width:100px"><ul><li><a href="/blog" target="_self" class="no-decor-link">
+                  Blog<!----><!----></a></li><li><a href="/desk-weibo" target="_self" class="no-decor-link">
+                  Desk<!----><!----></a></li></ul></div></span></li><li class="nav-parent"><!----> <span><span>Tool
+            <i class="fa fa-angle-down"></i></span> <div class="nav-child" style="width:200px"><ul><li><a href="/tool/free-resume-generator" target="_self" class="no-decor-link">
+                  Editable Free Resume Generator<!----><!----></a></li><li><a href="/tool/css-shape-guide" target="_self" class="no-decor-link">
+                  Pure CSS Shapes--A Handy Guidebook<!----><!----></a></li><li><a href="/tool/split-bill-calculator" target="_self" class="no-decor-link">
+                  Calculator for splitting dining bills<!----><!----></a></li><li><a href="/nuxt-maupassant" target="_self" class="no-decor-link">
+                  Nuxt blog theme Maupassant<!----><!----></a></li><li><a href="/desk-weibo" target="_self" class="no-decor-link">
+                  Self-hosted weibo solution<!----><!----></a></li><li><a href="/april-bill" target="_blank" class="no-decor-link">
+                  SPA bookkeeping app<!----><i class="fa fa-external-link"></i></a></li></ul></div></span></li><li class="nav-link"><a href="/store" target="_self" class="no-decor-link">
+          Store<!----><!----></a> <!----></li><li class="nav-link"><a href="https://wj.qq.com/s2/3731207/f0cd/" target="_blank" class="no-decor-link">
+          Contact<span> </span><i class="fa fa-external-link"></i></a> <!----></li></ul></div></nav> <div class="container-main"><div class="below-nav"><div class="breadcrumbs"><span><a href="/"> 
+        Home 
+      </a> <span>/</span></span><span><a href="/blog"> 
+        Blog 
+      </a> <span>/</span></span><span><span> 
+        This page
+      </span> <!----></span></div></div> <div class="blog-wrap"><main class="blog-main"><h1 class="align-center article-title">下载新浪博客全部博文的油猴浏览器脚本</h1> <p class="align-center"><span class="blog-date"><i class="fa fa-calendar"></i>
+        2024-02-18
+      </span> <a href="/blog/language/中文"><span class="blog-lang"><i class="fa fa-language"></i>
+          中文
+        </span></a></p> <p class="align-center"><span class="blog-cat"><a href="/blog/category/技术"><i class="fa fa-folder-open"></i>
+          技术
+        </a></span></p> <p class="blog-tags align-center"><span class="blog-tag"><a href="/blog/tag/浏览器脚本"><i class="fa fa-tag"></i>
+          浏览器脚本
+        </a></span></p> <p class="blog-desc">使用此文章的几个脚本，可以获取单个新浪博客用户的博文列表，并全部下载，再合并成一个PDF，可包含图片和目录。</p> <article><ul class="toc"><li class="toc2"><a href="/blog/tampermonkey-browser-script-download-sina-blog#前言">前言</a></li><li class="toc2"><a href="/blog/tampermonkey-browser-script-download-sina-blog#获取文章列表，存入localstorage">获取文章列表，存入localStorage</a></li><li class="toc2"><a href="/blog/tampermonkey-browser-script-download-sina-blog#设置下载文件夹，关闭浏览器询问">设置下载文件夹，关闭浏览器询问</a></li><li class="toc2"><a href="/blog/tampermonkey-browser-script-download-sina-blog#遍历文章列表，下载每一篇文章">遍历文章列表，下载每一篇文章</a></li><li class="toc2"><a href="/blog/tampermonkey-browser-script-download-sina-blog#合并文章为一个txt文件">合并文章为一个txt文件</a></li><li class="toc2"><a href="/blog/tampermonkey-browser-script-download-sina-blog#复制html到浏览器，替换图片链接">复制html到浏览器，替换图片链接</a></li><li class="toc2"><a href="/blog/tampermonkey-browser-script-download-sina-blog#给文章标题添加id">给文章标题添加id</a></li><li class="toc2"><a href="/blog/tampermonkey-browser-script-download-sina-blog#给整个页面添加博客目录功能区">给整个页面添加博客目录功能区</a></li><li class="toc2"><a href="/blog/tampermonkey-browser-script-download-sina-blog#保存整个页面为pdf">保存整个页面为PDF</a></li></ul> <div class="markdown-body nuxt-content"><h2 id="前言"><a aria-hidden="true" href="#%E5%89%8D%E8%A8%80" tabindex="-1"><span class="icon icon-link"></span></a>前言</h2>
+<p>本篇文章会介绍如何下载新浪博客文章到PDF，下载内容包括图片，可带目录。</p>
+<p>需要有一定的前端编程和浏览器知识，如果没有的话，建议找一个会的朋友帮你下载。</p>
+<h2 id="获取文章列表，存入localstorage"><a aria-hidden="true" href="#%E8%8E%B7%E5%8F%96%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8%EF%BC%8C%E5%AD%98%E5%85%A5localstorage" tabindex="-1"><span class="icon icon-link"></span></a>获取文章列表，存入localStorage</h2>
+<p>在新浪博客找到要保存的用户的主页，在主页点击“博文目录”，在此页按下 <code>F12</code> 打开 <code>console</code> ，输入以下代码。</p>
+<div class="nuxt-content-highlight"><pre class="language-text line-numbers"><code>var list = document.querySelectorAll("div.articleCell.SG_j_linedot1");
+var articles = [];
+for (let i = 0; i &lt; list.length; i++) {
+    let pList = list[i].querySelectorAll("p");
+    let a = pList[0].querySelector(".atc_title a");
+    let b = pList[1].querySelector(".atc_tm.SG_txtc");
+    let obj = {
+        title: a.innerHTML,
+        link: a.href,
+        time: b.innerHTML
+    };
+    articles.push(obj);
+}
+console.log(JSON.stringify(articles))
+</code></pre></div>
+<p>然后 <code>console</code> 里面会显示拿到的本页的博文的清单，如果博主的博文超过50篇，那接下来就要点击“下一页”以保存下一页的博文清单。</p>
+<p>请自己翻页，然后每一页执行一次，再手动合并成一个 <code>Array</code> ，如果你不会这一步，可能这篇教学不太适合你。</p>
+<div class="nuxt-content-highlight"><pre class="language-text line-numbers"><code>//把文章列表写成JSON
+articleJSON = {list: {
+  title: "文章标题",
+  link: "文章链接",
+  time: "发表时间"
+};
+//存入localStorage
+localStorage.setItem("articleJSON", JSON.stringify(articleJSON));
+localStorage.setItem("curArticleNum", 0);
+</code></pre></div>
+<h2 id="设置下载文件夹，关闭浏览器询问"><a aria-hidden="true" href="#%E8%AE%BE%E7%BD%AE%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E5%A4%B9%EF%BC%8C%E5%85%B3%E9%97%AD%E6%B5%8F%E8%A7%88%E5%99%A8%E8%AF%A2%E9%97%AE" tabindex="-1"><span class="icon icon-link"></span></a>设置下载文件夹，关闭浏览器询问</h2>
+<p>新建一个文件夹，把浏览器的默认下载文件夹设置成这个文件夹，然后关闭“每次下载都询问保存位置”。</p>
+<p>此外，在执行下一部分代码的时候，浏览器一定会提示“已阻止网站自动下载”，此时需要眼疾手快地点开提示，改成“允许下载”。</p>
+<h2 id="遍历文章列表，下载每一篇文章"><a aria-hidden="true" href="#%E9%81%8D%E5%8E%86%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8%EF%BC%8C%E4%B8%8B%E8%BD%BD%E6%AF%8F%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0" tabindex="-1"><span class="icon icon-link"></span></a>遍历文章列表，下载每一篇文章</h2>
+<p>打开博主的最新一篇博文详情页，不要打开其他新浪博客域名的页面，放在这里别动。</p>
+<p>在tampermonkey新建脚本，输入以下代码并保存。</p>
+<div class="nuxt-content-highlight"><pre class="language-text line-numbers"><code>// ==UserScript==
+// @name         Download Sina blog
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        https://blog.sina.com.cn/s/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=sina.com.cn
+// @grant        none
+// ==/UserScript==
+
+//参考文章
+//https://blog.csdn.net/qq_45677671/article/details/125905454
+//【JS】将字符串保存成文件到本地（.txt、.json、.md...）
+
+(function() {
+    'use strict';
+//如果准备好了，就把这个return注释掉，脚本就会执行了
+return;
+var articleJSON = localStorage.getItem("articleJSON");
+articleJSON = JSON.parse(articleJSON);
+var articleList = articleJSON.list;
+var curArticleNum = localStorage.getItem("curArticleNum");
+var curArticle = articleList[curArticleNum];
+
+setTimeout(function() {
+    //要保存的字符串
+    //获取标题
+    var title = document.querySelector("h2");
+    var stringData = `&lt;h2>${title.innerHTML}&lt;/h2>\n&lt;p>${curArticle.time}&lt;/p>&lt;div>`;
+    //获取正文
+    stringData += document.querySelector("#sina_keyword_ad_area2").innerHTML +"\n&lt;/div>\n";
+    // stringData 表示要转换的字符串数据，type 表示要转换的数据格式
+    const blob = new Blob([stringData], {
+        type: "text/plain;charset=utf-8"
+    });
+    // 根据 blob生成 url链接
+    const objectURL = URL.createObjectURL(blob);
+    // 创建一个 a 标签Tag
+    const aTag = document.createElement('a');
+    // 设置文件的下载地址
+    aTag.href = objectURL;
+    // 设置保存后的文件名称
+    //padStart用来给文件名前面补0，想要几位数，就在第一个参数写几
+    //但是padStart只能作用于字符串，所以要先toString()
+    //以下是三位数字的例子，eg:001.txt, 002.txt
+    var fileName = (curArticleNum+1).toString();
+    aTag.download = fileName.padStart(3, '0')+".txt";
+    // 给 a 标签添加点击事件
+    aTag.click();
+    // 释放一个之前已经存在的、通过调用 URL.createObjectURL() 创建的 URL 对象。
+    // 当你结束使用某个 URL 对象之后，应该通过调用这个方法来让浏览器知道不用在内存中继续保留对这个文件的引用了。
+    URL.revokeObjectURL(objectURL);
+    curArticleNum++;
+    localStorage.setItem("curArticleNum", curArticleNum);
+    //全下载完了就return
+    if(curArticleNum==articleList.length)return;
+    //没下载完则进入下一篇的页面
+    var nextArticle = articleList[curArticleNum];
+    window.location = nextArticle.link;
+}, 3000);
+})();
+</code></pre></div>
+<p>刷新刚才的博文详情页，代码就会开始执行，遍历文章列表，下载所有文章的html为txt，保存到你的电脑上。</p>
+<p>执行完之后记得把脚本的return的注释删掉，或者直接把整个脚本关掉，不然下次打开任何一个新浪博客的页面，它又会自动执行。</p>
+<h2 id="合并文章为一个txt文件"><a aria-hidden="true" href="#%E5%90%88%E5%B9%B6%E6%96%87%E7%AB%A0%E4%B8%BA%E4%B8%80%E4%B8%AAtxt%E6%96%87%E4%BB%B6" tabindex="-1"><span class="icon icon-link"></span></a>合并文章为一个txt文件</h2>
+<p>使用命令行将所有txt文件合并成一个txt文件。</p>
+<div class="nuxt-content-highlight"><pre class="language-text line-numbers"><code>type *.txt>index.txt
+</code></pre></div>
+<h2 id="复制html到浏览器，替换图片链接"><a aria-hidden="true" href="#%E5%A4%8D%E5%88%B6html%E5%88%B0%E6%B5%8F%E8%A7%88%E5%99%A8%EF%BC%8C%E6%9B%BF%E6%8D%A2%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5" tabindex="-1"><span class="icon icon-link"></span></a>复制html到浏览器，替换图片链接</h2>
+<p>打开新浪博客的任意一个页面，在 <code>console</code> 里面输入</p>
+<div class="nuxt-content-highlight"><pre class="language-text line-numbers"><code>document.querySelector("body").innerHTML = "";
+</code></pre></div>
+<p>清除该页body里的所有HTML之后，再点开 <code>elements</code> ，把合并后的TXT文件里的html复制粘贴到该页的body里面。</p>
+<p>为什么要这样做呢？因为新浪博客的图片链接只能在新浪博客的页面才能显示图片，为了能把图片也下载下来，我们需要用这种方式。</p>
+<p>此时有些图片不显示，这是因为之前我们设置的每一篇的下载间隔为3秒，如果该篇博客包含了很多图片，3秒可能不够全部加载，此时新浪博客有一个缓冲加载图片的机制，会导致我们下载下来的html里面的图片不显示，解决办法是从图片标签里获取到真正的图片链接，并替换缓冲的图片链接。</p>
+<div class="nuxt-content-highlight"><pre class="language-text line-numbers"><code>var allImg = document.querySelectorAll("img");
+for (let i = 0; i &lt; allImg.length; i++) {
+    let real_src = allImg[i].getAttribute("real_src");
+    allImg[i].src = real_src;
+}
+</code></pre></div>
+<p>然后图片就能显示了。</p>
+<h2 id="给文章标题添加id"><a aria-hidden="true" href="#%E7%BB%99%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98%E6%B7%BB%E5%8A%A0id" tabindex="-1"><span class="icon icon-link"></span></a>给文章标题添加id</h2>
+<div class="nuxt-content-highlight"><pre class="language-text line-numbers"><code>var h2All = document.querySelectorAll("h2");
+for (let j = 0; j &lt; h2All.length; j++) {
+    let num = (j+1).toString();
+    h2All[j].id = num.padStart(3, '0');
+}
+</code></pre></div>
+<h2 id="给整个页面添加博客目录功能区"><a aria-hidden="true" href="#%E7%BB%99%E6%95%B4%E4%B8%AA%E9%A1%B5%E9%9D%A2%E6%B7%BB%E5%8A%A0%E5%8D%9A%E5%AE%A2%E7%9B%AE%E5%BD%95%E5%8A%9F%E8%83%BD%E5%8C%BA" tabindex="-1"><span class="icon icon-link"></span></a>给整个页面添加博客目录功能区</h2>
+<div class="nuxt-content-highlight"><pre class="language-text line-numbers"><code>var articleJSON = localStorage.getItem("articleJSON");
+articleJSON = JSON.parse(articleJSON);
+var list = articleJSON.list;
+var html = `&lt;div id="menu">&lt;style>#menu a{font-weight:bold;text-decoration:none;}#menu span{font-size: 14px;color:silver;}&lt;/style>&lt;h3>目录&lt;/h3>`;
+for (let i = 0; i &lt; list.length; i++) {
+    let num = (i+1).toString();
+    html += `&lt;p>&lt;a href="#${num.padStart(3, '0')}" target="_self">${list[i].title}&lt;/a>&lt;br>&lt;span>${list[i].time}&lt;/span>&lt;/p>`;
+}
+html+="&lt;/div>"
+console.log(html)
+</code></pre></div>
+<p>复制生成的html，手动粘贴到body的开头。</p>
+<h2 id="保存整个页面为pdf"><a aria-hidden="true" href="#%E4%BF%9D%E5%AD%98%E6%95%B4%E4%B8%AA%E9%A1%B5%E9%9D%A2%E4%B8%BApdf" tabindex="-1"><span class="icon icon-link"></span></a>保存整个页面为PDF</h2>
+<p>使用浏览器自带的“打印到PDF”功能，我们可以保存整页为PDF，完成。</p>
+<p>经过测试，文章数量多，且包含的图片多的时候，打印预览窗口弹出的速度会比较慢，等一等就可以了。</p>
+<p>全文完。</p></div></article> <div class="prev-next"><div class="prev"><a href="/blog/fengshen-trilogy-part-1-synopsis" title="A new adaption of the novel The Investiture of the Gods, read the part one full story here." class="no-decor-link"><span class="prev-next-arrow"><i class="fa fa-long-arrow-left"></i></span> <br> <span class="title">Creation of the Gods I: Kingdom of Storms, full story</span></a></div> <div class="next"><!----></div></div> <div id="disqus_thread"><div class="loadCommentBtn"><i aria-hidden="true" class="fa fa-comment"></i>
+        Load Comments
+      </div></div></main> <aside class="blog-side"><div id="my-info" class="side-unit"><a href="/resume" class="no-decor-link"><div style="position:absolute">Author</div> <img src="/img/mypic.png" style="width:64px;margin:10px auto;display:block"> <div>Self-taught Front-End developer, experienced E-Commerce specialist, expert in Photoshop and Excel. Welcome to my blog~</div></a></div> <div><h3 class="align-center"><span style="border-bottom:2px solid #000">
+        	Related Posts
+        </span></h3> <div class="blog-gallery"><div class="blog-gallery-unit col-1"><a href="/blog/nuxt-breadcrumbs-bilingual-en" title="I made a Chinese/ English Breadcrumbs component for my Nuxt website, the key point is to use a preset mapping rule. Also I learned about the communication between sibling components, it's worth my time." class="no-decor-link"><div class="blog-gallery-inner align-left"><h4>Create Bilingual Breadcrumbs component for Nuxt</h4> <p class="date-lang"><span class="blog-date"><i class="fa fa-calendar"></i>
+               2021-04-06
+            </span> <span class="blog-gallery-lang"><i class="fa fa-language"></i>
+              English
+            </span></p> <p class="desc-tag"><span class="blog-gallery-desc">I made a Chinese/ English Breadcrumbs component for my Nuxt website, the key point is to use a preset mapping rule. Also I learned about the communication between sibling components, it's worth my time.</span></p> <p class="desc-tag"><span><span class="blog-gallery-cat"><i class="fa fa-folder-open"></i>
+                Tech
+              </span></span> <span><span class="blog-gallery-tag"><i class="fa fa-tag"></i>
+                Nuxt.js
+              </span><span class="blog-gallery-tag"><i class="fa fa-tag"></i>
+                breadcrumbs
+              </span></span></p></div></a></div><div class="blog-gallery-unit col-1"><a href="/blog/nuxt-breadcrumbs-bilingual" title="终于弄好了双语的面包屑导航，还学到了Vue的同级组件通信的知识，我还是很开心的。" class="no-decor-link"><div class="blog-gallery-inner align-left"><h4>如何制作中英双语的面包屑导航</h4> <p class="date-lang"><span class="blog-date"><i class="fa fa-calendar"></i>
+               2021-03-24
+            </span> <span class="blog-gallery-lang"><i class="fa fa-language"></i>
+              中文
+            </span></p> <p class="desc-tag"><span class="blog-gallery-desc">终于弄好了双语的面包屑导航，还学到了Vue的同级组件通信的知识，我还是很开心的。</span></p> <p class="desc-tag"><span><span class="blog-gallery-cat"><i class="fa fa-folder-open"></i>
+                技术
+              </span></span> <span><span class="blog-gallery-tag"><i class="fa fa-tag"></i>
+                Nuxt.js
+              </span><span class="blog-gallery-tag"><i class="fa fa-tag"></i>
+                面包屑导航
+              </span></span></p></div></a></div><div class="blog-gallery-unit col-1"><a href="/blog/devil-judge" title="背负沉重过往的法官，通过操纵民意来实现自己的正义，这样做对吗？" class="no-decor-link"><div class="blog-gallery-inner align-left"><h4>握不住的正义——《恶魔法官》剧评</h4> <p class="date-lang"><span class="blog-date"><i class="fa fa-calendar"></i>
+               2021-08-23
+            </span> <span class="blog-gallery-lang"><i class="fa fa-language"></i>
+              中文
+            </span></p> <p class="desc-tag"><span class="blog-gallery-desc">背负沉重过往的法官，通过操纵民意来实现自己的正义，这样做对吗？</span></p> <p class="desc-tag"><span><span class="blog-gallery-cat"><i class="fa fa-folder-open"></i>
+                剧评
+              </span></span> <span><span class="blog-gallery-tag"><i class="fa fa-tag"></i>
+                韩剧
+              </span><span class="blog-gallery-tag"><i class="fa fa-tag"></i>
+                池晟
+              </span><span class="blog-gallery-tag"><i class="fa fa-tag"></i>
+                恶魔法官
+              </span></span></p></div></a></div><div class="blog-gallery-unit col-1"><a href="/blog/minesweeper" title="我之前用原生JavaScript、jQuery、微信小程序写过3个版本的扫雷游戏，当我体验过类似Vue的微信小程序之后，学习Vue好像是自然而然的事，于是我终于用Vue写出了最让我满意的一个版本的扫雷~" class="no-decor-link"><div class="blog-gallery-inner align-left"><h4>我最喜欢的PC游戏——扫雷</h4> <p class="date-lang"><span class="blog-date"><i class="fa fa-calendar"></i>
+               2018-11-18
+            </span> <span class="blog-gallery-lang"><i class="fa fa-language"></i>
+              中文
+            </span></p> <p class="desc-tag"><span class="blog-gallery-desc">我之前用原生JavaScript、jQuery、微信小程序写过3个版本的扫雷游戏，当我体验过类似Vue的微信小程序之后，学习Vue好像是自然而然的事，于是我终于用Vue写出了最让我满意的一个版本的扫雷~</span></p> <p class="desc-tag"><span><span class="blog-gallery-cat"><i class="fa fa-folder-open"></i>
+                技术
+              </span></span> <span><span class="blog-gallery-tag"><i class="fa fa-tag"></i>
+                我的项目
+              </span><span class="blog-gallery-tag"><i class="fa fa-tag"></i>
+                JavaScript
+              </span><span class="blog-gallery-tag"><i class="fa fa-tag"></i>
+                Vue.js
+              </span></span></p></div></a></div></div></div> <div class="side-nav side-unit desk-fix"><ul class="toc"><li class="toc2"><a href="/blog/tampermonkey-browser-script-download-sina-blog#前言">前言</a></li><li class="toc2"><a href="/blog/tampermonkey-browser-script-download-sina-blog#获取文章列表，存入localstorage">获取文章列表，存入localStorage</a></li><li class="toc2"><a href="/blog/tampermonkey-browser-script-download-sina-blog#设置下载文件夹，关闭浏览器询问">设置下载文件夹，关闭浏览器询问</a></li><li class="toc2"><a href="/blog/tampermonkey-browser-script-download-sina-blog#遍历文章列表，下载每一篇文章">遍历文章列表，下载每一篇文章</a></li><li class="toc2"><a href="/blog/tampermonkey-browser-script-download-sina-blog#合并文章为一个txt文件">合并文章为一个txt文件</a></li><li class="toc2"><a href="/blog/tampermonkey-browser-script-download-sina-blog#复制html到浏览器，替换图片链接">复制html到浏览器，替换图片链接</a></li><li class="toc2"><a href="/blog/tampermonkey-browser-script-download-sina-blog#给文章标题添加id">给文章标题添加id</a></li><li class="toc2"><a href="/blog/tampermonkey-browser-script-download-sina-blog#给整个页面添加博客目录功能区">给整个页面添加博客目录功能区</a></li><li class="toc2"><a href="/blog/tampermonkey-browser-script-download-sina-blog#保存整个页面为pdf">保存整个页面为PDF</a></li></ul> <div class="close"><i class="fa fa-window-close-o"></i></div></div> <div class="list-btn desk-list-btn list-btn-hidden"><i class="fa fa-list-ul"></i></div></aside></div></div> <footer><p>Created with Nuxt.js <br>
+    	Designed by  
+    	<a href="https://github.com/c53hzn" target="_blank" class="no-decor-link"><strong>Jenny HOU</strong> <i class="fa fa-github font-20"></i></a></p> <div class="go-top go-top-hidden"><div class="arrow"></div> <div class="stick"></div></div></footer></div></div></div><script>window.__NUXT__=function(e,t,a,l,r,p,n,i,o,s,c,d,y,u,g,h,m,v,E,A,B,b,N,S,x,f,D,w,L,I,T,_,J,O,F,j){return L[0]="tampermonkey",{layout:"post",data:[{blog:{slug:w,description:"使用此文章的几个脚本，可以获取单个新浪博客用户的博文列表，并全部下载，再合并成一个PDF，可包含图片和目录。",date:"2024-02-18T00:00:00.000Z",language:v,title:"下载新浪博客全部博文的油猴浏览器脚本",categories:[f],tags:["浏览器脚本"],keywords:L,comments:!0,toc:[{id:E,depth:2,text:E},{id:I,depth:2,text:T},{id:A,depth:2,text:A},{id:B,depth:2,text:B},{id:b,depth:2,text:b},{id:N,depth:2,text:N},{id:S,depth:2,text:S},{id:x,depth:2,text:x},{id:_,depth:2,text:J}],body:{type:"root",children:[{type:t,tag:p,props:{id:E},children:[{type:t,tag:n,props:{ariaHidden:i,href:"#%E5%89%8D%E8%A8%80",tabIndex:o},children:[{type:t,tag:s,props:{className:[c,d]},children:[]}]},{type:e,value:E}]},{type:e,value:a},{type:t,tag:l,props:{},children:[{type:e,value:"本篇文章会介绍如何下载新浪博客文章到PDF，下载内容包括图片，可带目录。"}]},{type:e,value:a},{type:t,tag:l,props:{},children:[{type:e,value:"需要有一定的前端编程和浏览器知识，如果没有的话，建议找一个会的朋友帮你下载。"}]},{type:e,value:a},{type:t,tag:p,props:{id:I},children:[{type:t,tag:n,props:{ariaHidden:i,href:"#%E8%8E%B7%E5%8F%96%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8%EF%BC%8C%E5%AD%98%E5%85%A5localstorage",tabIndex:o},children:[{type:t,tag:s,props:{className:[c,d]},children:[]}]},{type:e,value:T}]},{type:e,value:a},{type:t,tag:l,props:{},children:[{type:e,value:"在新浪博客找到要保存的用户的主页，在主页点击“博文目录”，在此页按下 "},{type:t,tag:r,props:{},children:[{type:e,value:"F12"}]},{type:e,value:" 打开 "},{type:t,tag:r,props:{},children:[{type:e,value:D}]},{type:e,value:" ，输入以下代码。"}]},{type:e,value:a},{type:t,tag:y,props:{className:[u]},children:[{type:t,tag:g,props:{className:[h,m]},children:[{type:t,tag:r,props:{},children:[{type:e,value:'var list = document.querySelectorAll("div.articleCell.SG_j_linedot1");\nvar articles = [];\nfor (let i = 0; i < list.length; i++) {\n    let pList = list[i].querySelectorAll("p");\n    let a = pList[0].querySelector(".atc_title a");\n    let b = pList[1].querySelector(".atc_tm.SG_txtc");\n    let obj = {\n        title: a.innerHTML,\n        link: a.href,\n        time: b.innerHTML\n    };\n    articles.push(obj);\n}\nconsole.log(JSON.stringify(articles))\n'}]}]}]},{type:e,value:a},{type:t,tag:l,props:{},children:[{type:e,value:"然后 "},{type:t,tag:r,props:{},children:[{type:e,value:D}]},{type:e,value:" 里面会显示拿到的本页的博文的清单，如果博主的博文超过50篇，那接下来就要点击“下一页”以保存下一页的博文清单。"}]},{type:e,value:a},{type:t,tag:l,props:{},children:[{type:e,value:"请自己翻页，然后每一页执行一次，再手动合并成一个 "},{type:t,tag:r,props:{},children:[{type:e,value:"Array"}]},{type:e,value:" ，如果你不会这一步，可能这篇教学不太适合你。"}]},{type:e,value:a},{type:t,tag:y,props:{className:[u]},children:[{type:t,tag:g,props:{className:[h,m]},children:[{type:t,tag:r,props:{},children:[{type:e,value:'//把文章列表写成JSON\narticleJSON = {list: {\n  title: "文章标题",\n  link: "文章链接",\n  time: "发表时间"\n};\n//存入localStorage\nlocalStorage.setItem("articleJSON", JSON.stringify(articleJSON));\nlocalStorage.setItem("curArticleNum", 0);\n'}]}]}]},{type:e,value:a},{type:t,tag:p,props:{id:A},children:[{type:t,tag:n,props:{ariaHidden:i,href:"#%E8%AE%BE%E7%BD%AE%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E5%A4%B9%EF%BC%8C%E5%85%B3%E9%97%AD%E6%B5%8F%E8%A7%88%E5%99%A8%E8%AF%A2%E9%97%AE",tabIndex:o},children:[{type:t,tag:s,props:{className:[c,d]},children:[]}]},{type:e,value:A}]},{type:e,value:a},{type:t,tag:l,props:{},children:[{type:e,value:"新建一个文件夹，把浏览器的默认下载文件夹设置成这个文件夹，然后关闭“每次下载都询问保存位置”。"}]},{type:e,value:a},{type:t,tag:l,props:{},children:[{type:e,value:"此外，在执行下一部分代码的时候，浏览器一定会提示“已阻止网站自动下载”，此时需要眼疾手快地点开提示，改成“允许下载”。"}]},{type:e,value:a},{type:t,tag:p,props:{id:B},children:[{type:t,tag:n,props:{ariaHidden:i,href:"#%E9%81%8D%E5%8E%86%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8%EF%BC%8C%E4%B8%8B%E8%BD%BD%E6%AF%8F%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0",tabIndex:o},children:[{type:t,tag:s,props:{className:[c,d]},children:[]}]},{type:e,value:B}]},{type:e,value:a},{type:t,tag:l,props:{},children:[{type:e,value:"打开博主的最新一篇博文详情页，不要打开其他新浪博客域名的页面，放在这里别动。"}]},{type:e,value:a},{type:t,tag:l,props:{},children:[{type:e,value:"在tampermonkey新建脚本，输入以下代码并保存。"}]},{type:e,value:a},{type:t,tag:y,props:{className:[u]},children:[{type:t,tag:g,props:{className:[h,m]},children:[{type:t,tag:r,props:{},children:[{type:e,value:'// ==UserScript==\n// @name         Download Sina blog\n// @namespace    http://tampermonkey.net/\n// @version      0.1\n// @description  try to take over the world!\n// @author       You\n// @match        https://blog.sina.com.cn/s/*\n// @icon         https://www.google.com/s2/favicons?sz=64&domain=sina.com.cn\n// @grant        none\n// ==/UserScript==\n\n//参考文章\n//https://blog.csdn.net/qq_45677671/article/details/125905454\n//【JS】将字符串保存成文件到本地（.txt、.json、.md...）\n\n(function() {\n    \'use strict\';\n//如果准备好了，就把这个return注释掉，脚本就会执行了\nreturn;\nvar articleJSON = localStorage.getItem("articleJSON");\narticleJSON = JSON.parse(articleJSON);\nvar articleList = articleJSON.list;\nvar curArticleNum = localStorage.getItem("curArticleNum");\nvar curArticle = articleList[curArticleNum];\n\nsetTimeout(function() {\n    //要保存的字符串\n    //获取标题\n    var title = document.querySelector("h2");\n    var stringData = `<h2>${title.innerHTML}</h2>\\n<p>${curArticle.time}</p><div>`;\n    //获取正文\n    stringData += document.querySelector("#sina_keyword_ad_area2").innerHTML +"\\n</div>\\n";\n    // stringData 表示要转换的字符串数据，type 表示要转换的数据格式\n    const blob = new Blob([stringData], {\n        type: "text/plain;charset=utf-8"\n    });\n    // 根据 blob生成 url链接\n    const objectURL = URL.createObjectURL(blob);\n    // 创建一个 a 标签Tag\n    const aTag = document.createElement(\'a\');\n    // 设置文件的下载地址\n    aTag.href = objectURL;\n    // 设置保存后的文件名称\n    //padStart用来给文件名前面补0，想要几位数，就在第一个参数写几\n    //但是padStart只能作用于字符串，所以要先toString()\n    //以下是三位数字的例子，eg:001.txt, 002.txt\n    var fileName = (curArticleNum+1).toString();\n    aTag.download = fileName.padStart(3, \'0\')+".txt";\n    // 给 a 标签添加点击事件\n    aTag.click();\n    // 释放一个之前已经存在的、通过调用 URL.createObjectURL() 创建的 URL 对象。\n    // 当你结束使用某个 URL 对象之后，应该通过调用这个方法来让浏览器知道不用在内存中继续保留对这个文件的引用了。\n    URL.revokeObjectURL(objectURL);\n    curArticleNum++;\n    localStorage.setItem("curArticleNum", curArticleNum);\n    //全下载完了就return\n    if(curArticleNum==articleList.length)return;\n    //没下载完则进入下一篇的页面\n    var nextArticle = articleList[curArticleNum];\n    window.location = nextArticle.link;\n}, 3000);\n})();\n'}]}]}]},{type:e,value:a},{type:t,tag:l,props:{},children:[{type:e,value:"刷新刚才的博文详情页，代码就会开始执行，遍历文章列表，下载所有文章的html为txt，保存到你的电脑上。"}]},{type:e,value:a},{type:t,tag:l,props:{},children:[{type:e,value:"执行完之后记得把脚本的return的注释删掉，或者直接把整个脚本关掉，不然下次打开任何一个新浪博客的页面，它又会自动执行。"}]},{type:e,value:a},{type:t,tag:p,props:{id:b},children:[{type:t,tag:n,props:{ariaHidden:i,href:"#%E5%90%88%E5%B9%B6%E6%96%87%E7%AB%A0%E4%B8%BA%E4%B8%80%E4%B8%AAtxt%E6%96%87%E4%BB%B6",tabIndex:o},children:[{type:t,tag:s,props:{className:[c,d]},children:[]}]},{type:e,value:b}]},{type:e,value:a},{type:t,tag:l,props:{},children:[{type:e,value:"使用命令行将所有txt文件合并成一个txt文件。"}]},{type:e,value:a},{type:t,tag:y,props:{className:[u]},children:[{type:t,tag:g,props:{className:[h,m]},children:[{type:t,tag:r,props:{},children:[{type:e,value:"type *.txt>index.txt\n"}]}]}]},{type:e,value:a},{type:t,tag:p,props:{id:N},children:[{type:t,tag:n,props:{ariaHidden:i,href:"#%E5%A4%8D%E5%88%B6html%E5%88%B0%E6%B5%8F%E8%A7%88%E5%99%A8%EF%BC%8C%E6%9B%BF%E6%8D%A2%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5",tabIndex:o},children:[{type:t,tag:s,props:{className:[c,d]},children:[]}]},{type:e,value:N}]},{type:e,value:a},{type:t,tag:l,props:{},children:[{type:e,value:"打开新浪博客的任意一个页面，在 "},{type:t,tag:r,props:{},children:[{type:e,value:D}]},{type:e,value:" 里面输入"}]},{type:e,value:a},{type:t,tag:y,props:{className:[u]},children:[{type:t,tag:g,props:{className:[h,m]},children:[{type:t,tag:r,props:{},children:[{type:e,value:'document.querySelector("body").innerHTML = "";\n'}]}]}]},{type:e,value:a},{type:t,tag:l,props:{},children:[{type:e,value:"清除该页body里的所有HTML之后，再点开 "},{type:t,tag:r,props:{},children:[{type:e,value:"elements"}]},{type:e,value:" ，把合并后的TXT文件里的html复制粘贴到该页的body里面。"}]},{type:e,value:a},{type:t,tag:l,props:{},children:[{type:e,value:"为什么要这样做呢？因为新浪博客的图片链接只能在新浪博客的页面才能显示图片，为了能把图片也下载下来，我们需要用这种方式。"}]},{type:e,value:a},{type:t,tag:l,props:{},children:[{type:e,value:"此时有些图片不显示，这是因为之前我们设置的每一篇的下载间隔为3秒，如果该篇博客包含了很多图片，3秒可能不够全部加载，此时新浪博客有一个缓冲加载图片的机制，会导致我们下载下来的html里面的图片不显示，解决办法是从图片标签里获取到真正的图片链接，并替换缓冲的图片链接。"}]},{type:e,value:a},{type:t,tag:y,props:{className:[u]},children:[{type:t,tag:g,props:{className:[h,m]},children:[{type:t,tag:r,props:{},children:[{type:e,value:'var allImg = document.querySelectorAll("img");\nfor (let i = 0; i < allImg.length; i++) {\n    let real_src = allImg[i].getAttribute("real_src");\n    allImg[i].src = real_src;\n}\n'}]}]}]},{type:e,value:a},{type:t,tag:l,props:{},children:[{type:e,value:"然后图片就能显示了。"}]},{type:e,value:a},{type:t,tag:p,props:{id:S},children:[{type:t,tag:n,props:{ariaHidden:i,href:"#%E7%BB%99%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98%E6%B7%BB%E5%8A%A0id",tabIndex:o},children:[{type:t,tag:s,props:{className:[c,d]},children:[]}]},{type:e,value:S}]},{type:e,value:a},{type:t,tag:y,props:{className:[u]},children:[{type:t,tag:g,props:{className:[h,m]},children:[{type:t,tag:r,props:{},children:[{type:e,value:"var h2All = document.querySelectorAll(\"h2\");\nfor (let j = 0; j < h2All.length; j++) {\n    let num = (j+1).toString();\n    h2All[j].id = num.padStart(3, '0');\n}\n"}]}]}]},{type:e,value:a},{type:t,tag:p,props:{id:x},children:[{type:t,tag:n,props:{ariaHidden:i,href:"#%E7%BB%99%E6%95%B4%E4%B8%AA%E9%A1%B5%E9%9D%A2%E6%B7%BB%E5%8A%A0%E5%8D%9A%E5%AE%A2%E7%9B%AE%E5%BD%95%E5%8A%9F%E8%83%BD%E5%8C%BA",tabIndex:o},children:[{type:t,tag:s,props:{className:[c,d]},children:[]}]},{type:e,value:x}]},{type:e,value:a},{type:t,tag:y,props:{className:[u]},children:[{type:t,tag:g,props:{className:[h,m]},children:[{type:t,tag:r,props:{},children:[{type:e,value:'var articleJSON = localStorage.getItem("articleJSON");\narticleJSON = JSON.parse(articleJSON);\nvar list = articleJSON.list;\nvar html = `<div id="menu"><style>#menu a{font-weight:bold;text-decoration:none;}#menu span{font-size: 14px;color:silver;}</style><h3>目录</h3>`;\nfor (let i = 0; i < list.length; i++) {\n    let num = (i+1).toString();\n    html += `<p><a href="#${num.padStart(3, \'0\')}" target="_self">${list[i].title}</a><br><span>${list[i].time}</span></p>`;\n}\nhtml+="</div>"\nconsole.log(html)\n'}]}]}]},{type:e,value:a},{type:t,tag:l,props:{},children:[{type:e,value:"复制生成的html，手动粘贴到body的开头。"}]},{type:e,value:a},{type:t,tag:p,props:{id:_},children:[{type:t,tag:n,props:{ariaHidden:i,href:"#%E4%BF%9D%E5%AD%98%E6%95%B4%E4%B8%AA%E9%A1%B5%E9%9D%A2%E4%B8%BApdf",tabIndex:o},children:[{type:t,tag:s,props:{className:[c,d]},children:[]}]},{type:e,value:J}]},{type:e,value:a},{type:t,tag:l,props:{},children:[{type:e,value:"使用浏览器自带的“打印到PDF”功能，我们可以保存整页为PDF，完成。"}]},{type:e,value:a},{type:t,tag:l,props:{},children:[{type:e,value:"经过测试，文章数量多，且包含的图片多的时候，打印预览窗口弹出的速度会比较慢，等一等就可以了。"}]},{type:e,value:a},{type:t,tag:l,props:{},children:[{type:e,value:"全文完。"}]}]},dir:"/blog",path:"/blog/2024-02-18-tampermonkey-browser-script-download-sina-blog",extension:".md",createdAt:O,updatedAt:O,prev:{slug:"fengshen-trilogy-part-1-synopsis",description:"A new adaption of the novel The Investiture of the Gods, read the part one full story here.",title:"Creation of the Gods I: Kingdom of Storms, full story"},next:F,relatedBlog:[{slug:"nuxt-breadcrumbs-bilingual-en",description:"I made a Chinese/ English Breadcrumbs component for my Nuxt website, the key point is to use a preset mapping rule. Also I learned about the communication between sibling components, it's worth my time.",date:"2021-04-06T00:00:00.000Z",language:"English",title:"Create Bilingual Breadcrumbs component for Nuxt",categories:["Tech"],tags:[j,"breadcrumbs"]},{slug:"nuxt-breadcrumbs-bilingual",description:"终于弄好了双语的面包屑导航，还学到了Vue的同级组件通信的知识，我还是很开心的。",date:"2021-03-24T00:00:00.000Z",language:v,title:"如何制作中英双语的面包屑导航",categories:[f],tags:[j,"面包屑导航"]},{slug:"devil-judge",description:"背负沉重过往的法官，通过操纵民意来实现自己的正义，这样做对吗？",date:"2021-08-23T00:00:00.000Z",language:v,title:"握不住的正义——《恶魔法官》剧评",categories:["剧评"],tags:["韩剧","池晟","恶魔法官"]},{slug:"minesweeper",description:"我之前用原生JavaScript、jQuery、微信小程序写过3个版本的扫雷游戏，当我体验过类似Vue的微信小程序之后，学习Vue好像是自然而然的事，于是我终于用Vue写出了最让我满意的一个版本的扫雷~",date:"2018-11-18T00:00:00.000Z",language:v,title:"我最喜欢的PC游戏——扫雷",categories:[f],tags:["我的项目","JavaScript","Vue.js"]}]},mySlug:w,keywords:L,profile_pic:void 0,ui_zh:{related_posts:"相关文章",loadComment:"加载评论"},ui_en:{related_posts:"Related Posts",loadComment:"Load Comments"}}],fetch:[],error:F,state:{lang:{val:"Eng"}},serverRendered:!0,routePath:"/blog/tampermonkey-browser-script-download-sina-blog",content:{dbHash:"7d6f19ca"}}}("text","element","\n","p","code","h2","a","true",-1,"span","icon","icon-link","div","nuxt-content-highlight","pre","language-text","line-numbers","中文","前言","设置下载文件夹，关闭浏览器询问","遍历文章列表，下载每一篇文章","合并文章为一个txt文件","复制html到浏览器，替换图片链接","给文章标题添加id","给整个页面添加博客目录功能区","技术","console","tampermonkey-browser-script-download-sina-blog",Array(1),"获取文章列表，存入localstorage","获取文章列表，存入localStorage","保存整个页面为pdf","保存整个页面为PDF","2024-02-18T17:05:30.702Z",null,"Nuxt.js")</script><script src="/_nuxt/7e4b94164e32f472bd4c.js" defer></script><script src="/_nuxt/efceef13af374f2d770e.js" defer></script><script src="/_nuxt/54f6f6bd48b75643c87d.js" defer></script><script src="/_nuxt/43e415fec2b60ff3aa38.js" defer></script><script src="/_nuxt/8df581cb8a5ae31cb7f4.js" defer></script>
+  </body>
+</html>
