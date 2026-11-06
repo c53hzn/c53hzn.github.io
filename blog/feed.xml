@@ -4,9 +4,15 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Mon, 02 Nov 2026 06:19:41 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 06 Nov 2026 04:59:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[GitHub pages部署的Nuxt静态网站js资源404问题]]></title>
+            <link>https://www.houzhenni.com/blog/github-pages-nuxt-website-js-404</link>
+            <guid>https://www.houzhenni.com/blog/github-pages-nuxt-website-js-404</guid>
+            <description><![CDATA[加个.nojekyll文件就能解决]]></description>
+        </item>
         <item>
             <title><![CDATA[Vibe Coding趣事之按钮样式]]></title>
             <link>https://www.houzhenni.com/blog/vibe-coding-button-style-issue</link>
